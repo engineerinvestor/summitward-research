@@ -1,0 +1,38 @@
+{
+  "source": "World Bank Commodity Price Data (The Pink Sheet), monthly historical file",
+  "landing_page": "https://www.worldbank.org/en/research/commodity-markets",
+  "base_file": {
+    "url": "https://thedocs.worldbank.org/en/doc/18675f1d1639c7a34d463f59263ba0a2-0050012025/related/CMO-Historical-Data-Monthly.xlsx",
+    "file_updated_stamp": "Updated on January 06, 2025",
+    "note": "Full-precision release whose rows run through 2025-12. The stamp reads 2025 but the contents are the January 2026 release."
+  },
+  "extension_file": {
+    "url": "https://thedocs.worldbank.org/en/doc/74e8be41ceb20fa0da750cda2f6b9e4e-0050012026/related/CMO-Historical-Data-Monthly.xlsx",
+    "file_updated_stamp": "Updated on September 02, 2026",
+    "months_chained": [
+      "2026-01",
+      "2026-02",
+      "2026-03",
+      "2026-04",
+      "2026-05",
+      "2026-06",
+      "2026-07",
+      "2026-08"
+    ],
+    "note": "This release rounds values to one decimal. Months after the base file's last row are chained onto the base by the ratio of consecutive rounded values."
+  },
+  "retrieved": "2026-09-20",
+  "first_month": "1960-01",
+  "last_month": "2026-08",
+  "columns": {
+    "gold": "Gold, $/troy oz, monthly average (Monthly Prices sheet)",
+    "total": "Total commodity index, nominal USD, 2010=100 (Monthly Indices sheet)",
+    "energy": "Energy index, 2010=100",
+    "non_energy": "Non-energy index, 2010=100",
+    "agriculture": "Agriculture index, 2010=100",
+    "metals_minerals": "Metals & Minerals index, 2010=100",
+    "precious_metals": "Precious Metals index, 2010=100"
+  },
+  "notes": "Spot prices and spot-price indices. They are not the return of a collateralized futures position and include no roll or collateral yield.",
+  "licence": "CC BY 4.0 (World Bank Data Catalog). Used with attribution."
+}

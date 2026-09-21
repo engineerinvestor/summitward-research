@@ -1,0 +1,21 @@
+{
+  "source": "Robert J. Shiller, ie_data.xls (Irrational Exuberance dataset), sheet Data",
+  "landing_page": "https://shillerdata.com/",
+  "url": "https://img1.wsimg.com/blobby/go/e5e77e0b-59d1-44d9-ab25-4763ac982e53/downloads/e27e58c1-8ae0-488c-a976-a298708c7175/ie_data.xls",
+  "retrieved": "2026-09-20",
+  "first_month": "1871-01",
+  "last_month": "2026-08",
+  "columns": {
+    "p": "S&P Composite price, monthly average of daily closes (current month: one close)",
+    "d": "Dividends per share, 12-month trailing, interpolated to months",
+    "e": "Earnings per share, 12-month trailing, interpolated to months",
+    "cpi": "CPI-U as carried in Shiller's file (recent months estimated by Shiller)",
+    "gs10": "10-year Treasury constant maturity yield, percent"
+  },
+  "file_footnotes": [
+    "Aug price is Aug 1st close",
+    "Oct '25/July/Aug CPI estimated",
+    "Aug GS10 is Jul 31st value"
+  ],
+  "licence": "No redistribution restriction stated on shillerdata.com; attributed to Robert J. Shiller. Used with attribution."
+}
