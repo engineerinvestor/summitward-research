@@ -1,0 +1,295 @@
+{
+  "data_through": "202608",
+  "window": "1927-01 to 2025-12",
+  "months": 1188,
+  "full": {
+    "small_growth": {
+      "ann": 8.81,
+      "vol": 25.8,
+      "maxdd": -88.9,
+      "growth_of_1": 4259
+    },
+    "small_value": {
+      "ann": 14.16,
+      "vol": 28.1,
+      "maxdd": -88.7,
+      "growth_of_1": 493097
+    },
+    "large_growth": {
+      "ann": 10.21,
+      "vol": 18.3,
+      "maxdd": -81.7,
+      "growth_of_1": 15156
+    },
+    "large_value": {
+      "ann": 12.28,
+      "vol": 24.6,
+      "maxdd": -89.2,
+      "growth_of_1": 95100
+    },
+    "small": {
+      "ann": 12.03,
+      "vol": 25.4,
+      "maxdd": -87.7,
+      "growth_of_1": 76854
+    },
+    "big": {
+      "ann": 11.06,
+      "vol": 19.9,
+      "maxdd": -86.9,
+      "growth_of_1": 32501
+    },
+    "market": {
+      "ann": 10.27,
+      "vol": 18.4,
+      "maxdd": -83.7,
+      "growth_of_1": 15952
+    },
+    "tbill": {
+      "ann": 3.29,
+      "vol": 0.9,
+      "maxdd": -0.1,
+      "growth_of_1": 25
+    },
+    "tiny_growth": {
+      "ann": 2.47,
+      "vol": 41.2,
+      "maxdd": -98.6,
+      "growth_of_1": 11
+    },
+    "tiny_value": {
+      "ann": 15.89,
+      "vol": 31.7,
+      "maxdd": -90.9,
+      "growth_of_1": 2188134
+    }
+  },
+  "decades": [
+    {
+      "label": "1930s",
+      "small_value": 1.8,
+      "small_growth": 4.5,
+      "small": 4.2,
+      "big": -1.5,
+      "market": -0.3,
+      "spread": -2.7
+    },
+    {
+      "label": "1940s",
+      "small_value": 21.3,
+      "small_growth": 11.3,
+      "small": 15.7,
+      "big": 11.6,
+      "market": 9.5,
+      "spread": 10.0
+    },
+    {
+      "label": "1950s",
+      "small_value": 20.2,
+      "small_growth": 17.5,
+      "small": 18.8,
+      "big": 19.7,
+      "market": 18.3,
+      "spread": 2.7
+    },
+    {
+      "label": "1960s",
+      "small_value": 15.7,
+      "small_growth": 10.7,
+      "small": 13.3,
+      "big": 8.9,
+      "market": 8.3,
+      "spread": 5.0
+    },
+    {
+      "label": "1970s",
+      "small_value": 15.0,
+      "small_growth": 5.8,
+      "small": 10.4,
+      "big": 8.3,
+      "market": 6.1,
+      "spread": 9.2
+    },
+    {
+      "label": "1980s",
+      "small_value": 21.2,
+      "small_growth": 10.1,
+      "small": 17.1,
+      "big": 17.8,
+      "market": 16.9,
+      "spread": 11.1
+    },
+    {
+      "label": "1990s",
+      "small_value": 16.3,
+      "small_growth": 11.5,
+      "small": 14.6,
+      "big": 17.1,
+      "market": 18.0,
+      "spread": 4.8
+    },
+    {
+      "label": "2000s",
+      "small_value": 10.4,
+      "small_growth": -1.5,
+      "small": 6.3,
+      "big": 2.2,
+      "market": -0.4,
+      "spread": 11.9
+    },
+    {
+      "label": "2010s",
+      "small_value": 11.0,
+      "small_growth": 12.6,
+      "small": 12.2,
+      "big": 13.1,
+      "market": 13.6,
+      "spread": -1.6
+    },
+    {
+      "label": "2020-2025",
+      "small_value": 11.3,
+      "small_growth": 9.7,
+      "small": 10.3,
+      "big": 14.6,
+      "market": 14.8,
+      "spread": 1.6
+    }
+  ],
+  "subperiods": {
+    "1927-1962": {
+      "small_value": 12.6,
+      "small_growth": 9.0,
+      "market": 9.2,
+      "small": 11.1,
+      "big": 10.0,
+      "tiny_value": 14.6,
+      "tiny_growth": -1.3,
+      "tbill": 1.3
+    },
+    "1963-2025": {
+      "small_value": 15.1,
+      "small_growth": 8.7,
+      "market": 10.9,
+      "small": 12.6,
+      "big": 11.7,
+      "tiny_value": 16.6,
+      "tiny_growth": 4.7,
+      "tbill": 4.4
+    },
+    "1990-2025": {
+      "small_value": 12.3,
+      "small_growth": 7.7,
+      "market": 10.9,
+      "small": 10.9,
+      "big": 11.3,
+      "tiny_value": 14.5,
+      "tiny_growth": 2.5,
+      "tbill": 2.7
+    },
+    "2000-2025": {
+      "small_value": 10.8,
+      "small_growth": 6.3,
+      "market": 8.3,
+      "small": 9.5,
+      "big": 9.1,
+      "tiny_value": 13.2,
+      "tiny_growth": 1.0,
+      "tbill": 1.9
+    },
+    "2010-2025": {
+      "small_value": 11.1,
+      "small_growth": 11.5,
+      "market": 14.1,
+      "small": 11.5,
+      "big": 13.7,
+      "tiny_value": 13.7,
+      "tiny_growth": 6.0,
+      "tbill": 1.3
+    }
+  },
+  "ytd_2026": {
+    "through": "202608",
+    "small_value": 21.7,
+    "small_growth": 20.9,
+    "market": 12.7
+  },
+  "rolling": {
+    "1y": {
+      "windows": 1177,
+      "share_value_won": 63.0,
+      "median_spread": 4.5,
+      "worst_spread": -67.8,
+      "worst_window_end": "200002",
+      "best_spread": 108.8
+    },
+    "5y": {
+      "windows": 1129,
+      "share_value_won": 79.9,
+      "median_spread": 4.6,
+      "worst_spread": -12.4,
+      "worst_window_end": "202101",
+      "best_spread": 26.7
+    },
+    "10y": {
+      "windows": 1069,
+      "share_value_won": 86.4,
+      "median_spread": 6.5,
+      "worst_spread": -6.1,
+      "worst_window_end": "202012",
+      "best_spread": 15.3
+    },
+    "20y": {
+      "windows": 949,
+      "share_value_won": 98.5,
+      "median_spread": 6.7,
+      "worst_spread": -0.7,
+      "worst_window_end": "202510",
+      "best_spread": 12.4
+    }
+  },
+  "longest_relative_drawdown": {
+    "months": 138,
+    "from": "193209",
+    "to": "194402"
+  },
+  "calendar_years_value_won": 59,
+  "calendar_years": 99,
+  "funds": [
+    {
+      "window": "2000-08 to 2025-12",
+      "funds": {
+        "IWN": 8.82,
+        "IWO": 6.54
+      },
+      "ff_small_value": 10.57,
+      "ff_small_growth": 6.57,
+      "ff_tiny_growth": 0.99
+    },
+    {
+      "window": "2004-02 to 2025-12",
+      "funds": {
+        "VBR": 9.15,
+        "VBK": 9.37,
+        "IJS": 8.66,
+        "IJT": 9.56
+      },
+      "ff_small_value": 8.45,
+      "ff_small_growth": 8.44,
+      "ff_tiny_growth": 2.82
+    },
+    {
+      "window": "2019-10 to 2025-12",
+      "funds": {
+        "AVUV": 13.9,
+        "VBR": 10.57,
+        "VBK": 9.06,
+        "IWN": 9.0,
+        "IWO": 9.33
+      },
+      "ff_small_value": 12.39,
+      "ff_small_growth": 11.54,
+      "ff_tiny_growth": 6.29
+    }
+  ]
+}

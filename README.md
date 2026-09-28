@@ -8,7 +8,9 @@ the data files it reads, and a README stating the guide URL, the data
 provenance and read dates, and the output the guide quotes. Every analysis
 script runs with the Python standard library only (`inflation-beta` also
 carries an optional exporter that converts vendor spreadsheets to CSV and needs
-pandas or openpyxl; the committed CSVs make running it unnecessary):
+pandas or openpyxl; the committed CSVs make running it unnecessary; `small-cap-value-vs-growth` has
+an optional `--funds` flag that needs yfinance, and its committed
+`results.json` already holds that output):
 
 ```bash
 python3 <folder>/<script>.py
@@ -20,13 +22,15 @@ python3 <folder>/<script>.py
 | `social-security-discount-rate` | [What Discount Rate Belongs on Social Security?](https://summitward.com/learn/social-security-discount-rate) | Present value of claiming at 62, 67 and 70 by real discount rate, with SSA mortality, and the crossover rates |
 | `robo-advisor-returns` | [What Wealthfront's 9.8% Return Actually Measures](https://summitward.com/learn/robo-advisor-returns) | A published robo-advisor allocation rebuilt from index returns over two eras, and the reported risk-score ladder |
 | `inflation-beta` | [Inflation Beta Is Not One Number](https://summitward.com/learn/inflation-beta) | Full-sample and rolling inflation betas for six assets under three CPI series and two shock definitions, 1960 to date, plus the data behind the guide's explorer |
+| `small-cap-value-vs-growth` | [Small-Cap Value vs. Small-Cap Growth](https://summitward.com/learn/small-cap-value-vs-small-cap-growth) | 99 years of Fama-French small value, small growth and tiny-growth returns by decade and rolling window, plus index funds over matching windows |
 
 ## Data sources
 
 - S&P 500, Baa corporate and 10-year Treasury annual returns: Aswath Damodaran,
   [Historical Returns on Stocks, Bonds and Bills](https://pages.stern.nyu.edu/~adamodar/New_Home_Page/datafile/histretSP.html),
   NYU Stern. Used with attribution.
-- Developed ex-US and emerging market annual returns: Kenneth R. French,
+- Developed ex-US and emerging market annual returns, and US size and
+  book-to-market portfolios: Kenneth R. French,
   [Data Library](https://mba.tuck.dartmouth.edu/pages/faculty/ken.french/data_library.html).
   Used with attribution.
 - Period life table: Social Security Administration, Office of the Chief
