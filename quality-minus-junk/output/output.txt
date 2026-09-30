@@ -1,0 +1,90 @@
+Loading Ken French factors
+  FF3 1926-07..2026-08; FF5 1963-07..2026-08; Mom 1927-01..2026-08
+Loading AQR QMJ and BAB
+  QMJ USA 1957-07..2026-07; Global 1989-07..2026-07; BAB USA 1930-12..2026-07
+
+1. QMJ summary statistics (raw long/short returns, not alphas)
+  usa_1957_2016                      1957-07..2016-12 n=714 mean=+0.36%/mo (+4.3%/yr) vol=7.4% Sharpe=0.58 t=4.46 maxDD=-28.2% up=56%
+  usa_1963_2016                      1963-07..2016-12 n=642 mean=+0.38%/mo (+4.5%/yr) vol=7.7% Sharpe=0.59 t=4.28 maxDD=-28.2% up=56%
+  usa_2017_end                       2017-01..2026-07 n=115 mean=+0.14%/mo (+1.7%/yr) vol=11.3% Sharpe=0.15 t=0.45 maxDD=-36.2% up=52%
+  usa_2017_2026_06                   2017-01..2026-06 n=114 mean=+0.02%/mo (+0.2%/yr) vol=10.4% Sharpe=0.02 t=0.05 maxDD=-36.2% up=52%
+  usa_full                           1957-07..2026-07 n=829 mean=+0.33%/mo (+3.9%/yr) vol=8.1% Sharpe=0.49 t=4.05 maxDD=-36.2% up=55%
+  global_1989_2016                   1989-07..2016-12 n=330 mean=+0.47%/mo (+5.6%/yr) vol=7.4% Sharpe=0.76 t=4.00 maxDD=-21.3% up=59%
+  global_2017_end                    2017-01..2026-07 n=115 mean=+0.23%/mo (+2.7%/yr) vol=8.3% Sharpe=0.33 t=1.02 maxDD=-26.1% up=55%
+  global_2017_2026_06                2017-01..2026-06 n=114 mean=+0.14%/mo (+1.7%/yr) vol=7.7% Sharpe=0.22 t=0.68 maxDD=-26.1% up=54%
+  July 2026 USA QMJ +14.3%, rank 1 of 829; RMW +11.1%, Mom -12.2%
+  2017-2025 calendar years: {'years': 9, 'losing_years': 5, 'best_year': 2022, 'worst_year': 2020}
+
+2. QMJ factor regressions (USA)
+ff3mom_1957_2016: 1957-07..2016-12 n=714 R2=0.47 alpha=+0.53%/mo (+6.34%/yr, t=8.55, NW t=7.55)
+     Mkt-RF -0.212 (t=-14.36, NW t=-9.35)
+        SMB -0.277 (t=-13.18, NW t=-7.52)
+        HML -0.182 (t=-7.80, NW t=-3.25)
+        Mom +0.093 (t=6.24, NW t=3.19)
+ff5mom_1963_2016: 1963-07..2016-12 n=642 R2=0.73 alpha=+0.36%/mo (+4.33%/yr, t=7.35, NW t=6.91)
+     Mkt-RF -0.183 (t=-15.31, NW t=-12.14)
+        SMB -0.136 (t=-8.20, NW t=-6.64)
+        HML -0.215 (t=-8.95, NW t=-7.63)
+        RMW +0.556 (t=24.22, NW t=11.86)
+        CMA +0.112 (t=3.21, NW t=2.58)
+        Mom +0.069 (t=6.09, NW t=3.49)
+ff5mom_2017_end: 2017-01..2026-07 n=115 R2=0.76 alpha=+0.20%/mo (+2.41%/yr, t=1.26, NW t=1.35)
+     Mkt-RF -0.274 (t=-7.50, NW t=-7.20)
+        SMB -0.142 (t=-2.12, NW t=-2.55)
+        HML +0.102 (t=1.74, NW t=1.92)
+        RMW +0.858 (t=12.58, NW t=13.41)
+        CMA -0.005 (t=-0.06, NW t=-0.06)
+        Mom +0.040 (t=0.87, NW t=0.64)
+ff5mom_bab_1963_2016: 1963-07..2016-12 n=642 R2=0.73 alpha=+0.36%/mo (+4.28%/yr, t=7.23, NW t=6.55)
+     Mkt-RF -0.185 (t=-15.28, NW t=-12.72)
+        SMB -0.138 (t=-8.25, NW t=-6.25)
+        HML -0.219 (t=-8.96, NW t=-7.39)
+        RMW +0.548 (t=22.22, NW t=11.53)
+        CMA +0.106 (t=2.97, NW t=2.52)
+        Mom +0.067 (t=5.70, NW t=3.18)
+        BAB +0.015 (t=0.91, NW t=0.58)
+ff5mom_bab_2017_end: 2017-01..2026-07 n=115 R2=0.77 alpha=+0.19%/mo (+2.26%/yr, t=1.18, NW t=1.28)
+     Mkt-RF -0.274 (t=-7.57, NW t=-7.25)
+        SMB -0.168 (t=-2.45, NW t=-3.00)
+        HML +0.100 (t=1.73, NW t=1.74)
+        RMW +0.814 (t=11.12, NW t=12.61)
+        CMA -0.024 (t=-0.28, NW t=-0.25)
+        Mom +0.015 (t=0.31, NW t=0.22)
+        BAB +0.102 (t=1.55, NW t=1.28)
+  corr with QMJ 1963-07..end: {'QMJ': 1.0, 'RMW': 0.701, 'CMA': 0.116, 'BAB': 0.214, 'HML': -0.006, 'SMB': -0.449, 'Mkt-RF': -0.511}
+
+Loading Yahoo Finance (daily adjusted closes -> month-end)
+   AVUV  2019-10..2026-08 n=83  |r|>25%: [('2020-03', -0.289)]
+   DFSV  2022-03..2026-08 n=54
+   DFAT  2021-07..2026-08 n=62
+   IJS   2000-08..2026-08 n=313  |r|>25%: [('2020-03', -0.258)]
+   VBR   2004-02..2026-08 n=271  |r|>25%: [('2020-03', -0.251)]
+   IWN   2000-08..2026-08 n=313  |r|>25%: [('2020-03', -0.251)]
+   QUAL  2013-08..2026-08 n=157
+   SPHQ  2006-01..2026-08 n=248
+   JQUA  2017-12..2026-08 n=105
+   VTI   2001-07..2026-08 n=302
+
+3a. Funds, own windows
+  AVUV  2019-11..2026-07 n= 81 | FF5+Mom: SMB +0.90 HML +0.55 RMW +0.23(+3.1) CMA -0.05 Mom +0.01 R2 0.98 | FF3+Mom+QMJ: QMJ +0.13(+2.1) HML +0.53 R2 0.97 | FF5+Mom+QMJ: QMJ -0.09(-1.2) RMW +0.30
+  DFSV  2022-04..2026-07 n= 52 | FF5+Mom: SMB +0.87 HML +0.45 RMW +0.21(+4.0) CMA +0.08 Mom -0.05 R2 0.98 | FF3+Mom+QMJ: QMJ +0.17(+2.7) HML +0.50 R2 0.97 | FF5+Mom+QMJ: QMJ -0.02(-0.2) RMW +0.23
+  DFAT  2021-08..2026-07 n= 60 | FF5+Mom: SMB +0.87 HML +0.41 RMW +0.20(+3.8) CMA +0.05 Mom -0.01 R2 0.98 | FF3+Mom+QMJ: QMJ +0.15(+3.0) HML +0.44 R2 0.97 | FF5+Mom+QMJ: QMJ -0.04(-0.5) RMW +0.23
+  IJS   2000-09..2026-07 n=311 | FF5+Mom: SMB +0.89 HML +0.33 RMW +0.13(+3.7) CMA +0.04 Mom -0.01 R2 0.97 | FF3+Mom+QMJ: QMJ +0.13(+3.3) HML +0.36 R2 0.97 | FF5+Mom+QMJ: QMJ +0.07(+1.5) RMW +0.08
+  VBR   2004-03..2026-07 n=269 | FF5+Mom: SMB +0.61 HML +0.32 RMW +0.11(+3.4) CMA +0.04 Mom -0.03 R2 0.97 | FF3+Mom+QMJ: QMJ +0.05(+2.2) HML +0.34 R2 0.97 | FF5+Mom+QMJ: QMJ -0.04(-1.0) RMW +0.14
+  IWN   2000-09..2026-07 n=311 | FF5+Mom: SMB +0.83 HML +0.38 RMW +0.08(+2.5) CMA +0.07 Mom +0.02 R2 0.98 | FF3+Mom+QMJ: QMJ +0.05(+1.8) HML +0.42 R2 0.98 | FF5+Mom+QMJ: QMJ -0.02(-0.4) RMW +0.09
+  QUAL  2013-09..2026-07 n=155 | FF5+Mom: SMB -0.07 HML -0.03 RMW +0.17(+3.9) CMA +0.03 Mom +0.02 R2 0.96 | FF3+Mom+QMJ: QMJ +0.14(+4.7) HML -0.02 R2 0.96 | FF5+Mom+QMJ: QMJ +0.07(+1.6) RMW +0.11
+  SPHQ  2006-02..2026-07 n=246 | FF5+Mom: SMB +0.06 HML -0.07 RMW +0.14(+1.5) CMA +0.15 Mom +0.18 R2 0.86 | FF3+Mom+QMJ: QMJ +0.13(+1.7) HML -0.01 R2 0.85 | FF5+Mom+QMJ: QMJ +0.05(+0.8) RMW +0.10
+  JQUA  2018-01..2026-07 n=103 | FF5+Mom: SMB -0.02 HML -0.02 RMW +0.10(+1.1) CMA +0.11 Mom +0.05 R2 0.94 | FF3+Mom+QMJ: QMJ +0.13(+2.1) HML +0.02 R2 0.94 | FF5+Mom+QMJ: QMJ +0.13(+2.4) RMW -0.02
+  VTI   2001-08..2026-07 n=300 | FF5+Mom: SMB +0.00 HML +0.02 RMW +0.02(+2.1) CMA +0.01 Mom +0.00 R2 1.00 | FF3+Mom+QMJ: QMJ +0.00(+0.2) HML +0.02 R2 1.00 | FF5+Mom+QMJ: QMJ -0.02(-1.9) RMW +0.03
+
+3b. Funds, common window from 2019-11
+  AVUV  2019-11..2026-07 n= 81 | FF5+Mom: SMB +0.90 HML +0.55 RMW +0.23(+3.1) CMA -0.05 Mom +0.01 R2 0.98 | FF3+Mom+QMJ: QMJ +0.13(+2.1) HML +0.53 R2 0.97 | FF5+Mom+QMJ: QMJ -0.09(-1.2) RMW +0.30
+  IJS   2019-11..2026-07 n= 81 | FF5+Mom: SMB +0.91 HML +0.39 RMW +0.04(+0.9) CMA +0.05 Mom -0.03 R2 0.99 | FF3+Mom+QMJ: QMJ +0.02(+0.5) HML +0.41 R2 0.99 | FF5+Mom+QMJ: QMJ -0.05(-1.0) RMW +0.08
+  VBR   2019-11..2026-07 n= 81 | FF5+Mom: SMB +0.60 HML +0.39 RMW +0.12(+3.2) CMA -0.02 Mom -0.01 R2 0.97 | FF3+Mom+QMJ: QMJ +0.07(+2.2) HML +0.38 R2 0.97 | FF5+Mom+QMJ: QMJ -0.04(-0.5) RMW +0.15
+  IWN   2019-11..2026-07 n= 81 | FF5+Mom: SMB +0.83 HML +0.40 RMW -0.01(-0.4) CMA -0.04 Mom -0.01 R2 0.99 | FF3+Mom+QMJ: QMJ -0.03(-1.1) HML +0.39 R2 0.99 | FF5+Mom+QMJ: QMJ -0.03(-0.7) RMW +0.01
+  QUAL  2019-11..2026-07 n= 81 | FF5+Mom: SMB -0.10 HML -0.02 RMW +0.13(+2.7) CMA +0.05 Mom -0.01 R2 0.96 | FF3+Mom+QMJ: QMJ +0.14(+3.4) HML -0.00 R2 0.96 | FF5+Mom+QMJ: QMJ +0.10(+1.4) RMW +0.05
+  SPHQ  2019-11..2026-07 n= 81 | FF5+Mom: SMB -0.09 HML +0.00 RMW +0.02(+0.2) CMA +0.22 Mom +0.09 R2 0.89 | FF3+Mom+QMJ: QMJ +0.04(+0.4) HML +0.10 R2 0.88 | FF5+Mom+QMJ: QMJ -0.01(-0.1) RMW +0.03
+  JQUA  2019-11..2026-07 n= 81 | FF5+Mom: SMB -0.06 HML +0.01 RMW +0.08(+0.9) CMA +0.11 Mom +0.03 R2 0.95 | FF3+Mom+QMJ: QMJ +0.14(+2.1) HML +0.04 R2 0.95 | FF5+Mom+QMJ: QMJ +0.19(+3.4) RMW -0.08
+  VTI   2019-11..2026-07 n= 81 | FF5+Mom: SMB -0.00 HML +0.03 RMW +0.01(+1.1) CMA -0.01 Mom +0.01 R2 1.00 | FF3+Mom+QMJ: QMJ +0.02(+1.2) HML +0.02 R2 1.00 | FF5+Mom+QMJ: QMJ +0.02(+1.3) RMW -0.00
+
+Saved output/results.json
