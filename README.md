@@ -25,6 +25,7 @@ python3 <folder>/<script>.py
 | `inflation-beta` | [Inflation Beta Is Not One Number](https://summitward.com/learn/inflation-beta) | Full-sample and rolling inflation betas for six assets under three CPI series and two shock definitions, 1960 to date, plus the data behind the guide's explorer |
 | `small-cap-value-vs-growth` | [Small-Cap Value vs. Small-Cap Growth](https://summitward.com/learn/small-cap-value-vs-small-cap-growth) | 99 years of Fama-French small value, small growth and tiny-growth returns by decade and rolling window, plus index funds over matching windows |
 | `minimum-volatility-investing` | [Minimum Volatility and Betting Against Beta](https://summitward.com/learn/minimum-volatility-investing) | USMV's live record against VTI and a volatility-matched stock and T-bill mix, French beta quintiles since 1963, and AQR's BAB factor before and after publication |
+| `cheap-for-a-reason-value-traps` | [Cheap for a Reason: Value Traps](https://summitward.com/learn/cheap-for-a-reason-value-traps) | Returns, firm counts and five-factor loadings of Fama-French portfolios sorted on book-to-market and operating profitability since 1963, including the cheap-and-unprofitable corner |
 
 ## Data sources
 
@@ -32,7 +33,8 @@ python3 <folder>/<script>.py
   [Historical Returns on Stocks, Bonds and Bills](https://pages.stern.nyu.edu/~adamodar/New_Home_Page/datafile/histretSP.html),
   NYU Stern. Used with attribution.
 - Developed ex-US and emerging market annual returns, and US size and
-  book-to-market, beta and variance portfolios and factors: Kenneth R. French,
+  book-to-market, beta and variance portfolios and factors, and US
+  book-to-market x operating profitability portfolios: Kenneth R. French,
   [Data Library](https://mba.tuck.dartmouth.edu/pages/faculty/ken.french/data_library.html).
   Used with attribution.
 - Period life table: Social Security Administration, Office of the Chief
