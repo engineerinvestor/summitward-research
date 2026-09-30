@@ -10,7 +10,8 @@ script runs with the Python standard library only (`inflation-beta` also
 carries an optional exporter that converts vendor spreadsheets to CSV and needs
 pandas or openpyxl; the committed CSVs make running it unnecessary; `small-cap-value-vs-growth` has
 an optional `--funds` flag that needs yfinance, and its committed
-`results.json` already holds that output):
+`results.json` already holds that output; `minimum-volatility-investing` needs
+numpy, pandas, openpyxl and yfinance, and downloads its AQR and Yahoo inputs):
 
 ```bash
 python3 <folder>/<script>.py
@@ -23,6 +24,7 @@ python3 <folder>/<script>.py
 | `robo-advisor-returns` | [What Wealthfront's 9.8% Return Actually Measures](https://summitward.com/learn/robo-advisor-returns) | A published robo-advisor allocation rebuilt from index returns over two eras, and the reported risk-score ladder |
 | `inflation-beta` | [Inflation Beta Is Not One Number](https://summitward.com/learn/inflation-beta) | Full-sample and rolling inflation betas for six assets under three CPI series and two shock definitions, 1960 to date, plus the data behind the guide's explorer |
 | `small-cap-value-vs-growth` | [Small-Cap Value vs. Small-Cap Growth](https://summitward.com/learn/small-cap-value-vs-small-cap-growth) | 99 years of Fama-French small value, small growth and tiny-growth returns by decade and rolling window, plus index funds over matching windows |
+| `minimum-volatility-investing` | [Minimum Volatility and Betting Against Beta](https://summitward.com/learn/minimum-volatility-investing) | USMV's live record against VTI and a volatility-matched stock and T-bill mix, French beta quintiles since 1963, and AQR's BAB factor before and after publication |
 
 ## Data sources
 
@@ -30,7 +32,7 @@ python3 <folder>/<script>.py
   [Historical Returns on Stocks, Bonds and Bills](https://pages.stern.nyu.edu/~adamodar/New_Home_Page/datafile/histretSP.html),
   NYU Stern. Used with attribution.
 - Developed ex-US and emerging market annual returns, and US size and
-  book-to-market portfolios: Kenneth R. French,
+  book-to-market, beta and variance portfolios and factors: Kenneth R. French,
   [Data Library](https://mba.tuck.dartmouth.edu/pages/faculty/ken.french/data_library.html).
   Used with attribution.
 - Period life table: Social Security Administration, Office of the Chief
@@ -48,6 +50,12 @@ python3 <folder>/<script>.py
 - Wealthfront risk-score ladder: twenty values read from Wealthfront's public
   [historical performance page](https://www.wealthfront.com/historical-performance)
   on the date stated in the file. Facts, reproduced for comment and analysis.
+
+- Betting Against Beta factor returns: AQR Capital Management,
+  [data sets](https://www.aqr.com/Insights/Datasets), downloaded by the script
+  and not redistributed here.
+- ETF prices: Yahoo Finance adjusted closes via yfinance, downloaded by the
+  scripts that use them and not redistributed here.
 
 ## License
 

@@ -1,0 +1,354 @@
+==============================================================================
+Loading Ken French data
+  Portfolios_Formed_on_BETA monthly sections parsed: ['Value Weighted Returns -- Monthly', 'Equal Weighted Returns -- Monthly', 'Number of Firms in Portfolios', 'Average Firm Size']
+  Portfolios_Formed_on_VAR monthly sections parsed: ['Value Weighted Returns -- Monthly', 'Equal Weighted Returns -- Monthly', 'Number of Firms in Portfolios', 'Average Firm Size', 'Value-Weighted Average of Past Return Variance']
+  FF5 1963-07..2026-08; Mom through 2026-08; BETA VW 1963-07..2026-08; VAR VW 1963-07..2026-08
+Loading AQR BAB
+  AQR BAB USA 1930-12..2026-07 n=1148
+Loading Yahoo Finance (daily adjusted closes -> month-end)
+  Yahoo daily data through 2026-09-29; last full month 2026-08
+   USMV  2011-11..2026-08 n=178
+   SPLV  2011-06..2026-08 n=183
+   VTI   2007-02..2026-08 n=235
+   ITOT  2007-02..2026-08 n=235
+   ACWV  2011-11..2026-08 n=178
+   VT    2008-07..2026-08 n=218
+   BTAL  2011-10..2026-08 n=179
+   BIL   2007-06..2026-08 n=231
+   IEF   2007-02..2026-08 n=235
+   EFAV  2011-11..2026-08 n=178
+   EFA   2007-02..2026-08 n=235
+   EEMV  2011-11..2026-08 n=178
+   EEM   2007-02..2026-08 n=235
+   ACWI  2008-04..2026-08 n=221
+   SPY   2007-02..2026-08 n=235
+  ETF window 2011-11..2026-08 n=178; missing months: {'USMV': 0, 'SPLV': 0, 'VTI': 0}
+  RF check: French RF 1.57%/yr vs BIL 1.50%/yr over 2011-11..2026-08
+
+==============================================================================
+1. Flat security market line: French beta- and variance-sorted quintiles
+
+  beta-sorted quintiles, VW, full: 1963-07..2026-08 n=758
+  port      ExRet    Vol Sharpe  Beta   Alpha     t   NWt   CAGR
+  Lo 20     6.40%  12.1%   0.53  0.66  +1.65%  1.96  1.95  10.5%
+  Qnt 2     7.72%  14.7%   0.52  0.91  +1.16%  2.05  1.67  11.6%
+  Qnt 3     8.03%  17.0%   0.47  1.06  +0.39%  0.65  0.67  11.5%
+  Qnt 4     9.08%  19.8%   0.46  1.23  +0.23%  0.31  0.30  12.1%
+  Hi 20     9.70%  25.5%   0.38  1.50  -1.13% -0.84 -0.79  11.4%
+
+  beta-sorted quintiles, VW, 1963-1999: 1963-07..1999-12 n=438
+  port      ExRet    Vol Sharpe  Beta   Alpha     t   NWt   CAGR
+  Lo 20     6.20%  12.5%   0.50  0.74  +1.06%  1.17  1.13  12.2%
+  Qnt 2     6.91%  14.8%   0.47  0.94  +0.36%  0.63  0.53  12.7%
+  Qnt 3     7.09%  16.8%   0.42  1.08  -0.41% -0.68 -0.68  12.5%
+  Qnt 4     7.86%  19.2%   0.41  1.21  -0.54% -0.59 -0.57  12.9%
+  Hi 20     9.19%  23.9%   0.39  1.44  -0.85% -0.55 -0.48  13.2%
+
+  beta-sorted quintiles, VW, 2000-latest: 2000-01..2026-08 n=320
+  port      ExRet    Vol Sharpe  Beta   Alpha     t   NWt   CAGR
+  Lo 20     6.67%  11.6%   0.57  0.55  +2.48%  1.64  1.65   8.2%
+  Qnt 2     8.83%  14.7%   0.60  0.87  +2.25%  2.12  1.75  10.1%
+  Qnt 3     9.31%  17.2%   0.54  1.03  +1.50%  1.30  1.37  10.2%
+  Qnt 4    10.74%  20.6%   0.52  1.25  +1.28%  1.05  1.05  11.0%
+  Hi 20    10.40%  27.6%   0.38  1.58  -1.53% -0.64 -0.65   8.8%
+
+  beta-sorted quintiles, VW, 2011-11-latest: 2011-11..2026-08 n=178
+  port      ExRet    Vol Sharpe  Beta   Alpha     t   NWt   CAGR
+  Lo 20     9.90%  11.1%   0.89  0.59  +1.94%  1.01  1.24  11.4%
+  Qnt 2    13.27%  14.4%   0.92  0.97  +0.28%  0.29  0.27  14.7%
+  Qnt 3    14.79%  16.8%   0.88  1.11  -0.08% -0.06 -0.06  16.0%
+  Qnt 4    17.78%  19.3%   0.92  1.25  +0.92%  0.50  0.53  19.0%
+  Hi 20    18.79%  25.9%   0.72  1.54  -1.96% -0.54 -0.63  18.4%
+
+  beta-sorted quintiles, EW, full: 1963-07..2026-08 n=758
+  port      ExRet    Vol Sharpe  Beta   Alpha     t   NWt   CAGR
+  Lo 20     8.77%  14.1%   0.62  0.76  +3.28%  3.27  2.58  12.8%
+  Qnt 2    10.74%  16.2%   0.66  0.92  +4.13%  4.09  3.25  14.7%
+  Qnt 3    10.90%  18.6%   0.59  1.05  +3.30%  2.89  2.39  14.4%
+  Qnt 4    11.14%  21.8%   0.51  1.21  +2.38%  1.69  1.49  14.0%
+  Hi 20    10.26%  28.3%   0.36  1.47  -0.38% -0.18 -0.17  11.2%
+
+  beta-sorted quintiles, EW, 1963-1999: 1963-07..1999-12 n=438
+  port      ExRet    Vol Sharpe  Beta   Alpha     t   NWt   CAGR
+  Lo 20     9.36%  13.5%   0.69  0.73  +4.27%  3.34  2.71  15.6%
+  Qnt 2    10.47%  16.0%   0.65  0.92  +4.07%  3.13  2.74  16.5%
+  Qnt 3    10.21%  18.2%   0.56  1.04  +2.98%  2.00  1.74  15.7%
+  Qnt 4    10.50%  21.1%   0.50  1.17  +2.33%  1.25  1.14  15.4%
+  Hi 20    10.92%  26.5%   0.41  1.37  +1.35%  0.50  0.48  14.5%
+
+  beta-sorted quintiles, EW, 2000-latest: 2000-01..2026-08 n=320
+  port      ExRet    Vol Sharpe  Beta   Alpha     t   NWt   CAGR
+  Lo 20     7.96%  15.0%   0.53  0.80  +1.92%  1.20  0.88   9.1%
+  Qnt 2    11.11%  16.5%   0.67  0.91  +4.21%  2.62  1.86  12.3%
+  Qnt 3    11.85%  19.1%   0.62  1.07  +3.72%  2.11  1.60  12.6%
+  Qnt 4    12.02%  22.6%   0.53  1.27  +2.45%  1.15  0.92  12.0%
+  Hi 20     9.36%  30.6%   0.31  1.60  -2.78% -0.81 -0.75   6.9%
+
+  beta-sorted quintiles, EW, 2011-11-latest: 2011-11..2026-08 n=178
+  port      ExRet    Vol Sharpe  Beta   Alpha     t   NWt   CAGR
+  Lo 20     8.83%  14.9%   0.59  0.88  -3.00% -1.41 -1.27   9.7%
+  Qnt 2    12.11%  16.5%   0.73  1.01  -1.48% -0.71 -0.62  13.1%
+  Qnt 3    12.60%  18.8%   0.67  1.16  -2.98% -1.26 -1.21  13.1%
+  Qnt 4    12.12%  21.5%   0.56  1.31  -5.50% -1.95 -1.93  12.0%
+  Hi 20     8.30%  26.8%   0.31  1.54 -12.46% -3.08 -3.23   6.5%
+
+  variance-sorted quintiles, VW, full: 1963-07..2026-08 n=758
+  port      ExRet    Vol Sharpe  Beta   Alpha     t   NWt   CAGR
+  Lo 20     7.08%  12.1%   0.58  0.70  +2.05%  2.87  2.87  11.2%
+  Qnt 2     7.78%  15.3%   0.51  0.94  +1.02%  1.64  1.54  11.5%
+  Qnt 3     8.60%  17.9%   0.48  1.11  +0.61%  0.93  0.86  12.0%
+  Qnt 4    10.08%  21.8%   0.46  1.33  +0.48%  0.51  0.47  12.7%
+  Hi 20     5.64%  28.5%   0.20  1.60  -5.95% -3.32 -3.30   6.1%
+
+  variance-sorted quintiles, VW, 1963-1999: 1963-07..1999-12 n=438
+  port      ExRet    Vol Sharpe  Beta   Alpha     t   NWt   CAGR
+  Lo 20     6.19%  12.3%   0.50  0.75  +0.97%  1.29  1.16  12.2%
+  Qnt 2     7.38%  15.0%   0.49  0.96  +0.69%  1.25  1.13  13.1%
+  Qnt 3     8.62%  17.3%   0.50  1.11  +0.89%  1.45  1.22  14.1%
+  Qnt 4     9.52%  20.7%   0.46  1.30  +0.47%  0.47  0.39  14.4%
+  Hi 20     4.73%  25.4%   0.19  1.47  -5.54% -2.83 -2.49   7.9%
+
+  variance-sorted quintiles, VW, 2000-latest: 2000-01..2026-08 n=320
+  port      ExRet    Vol Sharpe  Beta   Alpha     t   NWt   CAGR
+  Lo 20     8.29%  11.9%   0.70  0.63  +3.55%  2.70  3.24   9.9%
+  Qnt 2     8.33%  15.6%   0.53  0.91  +1.48%  1.17  1.15   9.4%
+  Qnt 3     8.57%  18.6%   0.46  1.10  +0.22%  0.17  0.16   9.1%
+  Qnt 4    10.85%  23.3%   0.47  1.37  +0.47%  0.27  0.27  10.5%
+  Hi 20     6.88%  32.3%   0.21  1.78  -6.55% -2.03 -2.31   3.6%
+
+  variance-sorted quintiles, VW, 2011-11-latest: 2011-11..2026-08 n=178
+  port      ExRet    Vol Sharpe  Beta   Alpha     t   NWt   CAGR
+  Lo 20    12.80%  12.0%   1.07  0.74  +2.89%  1.93  2.06  14.6%
+  Qnt 2    12.80%  15.0%   0.85  1.00  -0.62% -0.51 -0.57  14.1%
+  Qnt 3    14.06%  17.1%   0.82  1.12  -1.00% -0.63 -0.72  15.1%
+  Qnt 4    15.97%  21.0%   0.76  1.31  -1.72% -0.70 -0.87  16.5%
+  Hi 20    15.83%  29.1%   0.54  1.64  -6.23% -1.35 -1.50  14.1%
+
+  variance-sorted quintiles, EW, full: 1963-07..2026-08 n=758
+  port      ExRet    Vol Sharpe  Beta   Alpha     t   NWt   CAGR
+  Lo 20     8.85%  11.4%   0.77  0.62  +4.41%  5.44  3.79  13.3%
+  Qnt 2    10.54%  15.2%   0.69  0.87  +4.23%  4.71  3.53  14.6%
+  Qnt 3    11.95%  17.7%   0.68  1.02  +4.62%  4.45  3.51  15.8%
+  Qnt 4    12.54%  20.8%   0.60  1.18  +4.05%  3.15  2.64  15.8%
+  Hi 20     6.98%  28.5%   0.25  1.42  -3.30% -1.43 -1.35   7.6%
+
+  variance-sorted quintiles, EW, 1963-1999: 1963-07..1999-12 n=438
+  port      ExRet    Vol Sharpe  Beta   Alpha     t   NWt   CAGR
+  Lo 20     7.77%  11.7%   0.66  0.65  +3.25%  3.12  2.36  14.1%
+  Qnt 2     9.76%  15.2%   0.64  0.90  +3.48%  3.23  2.62  15.8%
+  Qnt 3    11.74%  17.6%   0.67  1.03  +4.53%  3.49  2.91  17.6%
+  Qnt 4    12.33%  20.5%   0.60  1.17  +4.15%  2.49  2.16  17.7%
+  Hi 20     7.94%  26.3%   0.30  1.32  -1.24% -0.44 -0.40  11.2%
+
+  variance-sorted quintiles, EW, 2000-latest: 2000-01..2026-08 n=320
+  port      ExRet    Vol Sharpe  Beta   Alpha     t   NWt   CAGR
+  Lo 20    10.32%  11.1%   0.93  0.57  +6.00%  4.71  3.16  12.2%
+  Qnt 2    11.61%  15.3%   0.76  0.84  +5.26%  3.44  2.49  13.0%
+  Qnt 3    12.25%  17.8%   0.69  0.99  +4.74%  2.78  2.09  13.3%
+  Qnt 4    12.83%  21.2%   0.61  1.18  +3.90%  1.94  1.53  13.2%
+  Hi 20     5.67%  31.3%   0.18  1.56  -6.15% -1.62 -1.56   2.9%
+
+  variance-sorted quintiles, EW, 2011-11-latest: 2011-11..2026-08 n=178
+  port      ExRet    Vol Sharpe  Beta   Alpha     t   NWt   CAGR
+  Lo 20    11.54%  11.2%   1.03  0.64  +2.86%  1.68  1.24  13.2%
+  Qnt 2    13.42%  15.4%   0.87  0.94  +0.81%  0.40  0.37  14.7%
+  Qnt 3    14.15%  17.6%   0.80  1.08  -0.39% -0.18 -0.18  15.1%
+  Qnt 4    13.65%  20.5%   0.66  1.25  -3.11% -1.15 -1.16  13.9%
+  Hi 20     5.07%  28.1%   0.18  1.50 -15.16% -3.12 -3.22   2.8%
+  Market (Mkt-RF) full: ExRet 7.22% vol 15.4% Sharpe 0.47 n=758
+  Market (Mkt-RF) 1963-1999: ExRet 6.97% vol 15.3% Sharpe 0.46 n=438
+  Market (Mkt-RF) 2000-latest: ExRet 7.56% vol 15.7% Sharpe 0.48 n=320
+  Market (Mkt-RF) 2011-11-latest: ExRet 13.46% vol 14.4% Sharpe 0.93 n=178
+
+==============================================================================
+2. AQR Betting Against Beta, USA
+  full            1930-12..2026-07 n=1148: mean 7.81% vol 11.1% Sharpe 0.70 MaxDD -54.6% (1998-05->2000-02, recovered 2002-04) worst12m -41.9% (ending 2000-02)
+  pre-2014        1930-12..2013-12 n=997: mean 8.25% vol 11.4% Sharpe 0.72 MaxDD -54.6% (1998-05->2000-02, recovered 2002-04) worst12m -41.9% (ending 2000-02)
+  2014-latest     2014-01..2026-07 n=151: mean 4.97% vol 8.9% Sharpe 0.56 MaxDD -15.3% (2022-06->2023-07, recovered None) worst12m -14.6% (ending 2023-06)
+  2011-11-latest  2011-11..2026-07 n=177: mean 6.55% vol 8.5% Sharpe 0.77 MaxDD -15.3% (2022-06->2023-07, recovered None) worst12m -14.6% (ending 2023-06)
+  1963-07-latest  1963-07..2026-07 n=757: mean 8.95% vol 11.2% Sharpe 0.80 MaxDD -54.6% (1998-05->2000-02, recovered 2002-04) worst12m -41.9% (ending 2000-02)
+  BAB on FF5+Mom 1963-07-latest: 1963-07..2026-07 n=757 R2=0.27 alpha=+3.63%/yr (t=2.84, NW t=2.21)
+     Mkt-RF +0.070 (t=2.73, NW t=1.63)
+        SMB +0.121 (t=3.30, NW t=2.50)
+        HML +0.207 (t=4.25, NW t=2.45)
+        RMW +0.477 (t=9.96, NW t=5.22)
+        CMA +0.357 (t=5.04, NW t=3.14)
+        Mom +0.176 (t=6.97, NW t=3.28)
+  BAB on FF5+Mom 2014-latest: 2014-01..2026-07 n=151 R2=0.26 alpha=+3.60%/yr (t=1.57, NW t=1.56)
+     Mkt-RF -0.003 (t=-0.07, NW t=-0.05)
+        SMB +0.216 (t=2.71, NW t=2.23)
+        HML +0.037 (t=0.49, NW t=0.25)
+        RMW +0.440 (t=5.04, NW t=4.70)
+        CMA +0.100 (t=0.92, NW t=0.57)
+        Mom +0.295 (t=5.40, NW t=3.80)
+  BAB on FF5+Mom 2011-11-latest: 2011-11..2026-07 n=177 R2=0.24 alpha=+4.88%/yr (t=2.35, NW t=2.31)
+     Mkt-RF +0.025 (t=0.56, NW t=0.40)
+        SMB +0.177 (t=2.38, NW t=1.97)
+        HML +0.040 (t=0.57, NW t=0.29)
+        RMW +0.382 (t=4.72, NW t=3.72)
+        CMA +0.140 (t=1.35, NW t=0.83)
+        Mom +0.274 (t=5.41, NW t=3.60)
+  BAB calendar years: {2012: '14.9%', 2013: '19.6%', 2014: '15.2%', 2015: '17.8%', 2016: '3.6%', 2017: '10.6%', 2018: '3.0%', 2019: '3.6%', 2020: '-0.8%', 2021: '12.7%', 2022: '-0.1%', 2023: '-9.6%', 2024: '7.4%', 2025: '-2.7%', 2026: '1.6%'}
+
+==============================================================================
+3. USMV live record 2011-11..2026-08
+  USMV  2011-11..2026-08 n=178: CAGR 11.69% vol 11.1% Sharpe 0.91 MaxDD -19.1% (2020-01->2020-03, rec 2020-11)
+  SPLV  2011-11..2026-08 n=178: CAGR 10.12% vol 11.7% Sharpe 0.75 MaxDD -21.4% (2020-01->2020-03, rec 2021-04)
+  VTI   2011-11..2026-08 n=178: CAGR 14.64% vol 14.3% Sharpe 0.92 MaxDD -24.8% (2021-12->2022-09, rec 2023-12)
+  ITOT  2011-11..2026-08 n=178: CAGR 14.68% vol 14.3% Sharpe 0.93 MaxDD -24.8% (2021-12->2022-09, rec 2023-12)
+  ACWV  2011-11..2026-08 n=178: CAGR 8.75% vol 10.0% Sharpe 0.74 MaxDD -17.5% (2021-12->2022-09, rec 2024-03)
+  VT    2011-11..2026-08 n=178: CAGR 11.44% vol 13.8% Sharpe 0.74 MaxDD -25.5% (2021-12->2022-09, rec 2023-12)
+  BTAL  2011-11..2026-08 n=178: CAGR -2.94% vol 14.5% Sharpe -0.24 MaxDD -50.6% (2020-03->2026-06, rec None)
+  IEF   2011-11..2026-08 n=178: CAGR 1.45% vol 6.2% Sharpe 0.01 MaxDD -23.2% (2020-07->2023-10, rec None)
+  USMV vs VTI: beta 0.662 (t=21.4), alpha +1.41%/yr (t=0.89, NW t=0.94), R2 0.72, n=178 2011-11..2026-08
+     up capture 72% (n=122), down capture 64% (n=56); beat VTI in 4/14 full calendar years; worst year 2023 -15.7pp; best 2022 +10.1pp; CAGR gap -2.95pp/yr
+  SPLV vs VTI: beta 0.598 (t=14.2), alpha +0.89%/yr (t=0.41, NW t=0.44), R2 0.53, n=178 2011-11..2026-08
+     up capture 64% (n=122), down capture 56% (n=56); beat VTI in 4/14 full calendar years; worst year 2023 -25.5pp; best 2022 +14.6pp; CAGR gap -4.52pp/yr
+  USMV vs SPLV: beta 0.887 (t=34.2), alpha +2.36%/yr (t=2.20, NW t=2.47), R2 0.87, n=178 2011-11..2026-08
+     up capture 96% (n=110), down capture 81% (n=68); beat SPLV in 10/14 full calendar years; worst year 2022 -4.5pp; best 2023 +9.8pp; CAGR gap +1.57pp/yr
+  ACWV vs VT: beta 0.595 (t=19.3), alpha +1.23%/yr (t=0.82, NW t=0.88), R2 0.68, n=178 2011-11..2026-08
+     up capture 65% (n=117), down capture 56% (n=59); beat VT in 4/14 full calendar years; worst year 2023 -13.8pp; best 2018 +8.3pp; CAGR gap -2.69pp/yr
+
+  Calendar-year total returns (last year is YTD through 2026-08)
+  year   USMV    SPLV     VTI  USMV-VTI  ACWV     VT   BTAL
+  2012    10.8%   10.1%   16.5%    -5.6pp   10.7%   17.1%   -7.0%
+  2013    25.1%   23.1%   33.4%    -8.4pp   17.4%   22.9%  -13.8%
+  2014    16.3%   17.3%   12.5%    +3.8pp   10.6%    3.7%    8.7%
+  2015     5.4%    4.0%    0.4%    +5.1pp    2.9%   -1.9%    0.1%
+  2016    10.6%   10.1%   12.8%    -2.2pp    7.5%    8.5%   -4.7%
+  2017    18.9%   17.3%   21.2%    -2.3pp   18.6%   24.5%   -2.1%
+  2018     1.3%   -0.2%   -5.2%    +6.6pp   -1.4%   -9.8%   15.1%
+  2019    27.7%   27.9%   30.7%    -3.0pp   21.0%   26.8%    1.1%
+  2020     5.6%   -1.4%   21.1%   -15.4pp    3.0%   16.6%  -13.9%
+  2021    20.8%   24.0%   25.7%    -4.8pp   14.0%   18.3%   -6.8%
+  2022    -9.4%   -4.9%  -19.5%   +10.1pp  -10.4%  -18.0%   20.5%
+  2023    10.3%    0.5%   26.0%   -15.7pp    8.2%   22.0%  -15.1%
+  2024    15.7%   13.9%   23.8%    -8.1pp   11.4%   16.5%   12.8%
+  2025     7.6%    4.1%   17.1%    -9.4pp   11.0%   22.4%  -20.2%
+  2026*    8.6%    6.1%   13.5%    -4.9pp    8.1%   14.5%  -14.8%
+
+==============================================================================
+4. Hypothetical: VTI + cash vs USMV, and levered USMV vs VTI (monthly rebalanced, gross)
+  USMV beta to VTI 0.662; vol USMV 11.13% vs VTI 14.29%
+  strategy                                           CAGR    Vol Sharpe   MaxDD  beta
+  VTI 66% + cash (beta-matched)                    10.32%   9.5%   0.92  -16.7%  0.66  (2011-11..2026-08 n=178, DD 2021-12->2022-09)
+  VTI 78% + cash (vol-matched)                     11.83%  11.1%   0.92  -19.5%  0.78  (2011-11..2026-08 n=178, DD 2021-12->2022-09)
+  USMV                                             11.69%  11.1%   0.91  -19.1%  0.66  (2011-11..2026-08 n=178, DD 2020-01->2020-03)
+  VTI                                              14.64%  14.3%   0.92  -24.8%  1.00  (2011-11..2026-08 n=178, DD 2021-12->2022-09)
+  USMV x1.28 (vol-matched), fin RF+0.5%            14.30%  14.3%   0.90  -24.2%  0.85  (2011-11..2026-08 n=178, DD 2020-01->2020-03)
+  USMV x1.51 (beta 1), fin RF+0.5%                 16.34%  16.8%   0.90  -28.2%  1.00  (2011-11..2026-08 n=178, DD 2020-01->2020-03)
+  USMV x1.28 (vol-matched), fin RF+1.5%            13.98%  14.3%   0.88  -24.2%  0.85  (2011-11..2026-08 n=178, DD 2020-01->2020-03)
+  USMV x1.51 (beta 1), fin RF+1.5%                 15.75%  16.8%   0.87  -28.2%  1.00  (2011-11..2026-08 n=178, DD 2020-01->2020-03)
+
+==============================================================================
+5. Factor regressions (monthly excess returns)
+  USMV on FF5+Mom: 2011-11..2026-08 n=178 R2=0.79 alpha=-0.37%/yr (t=-0.26, NW t=-0.25)
+     Mkt-RF +0.725 (t=23.81, NW t=17.43)
+        SMB -0.071 (t=-1.38, NW t=-1.32)
+        HML -0.047 (t=-0.96, NW t=-0.49)
+        RMW +0.277 (t=4.99, NW t=4.91)
+        CMA +0.234 (t=3.26, NW t=2.11)
+        Mom +0.083 (t=2.40, NW t=2.00)
+  USMV CAPM vs French Mkt-RF: alpha +1.43% (t=0.87) beta 0.648 n=178
+  SPLV on FF5+Mom: 2011-11..2026-08 n=178 R2=0.69 alpha=-1.57%/yr (t=-0.86, NW t=-0.88)
+     Mkt-RF +0.687 (t=17.78, NW t=14.04)
+        SMB +0.043 (t=0.66, NW t=0.54)
+        HML +0.027 (t=0.43, NW t=0.23)
+        RMW +0.422 (t=5.99, NW t=6.42)
+        CMA +0.365 (t=4.01, NW t=2.78)
+        Mom +0.185 (t=4.21, NW t=4.08)
+  SPLV CAPM vs French Mkt-RF: alpha +1.00% (t=0.45) beta 0.579 n=178
+  ACWV on FF5+Mom: 2011-11..2026-08 n=178 R2=0.70 alpha=-1.16%/yr (t=-0.76, NW t=-0.77)
+     Mkt-RF +0.596 (t=18.45, NW t=14.90)
+        SMB -0.051 (t=-0.93, NW t=-0.86)
+        HML -0.078 (t=-1.49, NW t=-0.77)
+        RMW +0.262 (t=4.44, NW t=5.33)
+        CMA +0.281 (t=3.70, NW t=2.39)
+        Mom +0.005 (t=0.13, NW t=0.14)
+  ACWV CAPM vs French Mkt-RF: alpha +0.08% (t=0.05) beta 0.540 n=178
+  VTI on FF5+Mom: 2011-11..2026-08 n=178 R2=1.00 alpha=-0.24%/yr (t=-1.42, NW t=-1.58)
+     Mkt-RF +0.995 (t=272.94, NW t=207.75)
+        SMB +0.001 (t=0.12, NW t=0.13)
+        HML +0.016 (t=2.71, NW t=1.44)
+        RMW +0.016 (t=2.35, NW t=1.44)
+        CMA +0.005 (t=0.57, NW t=0.37)
+        Mom +0.007 (t=1.72, NW t=1.34)
+  VTI CAPM vs French Mkt-RF: alpha -0.15% (t=-0.85) beta 0.991 n=178
+  USMV on Mkt-RF + BAB: 2011-11..2026-07 n=177 R2=0.79 alpha=-1.42%/yr (t=-0.98, NW t=-1.14)
+     Mkt-RF +0.667 (t=24.49, NW t=28.56)
+        BAB +0.378 (t=8.19, NW t=3.56)
+  USMV on FF5+Mom+BAB: 2011-11..2026-07 n=177 R2=0.83 alpha=-2.16%/yr (t=-1.65, NW t=-1.92)
+     Mkt-RF +0.719 (t=26.49, NW t=23.03)
+        SMB -0.114 (t=-2.44, NW t=-2.08)
+        HML -0.051 (t=-1.15, NW t=-0.67)
+        RMW +0.185 (t=3.47, NW t=2.45)
+        CMA +0.187 (t=2.91, NW t=1.99)
+        Mom +0.016 (t=0.47, NW t=0.50)
+        BAB +0.300 (t=6.32, NW t=2.99)
+  SPLV on Mkt-RF + BAB: 2011-11..2026-07 n=177 R2=0.68 alpha=-2.87%/yr (t=-1.55, NW t=-1.81)
+     Mkt-RF +0.611 (t=17.43, NW t=21.56)
+        BAB +0.564 (t=9.49, NW t=4.26)
+  SPLV on FF5+Mom+BAB: 2011-11..2026-07 n=177 R2=0.75 alpha=-3.57%/yr (t=-2.15, NW t=-2.63)
+     Mkt-RF +0.677 (t=19.66, NW t=18.43)
+        SMB -0.030 (t=-0.50, NW t=-0.38)
+        HML +0.010 (t=0.18, NW t=0.11)
+        RMW +0.264 (t=3.90, NW t=2.78)
+        CMA +0.308 (t=3.78, NW t=2.76)
+        Mom +0.072 (t=1.66, NW t=1.80)
+        BAB +0.412 (t=6.84, NW t=3.35)
+
+==============================================================================
+6. Rate sensitivity: (USMV - VTI) on IEF total return
+  USMV-VTI on IEF: 2011-11..2026-08 n=178 R2=0.04 alpha=-3.45%/yr (t=-1.78, NW t=-1.70)
+        IEF +0.254 (t=2.80, NW t=1.48)
+  USMV-VTI on IEF + VTI excess: 2011-11..2026-08 n=178 R2=0.47 alpha=+1.03%/yr (t=0.69, NW t=0.67)
+        IEF +0.308 (t=4.53, NW t=3.16)
+     VTI-RF -0.347 (t=-11.78, NW t=-7.56)
+  SPLV-VTI on IEF: 2011-11..2026-08 n=178 R2=0.02 alpha=-4.78%/yr (t=-1.88, NW t=-1.85)
+        IEF +0.230 (t=1.94, NW t=1.13)
+  SPLV-VTI on IEF + VTI excess: 2011-11..2026-08 n=178 R2=0.37 alpha=+0.53%/yr (t=0.25, NW t=0.25)
+        IEF +0.294 (t=3.08, NW t=2.29)
+     VTI-RF -0.410 (t=-9.93, NW t=-7.08)
+  2022 calendar-year returns: {'USMV': '-9.4%', 'SPLV': '-4.9%', 'VTI': '-19.5%', 'IEF': '-15.2%'}
+  2022 monthly corr(USMV-VTI, IEF) = -0.59 (n=12)
+
+==============================================================================
+8. International min-vol funds vs parents, and the Feb-Mar 2020 crash (daily)
+  EFAV vs EFA (2011-11..2026-08, n=178):
+     EFAV  CAGR  7.25% vol 11.1% Sharpe 0.55 MaxDD -25.5% (2021-08->2022-09, rec 2024-07)
+     EFA   CAGR  8.19% vol 14.4% Sharpe 0.51 MaxDD -27.6% (2021-08->2022-09, rec 2023-12)
+     beta 0.69 alpha +1.01%/yr (t=0.76, NW t=0.83) R2 0.79
+     2020 CY: -0.1% vs 7.6%; 2022 CY: -15.1% vs -14.4%
+     2020-02-19 -> 2020-03-23 close-to-close: -27.2% vs -32.6%
+     own daily peak->trough Feb-Apr 2020: EFAV -27.5% (2020-02-06->2020-03-23), EFA -33.4% (2020-02-12->2020-03-23)
+  EEMV vs EEM (2011-11..2026-08, n=178):
+     EEMV  CAGR  5.06% vol 12.5% Sharpe 0.33 MaxDD -23.4% (2018-01->2020-03, rec 2020-12)
+     EEM   CAGR  5.67% vol 16.9% Sharpe 0.32 MaxDD -36.5% (2021-06->2022-10, rec 2025-09)
+     beta 0.70 alpha +0.41%/yr (t=0.38, NW t=0.35) R2 0.89
+     2020 CY: 6.9% vs 17.0%; 2022 CY: -13.9% vs -20.6%
+     2020-02-19 -> 2020-03-23 close-to-close: -25.0% vs -30.8%
+     own daily peak->trough Feb-Apr 2020: EEMV -25.6% (2020-02-12->2020-03-23), EEM -31.6% (2020-02-12->2020-03-23)
+  ACWV vs ACWI (2011-11..2026-08, n=178):
+     ACWV  CAGR  8.75% vol 10.0% Sharpe 0.74 MaxDD -17.5% (2021-12->2022-09, rec 2024-03)
+     ACWI  CAGR 11.44% vol 13.6% Sharpe 0.75 MaxDD -25.7% (2021-12->2022-09, rec 2024-01)
+     beta 0.60 alpha +1.16%/yr (t=0.77, NW t=0.82) R2 0.68
+     2020 CY: 3.0% vs 16.3%; 2022 CY: -10.4% vs -18.4%
+     2020-02-19 -> 2020-03-23 close-to-close: -28.8% vs -33.3%
+     own daily peak->trough Feb-Apr 2020: ACWV -28.8% (2020-02-14->2020-03-23), ACWI -33.5% (2020-02-12->2020-03-23)
+  USMV vs VTI (2011-11..2026-08, n=178):
+     USMV  CAGR 11.69% vol 11.1% Sharpe 0.91 MaxDD -19.1% (2020-01->2020-03, rec 2020-11)
+     VTI   CAGR 14.64% vol 14.3% Sharpe 0.92 MaxDD -24.8% (2021-12->2022-09, rec 2023-12)
+     beta 0.66 alpha +1.41%/yr (t=0.89, NW t=0.94) R2 0.72
+     2020 CY: 5.6% vs 21.1%; 2022 CY: -9.4% vs -19.5%
+     2020-02-19 -> 2020-03-23 close-to-close: -33.0% vs -35.0%
+     own daily peak->trough Feb-Apr 2020: USMV -33.1% (2020-02-14->2020-03-23), VTI -35.0% (2020-02-19->2020-03-23)
+  SPY (total return, adj close) 2020-02-19 -> 2020-03-23: -33.7%  (S&P 500 price index is -33.9% on these dates)
+
+==============================================================================
+Sanity checks
+  VTI CAGR 14.64% (expected ~13-15%); ITOT 14.68%
+  French Mkt (Mkt-RF+RF) CAGR same window 14.93%; corr(VTI, French Mkt) = 0.9989
+
+Saved output/results.json
+BAB FF5+Mom 1963-07..2013-12: alpha 2.55%/yr t 1.74 n 606 RMW 0.57
+Saved output/min-vol-chart.json
