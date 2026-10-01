@@ -26,6 +26,7 @@ python3 <folder>/<script>.py
 | `small-cap-value-vs-growth` | [Small-Cap Value vs. Small-Cap Growth](https://summitward.com/learn/small-cap-value-vs-small-cap-growth) | 99 years of Fama-French small value, small growth and tiny-growth returns by decade and rolling window, plus index funds over matching windows |
 | `minimum-volatility-investing` | [Minimum Volatility and Betting Against Beta](https://summitward.com/learn/minimum-volatility-investing) | USMV's live record against VTI and a volatility-matched stock and T-bill mix, French beta quintiles since 1963, and AQR's BAB factor before and after publication |
 | `cheap-for-a-reason-value-traps` | [Cheap for a Reason: Value Traps](https://summitward.com/learn/cheap-for-a-reason-value-traps) | Returns, firm counts and five-factor loadings of Fama-French portfolios sorted on book-to-market and operating profitability since 1963, including the cheap-and-unprofitable corner |
+| `roic-etfs` | [ROIC Explained](https://summitward.com/learn/roic-return-on-invested-capital) | Fama-French five-factor plus momentum loadings of ETFs that select on return on invested capital (MOAT, LCOW, GFLW) against QUAL, AVUV and VTI |
 
 ## Data sources
 
