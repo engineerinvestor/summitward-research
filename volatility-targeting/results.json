@@ -1,0 +1,521 @@
+{
+  "data": {
+    "source": "Kenneth R. French Data Library, F-F_Research_Data_Factors_daily",
+    "series": "Value-weighted U.S. market total return (Mkt-RF + RF)",
+    "start": 19260701,
+    "end": 20260529,
+    "days": 26253,
+    "units": "basis points",
+    "generated": "2026-07-18"
+  },
+  "main": {
+    "19270101-2026": {
+      "buy_hold": {
+        "cagr": 0.0981,
+        "vol": 0.1714,
+        "sharpe": 0.4562,
+        "max_drawdown": -0.8407,
+        "worst_month": -0.2911,
+        "vol_of_vol": 0.0875,
+        "growth_of_1": 16280.8605
+      },
+      "vol_target": {
+        "cagr": 0.0904,
+        "vol": 0.1116,
+        "sharpe": 0.561,
+        "max_drawdown": -0.5821,
+        "worst_month": -0.1459,
+        "vol_of_vol": 0.0252,
+        "growth_of_1": 7807.2192,
+        "avg_exposure": 0.8518,
+        "max_exposure": 1.0,
+        "min_exposure": 0.1217,
+        "turnover_per_year": 2.7512
+      },
+      "static_vol_matched": {
+        "cagr": 0.0777,
+        "vol": 0.1116,
+        "sharpe": 0.4562,
+        "max_drawdown": -0.679,
+        "worst_month": -0.199,
+        "vol_of_vol": 0.057,
+        "growth_of_1": 2326.7135,
+        "stock_weight": 0.6514
+      }
+    },
+    "19270101-1999": {
+      "buy_hold": {
+        "cagr": 0.1023,
+        "vol": 0.1622,
+        "sharpe": 0.4728,
+        "max_drawdown": -0.8407,
+        "worst_month": -0.2911,
+        "vol_of_vol": 0.0827,
+        "growth_of_1": 1848.1583
+      },
+      "vol_target": {
+        "cagr": 0.0969,
+        "vol": 0.1094,
+        "sharpe": 0.5907,
+        "max_drawdown": -0.5821,
+        "worst_month": -0.1459,
+        "vol_of_vol": 0.0265,
+        "growth_of_1": 1268.2267,
+        "avg_exposure": 0.8749,
+        "max_exposure": 1.0,
+        "min_exposure": 0.1217,
+        "turnover_per_year": 2.4799
+      },
+      "static_vol_matched": {
+        "cagr": 0.0829,
+        "vol": 0.1094,
+        "sharpe": 0.4728,
+        "max_drawdown": -0.6931,
+        "worst_month": -0.2054,
+        "vol_of_vol": 0.0558,
+        "growth_of_1": 468.4728,
+        "stock_weight": 0.6745
+      }
+    },
+    "20000101-2026": {
+      "buy_hold": {
+        "cagr": 0.0861,
+        "vol": 0.1959,
+        "sharpe": 0.4218,
+        "max_drawdown": -0.5457,
+        "worst_month": -0.1721,
+        "vol_of_vol": 0.0949,
+        "growth_of_1": 8.8092
+      },
+      "vol_target": {
+        "cagr": 0.0714,
+        "vol": 0.1179,
+        "sharpe": 0.4813,
+        "max_drawdown": -0.3745,
+        "worst_month": -0.0716,
+        "vol_of_vol": 0.0188,
+        "growth_of_1": 6.156,
+        "avg_exposure": 0.7842,
+        "max_exposure": 1.0,
+        "min_exposure": 0.1242,
+        "turnover_per_year": 3.5462
+      },
+      "static_vol_matched": {
+        "cagr": 0.0639,
+        "vol": 0.1179,
+        "sharpe": 0.4218,
+        "max_drawdown": -0.3565,
+        "worst_month": -0.1017,
+        "vol_of_vol": 0.0571,
+        "growth_of_1": 5.1172,
+        "stock_weight": 0.6021
+      }
+    },
+    "19360101-2026": {
+      "buy_hold": {
+        "cagr": 0.1066,
+        "vol": 0.1545,
+        "sharpe": 0.526,
+        "max_drawdown": -0.5457,
+        "worst_month": -0.2393,
+        "vol_of_vol": 0.0744,
+        "growth_of_1": 12349.7899
+      },
+      "vol_target": {
+        "cagr": 0.096,
+        "vol": 0.1098,
+        "sharpe": 0.598,
+        "max_drawdown": -0.4499,
+        "worst_month": -0.1452,
+        "vol_of_vol": 0.0248,
+        "growth_of_1": 5026.2026,
+        "avg_exposure": 0.8746,
+        "max_exposure": 1.0,
+        "min_exposure": 0.1242,
+        "turnover_per_year": 2.6213
+      },
+      "static_vol_matched": {
+        "cagr": 0.0874,
+        "vol": 0.1098,
+        "sharpe": 0.526,
+        "max_drawdown": -0.4129,
+        "worst_month": -0.1756,
+        "vol_of_vol": 0.0528,
+        "growth_of_1": 2410.2381,
+        "stock_weight": 0.7106
+      }
+    },
+    "19900101-2026": {
+      "buy_hold": {
+        "cagr": 0.1108,
+        "vol": 0.1808,
+        "sharpe": 0.5231,
+        "max_drawdown": -0.5457,
+        "worst_month": -0.1721,
+        "vol_of_vol": 0.0872,
+        "growth_of_1": 45.7006
+      },
+      "vol_target": {
+        "cagr": 0.092,
+        "vol": 0.1156,
+        "sharpe": 0.5869,
+        "max_drawdown": -0.3745,
+        "worst_month": -0.0931,
+        "vol_of_vol": 0.0208,
+        "growth_of_1": 24.5713,
+        "avg_exposure": 0.8155,
+        "max_exposure": 1.0,
+        "min_exposure": 0.1242,
+        "turnover_per_year": 3.3226
+      },
+      "static_vol_matched": {
+        "cagr": 0.084,
+        "vol": 0.1156,
+        "sharpe": 0.5231,
+        "max_drawdown": -0.3763,
+        "worst_month": -0.1082,
+        "vol_of_vol": 0.0557,
+        "growth_of_1": 18.7953,
+        "stock_weight": 0.6393
+      }
+    }
+  },
+  "levered_t16_cap150_spread150": {
+    "buy_hold": {
+      "cagr": 0.0981,
+      "vol": 0.1714,
+      "sharpe": 0.4562,
+      "max_drawdown": -0.8407,
+      "worst_month": -0.2911,
+      "vol_of_vol": 0.0875,
+      "growth_of_1": 16280.8605
+    },
+    "vol_target": {
+      "cagr": 0.1073,
+      "vol": 0.1566,
+      "sharpe": 0.5369,
+      "max_drawdown": -0.6966,
+      "worst_month": -0.2003,
+      "vol_of_vol": 0.0311,
+      "growth_of_1": 38403.9832,
+      "avg_exposure": 1.2202,
+      "max_exposure": 1.5,
+      "min_exposure": 0.1623,
+      "turnover_per_year": 4.9946
+    },
+    "static_vol_matched": {
+      "cagr": 0.0934,
+      "vol": 0.1566,
+      "sharpe": 0.4562,
+      "max_drawdown": -0.8096,
+      "worst_month": -0.2691,
+      "vol_of_vol": 0.08,
+      "growth_of_1": 10401.826,
+      "stock_weight": 0.9135
+    }
+  },
+  "levered_t16_cap150_spread50": {
+    "buy_hold": {
+      "cagr": 0.0981,
+      "vol": 0.1714,
+      "sharpe": 0.4562,
+      "max_drawdown": -0.8407,
+      "worst_month": -0.2911,
+      "vol_of_vol": 0.0875,
+      "growth_of_1": 16280.8605
+    },
+    "vol_target": {
+      "cagr": 0.1106,
+      "vol": 0.1566,
+      "sharpe": 0.556,
+      "max_drawdown": -0.6965,
+      "worst_month": -0.2001,
+      "vol_of_vol": 0.0311,
+      "growth_of_1": 52327.9866,
+      "avg_exposure": 1.2202,
+      "max_exposure": 1.5,
+      "min_exposure": 0.1623,
+      "turnover_per_year": 4.9946
+    },
+    "static_vol_matched": {
+      "cagr": 0.0934,
+      "vol": 0.1566,
+      "sharpe": 0.4562,
+      "max_drawdown": -0.8096,
+      "worst_month": -0.2691,
+      "vol_of_vol": 0.08,
+      "growth_of_1": 10402.2352,
+      "stock_weight": 0.9135
+    }
+  },
+  "excess_return_index_style": {
+    "t10_cap150_from1995": {
+      "buy_hold": {
+        "cagr": 0.1145,
+        "vol": 0.1894,
+        "sharpe": 0.54,
+        "max_drawdown": -0.5457,
+        "worst_month": -0.1721,
+        "vol_of_vol": 0.0902,
+        "growth_of_1": 29.9348
+      },
+      "vol_target": {
+        "cagr": 0.0603,
+        "vol": 0.1096,
+        "sharpe": 0.5895,
+        "max_drawdown": -0.3777,
+        "worst_month": -0.0923,
+        "vol_of_vol": 0.0134,
+        "growth_of_1": 6.2751,
+        "avg_exposure": 0.7738,
+        "max_exposure": 1.5,
+        "min_exposure": 0.1035,
+        "turnover_per_year": 7.0054
+      },
+      "static_vol_matched": {
+        "cagr": 0.0803,
+        "vol": 0.1096,
+        "sharpe": 0.54,
+        "max_drawdown": -0.3437,
+        "worst_month": -0.0976,
+        "vol_of_vol": 0.0522,
+        "growth_of_1": 11.2754,
+        "stock_weight": 0.5785
+      }
+    },
+    "t10_cap150_from1995_total_return": {
+      "buy_hold": {
+        "cagr": 0.1145,
+        "vol": 0.1894,
+        "sharpe": 0.54,
+        "max_drawdown": -0.5457,
+        "worst_month": -0.1721,
+        "vol_of_vol": 0.0902,
+        "growth_of_1": 29.9348
+      },
+      "vol_target": {
+        "cagr": 0.0852,
+        "vol": 0.1096,
+        "sharpe": 0.5815,
+        "max_drawdown": -0.3187,
+        "worst_month": -0.0905,
+        "vol_of_vol": 0.0133,
+        "growth_of_1": 12.9997,
+        "avg_exposure": 0.7738,
+        "max_exposure": 1.5,
+        "min_exposure": 0.1035,
+        "turnover_per_year": 7.0054
+      },
+      "static_vol_matched": {
+        "cagr": 0.0803,
+        "vol": 0.1096,
+        "sharpe": 0.54,
+        "max_drawdown": -0.3437,
+        "worst_month": -0.0976,
+        "vol_of_vol": 0.0522,
+        "growth_of_1": 11.2753,
+        "stock_weight": 0.5785
+      }
+    }
+  },
+  "robustness_grid": {
+    "lb21_t8": {
+      "sharpe_1927": 0.5557,
+      "sharpe_2000": 0.4453,
+      "turnover_1927": 4.6146
+    },
+    "lb21_t10": {
+      "sharpe_1927": 0.5663,
+      "sharpe_2000": 0.4644,
+      "turnover_1927": 3.6793
+    },
+    "lb21_t12": {
+      "sharpe_1927": 0.561,
+      "sharpe_2000": 0.4813,
+      "turnover_1927": 2.7512
+    },
+    "lb21_t15": {
+      "sharpe_1927": 0.5394,
+      "sharpe_2000": 0.4766,
+      "turnover_1927": 1.8717
+    },
+    "lb63_t8": {
+      "sharpe_1927": 0.5593,
+      "sharpe_2000": 0.4506,
+      "turnover_1927": 1.6505
+    },
+    "lb63_t10": {
+      "sharpe_1927": 0.5509,
+      "sharpe_2000": 0.4539,
+      "turnover_1927": 1.4038
+    },
+    "lb63_t12": {
+      "sharpe_1927": 0.542,
+      "sharpe_2000": 0.4733,
+      "turnover_1927": 1.0657
+    },
+    "lb63_t15": {
+      "sharpe_1927": 0.5243,
+      "sharpe_2000": 0.4645,
+      "turnover_1927": 0.6893
+    },
+    "lb126_t8": {
+      "sharpe_1927": 0.5509,
+      "sharpe_2000": 0.4461,
+      "turnover_1927": 0.8741
+    },
+    "lb126_t10": {
+      "sharpe_1927": 0.5448,
+      "sharpe_2000": 0.4445,
+      "turnover_1927": 0.7485
+    },
+    "lb126_t12": {
+      "sharpe_1927": 0.532,
+      "sharpe_2000": 0.454,
+      "turnover_1927": 0.5897
+    },
+    "lb126_t15": {
+      "sharpe_1927": 0.5122,
+      "sharpe_2000": 0.4397,
+      "turnover_1927": 0.3611
+    }
+  },
+  "cost_sensitivity_sharpe_1927": {
+    "0": 0.5733,
+    "5": 0.561,
+    "20": 0.524,
+    "50": 0.4501
+  },
+  "rebalance_variants_1927": {
+    "monthly": {
+      "cagr": 0.0903,
+      "vol": 0.1183,
+      "sharpe": 0.5358,
+      "max_drawdown": -0.5793,
+      "worst_month": -0.2199,
+      "vol_of_vol": 0.0374,
+      "growth_of_1": 7783.8654,
+      "avg_exposure": 0.8506,
+      "max_exposure": 1.0,
+      "min_exposure": 0.1242,
+      "turnover_per_year": 1.1613
+    },
+    "band": {
+      "cagr": 0.0915,
+      "vol": 0.1118,
+      "sharpe": 0.5696,
+      "max_drawdown": -0.5903,
+      "worst_month": -0.1549,
+      "vol_of_vol": 0.0268,
+      "growth_of_1": 8684.9649,
+      "avg_exposure": 0.8435,
+      "max_exposure": 1.0,
+      "min_exposure": 0.1287,
+      "turnover_per_year": 1.4022
+    }
+  },
+  "episodes_t12_cap100": {
+    "1929_crash": {
+      "buy_hold": -0.839,
+      "vol_target": -0.5677,
+      "exposure_start": 0.671,
+      "exposure_min": 0.122,
+      "exposure_end": 0.289
+    },
+    "oct_1987": {
+      "buy_hold": -0.2258,
+      "vol_target": -0.1428,
+      "exposure_start": 0.801,
+      "exposure_min": 0.151,
+      "exposure_end": 0.151
+    },
+    "gfc": {
+      "buy_hold": -0.5421,
+      "vol_target": -0.2651,
+      "exposure_start": 0.892,
+      "exposure_min": 0.145,
+      "exposure_end": 0.307
+    },
+    "recovery_2009": {
+      "buy_hold": 0.6924,
+      "vol_target": 0.2372,
+      "exposure_start": 0.315,
+      "exposure_min": 0.235,
+      "exposure_end": 1.0
+    },
+    "covid_crash": {
+      "buy_hold": -0.3422,
+      "vol_target": -0.1383,
+      "exposure_start": 0.922,
+      "exposure_min": 0.145,
+      "exposure_end": 0.145
+    },
+    "covid_rebound": {
+      "buy_hold": 0.612,
+      "vol_target": 0.2009,
+      "exposure_start": 0.144,
+      "exposure_min": 0.124,
+      "exposure_end": 1.0
+    },
+    "feb_2018": {
+      "buy_hold": -0.0884,
+      "vol_target": -0.0794,
+      "exposure_start": 1.0,
+      "exposure_min": 0.621,
+      "exposure_end": 0.621
+    },
+    "aug_2024": {
+      "buy_hold": -0.0813,
+      "vol_target": -0.067,
+      "exposure_start": 1.0,
+      "exposure_min": 0.698,
+      "exposure_end": 0.698
+    },
+    "year_2022": {
+      "buy_hold": -0.1996,
+      "vol_target": -0.1208,
+      "exposure_start": 0.664,
+      "exposure_min": 0.338,
+      "exposure_end": 0.545
+    },
+    "year_2020": {
+      "buy_hold": 0.2422,
+      "vol_target": 0.1429,
+      "exposure_start": 1.0,
+      "exposure_min": 0.124,
+      "exposure_end": 1.0
+    }
+  },
+  "share_1y_vol_within_9_15": 0.832,
+  "share_days_at_full_exposure": 0.555,
+  "share_days_below_half": 0.104,
+  "moreira_muir_monthly": {
+    "from_1927": {
+      "sharpe_unmanaged": 0.452,
+      "sharpe_full_sample_c": 0.517,
+      "max_weight_full_sample_c": 14.57,
+      "sharpe_unmanaged_realtime_window": 0.525,
+      "sharpe_real_time_c": 0.447,
+      "max_weight_real_time_c": 15.36,
+      "real_time_window_start": 193608
+    },
+    "from_1936": {
+      "sharpe_unmanaged": 0.525,
+      "sharpe_full_sample_c": 0.497,
+      "max_weight_full_sample_c": 12.21,
+      "sharpe_unmanaged_realtime_window": 0.525,
+      "sharpe_real_time_c": 0.447,
+      "max_weight_real_time_c": 15.36,
+      "real_time_window_start": 193608
+    },
+    "from_2000": {
+      "sharpe_unmanaged": 0.482,
+      "sharpe_full_sample_c": 0.515,
+      "max_weight_full_sample_c": 8.16,
+      "sharpe_unmanaged_realtime_window": 0.482,
+      "sharpe_real_time_c": 0.521,
+      "max_weight_real_time_c": 5.76,
+      "real_time_window_start": 200001
+    }
+  }
+}
