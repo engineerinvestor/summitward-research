@@ -11,7 +11,8 @@ carries an optional exporter that converts vendor spreadsheets to CSV and needs
 pandas or openpyxl; the committed CSVs make running it unnecessary; `small-cap-value-vs-growth` has
 an optional `--funds` flag that needs yfinance, and its committed
 `results.json` already holds that output; `minimum-volatility-investing` needs
-numpy, pandas, openpyxl and yfinance, and downloads its AQR and Yahoo inputs):
+numpy, pandas, openpyxl and yfinance, and downloads its AQR and Yahoo inputs;
+`r-squared-trap` needs numpy and matplotlib, plus ffmpeg to render its video):
 
 ```bash
 python3 <folder>/<script>.py
@@ -28,6 +29,7 @@ python3 <folder>/<script>.py
 | `cheap-for-a-reason-value-traps` | [Cheap for a Reason: Value Traps](https://summitward.com/learn/cheap-for-a-reason-value-traps) | Returns, firm counts and five-factor loadings of Fama-French portfolios sorted on book-to-market and operating profitability since 1963, including the cheap-and-unprofitable corner |
 | `roic-etfs` | [ROIC Explained](https://summitward.com/learn/roic-return-on-invested-capital) | Fama-French five-factor plus momentum loadings of ETFs that select on return on invested capital (MOAT, LCOW, GFLW) against QUAL, AVUV and VTI |
 | `volatility-targeting` | [Volatility Targeting: Does Scaling Risk Improve Returns?](https://summitward.com/learn/volatility-targeting) | A constant-volatility rule on daily US market returns since 1926 against buy and hold and a volatility-matched stock and T-bill mix, with parameter, cost, episode and Moreira-Muir comparisons |
+| `r-squared-trap` | [The R² Trap](https://summitward.com/learn/r-squared-trap) | In-sample R² of rolling P/E vs. 10-year return regressions in 5,000 simulated markets with zero predictability, under random-walk and mean-reverting valuation, plus the video that shows it |
 
 ## Data sources
 
