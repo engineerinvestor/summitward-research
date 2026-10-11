@@ -1,0 +1,104 @@
+isin,instrument_type,coupon_pct,maturity_date,face_eur,indexed_eur,source_url,as_of_date,name,index_coef,notes
+FR0129704203,BTF,,2026-10-14,6964000000,,https://www.aft.gouv.fr/en/encours-detaille-btf,2026-10-09,BTF 14 October 2026,,"discount bill, no coupon"
+FR0129570588,BTF,,2026-10-21,9280000000,,https://www.aft.gouv.fr/en/encours-detaille-btf,2026-10-09,BTF 21 October 2026,,"discount bill, no coupon"
+FR0129704088,BTF,,2026-10-28,6348000000,,https://www.aft.gouv.fr/en/encours-detaille-btf,2026-10-09,BTF 28 October 2026,,"discount bill, no coupon"
+FR0129287324,BTF,,2026-11-04,8674000000,,https://www.aft.gouv.fr/en/encours-detaille-btf,2026-10-09,BTF 04 November 2026,,"discount bill, no coupon"
+FR0129704096,BTF,,2026-11-11,7321000000,,https://www.aft.gouv.fr/en/encours-detaille-btf,2026-10-09,BTF 11 November 2026,,"discount bill, no coupon"
+FR0129570596,BTF,,2026-11-18,8956000000,,https://www.aft.gouv.fr/en/encours-detaille-btf,2026-10-09,BTF 18 November 2026,,"discount bill, no coupon"
+FR0129704104,BTF,,2026-11-25,5898000000,,https://www.aft.gouv.fr/en/encours-detaille-btf,2026-10-09,BTF 25 November 2026,,"discount bill, no coupon"
+FR0013200813,OAT,0.25,2026-11-25,36448000000,,https://www.aft.gouv.fr/en/encours-detaille-oat,2026-10-05,OAT 0.25% 25 November 2026,,
+FR0129287332,BTF,,2026-12-02,8793000000,,https://www.aft.gouv.fr/en/encours-detaille-btf,2026-10-09,BTF 02 December 2026,,"discount bill, no coupon"
+FR0129704112,BTF,,2026-12-09,6313000000,,https://www.aft.gouv.fr/en/encours-detaille-btf,2026-10-09,BTF 09 December 2026,,"discount bill, no coupon"
+FR0129570604,BTF,,2026-12-16,9250000000,,https://www.aft.gouv.fr/en/encours-detaille-btf,2026-10-09,BTF 16 December 2026,,"discount bill, no coupon"
+FR0129704120,BTF,,2026-12-23,6725000000,,https://www.aft.gouv.fr/en/encours-detaille-btf,2026-10-09,BTF 23 December 2026,,"discount bill, no coupon"
+FR0129287340,BTF,,2026-12-30,9100000000,,https://www.aft.gouv.fr/en/encours-detaille-btf,2026-10-09,BTF 30 December 2026,,"discount bill, no coupon"
+FR0129704138,BTF,,2027-01-06,7915000000,,https://www.aft.gouv.fr/en/encours-detaille-btf,2026-10-09,BTF 06 January 2027,,"discount bill, no coupon"
+FR0129570612,BTF,,2027-01-13,7760000000,,https://www.aft.gouv.fr/en/encours-detaille-btf,2026-10-09,BTF 13 January 2027,,"discount bill, no coupon"
+FR0129437572,BTF,,2027-01-27,9673000000,,https://www.aft.gouv.fr/en/encours-detaille-btf,2026-10-09,BTF 27 January 2027,,"discount bill, no coupon"
+FR0129704146,BTF,,2027-02-10,8005000000,,https://www.aft.gouv.fr/en/encours-detaille-btf,2026-10-09,BTF 10 February 2027,,"discount bill, no coupon"
+FR0129437580,BTF,,2027-02-24,10143000000,,https://www.aft.gouv.fr/en/encours-detaille-btf,2026-10-09,BTF 24 February 2027,,"discount bill, no coupon"
+FR0014003513,OAT,0.0,2027-02-25,35818000000,,https://www.aft.gouv.fr/en/encours-detaille-oat,2026-10-05,OAT 0.00% 25 February 2027,,
+FR0129704153,BTF,,2027-03-10,8083000000,,https://www.aft.gouv.fr/en/encours-detaille-btf,2026-10-09,BTF 10 March 2027,,"discount bill, no coupon"
+FR0129437598,BTF,,2027-03-24,10394000000,,https://www.aft.gouv.fr/en/encours-detaille-btf,2026-10-09,BTF 24 March 2027,,"discount bill, no coupon"
+FR0129704161,BTF,,2027-04-07,6184000000,,https://www.aft.gouv.fr/en/encours-detaille-btf,2026-10-09,BTF 07 April 2027,,"discount bill, no coupon"
+FR0129570620,BTF,,2027-04-21,9539000000,,https://www.aft.gouv.fr/en/encours-detaille-btf,2026-10-09,BTF 21 April 2027,,"discount bill, no coupon"
+FR0129570638,BTF,,2027-05-20,9309000000,,https://www.aft.gouv.fr/en/encours-detaille-btf,2026-10-09,BTF 20 May 2027,,"discount bill, no coupon"
+FR0013250560,OAT,1.0,2027-05-25,38944000000,,https://www.aft.gouv.fr/en/encours-detaille-oat,2026-10-05,OAT 1.00% 25 May 2027,,
+FR0129570646,BTF,,2027-06-16,8586000000,,https://www.aft.gouv.fr/en/encours-detaille-btf,2026-10-09,BTF 16 June 2027,,"discount bill, no coupon"
+FR0129704179,BTF,,2027-07-14,8936000000,,https://www.aft.gouv.fr/en/encours-detaille-btf,2026-10-09,BTF 14 July 2027,,"discount bill, no coupon"
+FR0011008705,OATei,1.85,2027-07-25,21737000000,30681992870,https://www.aft.gouv.fr/en/encours-detaille-oatei,2026-10-05,OATEi 1.85% 25 July 2027,1.41151,indexed = face x AFT index coefficient on 2026-10-05
+FR0129704187,BTF,,2027-08-11,8135000000,,https://www.aft.gouv.fr/en/encours-detaille-btf,2026-10-09,BTF 11 August 2027,,"discount bill, no coupon"
+FR0129704195,BTF,,2027-09-08,8287000000,,https://www.aft.gouv.fr/en/encours-detaille-btf,2026-10-09,BTF 08 September 2027,,"discount bill, no coupon"
+FR001400NBC6,OAT,2.5,2027-09-24,30797000000,,https://www.aft.gouv.fr/en/encours-detaille-oat,2026-10-05,OAT 2.50 % 24 September 2027,,
+FR0129886208,BTF,,2027-10-06,1683000000,,https://www.aft.gouv.fr/en/encours-detaille-btf,2026-10-09,BTF 06 October 2027,,"discount bill, no coupon"
+FR0011317783,OAT,2.75,2027-10-25,60083000000,,https://www.aft.gouv.fr/en/encours-detaille-oat,2026-10-05,OAT 2.75% 25 October 2027,,
+FR001400AIN5,OAT,0.75,2028-02-25,50978000000,,https://www.aft.gouv.fr/en/encours-detaille-oat,2026-10-05,OAT 0.75% 25 February 2028,,
+FR0013238268,OATi,0.1,2028-03-01,17412000000,21429819000,https://www.aft.gouv.fr/en/encours-detaille-oati,2026-10-05,OATi 0.10% 1 March 2028,1.23075,indexed = face x AFT index coefficient on 2026-10-05
+FR0000571226,OAT,0.0,2028-03-28,46232603,,https://www.aft.gouv.fr/en/encours-detaille-oat,2026-10-05,OAT zero coupon 28 March 2028,,"zero-coupon; face=redemption value; AFT bulletin counts accreted value 41,393,652 (31 Aug 2026)"
+FR0013286192,OAT,0.75,2028-05-25,67202000000,,https://www.aft.gouv.fr/en/encours-detaille-oat,2026-10-05,OAT 0.75% 25 May 2028,,
+FR001400XLW2,OAT,2.4,2028-09-24,48096000000,,https://www.aft.gouv.fr/en/encours-detaille-oat,2026-10-05,OAT 2.40% 24 September 2028,,
+FR0013341682,OAT,0.75,2028-11-25,62095000000,,https://www.aft.gouv.fr/en/encours-detaille-oat,2026-10-05,OAT 0.75% 25 November 2028,,
+FR001400HI98,OAT,2.75,2029-02-25,63538000000,,https://www.aft.gouv.fr/en/encours-detaille-oat,2026-10-05,OAT 2.75% 25 FEBRUARY 2029,,
+FR0013410552,OATei,0.1,2029-03-01,24041000000,30552504850,https://www.aft.gouv.fr/en/encours-detaille-oatei,2026-10-05,OATEi 0.10% 1 MARCH 2029,1.27085,indexed = face x AFT index coefficient on 2026-10-05
+FR0000571218,OAT,5.5,2029-04-25,44514880462,,https://www.aft.gouv.fr/en/encours-detaille-oat,2026-10-05,OAT 5.50% 25 April 2029,,
+FR0013407236,OAT,0.5,2029-05-25,58805000000,,https://www.aft.gouv.fr/en/encours-detaille-oat,2026-10-05,OAT 0.50% 25 May 2029,,
+FR0000186413,OATi,3.4,2029-07-25,10176144000,15690189388,https://www.aft.gouv.fr/en/encours-detaille-oati,2026-10-05,OATi 3.40% 25 July 2029,1.54186,indexed = face x AFT index coefficient on 2026-10-05
+FR0014016G71,OAT,2.4,2029-09-24,32737000000,,https://www.aft.gouv.fr/en/encours-detaille-oat,2026-10-05,OAT 2.40% 24 September 2029,,
+FR0013451507,OAT,0.0,2029-11-25,49931000000,,https://www.aft.gouv.fr/en/encours-detaille-oat,2026-10-05,OAT 0.00% 25 NOVEMBER 2029,,
+FR001400PM68,OAT,2.75,2030-02-25,60789000000,,https://www.aft.gouv.fr/en/encours-detaille-oat,2026-10-05,OAT 2.75% 25 FEBRUARY 2030,,
+FR0011883966,OAT,2.5,2030-05-25,73381000000,,https://www.aft.gouv.fr/en/encours-detaille-oat,2026-10-05,OAT 2.50% 25 May 2030,,
+FR0011982776,OATei,0.7,2030-07-25,17232000000,22816546560,https://www.aft.gouv.fr/en/encours-detaille-oatei,2026-10-05,OATEi 0.70% 25 July 2030,1.32408,indexed = face x AFT index coefficient on 2026-10-05
+FR0013516549,OAT,0.0,2030-11-25,58857000000,,https://www.aft.gouv.fr/en/encours-detaille-oat,2026-10-05,OAT 0.00% 25 November 2030,,
+FR001400Z2L7,OAT,2.7,2031-02-25,62934000000,,https://www.aft.gouv.fr/en/encours-detaille-oat,2026-10-05,OAT 2.70% 25 February 2031,,
+FR0012993103,OAT,1.5,2031-05-25,71282000000,,https://www.aft.gouv.fr/en/encours-detaille-oat,2026-10-05,OAT 1.50% 25 May 2031,,
+FR0014001N38,OATei,0.1,2031-07-25,13837000000,17439462950,https://www.aft.gouv.fr/en/encours-detaille-oatei,2026-10-05,OATEI 0.10% 25 July 2031,1.26035,indexed = face x AFT index coefficient on 2026-10-05
+FR0014002WK3,OAT,0.0,2031-11-25,59865000000,,https://www.aft.gouv.fr/en/encours-detaille-oat,2026-10-05,OAT 0.00% 25 November 2031,,
+FR0014018OI0,OAT,3.25,2032-02-25,29929000000,,https://www.aft.gouv.fr/en/encours-detaille-oat,2026-10-05,OAT 3.25% 25 February 2032,,
+FR0014003N51,OATi,0.1,2032-03-01,10064000000,11904303040,https://www.aft.gouv.fr/en/encours-detaille-oati,2026-10-05,OATi 0.10% 1 March 2032,1.18286,indexed = face x AFT index coefficient on 2026-10-05
+FR0014007L00,OAT,0.0,2032-05-25,50484000000,,https://www.aft.gouv.fr/en/encours-detaille-oat,2026-10-05,OAT 0.00% 25 May 2032,,
+FR0000188799,OATei,3.15,2032-07-25,15950000000,26038375000,https://www.aft.gouv.fr/en/encours-detaille-oatei,2026-10-05,OATEi 3.15% 25 July 2032,1.6325,indexed = face x AFT index coefficient on 2026-10-05
+FR0000187635,OAT,5.75,2032-10-25,35192322600,,https://www.aft.gouv.fr/en/encours-detaille-oat,2026-10-05,OAT 5.75% 25 October 2032,,
+FR001400BKZ3,OAT,2.0,2032-11-25,63473000000,,https://www.aft.gouv.fr/en/encours-detaille-oat,2026-10-05,OAT 2.00% 25 November 2032,,
+FR001400H7V7,OAT,3.0,2033-05-25,50596000000,,https://www.aft.gouv.fr/en/encours-detaille-oat,2026-10-05,OAT 3.00% 25 May 2033,,
+FR001400L834,OAT,3.5,2033-11-25,63249000000,,https://www.aft.gouv.fr/en/encours-detaille-oat,2026-10-05,OAT 3.50 % 25 november 2033,,
+FR0013313582,OAT,1.25,2034-05-25,65035000000,,https://www.aft.gouv.fr/en/encours-detaille-oat,2026-10-05,OAT 1.25% 25 May 2034,,
+FR001400JI88,OATei,0.6,2034-07-25,12848000000,14713272640,https://www.aft.gouv.fr/en/encours-detaille-oatei,2026-10-05,OATEi 0.60% 25 July 2034,1.14518,indexed = face x AFT index coefficient on 2026-10-05
+FR001400QMF9,OAT,3.0,2034-11-25,52348000000,,https://www.aft.gouv.fr/en/encours-detaille-oat,2026-10-05,OAT 3.00 % 25 November 2034,,
+FR0010070060,OAT,4.75,2035-04-25,37723000000,,https://www.aft.gouv.fr/en/encours-detaille-oat,2026-10-05,OAT 4.75% 25 April 2035,,
+FR001400X8V5,OAT,3.2,2035-05-25,54712000000,,https://www.aft.gouv.fr/en/encours-detaille-oat,2026-10-05,OAT 3.20% 25 May 2035,,
+FR0014012II5,OAT,3.5,2035-11-25,59064000000,,https://www.aft.gouv.fr/en/encours-detaille-oat,2026-10-05,OAT 3.50% 25 November 2035,,
+FR0013524014,OATi,0.1,2036-03-01,12717000000,14999192820,https://www.aft.gouv.fr/en/encours-detaille-oati,2026-10-05,OATi 0.10% 1 March 2036,1.17946,indexed = face x AFT index coefficient on 2026-10-05
+FR0013154044,OAT,1.25,2036-05-25,71354000000,,https://www.aft.gouv.fr/en/encours-detaille-oat,2026-10-05,OAT 1.25% 25 May 2036,,
+FR0013327491,OATei,0.1,2036-07-25,16213000000,21055823100,https://www.aft.gouv.fr/en/encours-detaille-oatei,2026-10-05,OATEi 0.10% 25 July 2036,1.2987,indexed = face x AFT index coefficient on 2026-10-05
+FR0014018YR0,OAT,3.7,2036-11-25,41231000000,,https://www.aft.gouv.fr/en/encours-detaille-oat,2026-10-05,OAT 3.70% 25 November 2036,,
+FR001401B0I4,OATei,2.1,2037-03-01,2500000000,2566050000,https://www.aft.gouv.fr/en/encours-detaille-oatei,2026-10-05,OATEi 2.10 % 1 March 2037,1.02642,indexed = face x AFT index coefficient on 2026-10-05; new line created Sep 2026
+FR0014017Z10,OAT,3.8,2037-06-25,14175000000,,https://www.aft.gouv.fr/en/encours-detaille-oat,2026-10-05,Green OAT 3.80% 25 June 2037,,green
+FR0014009O62,OAT,1.25,2038-05-25,36540000000,,https://www.aft.gouv.fr/en/encours-detaille-oat,2026-10-05,OAT 1.25% 25 May 2038,,
+FR001400AQH0,OATei,0.1,2038-07-25,9667000000,11962719160,https://www.aft.gouv.fr/en/encours-detaille-oatei,2026-10-05,GREEN OATEi 0.10% 25 JULY 2038,1.23748,indexed = face x AFT index coefficient on 2026-10-05
+FR0010371401,OAT,4.0,2038-10-25,29884000000,,https://www.aft.gouv.fr/en/encours-detaille-oat,2026-10-05,OAT 4.00% 25 October 2038,,
+FR001400IKW5,OATi,0.55,2039-03-01,6227000000,6759782120,https://www.aft.gouv.fr/en/encours-detaille-oati,2026-10-05,OATi 0.55 % 1 March 2039,1.08556,indexed = face x AFT index coefficient on 2026-10-05
+FR0013234333,OAT,1.75,2039-06-25,36304000000,,https://www.aft.gouv.fr/en/encours-detaille-oat,2026-10-05,GREEN OAT 1.75% 25 June 2039,,green
+FR0013515806,OAT,0.5,2040-05-25,40551000000,,https://www.aft.gouv.fr/en/encours-detaille-oat,2026-10-05,OAT 0.50% 25 May 2040,,
+FR0010447367,OATei,1.8,2040-07-25,17723000000,26800897830,https://www.aft.gouv.fr/en/encours-detaille-oatei,2026-10-05,OATEi 1.80% 25 July 2040,1.51221,indexed = face x AFT index coefficient on 2026-10-05
+FR0010773192,OAT,4.5,2041-04-25,43447000000,,https://www.aft.gouv.fr/en/encours-detaille-oat,2026-10-05,OAT 4.50% 25 April 2041,,
+FR001400WYO4,OAT,3.6,2042-05-25,26187000000,,https://www.aft.gouv.fr/en/encours-detaille-oat,2026-10-05,OAT 3.60% 25 May 2042,,
+FR001400CMX2,OAT,2.5,2043-05-25,27954000000,,https://www.aft.gouv.fr/en/encours-detaille-oat,2026-10-05,OAT 2.50% 25 May 2043,,
+FR001400QCA1,OATei,0.95,2043-07-25,8530000000,9189113100,https://www.aft.gouv.fr/en/encours-detaille-oatei,2026-10-05,OATEi 0.95% 25 July 2043,1.07727,indexed = face x AFT index coefficient on 2026-10-05
+FR0014002JM6,OAT,0.5,2044-06-25,29953000000,,https://www.aft.gouv.fr/en/encours-detaille-oat,2026-10-05,Green OAT 0.50% 25 June 2044,,green
+FR0011461037,OAT,3.25,2045-05-25,31657000000,,https://www.aft.gouv.fr/en/encours-detaille-oat,2026-10-05,OAT 3.25% 25 May 2045,,
+FR0014015MU5,OAT,4.1,2046-05-25,18682000000,,https://www.aft.gouv.fr/en/encours-detaille-oat,2026-10-05,OAT 4.10% 25 May 2046,,
+FR0013209871,OATei,0.1,2047-07-25,13930000000,18357371900,https://www.aft.gouv.fr/en/encours-detaille-oatei,2026-10-05,OATEi 0.10% 25 July 2047,1.31783,indexed = face x AFT index coefficient on 2026-10-05
+FR0013257524,OAT,2.0,2048-05-25,34787000000,,https://www.aft.gouv.fr/en/encours-detaille-oat,2026-10-05,OAT 2.00% 25 May 2048,,
+FR001400NEF3,OAT,3.0,2049-06-25,17612000000,,https://www.aft.gouv.fr/en/encours-detaille-oat,2026-10-05,Green OAT 3.00% 25 June 2049,,green
+FR0013404969,OAT,1.5,2050-05-25,34348000000,,https://www.aft.gouv.fr/en/encours-detaille-oat,2026-10-05,OAT 1.50% 25 May 2050,,
+FR0013480613,OAT,0.75,2052-05-25,33622000000,,https://www.aft.gouv.fr/en/encours-detaille-oat,2026-10-05,OAT 0.75% 25 May 2052,,
+FR0014004J31,OAT,0.75,2053-05-25,33416000000,,https://www.aft.gouv.fr/en/encours-detaille-oat,2026-10-05,OAT 0.75% 25 May 2053,,
+FR0014008181,OATei,0.1,2053-07-25,11861000000,14677750280,https://www.aft.gouv.fr/en/encours-detaille-oatei,2026-10-05,OATEi 0.10% 25 July 2053,1.23748,indexed = face x AFT index coefficient on 2026-10-05
+FR001400FTH3,OAT,3.0,2054-05-25,25978000000,,https://www.aft.gouv.fr/en/encours-detaille-oat,2026-10-05,OAT 3.00 % 25 May 2054,,
+FR0010171975,OAT,4.0,2055-04-25,23988000000,,https://www.aft.gouv.fr/en/encours-detaille-oat,2026-10-05,OAT 4.00% 25 April 2055,,
+FR001400OHF4,OAT,3.25,2055-05-25,25005000000,,https://www.aft.gouv.fr/en/encours-detaille-oat,2026-10-05,OAT 3.25% 25 May 2055,,
+FR001400XJJ3,OAT,3.75,2056-05-25,20676000000,,https://www.aft.gouv.fr/en/encours-detaille-oat,2026-10-05,OAT 3.75% 25 May 2056,,
+FR0014016CV2,OAT,4.4,2057-05-25,11001000000,,https://www.aft.gouv.fr/en/encours-detaille-oat,2026-10-05,OAT 4.40 % 25 May 2057,,
+FR0010870956,OAT,4.0,2060-04-25,22843000000,,https://www.aft.gouv.fr/en/encours-detaille-oat,2026-10-05,OAT 4.00% 25 April 2060,,
+FR0013154028,OAT,1.75,2066-05-25,18394000000,,https://www.aft.gouv.fr/en/encours-detaille-oat,2026-10-05,OAT 1.75% 25 May 2066,,
+FR0014001NN8,OAT,0.5,2072-05-25,14472000000,,https://www.aft.gouv.fr/en/encours-detaille-oat,2026-10-05,OAT 0.50% 25 May 2072,,

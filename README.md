@@ -37,6 +37,7 @@ python3 <folder>/<script>.py
 | `most-stocks-lose-to-tbills` | [Most Stocks Lose to T-Bills. The Market Still Wins.](https://summitward.com/learn/most-stocks-lose-to-tbills) | 1,000 identical simulated stocks whose compounding produces the skew Bessembinder documents, and the Short built on it |
 | `dividends-are-not-free-money` | [Dividends Are Not Free Money](https://summitward.com/learn/dividends-are-not-free-money) | The ex-dividend price drop, the homemade-dividend comparison and its tax timing, as worked examples in a Short |
 | `tals-leverage-simulator` | [We Open-Sourced a TALS Simulator](https://summitward.com/learn/tals-leverage-simulator) | A Short rendered from talsim v0.5.0's leverage sweep and scenario comparison: harvested losses and tax benefit by book, and the paired wealth difference against long-only |
+| `government-debt-crisis-bonds` | [Will Government Bonds Blow Up?](https://summitward.com/learn/government-debt-crisis-bonds) | France's nominal State debt rolled forward bond by bond from the AFT line table: effective interest rate and interest bill under three yield curves, against the reprice-everything shortcut, validated against the French budget's own rate sensitivity |
 
 ## Data sources
 

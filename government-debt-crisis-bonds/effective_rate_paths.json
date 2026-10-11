@@ -1,0 +1,82 @@
+[
+ {
+  "year": 2027,
+  "down": 2.32,
+  "held": 2.43,
+  "up": 2.55,
+  "shortcut": 4.34,
+  "growth": 2.7
+ },
+ {
+  "year": 2028,
+  "down": 2.5,
+  "held": 2.77,
+  "up": 3.04,
+  "shortcut": 4.35,
+  "growth": 2.8
+ },
+ {
+  "year": 2029,
+  "down": 2.69,
+  "held": 3.08,
+  "up": 3.47,
+  "shortcut": 4.35,
+  "growth": 2.8
+ },
+ {
+  "year": 2030,
+  "down": 2.83,
+  "held": 3.32,
+  "up": 3.81,
+  "shortcut": 4.35,
+  "growth": 2.9
+ },
+ {
+  "year": 2031,
+  "down": 2.96,
+  "held": 3.54,
+  "up": 4.11,
+  "shortcut": 4.36,
+  "growth": 2.9
+ },
+ {
+  "year": 2032,
+  "down": 3.07,
+  "held": 3.71,
+  "up": 4.36,
+  "shortcut": 4.36,
+  "growth": 2.9
+ },
+ {
+  "year": 2033,
+  "down": 3.11,
+  "held": 3.81,
+  "up": 4.52,
+  "shortcut": 4.37,
+  "growth": 2.9
+ },
+ {
+  "year": 2034,
+  "down": 3.15,
+  "held": 3.89,
+  "up": 4.64,
+  "shortcut": 4.37,
+  "growth": 2.9
+ },
+ {
+  "year": 2035,
+  "down": 3.18,
+  "held": 3.97,
+  "up": 4.75,
+  "shortcut": 4.37,
+  "growth": 2.9
+ },
+ {
+  "year": 2036,
+  "down": 3.2,
+  "held": 4.03,
+  "up": 4.86,
+  "shortcut": 4.37,
+  "growth": 2.9
+ }
+]
