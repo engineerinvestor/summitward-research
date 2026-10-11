@@ -65,4 +65,38 @@ to 35.8x.
 The results depend on the assumed valuation process. A random-walk log P/E
 is the most persistent case and produces the largest spurious R².
 
+## Companion Short: R² is not a model-quality score
+
+`r2_quality_render.py` renders a second 1080x1920 Short with four simulated
+demonstrations, following Cosma Shalizi's
+[lecture 10 notes](https://www.stat.cmu.edu/~cshalizi/mreg/15/lectures/10/lecture-10.pdf)
+(CMU 36-401) as summarized by the UVA Library StatLab article
+["Is R-squared Useless?"](https://library.virginia.edu/data/articles/is-r-squared-useless).
+`r2_quality_cover.py` renders its cover. Both need numpy and matplotlib; the
+video also needs ffmpeg.
+
+```bash
+python3 r2_quality_render.py --stats-only      # numbers only, no ffmpeg needed
+python3 r2_quality_render.py r2_quality.mp4    # video (53.5 s); add `start end` for a slice
+python3 r2_quality_cover.py                    # writes r2_quality_cover.png
+```
+
+Seeds are fixed, so the output reproduces exactly:
+
+```
+A: 0.943->0.135 rmse 0.765  B: 0.98->0.25 slope 1.52  C: 0.921  D: 0.772
+```
+
+- **A.** y = 2 + 1.2x plus the same 100 noise draws (sd 0.9). Narrowing the
+  range of x from 1-10 to 1-2 drops R² from 0.94 to 0.14 while the residual
+  RMSE stays at 0.765.
+- **B.** The model is correctly specified and only the noise grows: R² falls
+  from 0.98 at noise sd 0.5 to 0.25 at sd 8. The fitted slope at sd 8 is 1.52
+  against a true 1.2.
+- **C.** A straight line fit to y = x² (with multiplicative noise) gets
+  R² = 0.92, while the residuals form a U-shape.
+- **D.** Regressing y on x and x on y gives the same R² (0.77): with one
+  regressor and an intercept, R² is the squared correlation and says nothing
+  about causal direction.
+
 MIT license, as for the rest of this repository.
