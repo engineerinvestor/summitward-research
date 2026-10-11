@@ -12,7 +12,10 @@ pandas or openpyxl; the committed CSVs make running it unnecessary; `small-cap-v
 an optional `--funds` flag that needs yfinance, and its committed
 `results.json` already holds that output; `minimum-volatility-investing` needs
 numpy, pandas, openpyxl and yfinance, and downloads its AQR and Yahoo inputs;
-`r-squared-trap` needs numpy and matplotlib, plus ffmpeg to render its video):
+`r-squared-trap`, `most-stocks-lose-to-tbills` and `dividends-are-not-free-money`
+need numpy and matplotlib, and `safe-withdrawal-rate` and `tals-leverage-simulator`
+also need pandas; these five render Shorts and need ffmpeg for the video, and
+each video renderer takes `--stats-only` to print its numbers without it):
 
 ```bash
 python3 <folder>/<script>.py
@@ -29,7 +32,11 @@ python3 <folder>/<script>.py
 | `cheap-for-a-reason-value-traps` | [Cheap for a Reason: Value Traps](https://summitward.com/learn/cheap-for-a-reason-value-traps) | Returns, firm counts and five-factor loadings of Fama-French portfolios sorted on book-to-market and operating profitability since 1963, including the cheap-and-unprofitable corner |
 | `roic-etfs` | [ROIC Explained](https://summitward.com/learn/roic-return-on-invested-capital) | Fama-French five-factor plus momentum loadings of ETFs that select on return on invested capital (MOAT, LCOW, GFLW) against QUAL, AVUV and VTI |
 | `volatility-targeting` | [Volatility Targeting: Does Scaling Risk Improve Returns?](https://summitward.com/learn/volatility-targeting) | A constant-volatility rule on daily US market returns since 1926 against buy and hold and a volatility-matched stock and T-bill mix, with parameter, cost, episode and Moreira-Muir comparisons |
-| `r-squared-trap` | [The R² Trap](https://summitward.com/learn/r-squared-trap) | In-sample R² of rolling P/E vs. 10-year return regressions in 5,000 simulated markets with zero predictability, under random-walk and mean-reverting valuation, plus the video that shows it |
+| `r-squared-trap` | [The R² Trap](https://summitward.com/learn/r-squared-trap) | In-sample R² of rolling P/E vs. 10-year return regressions in 5,000 simulated markets with zero predictability, under random-walk and mean-reverting valuation, plus the video that shows it and a second Short on what R² does not measure |
+| `safe-withdrawal-rate` | [Safe Withdrawal Rate: Why the 4% Rule Isn't Enough](https://summitward.com/learn/safe-withdrawal-rate) | A 4% constant-real withdrawal from a 60/40 portfolio over every 30- and 50-year window since 1871, and the Short built on it |
+| `most-stocks-lose-to-tbills` | [Most Stocks Lose to T-Bills. The Market Still Wins.](https://summitward.com/learn/most-stocks-lose-to-tbills) | 1,000 identical simulated stocks whose compounding produces the skew Bessembinder documents, and the Short built on it |
+| `dividends-are-not-free-money` | [Dividends Are Not Free Money](https://summitward.com/learn/dividends-are-not-free-money) | The ex-dividend price drop, the homemade-dividend comparison and its tax timing, as worked examples in a Short |
+| `tals-leverage-simulator` | [We Open-Sourced a TALS Simulator](https://summitward.com/learn/tals-leverage-simulator) | A Short rendered from talsim v0.5.0's leverage sweep and scenario comparison: harvested losses and tax benefit by book, and the paired wealth difference against long-only |
 
 ## Data sources
 
@@ -50,6 +57,10 @@ python3 <folder>/<script>.py
   domain; citation requested.
 - Monthly S&P Composite price, dividends and 10-year Treasury yield: Robert J.
   Shiller, [ie_data.xls](https://shillerdata.com/). Used with attribution.
+  `safe-withdrawal-rate` uses the
+  [datasets/s-and-p-500](https://github.com/datasets/s-and-p-500) CSV of the
+  same series, which its maintainer dedicates to the public domain (ODC PDDL)
+  and whose Shiller rows end in June 2023.
 - Gold and commodity price indices: World Bank,
   [Commodity Price Data (Pink Sheet)](https://www.worldbank.org/en/research/commodity-markets).
   CC BY 4.0.
@@ -57,6 +68,12 @@ python3 <folder>/<script>.py
   [historical performance page](https://www.wealthfront.com/historical-performance)
   on the date stated in the file. Facts, reproduced for comment and analysis.
 
+- Stock-level lifetime returns and wealth creation, 1926-2025: Hendrik
+  Bessembinder (2026), "One Hundred Years in the U.S. Stock Markets,"
+  [SSRN 6438198](https://papers.ssrn.com/sol3/papers.cfm?abstract_id=6438198).
+  Summary figures quoted from the paper and hardcoded in the script.
+- Trinity Study success rates: Cooley, Hubbard and Walz (1999), *Financial
+  Counseling and Planning* 10(1), Table 2. Quoted figures.
 - Betting Against Beta factor returns: AQR Capital Management,
   [data sets](https://www.aqr.com/Insights/Datasets), downloaded by the script
   and not redistributed here.
