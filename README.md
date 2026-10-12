@@ -12,6 +12,7 @@ pandas or openpyxl; the committed CSVs make running it unnecessary; `small-cap-v
 an optional `--funds` flag that needs yfinance, and its committed
 `results.json` already holds that output; `minimum-volatility-investing` needs
 numpy, pandas, openpyxl and yfinance, and downloads its AQR and Yahoo inputs;
+`portable-alpha-and-return-stacking` needs numpy, pandas and yfinance;
 `r-squared-trap`, `most-stocks-lose-to-tbills` and `dividends-are-not-free-money`
 need numpy and matplotlib, and `safe-withdrawal-rate` and `tals-leverage-simulator`
 also need pandas; these five render Shorts and need ffmpeg for the video, and
@@ -38,6 +39,7 @@ python3 <folder>/<script>.py
 | `dividends-are-not-free-money` | [Dividends Are Not Free Money](https://summitward.com/learn/dividends-are-not-free-money) | The ex-dividend price drop, the homemade-dividend comparison and its tax timing, as worked examples in a Short |
 | `tals-leverage-simulator` | [We Open-Sourced a TALS Simulator](https://summitward.com/learn/tals-leverage-simulator) | A Short rendered from talsim v0.5.0's leverage sweep and scenario comparison: harvested losses and tax benefit by book, and the paired wealth difference against long-only |
 | `government-debt-crisis-bonds` | [Will Government Bonds Blow Up?](https://summitward.com/learn/government-debt-crisis-bonds) | France's nominal State debt rolled forward bond by bond from the AFT line table: effective interest rate and interest bill under three yield curves, against the reprice-everything shortcut, validated against the French budget's own rate sensitivity |
+| `portable-alpha-and-return-stacking` | [Do You Need Return Stacking?](https://summitward.com/learn/portable-alpha-and-return-stacking) | NTSX, RSSB and RSST against SPY, VT, a 60/40 fund and costless ETF replicas: 2022 losses, RSST's gap to the S&P 500 by year and worst 12 months, RSSB's tracking of a 100/100, and stock-bond correlation by year since 2002 |
 
 ## Data sources
 
