@@ -47,11 +47,56 @@ Data:
 
 ```bash
 python3 analyze.py         # standard library only
+python3 same_date.py       # issuer files in .cache/; needs pdftotext
 python3 fetch_data.py      # re-download; prices need yfinance
 ```
 
 `fetch_data.py` asks the SEC for files, and the SEC rejects requests without
 a contact address in the User-Agent; set `SEC_USER_AGENT="Name you@example.com"`.
+
+## Same-date holdings (`same_date.py`)
+
+The N-PORT figures below come from filings dated one to two months apart.
+`same_date.py` repeats the comparison on holdings that share one date, August
+31, 2026: Fidelity's Monthly Holdings Report PDFs for FZROX and FSKAX (fund
+document pages on fundresearch.fidelity.com, posted September 30, 2026) and
+Vanguard's "Export full holdings" CSV for VTI with the date selector set to
+08/31/2026 (advisors.vanguard.com; VTI's holdings are VTSAX's). Those files
+belong to Fidelity and Vanguard and are not redistributed: save them in
+`.cache/` under the names the script's docstring lists. It needs `pdftotext`
+(poppler) and is otherwise standard library.
+
+Issuers are matched across sponsors on SEDOL, ticker root and cleaned name,
+so share classes collapse; futures are dropped. Active share is
+1/2 * sum |w_A - w_B|. The page quotes this output (run 2026-10-15, files
+read 2026-10-15):
+
+```
+Holdings as of August 31, 2026, grouped by issuer
+   FZROX: 2627 positions, 2604 issuers
+   FSKAX: 3698 positions, 3665 issuers
+   VTSAX: 3504 positions, 3466 issuers
+
+Pairs: active share, and weight in issuers the other fund does not hold
+   FZROX vs VTSAX: active share 1.41%, overlap 98.59%
+      VTSAX in issuers FZROX lacks: 0.41% (918 issuers); largest: Space Exploration Technologies 0.115%; Waste Connections Inc 0.057%; JFrog Ltd 0.014%; Chime Financial Inc Class A 0.012%; Figma Inc 0.010%
+      FZROX in issuers VTSAX lacks: 0.41% (56 issuers); largest: NXP Semiconductors NV 0.077%; Anglogold Ashanti Plc 0.064%; Royalty Pharma PLC Class A 0.032%; Amrize Ltd (United States) 0.030%; Coupang Inc Class A 0.029%
+   FZROX vs FSKAX: active share 0.43%, overlap 99.57%
+      FSKAX in issuers FZROX lacks: 0.30% (1072 issuers); largest: Space Exploration Technologies 0.114%; Mobility Global Inc 0.008%; Forgent Power Solutions Inc Cl 0.008%; Janus Living Inc Class A 0.003%; Ubiquiti Inc 0.003%
+      FZROX in issuers FSKAX lacks: 0.11% (11 issuers); largest: Anglogold Ashanti Plc 0.064%; Viking Holdings Ltd 0.022%; Amdocs Ltd 0.009%; GlobalFoundries Inc 0.006%; Scorpio Tankers Inc 0.004%
+   FSKAX vs VTSAX: active share 1.30%, overlap 98.70%
+      VTSAX in issuers FSKAX lacks: 0.12% (97 issuers); largest: Waste Connections Inc 0.057%; JFrog Ltd 0.014%; Figma Inc 0.010%; Energy Fuels Inc/Canada 0.005%; Kiniksa Pharmaceuticals Intern 0.004%
+      FSKAX in issuers VTSAX lacks: 0.32% (296 issuers); largest: NXP Semiconductors NV 0.076%; Royalty Pharma PLC Class A 0.032%; Amrize Ltd (United States) 0.030%; Coupang Inc Class A 0.029%; Amcor PLC 0.029%
+
+Weight in issuers ranked below FZROX's issuer count (2604)
+   VTSAX: 862 issuers, 0.076%
+   FSKAX: 1061 issuers, 0.086%
+```
+
+The largest gaps checked by hand against the raw files are real holdings
+differences, not matching misses: SpaceX (listed June 12, 2026) is in FSKAX
+and VTSAX but not FZROX; NXP Semiconductors and AngloGold Ashanti are in the
+Fidelity funds but not VTSAX; Waste Connections is in VTSAX only.
 
 Output quoted on the pages (run 2026-10-15; growth of $10,000 added 2026-10-16):
 
