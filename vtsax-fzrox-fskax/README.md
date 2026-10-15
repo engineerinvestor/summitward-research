@@ -53,7 +53,7 @@ python3 fetch_data.py      # re-download; prices need yfinance
 `fetch_data.py` asks the SEC for files, and the SEC rejects requests without
 a contact address in the User-Agent; set `SEC_USER_AGENT="Name you@example.com"`.
 
-Output quoted on the pages (run 2026-10-15):
+Output quoted on the pages (run 2026-10-15; growth of $10,000 added 2026-10-16):
 
 ```
 1. Equity holdings by issuer (SEC N-PORT-P)
@@ -89,9 +89,9 @@ Output quoted on the pages (run 2026-10-15):
       FORGENT POWER SOLUTIONS INC              0.006%
 
 4. Total returns, 2018-08-31 to 2026-09-30 (97 months)
-   VTSAX: 13.71% a year
-   FZROX: 13.85% a year
-   FSKAX: 13.71% a year
+   VTSAX: 13.71% a year; $10,000 grew to $28,254
+   FZROX: 13.85% a year; $10,000 grew to $28,529
+   FSKAX: 13.71% a year; $10,000 grew to $28,251
 
    Calendar years (December to December month ends), %
    year     VTSAX    FZROX    FSKAX

@@ -146,7 +146,8 @@ def returns_section():
     r = {t: [px[t][i + 1] / px[t][i] - 1 for i in range(months)] for t in FUNDS}
     a = {t: ann(px[t][-1] / px[t][0], months) for t in FUNDS}
     for t in FUNDS:
-        print(f"   {t}: {100 * a[t]:.2f}% a year")
+        grown = 10_000 * px[t][-1] / px[t][0]
+        print(f"   {t}: {100 * a[t]:.2f}% a year; $10,000 grew to ${grown:,.0f}")
 
     print("\n   Calendar years (December to December month ends), %")
     print("   year   " + "  ".join(f"{t:>7s}" for t in FUNDS))
