@@ -145,4 +145,110 @@ stated trading-cost assumption.
 
 ## Deviations from the pre-registration
 
-None yet.
+1. **Part B2 gold (added 2026-10-15, after the first quick run).** Damodaran's
+   gold series before 1972 is an administered price: it moves by less than 1%
+   in most years from 1935 to 1967, with jumps at the 1933-34 revaluation.
+   US residents also could not legally hold gold bullion from 1934 to 1974.
+   The optimizers read the series as a near-riskless asset and the
+   minimum-variance rules held up to 94% of the portfolio in it, so the
+   pre-registered B2 run mostly measures that artifact. The pre-registered
+   run is kept in `results.json` under `part_b2_asset_classes.with_gold`, and
+   a variant without gold (S&P 500, small cap, Treasury bond, Baa corporate)
+   is added under `ex_gold`, with the same windows, strategies and periods.
+   The guide quotes `ex_gold`. This was a design error: the trap was already
+   documented in the Summitward notes and should have been caught before
+   pre-registration.
+
+Note that in B2's expanding-window mode `max_sharpe_sample` and
+`max_sharpe_expanding` are the same rule by construction.
+
+## Running it
+
+```bash
+python3 mvo_retest.py          # about 70 seconds; writes results.json
+python3 mvo_retest.py --quick  # 200 histories, 500 bootstraps; results_quick.json
+```
+
+Needs numpy and scipy. `tool_check` in `results.json` reproduces the browser
+tool's default run (20 years, 300 histories, seed 42, mulberry32 and
+Box-Muller), so the tool's displayed numbers can be checked against it.
+
+## Replication check
+
+Over DeMiguel et al.'s industry window (July 1973 to November 2004
+out-of-sample, M = 120), this script gives monthly Sharpe ratios of 0.137 for
+1/N, 0.151 for unconstrained minimum variance and 0.145 for long-only minimum
+variance. Their December 2005 working paper reports 0.135, 0.155 and 0.143.
+French's data have been revised since 2004, so exact agreement is not
+expected. Their sample mean-variance strategy is negative in both (-0.084
+here, -0.036 there).
+
+## Output the guide quotes
+
+Sharpe ratios annualized; CE at gamma = 1, % a year; p is the Memmel-corrected
+Jobson-Korkie p-value against 1/N. Full output, including bootstrap
+intervals, M = 60, CE net of costs and the weight paths, is in
+`results.json`.
+
+### Part A (2,000 histories per cell)
+
+Calibration 1 (three assets), gamma = 2.5: true optimum 42% US, 22%
+international, 36% bonds. 1/N falls 1.6 basis points a year short of it.
+With 20 years of monthly data, sample mean-variance holds anywhere from 0% to
+100% in stocks (5th to 95th percentile), loses 54 basis points a year of CE
+against the true optimum on average, and beats 1/N in 1.3% of histories.
+
+Calibration 2 (adds gold): 1/N falls 28 basis points short of the true
+optimum. Share of histories in which sample mean-variance beats 1/N: 10%
+(5 years), 13% (10), 20% (20), 29% (40), 55% (100). Its average loss is
+still larger than 1/N's at 100 years (32 against 28 basis points).
+
+### Part B1, ten industries, M = 120
+
+| Strategy | Sharpe 1973-2004 | p | Sharpe Dec 2004-Aug 2026 | p | Vol 2004-26 | Turnover/month 2004-26 |
+| --- | --- | --- | --- | --- | --- | --- |
+| `equal_weight` | 0.475 | | 0.660 | | 15.0% | 0.025 |
+| `market_cap` | 0.409 | 0.04 | 0.669 | 0.86 | 15.2% | 0.003 |
+| `max_sharpe_sample` | 0.327 | 0.18 | 0.670 | 0.94 | 15.4% | 0.144 |
+| `mv_unconstrained` | -0.290 | 0.001 | 0.394 | 0.34 | 23.2% | 0.858 |
+| `min_var_unconstrained` | 0.524 | 0.71 | 0.656 | 0.98 | 11.9% | 0.143 |
+| `min_var_long_only` | 0.501 | 0.80 | 0.726 | 0.58 | 11.8% | 0.050 |
+| `min_var_lw` | 0.498 | 0.83 | 0.718 | 0.63 | 11.8% | 0.044 |
+| `max_sharpe_bs_lw` | 0.334 | 0.14 | 0.672 | 0.92 | 12.9% | 0.110 |
+| `max_sharpe_const_sharpe` | 0.500 | 0.63 | 0.703 | 0.44 | 13.6% | 0.046 |
+| `max_sharpe_expanding` | 0.423 | 0.50 | 0.595 | 0.50 | 13.0% | 0.012 |
+| `blend_half` | 0.415 | 0.32 | 0.699 | 0.58 | 14.4% | 0.080 |
+
+In the post-publication period no strategy's Sharpe ratio differs from 1/N's
+at conventional significance. Long-only minimum variance cut volatility from
+15.0% to 11.8% at a similar Sharpe ratio. `max_sharpe_const_sharpe` is the
+only rule at or above 1/N in all four periods (by 0.02 to 0.04), and none of
+those gaps is significant.
+
+In-sample illustration: a long-only max-Sharpe portfolio fit on January 1995
+to December 2004 holds 39% health, 36% energy, 12% consumer non-durables and
+the rest in three other industries, with an in-sample Sharpe ratio of 0.87
+against 0.69 for 1/N. Held from January 2005 to August 2026 (rebalanced
+monthly) it earned 0.63 against 0.65 for 1/N.
+
+The M = 120 max-Sharpe portfolio at August 2026 holds 79% high-tech, 17%
+utilities and 4% energy.
+
+### Part B2, asset classes without gold, 20-year rolling window
+
+| Strategy | Sharpe 1948-1986 | Sharpe 1987-2025 | Sharpe 1948-2025 | p (full) |
+| --- | --- | --- | --- | --- |
+| `equal_weight` | 0.459 | 0.574 | 0.514 | |
+| `sixty_forty` | 0.439 | 0.632 | 0.532 | 0.77 |
+| `max_sharpe_sample` | 0.249 | 0.630 | 0.373 | 0.15 |
+| `min_var_long_only` | 0.078 | 0.583 | 0.324 | 0.09 |
+| `min_var_lw` | 0.081 | 0.597 | 0.328 | 0.12 |
+| `max_sharpe_bs_lw` | 0.243 | 0.669 | 0.352 | 0.12 |
+| `max_sharpe_const_sharpe` | 0.211 | 0.551 | 0.389 | 0.13 |
+| `max_sharpe_expanding` | 0.177 | 0.617 | 0.398 | 0.16 |
+| `blend_half` | 0.379 | 0.626 | 0.481 | 0.53 |
+
+In 1948 the 20-year max-Sharpe rule, estimated on 1928-1947 (when the
+10-year Treasury's excess return had a Sharpe ratio of 0.70 against 0.24 for
+the S&P 500), held 98% in Treasuries. From 1948 to 1981 the Treasury's
+excess return averaged -1.45% a year.
