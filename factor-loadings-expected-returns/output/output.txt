@@ -1,0 +1,60 @@
+Loading factors
+
+1. Premiums, 1963-07 to 2026-08 (758 months), % a year
+  Mkt-RF  mean  7.22  sd/mo 4.46  SE cl 1.94 nw6 1.99 nw12 2.00  t 3.62  95% [ 3.31, 11.13]  yrs +/-1pt  916  +/-2pt  229
+          rolling share < 0: 10y  13% [ -4.3,  16.3] latest  13.2  20y   0% [  1.9,  11.2] latest  10.6  30y   0% [  4.4,   9.5] latest   9.1
+  SMB     mean  2.24  sd/mo 3.02  SE cl 1.32 nw6 1.40 nw12 1.46  t 1.53  95% [-0.62,  5.10]  yrs +/-1pt  420  +/-2pt  105
+          rolling share < 0: 10y  33% [ -5.0,  11.7] latest  -2.0  20y  16% [ -1.6,   7.2] latest  -0.4  30y   1% [ -0.2,   4.2] latest   1.0
+  HML     mean  3.53  sd/mo 2.97  SE cl 1.29 nw6 1.54 nw12 1.60  t 2.21  95% [ 0.40,  6.65]  yrs +/-1pt  407  +/-2pt  102
+          rolling share < 0: 10y  22% [ -6.0,   9.4] latest  -0.1  20y  12% [ -1.6,   6.9] latest  -1.2  30y   0% [  0.8,   6.8] latest   1.8
+  RMW     mean  3.02  sd/mo 2.29  SE cl 1.00 nw6 1.08 nw12 1.16  t 2.61  95% [ 0.75,  5.28]  yrs +/-1pt  241  +/-2pt   60
+          rolling share < 0: 10y  10% [ -1.5,  10.7] latest   2.3  20y   0% [  0.3,   6.6] latest   3.0  30y   0% [  1.5,   5.4] latest   3.5
+  CMA     mean  2.92  sd/mo 2.07  SE cl 0.90 nw6 1.03 nw12 1.08  t 2.71  95% [ 0.81,  5.03]  yrs +/-1pt  198  +/-2pt   50
+          rolling share < 0: 10y  10% [ -1.6,   7.2] latest  -0.6  20y   0% [  0.0,   5.9] latest   0.1  30y   0% [  1.8,   5.7] latest   2.1
+  Mom     mean  7.16  sd/mo 4.21  SE cl 1.83 nw6 1.85 nw12 1.81  t 3.96  95% [ 3.62, 10.69]  yrs +/-1pt  816  +/-2pt  204
+          rolling share < 0: 10y  10% [ -3.9,  16.5] latest   2.4  20y   1% [ -0.3,  12.1] latest   1.2  30y   0% [  3.9,  12.4] latest   4.1
+  correlation of factor-mean estimates (NW 12):
+    Mkt-RF   1.00  0.13 -0.29 -0.30 -0.44
+    SMB      0.13  1.00  0.12 -0.11  0.08
+    HML     -0.29  0.12  1.00  0.20  0.71
+    RMW     -0.30 -0.11  0.20  1.00  0.14
+    CMA     -0.44  0.08  0.71  0.14  1.00
+
+1b. Means capped at 2026-06 (blender check: 7.21 2.24 3.58 2.87 2.95):
+    Mkt-RF 7.21  SMB 2.25  HML 3.56  RMW 2.91  CMA 2.93
+
+2. Fund loadings, FF5, classical SE and NW(6) SE
+  common VTI    2019-10 to 2026-08 n= 83 R2 0.999 alpha -0.35 (nw se 0.19)  Mkt-RF:0.995(0.005/0.006) SMB:-0.007(0.008/0.008) HML:0.029(0.007/0.012) RMW:0.009(0.008/0.015) CMA:-0.004(0.010/0.014)
+  own    VTI    2001-07 to 2026-08 n=302 R2 0.998 alpha -0.21 (nw se 0.13)  Mkt-RF:0.998(0.003/0.004) SMB:0.003(0.005/0.006) HML:0.017(0.005/0.007) RMW:0.018(0.006/0.009) CMA:0.008(0.007/0.008)
+  common VBR    2019-10 to 2026-08 n= 83 R2 0.974 alpha -2.82 (nw se 0.90)  Mkt-RF:0.984(0.025/0.017) SMB:0.603(0.044/0.045) HML:0.390(0.039/0.046) RMW:0.124(0.041/0.036) CMA:-0.023(0.055/0.085)
+  own    VBR    2004-02 to 2026-08 n=271 R2 0.974 alpha -1.02 (nw se 0.56)  Mkt-RF:1.010(0.014/0.015) SMB:0.614(0.024/0.029) HML:0.337(0.023/0.030) RMW:0.125(0.028/0.033) CMA:0.029(0.036/0.053)
+  common DFSVX  2019-10 to 2026-08 n= 83 R2 0.983 alpha -0.12 (nw se 1.01)  Mkt-RF:0.987(0.022/0.018) SMB:0.811(0.039/0.049) HML:0.498(0.035/0.039) RMW:0.219(0.036/0.035) CMA:0.003(0.049/0.076)
+  own    DFSVX  1993-03 to 2026-08 n=402 R2 0.969 alpha -1.37 (nw se 0.61)  Mkt-RF:1.050(0.013/0.015) SMB:0.857(0.019/0.033) HML:0.436(0.022/0.027) RMW:0.152(0.023/0.040) CMA:0.081(0.032/0.047)
+  common AVUV   2019-10 to 2026-08 n= 83 R2 0.975 alpha  0.44 (nw se 1.35)  Mkt-RF:1.061(0.029/0.038) SMB:0.890(0.052/0.059) HML:0.545(0.046/0.050) RMW:0.220(0.048/0.072) CMA:-0.049(0.065/0.095)
+  own    AVUV   2019-10 to 2026-08 n= 83 R2 0.975 alpha  0.44 (nw se 1.35)  Mkt-RF:1.061(0.029/0.038) SMB:0.890(0.052/0.059) HML:0.545(0.046/0.050) RMW:0.220(0.048/0.072) CMA:-0.049(0.065/0.095)
+
+3. Implied edge over VTI from loading differences, % a year
+  VBR    full edge  2.85  SE from premia 1.12  from loadings 0.19  total 1.14  95% [ 0.62,  5.07]  Mkt-RF:-0.08 SMB:1.36 HML:1.27 RMW:0.34 CMA:-0.06
+  VBR    mp   edge  1.15  SE from premia 0.47  from loadings 0.11  total 0.48  95% [ 0.20,  2.10]  Mkt-RF:-0.08 SMB:0.57 HML:0.54 RMW:0.14 CMA:-0.02
+  VBR    half edge  1.38  SE from premia 0.56  from loadings 0.11  total 0.57  95% [ 0.26,  2.51]  Mkt-RF:-0.08 SMB:0.68 HML:0.64 RMW:0.17 CMA:-0.03
+  VBR    zero edge -0.08  SE from premia 0.02  from loadings 0.12  total 0.12  95% [-0.32,  0.16]  Mkt-RF:-0.08 SMB:0.00 HML:0.00 RMW:0.00 CMA:-0.00
+  DFSVX  full edge  4.08  SE from premia 1.51  from loadings 0.22  total 1.53  95% [ 1.08,  7.07]  Mkt-RF:-0.05 SMB:1.83 HML:1.65 RMW:0.63 CMA:0.02
+  DFSVX  mp   edge  1.68  SE from premia 0.64  from loadings 0.16  total 0.66  95% [ 0.40,  2.97]  Mkt-RF:-0.05 SMB:0.77 HML:0.69 RMW:0.27 CMA:0.01
+  DFSVX  half edge  2.01  SE from premia 0.76  from loadings 0.17  total 0.78  95% [ 0.49,  3.53]  Mkt-RF:-0.05 SMB:0.91 HML:0.83 RMW:0.32 CMA:0.01
+  DFSVX  zero edge -0.05  SE from premia 0.01  from loadings 0.14  total 0.14  95% [-0.33,  0.23]  Mkt-RF:-0.05 SMB:0.00 HML:0.00 RMW:0.00 CMA:0.00
+  AVUV   full edge  4.81  SE from premia 1.63  from loadings 0.44  total 1.69  95% [ 1.51,  8.11]  Mkt-RF:0.48 SMB:2.01 HML:1.82 RMW:0.63 CMA:-0.13
+  AVUV   mp   edge  2.30  SE from premia 0.69  from loadings 0.35  total 0.77  95% [ 0.79,  3.81]  Mkt-RF:0.48 SMB:0.84 HML:0.76 RMW:0.27 CMA:-0.06
+  AVUV   half edge  2.65  SE from premia 0.82  from loadings 0.36  total 0.89  95% [ 0.90,  4.39]  Mkt-RF:0.48 SMB:1.00 HML:0.91 RMW:0.32 CMA:-0.07
+  AVUV   zero edge  0.48  SE from premia 0.13  from loadings 0.29  total 0.32  95% [-0.15,  1.11]  Mkt-RF:0.48 SMB:0.00 HML:0.00 RMW:0.00 CMA:-0.00
+
+4. Realized, 2019-10 to 2026-08
+  factor means in window: Mkt-RF 13.88  SMB -1.29  HML 1.68  RMW 2.48  CMA 0.25
+  VTI    CAGR  15.85  arith  16.26  vol 17.13  mu - s^2/2  14.79
+  VBR    CAGR  12.02  arith  13.73  vol 21.38  mu - s^2/2  11.44
+  DFSVX  CAGR  14.75  arith  16.64  vol 23.51  mu - s^2/2  13.87
+  AVUV   CAGR  15.94  arith  18.19  vol 25.54  mu - s^2/2  14.93
+  VBR    vs VTI: arith gap -2.53  CAGR gap -3.83  delta-beta x realized factors -0.06  implied at full premia  2.85
+  DFSVX  vs VTI: arith gap  0.38  CAGR gap -1.10  delta-beta x realized factors  0.15  implied at full premia  4.08
+  AVUV   vs VTI: arith gap  1.93  CAGR gap  0.09  delta-beta x realized factors  1.14  implied at full premia  4.81
+
+Wrote output/results.json
