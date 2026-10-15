@@ -42,6 +42,7 @@ python3 <folder>/<script>.py
 | `government-debt-crisis-bonds` | [Will Government Bonds Blow Up?](https://summitward.com/learn/government-debt-crisis-bonds) | France's nominal State debt rolled forward bond by bond from the AFT line table: effective interest rate and interest bill under three yield curves, against the reprice-everything shortcut, validated against the French budget's own rate sensitivity |
 | `portable-alpha-and-return-stacking` | [Do You Need Return Stacking?](https://summitward.com/learn/portable-alpha-and-return-stacking) | NTSX, RSSB and RSST against SPY, VT, a 60/40 fund and costless ETF replicas: 2022 losses, RSST's gap to the S&P 500 by year and worst 12 months, RSSB's tracking of a 100/100, and stock-bond correlation by year since 2002 |
 | `mega-backdoor-roth` | [The Mega Backdoor Roth Is a Much Bigger Deal Than the Backdoor Roth IRA](https://summitward.com/learn/mega-backdoor-roth) | $39,500 a year of 2026 after-tax 401(k) room held 25 years in a Roth against a taxable account with dividend drag and a final sale, with return, tax-rate and horizon sensitivities, and the Short built on it |
+| `vtsax-fzrox-fskax` | [VTSAX vs FZROX vs FSKAX](https://summitward.com/compare/vtsax-vs-fzrox-vs-fskax) | Issuer-level holdings of the three total-market funds from SEC N-PORT filings (weight in the names FZROX omits) and their month-end returns since August 2018 |
 
 ## Data sources
 
