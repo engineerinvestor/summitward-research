@@ -1222,6 +1222,8 @@
   }
  },
  "tool_check": {
+  "mean_promised_excess_return_pct": 5.384,
+  "mean_true_excess_return_pct": 3.686,
   "years": 20,
   "histories": 300,
   "seed": 42,

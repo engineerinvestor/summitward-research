@@ -304,7 +304,7 @@ def tool_check(years=20, n_hist=300, seed=42):
     ce_true = grid_ce(grid, mu, sig, gamma).max()
     w_eq = np.full(3, 1 / 3)
     ce_eq = w_eq @ mu - 0.5 * gamma * w_eq @ sig @ w_eq
-    losses, beats, stocks = [], 0, []
+    losses, beats, stocks, promised, delivered = [], 0, [], [], []
     for _ in range(n_hist):
         z = np.array([[normal() for _ in range(3)] for _ in range(t)])
         x = mu / 12 + z @ chol.T
@@ -314,7 +314,11 @@ def tool_check(years=20, n_hist=300, seed=42):
         losses.append(1e4 * (ce_true - ce))
         beats += ce > ce_eq
         stocks.append(w[0] + w[1])
+        promised.append(12 * w @ m_hat)
+        delivered.append(w @ mu)
     return {
+        "mean_promised_excess_return_pct": round(100 * float(np.mean(promised)), 3),
+        "mean_true_excess_return_pct": round(100 * float(np.mean(delivered)), 3),
         "years": years,
         "histories": n_hist,
         "seed": seed,

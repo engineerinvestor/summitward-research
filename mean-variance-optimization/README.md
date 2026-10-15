@@ -171,7 +171,10 @@ python3 mvo_retest.py --quick  # 200 histories, 500 bootstraps; results_quick.js
 
 Needs numpy and scipy. `tool_check` in `results.json` reproduces the browser
 tool's default run (20 years, 300 histories, seed 42, mulberry32 and
-Box-Muller), so the tool's displayed numbers can be checked against it.
+Box-Muller), so the tool's displayed numbers can be checked against it:
+mean shortfall 51.2 basis points, 1% of histories beating 1/N, and an average
+in-sample ("promised") excess return of 5.38% against 3.69% at the true
+parameters. The browser tool reproduced these figures exactly on 2026-10-15.
 
 ## Replication check
 

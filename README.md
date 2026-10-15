@@ -13,6 +13,7 @@ an optional `--funds` flag that needs yfinance, and its committed
 `results.json` already holds that output; `minimum-volatility-investing` needs
 numpy, pandas, openpyxl and yfinance, and downloads its AQR and Yahoo inputs;
 `portable-alpha-and-return-stacking` and `factor-loadings-expected-returns` need numpy, pandas and yfinance;
+`mean-variance-optimization` needs numpy and scipy;
 `r-squared-trap`, `most-stocks-lose-to-tbills` and `dividends-are-not-free-money`
 need numpy and matplotlib, and `safe-withdrawal-rate` and `tals-leverage-simulator`
 also need pandas; these five render Shorts and need ffmpeg for the video, and
@@ -42,6 +43,7 @@ python3 <folder>/<script>.py
 | `government-debt-crisis-bonds` | [Will Government Bonds Blow Up?](https://summitward.com/learn/government-debt-crisis-bonds) | France's nominal State debt rolled forward bond by bond from the AFT line table: effective interest rate and interest bill under three yield curves, against the reprice-everything shortcut, validated against the French budget's own rate sensitivity |
 | `portable-alpha-and-return-stacking` | [Do You Need Return Stacking?](https://summitward.com/learn/portable-alpha-and-return-stacking) | NTSX, RSSB and RSST against SPY, VT, a 60/40 fund and costless ETF replicas: 2022 losses, RSST's gap to the S&P 500 by year and worst 12 months, RSSB's tracking of a 100/100, and stock-bond correlation by year since 2002 |
 | `mega-backdoor-roth` | [The Mega Backdoor Roth Is a Much Bigger Deal Than the Backdoor Roth IRA](https://summitward.com/learn/mega-backdoor-roth) | $39,500 a year of 2026 after-tax 401(k) room held 25 years in a Roth against a taxable account with dividend drag and a final sale, with return, tax-rate and horizon sensitivities, and the Short built on it |
+| `mean-variance-optimization` | [Mean-Variance Optimization Out of Sample](https://summitward.com/learn/mean-variance-optimization-out-of-sample) | A known-parameter simulation of estimated mean-variance portfolios against the true optimum and 1/N, and a pre-registered walk-forward rerun of DeMiguel, Garlappi and Uppal's 1/N test on French's 10 industries through August 2026 and on Damodaran asset classes |
 | `vtsax-fzrox-fskax` | [VTSAX vs FZROX vs FSKAX](https://summitward.com/compare/vtsax-vs-fzrox-vs-fskax) | Issuer-level holdings of the three total-market funds from SEC N-PORT filings and from same-date (August 31, 2026) issuer holdings files: overlap, active share and the weight in names FZROX omits; plus month-end returns since August 2018 |
 
 ## Data sources
