@@ -176,6 +176,14 @@ mean shortfall 51.2 basis points, 1% of histories beating 1/N, and an average
 in-sample ("promised") excess return of 5.38% against 3.69% at the true
 parameters. The browser tool reproduced these figures exactly on 2026-10-15.
 
+`export_replay.py` reruns the 120-month industry walk-forward for five rules
+(1/N, market cap, max Sharpe with historical inputs, long-only minimum
+variance, max Sharpe with equal Sharpe ratios) and writes `replay.json`: each
+rule's monthly excess return, the T-bill rate, and the two optimizers'
+quarterly weights. It stops unless the Sharpe ratios recomputed from the
+rounded series match `results.json` to within 0.002 in all four periods. With
+`--ts PATH` it also writes the data module behind the guide's replay chart.
+
 ## Replication check
 
 Over DeMiguel et al.'s industry window (July 1973 to November 2004
