@@ -1,0 +1,61 @@
+
+Elm spec (50-year annuity): years ending Sep 30, 2000-2026
+           spend mean  spend sd  price sd  worst sp   cum sp
+tips            1.29%      2.3%     14.7%     -8.1%    40.4%
+nominal         1.04%      6.3%     12.6%    -13.0%    25.9%
+bills          -0.10%     14.7%      2.3%    -19.7%   -24.7%
+
+Elm published (inset, 1999-2026): TIPS 1.3% / 2.8%, 30-yr Treasury 0.7% / 6.7%, T-bills 0.2% / 14.2%
+
+Treasury 30Y real on both ends: years ending Sep 30, 2011-2026
+           spend mean  spend sd  price sd  worst sp   cum sp
+tips            0.42%      2.6%     17.7%     -8.1%     6.4%
+nominal         0.55%      6.8%     15.5%    -13.0%     5.5%
+bills           2.41%     18.0%      2.5%    -19.7%    17.9%
+
+Excluding 2022: years ending Sep 30, 2000-2026
+           spend mean  spend sd  price sd  worst sp   cum sp
+tips            1.65%      1.4%     11.9%     -2.0%    52.8%
+nominal         0.99%      6.4%     10.3%    -13.0%    22.9%
+bills          -1.94%     11.4%      2.0%    -19.7%   -49.0%
+
+Against a 30-year annuity: years ending Sep 30, 2000-2026
+           spend mean  spend sd  price sd  worst sp   cum sp
+tips            1.65%      6.7%     14.7%    -22.7%    46.1%
+nominal         1.21%      6.6%     12.6%    -14.2%    31.0%
+bills          -0.53%      8.9%      2.3%    -12.7%   -21.6%
+
+Modified duration at a flat real yield
+  0%: 30y bond 29.5  50y annuity 25.5  30y annuity 15.5
+  1%: 30y bond 25.9  50y annuity 23.3  30y annuity 14.7
+  2%: 30y bond 22.5  50y annuity 21.2  30y annuity 13.9
+  3%: 30y bond 19.7  50y annuity 19.2  30y annuity 13.1
+
+Year-by-year (spending change, %):
+  2000  real 4.07->3.93  TIPS    4.1  nominal    3.8  bills   -0.2  | TIPS price    6.7
+  2001  real 3.93->3.41  TIPS    3.4  nominal    0.5  bills   -7.0  | TIPS price   13.6
+  2002  real 3.41->2.57  TIPS    2.5  nominal   -3.3  bills  -14.6  | TIPS price   20.3
+  2003  real 2.57->2.48  TIPS    2.3  nominal   -1.6  bills   -2.9  | TIPS price    4.2
+  2004  real 2.48->2.18  TIPS    2.9  nominal   -2.9  bills   -7.4  | TIPS price    9.5
+  2005  real 2.18->1.96  TIPS    0.7  nominal   -0.1  bills   -6.3  | TIPS price    5.4
+  2006  real 1.96->2.23  TIPS    3.9  nominal    7.0  bills    8.5  | TIPS price   -1.9
+  2007  real 2.23->2.29  TIPS    1.8  nominal    2.8  bills    3.4  | TIPS price    0.7
+  2008  real 2.29->2.63  TIPS    2.9  nominal   16.2  bills    4.6  | TIPS price   -4.0
+  2009  real 2.63->2.09  TIPS    1.5  nominal   -1.8  bills   -9.1  | TIPS price   13.4
+  2010  real 2.09->1.63  TIPS    2.2  nominal   -1.3  bills  -10.4  | TIPS price   12.8
+  2011  real 1.63->1.02  TIPS    1.6  nominal   -0.6  bills  -16.0  | TIPS price   16.6
+  2012  real 1.02->0.43  TIPS    1.1  nominal   -9.3  bills  -14.8  | TIPS price   16.4
+  2013  real 0.43->1.38  TIPS   -2.0  nominal    6.4  bills   23.7  | TIPS price  -21.6
+  2014  real 1.38->1.10  TIPS    2.0  nominal    3.9  bills   -7.7  | TIPS price    8.7
+  2015  real 1.10->1.29  TIPS    1.0  nominal   13.1  bills    4.5  | TIPS price   -3.3
+  2016  real 1.29->0.59  TIPS    1.1  nominal   -4.1  bills  -16.2  | TIPS price   19.2
+  2017  real 0.59->0.94  TIPS   -0.8  nominal   -2.0  bills    7.1  | TIPS price   -8.7
+  2018  real 0.94->1.04  TIPS    1.4  nominal   -2.2  bills    1.7  | TIPS price   -0.9
+  2019  real 1.04->0.53  TIPS    1.7  nominal    8.5  bills  -10.9  | TIPS price   14.8
+  2020  real 0.53->-0.32  TIPS    1.6  nominal   -6.7  bills  -19.7  | TIPS price   25.9
+  2021  real -0.32->-0.19  TIPS   -0.7  nominal  -13.0  bills   -1.8  | TIPS price   -4.0
+  2022  real -0.19->1.74  TIPS   -8.1  nominal    2.5  bills   47.6  | TIPS price  -42.0
+  2023  real 1.74->2.33  TIPS    0.7  nominal   -0.5  bills   14.6  | TIPS price  -11.1
+  2024  real 2.33->1.96  TIPS    2.7  nominal    3.8  bills   -4.6  | TIPS price   11.0
+  2025  real 1.96->2.49  TIPS    1.3  nominal    4.5  bills   13.2  | TIPS price   -9.2
+  2026  real 2.49->3.33  TIPS    2.0  nominal    4.7  bills   17.8  | TIPS price  -13.4
