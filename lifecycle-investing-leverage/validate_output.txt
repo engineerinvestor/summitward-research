@@ -1,0 +1,13 @@
+1) Workbook timing vs the workbook's Summary sheet (lifecycle strategy)
+   median ours    1,146,812   workbook    1,146,812
+   mean   ours    1,223,105   workbook    1,223,105
+   std    ours      453,379   workbook      453,379
+   min    ours      387,172   workbook      387,172
+   p10    ours      701,834   workbook      701,834
+   p90    ours    1,929,577   workbook    1,929,577
+   ce2    ours    1,044,919   workbook    1,044,919
+   ce4    ours      870,326   workbook      870,326
+2) lifecycle_leverage.simulate (standard timing)
+   lifecycle    median -0.47%  mean -0.55%  std -0.75%  min -0.76%  p10 -0.39%  p90 -0.52%  ce2 -0.50%  ce4 -0.51%
+   constant75   median -0.42%  mean -0.44%  min -0.57%
+   birthday9050 median -0.51%  mean -0.50%  min -0.60%
