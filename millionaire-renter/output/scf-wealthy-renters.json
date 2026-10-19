@@ -1,0 +1,666 @@
+{
+  "2025": {
+    "year": 2025,
+    "families_m": 134.963691,
+    "own_rate": {
+      "share": 0.655649,
+      "se": 0.000993,
+      "n": 4360,
+      "suppressed": false
+    },
+    "renter_rate": {
+      "share": 0.332454,
+      "se": 0.001991,
+      "n": 4360,
+      "suppressed": false
+    },
+    "median_networth": 215916.0,
+    "by_threshold": {
+      "networth": [
+        {
+          "threshold": 1000000,
+          "families_m": 29.064321,
+          "nonowner": {
+            "share": 0.039478,
+            "se": 0.006082,
+            "n": 1589,
+            "suppressed": false
+          },
+          "renter": {
+            "share": 0.032397,
+            "se": 0.004625,
+            "n": 1589,
+            "suppressed": false
+          }
+        },
+        {
+          "threshold": 3000000,
+          "families_m": 11.094681,
+          "nonowner": {
+            "share": 0.041983,
+            "se": 0.009854,
+            "n": 1065,
+            "suppressed": false
+          },
+          "renter": {
+            "share": 0.038551,
+            "se": 0.009,
+            "n": 1065,
+            "suppressed": false
+          }
+        },
+        {
+          "threshold": 5000000,
+          "families_m": 6.669439,
+          "nonowner": {
+            "share": 0.043976,
+            "se": 0.012113,
+            "n": 885,
+            "suppressed": false
+          },
+          "renter": {
+            "share": 0.038267,
+            "se": 0.010129,
+            "n": 885,
+            "suppressed": false
+          }
+        },
+        {
+          "threshold": 10000000,
+          "families_m": 2.703623,
+          "nonowner": {
+            "share": 0.036763,
+            "se": 0.01688,
+            "n": 650,
+            "suppressed": false
+          },
+          "renter": {
+            "share": 0.036763,
+            "se": 0.01688,
+            "n": 650,
+            "suppressed": false
+          }
+        }
+      ],
+      "networth_ex_home": [
+        {
+          "threshold": 1000000,
+          "families_m": 21.097115,
+          "nonowner": {
+            "share": 0.054378,
+            "se": 0.008158,
+            "n": 1377,
+            "suppressed": false
+          },
+          "renter": {
+            "share": 0.044621,
+            "se": 0.006148,
+            "n": 1377,
+            "suppressed": false
+          }
+        },
+        {
+          "threshold": 3000000,
+          "families_m": 8.753138,
+          "nonowner": {
+            "share": 0.053265,
+            "se": 0.01281,
+            "n": 978,
+            "suppressed": false
+          },
+          "renter": {
+            "share": 0.048916,
+            "se": 0.011743,
+            "n": 978,
+            "suppressed": false
+          }
+        },
+        {
+          "threshold": 5000000,
+          "families_m": 5.385776,
+          "nonowner": {
+            "share": 0.054462,
+            "se": 0.014998,
+            "n": 818,
+            "suppressed": false
+          },
+          "renter": {
+            "share": 0.047393,
+            "se": 0.012567,
+            "n": 818,
+            "suppressed": false
+          }
+        },
+        {
+          "threshold": 10000000,
+          "families_m": 2.298223,
+          "nonowner": {
+            "share": 0.043244,
+            "se": 0.019837,
+            "n": 615,
+            "suppressed": false
+          },
+          "renter": {
+            "share": 0.043244,
+            "se": 0.019837,
+            "n": 615,
+            "suppressed": false
+          }
+        }
+      ],
+      "financial": [
+        {
+          "threshold": 1000000,
+          "families_m": 15.702872,
+          "nonowner": {
+            "share": 0.041018,
+            "se": 0.007802,
+            "n": 1144,
+            "suppressed": false
+          },
+          "renter": {
+            "share": 0.036143,
+            "se": 0.006695,
+            "n": 1144,
+            "suppressed": false
+          }
+        },
+        {
+          "threshold": 3000000,
+          "families_m": 6.115919,
+          "nonowner": {
+            "share": 0.05627,
+            "se": 0.016539,
+            "n": 770,
+            "suppressed": false
+          },
+          "renter": {
+            "share": 0.050045,
+            "se": 0.015203,
+            "n": 770,
+            "suppressed": false
+          }
+        },
+        {
+          "threshold": 5000000,
+          "families_m": 3.65046,
+          "nonowner": {
+            "share": 0.058085,
+            "se": 0.020427,
+            "n": 625,
+            "suppressed": false
+          },
+          "renter": {
+            "share": 0.047655,
+            "se": 0.017321,
+            "n": 625,
+            "suppressed": false
+          }
+        },
+        {
+          "threshold": 10000000,
+          "families_m": 1.27593,
+          "nonowner": {
+            "share": 0.051667,
+            "se": 0.03131,
+            "n": 428,
+            "suppressed": false
+          },
+          "renter": {
+            "share": 0.051667,
+            "se": 0.03131,
+            "n": 428,
+            "suppressed": false
+          }
+        }
+      ]
+    },
+    "share_families_nw_ge_1m": {
+      "share": 0.215349,
+      "se": 0.007375,
+      "n": 4360,
+      "suppressed": false
+    },
+    "profile_networth_ge_1m": {
+      "renter": {
+        "n": 58,
+        "families_m": 0.941714,
+        "median_age": 54.8,
+        "median_income": 259385.945946,
+        "median_networth": 2809804.0,
+        "median_financial": 1337870.0,
+        "median_equity_share_of_financial": 0.544614,
+        "share_owns_business": 0.375463,
+        "share_has_retirement_account": 0.785317,
+        "share_owns_other_real_estate": 0.393069,
+        "share_married": 0.697001,
+        "share_with_kids": 0.374611,
+        "share_under_45": 0.24417,
+        "share_65_plus": 0.312668
+      },
+      "nonowner": {
+        "n": 62,
+        "families_m": 1.147572,
+        "median_age": 54.6,
+        "median_income": 232724.324328,
+        "median_networth": 2248516.0,
+        "median_financial": 1196740.0,
+        "median_equity_share_of_financial": 0.570763,
+        "share_owns_business": 0.308001,
+        "share_has_retirement_account": 0.823859,
+        "share_owns_other_real_estate": 0.468884,
+        "share_married": 0.698955,
+        "share_with_kids": 0.401477,
+        "share_under_45": 0.233798,
+        "share_65_plus": 0.289682
+      },
+      "owner": {
+        "n": 1527,
+        "families_m": 27.916749,
+        "median_age": 63.0,
+        "median_income": 202427.027028,
+        "median_networth": 2377112.0,
+        "median_financial": 1100320.0,
+        "median_equity_share_of_financial": 0.501765,
+        "share_owns_business": 0.336715,
+        "share_has_retirement_account": 0.873365,
+        "share_owns_other_real_estate": 0.471712,
+        "share_married": 0.80267,
+        "share_with_kids": 0.382021,
+        "share_under_45": 0.115752,
+        "share_65_plus": 0.450685
+      }
+    },
+    "by_age": {
+      "networth": {
+        "under_45": {
+          "nonowner": {
+            "share": 0.076575,
+            "se": 0.020044,
+            "n": 170,
+            "suppressed": false
+          },
+          "renter": {
+            "share": 0.065582,
+            "se": 0.016635,
+            "n": 170,
+            "suppressed": false
+          }
+        },
+        "45_to_64": {
+          "nonowner": {
+            "share": 0.043224,
+            "se": 0.010073,
+            "n": 730,
+            "suppressed": false
+          },
+          "renter": {
+            "share": 0.033006,
+            "se": 0.007786,
+            "n": 730,
+            "suppressed": false
+          }
+        },
+        "65_plus": {
+          "nonowner": {
+            "share": 0.025769,
+            "se": 0.006926,
+            "n": 690,
+            "suppressed": false
+          },
+          "renter": {
+            "share": 0.022818,
+            "se": 0.006028,
+            "n": 690,
+            "suppressed": false
+          }
+        }
+      },
+      "networth_ex_home": {
+        "under_45": {
+          "nonowner": {
+            "share": 0.121125,
+            "se": 0.031588,
+            "n": 136,
+            "suppressed": false
+          },
+          "renter": {
+            "share": 0.103709,
+            "se": 0.026352,
+            "n": 136,
+            "suppressed": false
+          }
+        },
+        "45_to_64": {
+          "nonowner": {
+            "share": 0.05665,
+            "se": 0.012992,
+            "n": 636,
+            "suppressed": false
+          },
+          "renter": {
+            "share": 0.043256,
+            "se": 0.010096,
+            "n": 636,
+            "suppressed": false
+          }
+        },
+        "65_plus": {
+          "nonowner": {
+            "share": 0.035997,
+            "se": 0.009163,
+            "n": 604,
+            "suppressed": false
+          },
+          "renter": {
+            "share": 0.031871,
+            "se": 0.007972,
+            "n": 604,
+            "suppressed": false
+          }
+        }
+      },
+      "financial": {
+        "under_45": {
+          "nonowner": {
+            "share": 0.104019,
+            "se": 0.039604,
+            "n": 84,
+            "suppressed": false
+          },
+          "renter": {
+            "share": 0.072949,
+            "se": 0.022759,
+            "n": 84,
+            "suppressed": false
+          }
+        },
+        "45_to_64": {
+          "nonowner": {
+            "share": 0.034916,
+            "se": 0.011882,
+            "n": 523,
+            "suppressed": false
+          },
+          "renter": {
+            "share": 0.034916,
+            "se": 0.011882,
+            "n": 523,
+            "suppressed": false
+          }
+        },
+        "65_plus": {
+          "nonowner": {
+            "share": 0.03624,
+            "se": 0.010188,
+            "n": 537,
+            "suppressed": false
+          },
+          "renter": {
+            "share": 0.03112,
+            "se": 0.008441,
+            "n": 537,
+            "suppressed": false
+          }
+        }
+      }
+    },
+    "married_kids_under55_fin_ge_3m": {
+      "nonowner": {
+        "share": 0.061401,
+        "se": 0.035152,
+        "n": 122,
+        "suppressed": false
+      },
+      "renter": {
+        "share": 0.061401,
+        "se": 0.035152,
+        "n": 122,
+        "suppressed": false
+      }
+    },
+    "married_kids_under55_fin_ge_1m": {
+      "nonowner": {
+        "share": 0.056201,
+        "se": 0.020949,
+        "n": 216,
+        "suppressed": false
+      },
+      "renter": {
+        "share": 0.043857,
+        "se": 0.016559,
+        "n": 216,
+        "suppressed": false
+      }
+    },
+    "renters_among_nonowners_nw_ge_1m": {
+      "share": 0.820298,
+      "se": 0.07272,
+      "n": 62,
+      "suppressed": false
+    }
+  },
+  "2022": {
+    "year": 2022,
+    "families_m": 131.306389,
+    "own_rate": {
+      "share": 0.6605,
+      "se": 0.00124,
+      "n": 4595,
+      "suppressed": false
+    },
+    "renter_rate": {
+      "share": 0.319996,
+      "se": 0.00214,
+      "n": 4595,
+      "suppressed": false
+    },
+    "median_networth": 210212.585922,
+    "by_threshold": {
+      "networth": [
+        {
+          "threshold": 1000000,
+          "families_m": 25.782314,
+          "nonowner": {
+            "share": 0.051855,
+            "se": 0.007671,
+            "n": 1695,
+            "suppressed": false
+          },
+          "renter": {
+            "share": 0.05053,
+            "se": 0.007661,
+            "n": 1695,
+            "suppressed": false
+          }
+        },
+        {
+          "threshold": 3000000,
+          "families_m": 9.039621,
+          "nonowner": {
+            "share": 0.048968,
+            "se": 0.011577,
+            "n": 1103,
+            "suppressed": false
+          },
+          "renter": {
+            "share": 0.045398,
+            "se": 0.011415,
+            "n": 1103,
+            "suppressed": false
+          }
+        },
+        {
+          "threshold": 5000000,
+          "families_m": 5.413378,
+          "nonowner": {
+            "share": 0.052794,
+            "se": 0.015473,
+            "n": 903,
+            "suppressed": false
+          },
+          "renter": {
+            "share": 0.048632,
+            "se": 0.015323,
+            "n": 903,
+            "suppressed": false
+          }
+        },
+        {
+          "threshold": 10000000,
+          "families_m": 2.455756,
+          "nonowner": {
+            "share": 0.033601,
+            "se": 0.012583,
+            "n": 679,
+            "suppressed": false
+          },
+          "renter": {
+            "share": 0.032243,
+            "se": 0.012559,
+            "n": 679,
+            "suppressed": false
+          }
+        }
+      ],
+      "networth_ex_home": [
+        {
+          "threshold": 1000000,
+          "families_m": 17.518446,
+          "nonowner": {
+            "share": 0.076334,
+            "se": 0.010881,
+            "n": 1423,
+            "suppressed": false
+          },
+          "renter": {
+            "share": 0.074384,
+            "se": 0.010873,
+            "n": 1423,
+            "suppressed": false
+          }
+        },
+        {
+          "threshold": 3000000,
+          "families_m": 7.185675,
+          "nonowner": {
+            "share": 0.061628,
+            "se": 0.014616,
+            "n": 1003,
+            "suppressed": false
+          },
+          "renter": {
+            "share": 0.057125,
+            "se": 0.014366,
+            "n": 1003,
+            "suppressed": false
+          }
+        },
+        {
+          "threshold": 5000000,
+          "families_m": 4.448744,
+          "nonowner": {
+            "share": 0.064207,
+            "se": 0.018541,
+            "n": 832,
+            "suppressed": false
+          },
+          "renter": {
+            "share": 0.059143,
+            "se": 0.018367,
+            "n": 832,
+            "suppressed": false
+          }
+        },
+        {
+          "threshold": 10000000,
+          "families_m": 1.999214,
+          "nonowner": {
+            "share": 0.041272,
+            "se": 0.015361,
+            "n": 635,
+            "suppressed": false
+          },
+          "renter": {
+            "share": 0.039603,
+            "se": 0.015345,
+            "n": 635,
+            "suppressed": false
+          }
+        }
+      ],
+      "financial": [
+        {
+          "threshold": 1000000,
+          "families_m": 12.801982,
+          "nonowner": {
+            "share": 0.059379,
+            "se": 0.009982,
+            "n": 1187,
+            "suppressed": false
+          },
+          "renter": {
+            "share": 0.056916,
+            "se": 0.009871,
+            "n": 1187,
+            "suppressed": false
+          }
+        },
+        {
+          "threshold": 3000000,
+          "families_m": 4.766593,
+          "nonowner": {
+            "share": 0.041467,
+            "se": 0.01216,
+            "n": 785,
+            "suppressed": false
+          },
+          "renter": {
+            "share": 0.040766,
+            "se": 0.012108,
+            "n": 785,
+            "suppressed": false
+          }
+        },
+        {
+          "threshold": 5000000,
+          "families_m": 2.64651,
+          "nonowner": {
+            "share": 0.051206,
+            "se": 0.020448,
+            "n": 615,
+            "suppressed": false
+          },
+          "renter": {
+            "share": 0.049945,
+            "se": 0.020374,
+            "n": 615,
+            "suppressed": false
+          }
+        },
+        {
+          "threshold": 10000000,
+          "families_m": 0.902032,
+          "nonowner": {
+            "share": 0.049914,
+            "se": 0.026811,
+            "n": 424,
+            "suppressed": false
+          },
+          "renter": {
+            "share": 0.046212,
+            "se": 0.026706,
+            "n": 424,
+            "suppressed": false
+          }
+        }
+      ]
+    },
+    "share_families_nw_ge_1m": {
+      "share": 0.196352,
+      "se": 0.008988,
+      "n": 4595,
+      "suppressed": false
+    }
+  }
+}

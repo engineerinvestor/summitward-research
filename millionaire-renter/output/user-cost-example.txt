@@ -1,0 +1,76 @@
+After-tax opportunity cost: Treasuries 3.18%, stocks 6.90%
+Year-one interest on $1,200,000: $88,423
+
+===== hold 5 years =====
+
+20% down, equity earns Treasury rate
+   TOTAL annual economic cost                  116,582   user cost 7.77%   break-even rent $9,715/mo   price/rent 12.9x
+
+20% down, equity earns stock rate
+   TOTAL annual economic cost                  128,870   user cost 8.59%   break-even rent $10,739/mo   price/rent 11.6x
+
+all cash, cash earns Treasury rate
+   TOTAL annual economic cost                   77,847   user cost 5.19%   break-even rent $6,487/mo   price/rent 19.3x
+
+all cash, cash earns stock rate
+   TOTAL annual economic cost                  134,820   user cost 8.99%   break-even rent $11,235/mo   price/rent 11.1x
+
+===== hold 10 years =====
+
+20% down, equity earns Treasury rate
+   forgone return on equity                     10,482
+   mortgage interest                            88,423
+   property tax                                 15,000
+   insurance                                     5,250
+   maintenance, depreciation, HOA               30,000
+   buy+sell costs spread over 10 yrs            12,000
+   federal tax saving                          -11,572
+   expected appreciation                       -45,000
+   TOTAL annual economic cost                  104,582   user cost 6.97%   break-even rent $8,715/mo   price/rent 14.3x
+
+20% down, equity earns stock rate
+   forgone return on equity                     22,770
+   mortgage interest                            88,423
+   property tax                                 15,000
+   insurance                                     5,250
+   maintenance, depreciation, HOA               30,000
+   buy+sell costs spread over 10 yrs            12,000
+   federal tax saving                          -11,572
+   expected appreciation                       -45,000
+   TOTAL annual economic cost                  116,870   user cost 7.79%   break-even rent $9,739/mo   price/rent 12.8x
+
+all cash, cash earns Treasury rate
+   forgone return on equity                     48,597
+   mortgage interest                                 0
+   property tax                                 15,000
+   insurance                                     5,250
+   maintenance, depreciation, HOA               30,000
+   buy+sell costs spread over 10 yrs            12,000
+   federal tax saving                               -0
+   expected appreciation                       -45,000
+   TOTAL annual economic cost                   65,847   user cost 4.39%   break-even rent $5,487/mo   price/rent 22.8x
+
+all cash, cash earns stock rate
+   forgone return on equity                    105,570
+   mortgage interest                                 0
+   property tax                                 15,000
+   insurance                                     5,250
+   maintenance, depreciation, HOA               30,000
+   buy+sell costs spread over 10 yrs            12,000
+   federal tax saving                               -0
+   expected appreciation                       -45,000
+   TOTAL annual economic cost                  122,820   user cost 8.19%   break-even rent $10,235/mo   price/rent 12.2x
+
+===== hold 20 years =====
+
+20% down, equity earns Treasury rate
+   TOTAL annual economic cost                   98,582   user cost 6.57%   break-even rent $8,215/mo   price/rent 15.2x
+
+20% down, equity earns stock rate
+   TOTAL annual economic cost                  110,870   user cost 7.39%   break-even rent $9,239/mo   price/rent 13.5x
+
+all cash, cash earns Treasury rate
+   TOTAL annual economic cost                   59,847   user cost 3.99%   break-even rent $4,987/mo   price/rent 25.1x
+
+all cash, cash earns stock rate
+   TOTAL annual economic cost                  116,820   user cost 7.79%   break-even rent $9,735/mo   price/rent 12.8x
