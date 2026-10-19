@@ -1,0 +1,763 @@
+{
+  "horizon_years": 5,
+  "eras": {
+    "All years, 1870-2015": {
+      "by_debt": [
+        {
+          "bucket": "0-30",
+          "n": 760,
+          "countries": 17,
+          "median": 2.57,
+          "p25": 0.16,
+          "p75": 6.1,
+          "share_above_10": 0.125
+        },
+        {
+          "bucket": "30-60",
+          "n": 817,
+          "countries": 18,
+          "median": 2.42,
+          "p25": 1.13,
+          "p75": 5.37,
+          "share_above_10": 0.089
+        },
+        {
+          "bucket": "60-90",
+          "n": 458,
+          "countries": 17,
+          "median": 1.8,
+          "p25": 0.76,
+          "p75": 3.57,
+          "share_above_10": 0.107
+        },
+        {
+          "bucket": ">=90",
+          "n": 364,
+          "countries": 13,
+          "median": 1.65,
+          "p25": 0.0,
+          "p75": 3.43,
+          "share_above_10": 0.06
+        }
+      ],
+      "by_deficit": [
+        {
+          "bucket": "-1000-0",
+          "n": 765,
+          "countries": 18,
+          "median": 2.01,
+          "p25": 0.15,
+          "p75": 4.61,
+          "share_above_10": 0.077
+        },
+        {
+          "bucket": "0-3",
+          "n": 1098,
+          "countries": 18,
+          "median": 1.91,
+          "p25": 0.22,
+          "p75": 4.13,
+          "share_above_10": 0.077
+        },
+        {
+          "bucket": "3-6",
+          "n": 316,
+          "countries": 18,
+          "median": 2.31,
+          "p25": 1.21,
+          "p75": 5.52,
+          "share_above_10": 0.123
+        },
+        {
+          "bucket": ">=6",
+          "n": 249,
+          "countries": 17,
+          "median": 5.51,
+          "p25": 2.11,
+          "p75": 11.24,
+          "share_above_10": 0.281
+        }
+      ],
+      "slope_debt": {
+        "beta_pp_per_10pt": 0.032,
+        "se_pp_per_10pt": 0.145,
+        "n": 2399,
+        "countries": 18
+      },
+      "slope_deficit": {
+        "beta_pp_per_10pt": 3.284,
+        "se_pp_per_10pt": 1.671,
+        "n": 2428,
+        "countries": 18
+      }
+    },
+    "Excluding war years": {
+      "by_debt": [
+        {
+          "bucket": "0-30",
+          "n": 709,
+          "countries": 17,
+          "median": 2.5,
+          "p25": 0.0,
+          "p75": 5.66,
+          "share_above_10": 0.103
+        },
+        {
+          "bucket": "30-60",
+          "n": 774,
+          "countries": 18,
+          "median": 2.33,
+          "p25": 1.09,
+          "p75": 5.03,
+          "share_above_10": 0.074
+        },
+        {
+          "bucket": "60-90",
+          "n": 416,
+          "countries": 17,
+          "median": 1.66,
+          "p25": 0.7,
+          "p75": 2.76,
+          "share_above_10": 0.06
+        },
+        {
+          "bucket": ">=90",
+          "n": 333,
+          "countries": 12,
+          "median": 1.51,
+          "p25": 0.0,
+          "p75": 2.67,
+          "share_above_10": 0.039
+        }
+      ],
+      "by_deficit": [
+        {
+          "bucket": "-1000-0",
+          "n": 743,
+          "countries": 18,
+          "median": 1.91,
+          "p25": 0.0,
+          "p75": 4.21,
+          "share_above_10": 0.055
+        },
+        {
+          "bucket": "0-3",
+          "n": 1054,
+          "countries": 18,
+          "median": 1.83,
+          "p25": 0.2,
+          "p75": 3.64,
+          "share_above_10": 0.059
+        },
+        {
+          "bucket": "3-6",
+          "n": 296,
+          "countries": 17,
+          "median": 2.23,
+          "p25": 1.14,
+          "p75": 5.06,
+          "share_above_10": 0.108
+        },
+        {
+          "bucket": ">=6",
+          "n": 172,
+          "countries": 16,
+          "median": 4.58,
+          "p25": 2.02,
+          "p75": 8.98,
+          "share_above_10": 0.215
+        }
+      ],
+      "slope_debt": {
+        "beta_pp_per_10pt": -0.18,
+        "se_pp_per_10pt": 0.079,
+        "n": 2232,
+        "countries": 18
+      },
+      "slope_deficit": {
+        "beta_pp_per_10pt": 1.592,
+        "se_pp_per_10pt": 1.207,
+        "n": 2265,
+        "countries": 18
+      }
+    },
+    "1870-1913 gold standard": {
+      "by_debt": [
+        {
+          "bucket": "0-30",
+          "n": 263,
+          "countries": 11,
+          "median": 0.87,
+          "p25": -1.11,
+          "p75": 2.29,
+          "share_above_10": 0.042
+        },
+        {
+          "bucket": "30-60",
+          "n": 175,
+          "countries": 9,
+          "median": 0.62,
+          "p25": -0.68,
+          "p75": 1.89,
+          "share_above_10": 0.051
+        },
+        {
+          "bucket": "60-90",
+          "n": 119,
+          "countries": 8,
+          "median": 0.81,
+          "p25": -1.11,
+          "p75": 2.06,
+          "share_above_10": 0.05
+        },
+        {
+          "bucket": ">=90",
+          "n": 91,
+          "countries": 4,
+          "median": 0.0,
+          "p25": -0.49,
+          "p75": 0.84,
+          "share_above_10": 0.0
+        }
+      ],
+      "by_deficit": [
+        {
+          "bucket": "-1000-0",
+          "n": 283,
+          "countries": 16,
+          "median": 0.64,
+          "p25": -0.89,
+          "p75": 2.03,
+          "share_above_10": 0.042
+        },
+        {
+          "bucket": "0-3",
+          "n": 396,
+          "countries": 16,
+          "median": 0.45,
+          "p25": -0.83,
+          "p75": 1.89,
+          "share_above_10": 0.038
+        },
+        {
+          "bucket": "3-6",
+          "n": 13,
+          "countries": 7,
+          "median": 0.74,
+          "p25": 0.21,
+          "p75": 2.67,
+          "share_above_10": 0.077
+        },
+        {
+          "bucket": ">=6",
+          "n": 2,
+          "countries": 2,
+          "median": 0.84,
+          "p25": 0.53,
+          "p75": 1.15,
+          "share_above_10": 0.0
+        }
+      ],
+      "slope_debt": {
+        "beta_pp_per_10pt": -0.465,
+        "se_pp_per_10pt": 0.34,
+        "n": 648,
+        "countries": 16
+      },
+      "slope_deficit": {
+        "beta_pp_per_10pt": -0.287,
+        "se_pp_per_10pt": 2.283,
+        "n": 694,
+        "countries": 17
+      }
+    },
+    "1914-1945 wars and interwar": {
+      "by_debt": [
+        {
+          "bucket": "0-30",
+          "n": 164,
+          "countries": 11,
+          "median": 0.36,
+          "p25": -2.58,
+          "p75": 6.17,
+          "share_above_10": 0.146
+        },
+        {
+          "bucket": "30-60",
+          "n": 127,
+          "countries": 14,
+          "median": 1.6,
+          "p25": -0.64,
+          "p75": 5.99,
+          "share_above_10": 0.15
+        },
+        {
+          "bucket": "60-90",
+          "n": 109,
+          "countries": 13,
+          "median": 3.05,
+          "p25": -1.41,
+          "p75": 11.97,
+          "share_above_10": 0.303
+        },
+        {
+          "bucket": ">=90",
+          "n": 111,
+          "countries": 10,
+          "median": 3.79,
+          "p25": -0.42,
+          "p75": 8.16,
+          "share_above_10": 0.189
+        }
+      ],
+      "by_deficit": [
+        {
+          "bucket": "-1000-0",
+          "n": 121,
+          "countries": 17,
+          "median": -0.22,
+          "p25": -2.55,
+          "p75": 7.09,
+          "share_above_10": 0.157
+        },
+        {
+          "bucket": "0-3",
+          "n": 189,
+          "countries": 17,
+          "median": 0.74,
+          "p25": -1.94,
+          "p75": 4.48,
+          "share_above_10": 0.127
+        },
+        {
+          "bucket": "3-6",
+          "n": 71,
+          "countries": 16,
+          "median": 1.85,
+          "p25": -0.25,
+          "p75": 11.69,
+          "share_above_10": 0.268
+        },
+        {
+          "bucket": ">=6",
+          "n": 108,
+          "countries": 13,
+          "median": 6.4,
+          "p25": 2.73,
+          "p75": 18.28,
+          "share_above_10": 0.407
+        }
+      ],
+      "slope_debt": {
+        "beta_pp_per_10pt": 1.635,
+        "se_pp_per_10pt": 1.529,
+        "n": 511,
+        "countries": 18
+      },
+      "slope_deficit": {
+        "beta_pp_per_10pt": 4.146,
+        "se_pp_per_10pt": 1.701,
+        "n": 489,
+        "countries": 18
+      }
+    },
+    "1946-1972 Bretton Woods": {
+      "by_debt": [
+        {
+          "bucket": "0-30",
+          "n": 200,
+          "countries": 12,
+          "median": 4.68,
+          "p25": 3.01,
+          "p75": 6.33,
+          "share_above_10": 0.095
+        },
+        {
+          "bucket": "30-60",
+          "n": 164,
+          "countries": 15,
+          "median": 4.59,
+          "p25": 3.11,
+          "p75": 6.76,
+          "share_above_10": 0.079
+        },
+        {
+          "bucket": "60-90",
+          "n": 64,
+          "countries": 9,
+          "median": 1.98,
+          "p25": 1.39,
+          "p75": 3.62,
+          "share_above_10": 0.094
+        },
+        {
+          "bucket": ">=90",
+          "n": 41,
+          "countries": 6,
+          "median": 3.84,
+          "p25": 3.04,
+          "p75": 5.86,
+          "share_above_10": 0.024
+        }
+      ],
+      "by_deficit": [
+        {
+          "bucket": "-1000-0",
+          "n": 193,
+          "countries": 15,
+          "median": 3.99,
+          "p25": 2.53,
+          "p75": 6.12,
+          "share_above_10": 0.073
+        },
+        {
+          "bucket": "0-3",
+          "n": 204,
+          "countries": 17,
+          "median": 3.81,
+          "p25": 2.59,
+          "p75": 5.98,
+          "share_above_10": 0.083
+        },
+        {
+          "bucket": "3-6",
+          "n": 51,
+          "countries": 7,
+          "median": 4.88,
+          "p25": 3.28,
+          "p75": 6.76,
+          "share_above_10": 0.118
+        },
+        {
+          "bucket": ">=6",
+          "n": 23,
+          "countries": 8,
+          "median": 5.94,
+          "p25": 4.21,
+          "p75": 8.26,
+          "share_above_10": 0.174
+        }
+      ],
+      "slope_debt": {
+        "beta_pp_per_10pt": -0.016,
+        "se_pp_per_10pt": 0.128,
+        "n": 469,
+        "countries": 18
+      },
+      "slope_deficit": {
+        "beta_pp_per_10pt": 1.434,
+        "se_pp_per_10pt": 1.163,
+        "n": 471,
+        "countries": 18
+      }
+    },
+    "1973-1990 floating, high inflation": {
+      "by_debt": [
+        {
+          "bucket": "0-30",
+          "n": 98,
+          "countries": 12,
+          "median": 9.54,
+          "p25": 5.64,
+          "p75": 10.93,
+          "share_above_10": 0.418
+        },
+        {
+          "bucket": "30-60",
+          "n": 164,
+          "countries": 16,
+          "median": 5.61,
+          "p25": 3.61,
+          "p75": 8.99,
+          "share_above_10": 0.195
+        },
+        {
+          "bucket": "60-90",
+          "n": 43,
+          "countries": 7,
+          "median": 4.17,
+          "p25": 2.22,
+          "p75": 6.02,
+          "share_above_10": 0.093
+        },
+        {
+          "bucket": ">=90",
+          "n": 17,
+          "countries": 3,
+          "median": 2.99,
+          "p25": 2.52,
+          "p75": 3.17,
+          "share_above_10": 0.0
+        }
+      ],
+      "by_deficit": [
+        {
+          "bucket": "-1000-0",
+          "n": 57,
+          "countries": 11,
+          "median": 5.48,
+          "p25": 4.13,
+          "p75": 9.87,
+          "share_above_10": 0.246
+        },
+        {
+          "bucket": "0-3",
+          "n": 132,
+          "countries": 15,
+          "median": 5.76,
+          "p25": 3.26,
+          "p75": 9.52,
+          "share_above_10": 0.212
+        },
+        {
+          "bucket": "3-6",
+          "n": 66,
+          "countries": 13,
+          "median": 4.56,
+          "p25": 2.78,
+          "p75": 9.15,
+          "share_above_10": 0.197
+        },
+        {
+          "bucket": ">=6",
+          "n": 69,
+          "countries": 8,
+          "median": 6.36,
+          "p25": 4.6,
+          "p75": 11.31,
+          "share_above_10": 0.319
+        }
+      ],
+      "slope_debt": {
+        "beta_pp_per_10pt": -1.513,
+        "se_pp_per_10pt": 0.366,
+        "n": 322,
+        "countries": 18
+      },
+      "slope_deficit": {
+        "beta_pp_per_10pt": -5.782,
+        "se_pp_per_10pt": 1.663,
+        "n": 324,
+        "countries": 18
+      }
+    },
+    "1991-2015 inflation targeting": {
+      "by_debt": [
+        {
+          "bucket": "0-30",
+          "n": 35,
+          "countries": 5,
+          "median": 2.43,
+          "p25": 2.0,
+          "p75": 2.85,
+          "share_above_10": 0.0
+        },
+        {
+          "bucket": "30-60",
+          "n": 187,
+          "countries": 14,
+          "median": 1.74,
+          "p25": 1.2,
+          "p75": 2.32,
+          "share_above_10": 0.0
+        },
+        {
+          "bucket": "60-90",
+          "n": 123,
+          "countries": 14,
+          "median": 1.77,
+          "p25": 1.4,
+          "p75": 2.22,
+          "share_above_10": 0.0
+        },
+        {
+          "bucket": ">=90",
+          "n": 104,
+          "countries": 9,
+          "median": 1.55,
+          "p25": 0.6,
+          "p75": 2.04,
+          "share_above_10": 0.0
+        }
+      ],
+      "by_deficit": [
+        {
+          "bucket": "-1000-0",
+          "n": 111,
+          "countries": 13,
+          "median": 1.98,
+          "p25": 1.48,
+          "p75": 2.43,
+          "share_above_10": 0.0
+        },
+        {
+          "bucket": "0-3",
+          "n": 177,
+          "countries": 17,
+          "median": 1.79,
+          "p25": 1.22,
+          "p75": 2.26,
+          "share_above_10": 0.0
+        },
+        {
+          "bucket": "3-6",
+          "n": 115,
+          "countries": 14,
+          "median": 1.66,
+          "p25": 0.84,
+          "p75": 2.09,
+          "share_above_10": 0.0
+        },
+        {
+          "bucket": ">=6",
+          "n": 47,
+          "countries": 13,
+          "median": 1.48,
+          "p25": 0.89,
+          "p75": 2.05,
+          "share_above_10": 0.0
+        }
+      ],
+      "slope_debt": {
+        "beta_pp_per_10pt": -0.118,
+        "se_pp_per_10pt": 0.065,
+        "n": 449,
+        "countries": 18
+      },
+      "slope_deficit": {
+        "beta_pp_per_10pt": -0.38,
+        "se_pp_per_10pt": 0.256,
+        "n": 450,
+        "countries": 18
+      }
+    }
+  },
+  "peak_debt_by_country": [
+    {
+      "country": "UK",
+      "year": 1946,
+      "debt_pct": 269.8,
+      "deficit_pct": 6.19,
+      "fwd_infl": 6.07
+    },
+    {
+      "country": "France",
+      "year": 1921,
+      "debt_pct": 237.03,
+      "deficit_pct": 7.27,
+      "fwd_infl": 11.17
+    },
+    {
+      "country": "Japan",
+      "year": 2014,
+      "debt_pct": 233.53,
+      "deficit_pct": 5.21,
+      "fwd_infl": 0.52
+    },
+    {
+      "country": "Netherlands",
+      "year": 1946,
+      "debt_pct": 222.97,
+      "deficit_pct": 7.17,
+      "fwd_infl": 6.8
+    },
+    {
+      "country": "Italy",
+      "year": 1920,
+      "debt_pct": 154.11,
+      "deficit_pct": 6.09,
+      "fwd_infl": 6.34
+    },
+    {
+      "country": "Canada",
+      "year": 1946,
+      "debt_pct": 153.78,
+      "deficit_pct": 17.86,
+      "fwd_infl": 7.99
+    },
+    {
+      "country": "Spain",
+      "year": 1880,
+      "debt_pct": 152.49,
+      "deficit_pct": 0.95,
+      "fwd_infl": -2.21
+    },
+    {
+      "country": "Belgium",
+      "year": 1922,
+      "debt_pct": 141.23,
+      "deficit_pct": 6.97,
+      "fwd_infl": 16.08
+    },
+    {
+      "country": "Portugal",
+      "year": 2014,
+      "debt_pct": 132.94,
+      "deficit_pct": 4.16,
+      "fwd_infl": 0.83
+    },
+    {
+      "country": "Ireland",
+      "year": 2013,
+      "debt_pct": 120.04,
+      "deficit_pct": 4.14,
+      "fwd_infl": 0.13
+    },
+    {
+      "country": "USA",
+      "year": 1946,
+      "debt_pct": 118.9,
+      "deficit_pct": 7.0,
+      "fwd_infl": 5.87
+    },
+    {
+      "country": "Australia",
+      "year": 1932,
+      "debt_pct": 98.16,
+      "deficit_pct": -0.14,
+      "fwd_infl": 1.25
+    },
+    {
+      "country": "Switzerland",
+      "year": 1946,
+      "debt_pct": 86.92,
+      "deficit_pct": -1.09,
+      "fwd_infl": 1.96
+    },
+    {
+      "country": "Germany",
+      "year": 2010,
+      "debt_pct": 82.38,
+      "deficit_pct": 1.73,
+      "fwd_infl": 1.53
+    },
+    {
+      "country": "Sweden",
+      "year": 1996,
+      "debt_pct": 73.06,
+      "deficit_pct": 1.81,
+      "fwd_infl": 0.85
+    },
+    {
+      "country": "Denmark",
+      "year": 1998,
+      "debt_pct": 72.4,
+      "deficit_pct": 0.03,
+      "fwd_infl": 2.29
+    },
+    {
+      "country": "Finland",
+      "year": 2015,
+      "debt_pct": 63.64,
+      "deficit_pct": 2.98,
+      "fwd_infl": 0.78
+    },
+    {
+      "country": "Norway",
+      "year": 2006,
+      "debt_pct": 53.31,
+      "deficit_pct": -18.01,
+      "fwd_infl": 2.07
+    }
+  ]
+}
