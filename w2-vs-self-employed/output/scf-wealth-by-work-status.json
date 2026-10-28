@@ -1,0 +1,1100 @@
+[
+  {
+    "year": 2025,
+    "all": {
+      "composition": {
+        "employee": {
+          "est": 0.5490086475890984,
+          "se": 0.006133042330371277,
+          "n": 4360,
+          "suppressed": false
+        },
+        "self_employed": {
+          "est": 0.12109961552304505,
+          "se": 0.0046240461670275165,
+          "n": 4360,
+          "suppressed": false
+        },
+        "retired_or_nilf": {
+          "est": 0.28003685283396496,
+          "se": 0.004827183987498968,
+          "n": 4360,
+          "suppressed": false
+        },
+        "other": {
+          "est": 0.04985488405389151,
+          "se": 0.0033147142020526,
+          "n": 4360,
+          "suppressed": false
+        },
+        "families_millions": 134.96369069014884
+      },
+      "employee": {
+        "median_networth": {
+          "est": 155784.2,
+          "se": 7469.920578065245,
+          "n": 2160,
+          "suppressed": false
+        },
+        "median_nw_ex_business": {
+          "est": 152720.0,
+          "se": 6526.202523932534,
+          "n": 2160,
+          "suppressed": false
+        },
+        "median_financial": {
+          "est": 41348.0,
+          "se": 2701.3313706715385,
+          "n": 2160,
+          "suppressed": false
+        },
+        "median_income": {
+          "est": 95718.91891919999,
+          "se": 2598.8072212382476,
+          "n": 2160,
+          "suppressed": false
+        },
+        "median_age": {
+          "est": 43.0,
+          "se": 0.20010007506255473,
+          "n": 2160,
+          "suppressed": false
+        },
+        "owns_business": {
+          "est": 0.10065483568993297,
+          "se": 0.006171852982813042,
+          "n": 2160,
+          "suppressed": false
+        },
+        "owns_stock": {
+          "est": 0.6395981098454268,
+          "se": 0.010604958212292898,
+          "n": 2160,
+          "suppressed": false
+        },
+        "nw_ge_1000000": {
+          "est": 0.14264843211308312,
+          "se": 0.006809273998515208,
+          "n": 2160,
+          "suppressed": false
+        },
+        "nw_ge_3000000": {
+          "est": 0.042775291483874496,
+          "se": 0.003995968558393356,
+          "n": 2160,
+          "suppressed": false
+        },
+        "nw_ge_10000000": {
+          "est": 0.009203658181263475,
+          "se": 0.0013637063294443413,
+          "n": 2160,
+          "suppressed": false
+        }
+      },
+      "self_employed": {
+        "median_networth": {
+          "est": 568998.0,
+          "se": 82101.14079923333,
+          "n": 932,
+          "suppressed": false
+        },
+        "median_nw_ex_business": {
+          "est": 382720.0,
+          "se": 34992.328710999194,
+          "n": 932,
+          "suppressed": false
+        },
+        "median_financial": {
+          "est": 54850.0,
+          "se": 10261.806615846013,
+          "n": 932,
+          "suppressed": false
+        },
+        "median_income": {
+          "est": 92843.2432428,
+          "se": 5791.849984955811,
+          "n": 932,
+          "suppressed": false
+        },
+        "median_age": {
+          "est": 53.8,
+          "se": 1.1428324750662566,
+          "n": 932,
+          "suppressed": false
+        },
+        "owns_business": {
+          "est": 0.6683097988315623,
+          "se": 0.01885347411495217,
+          "n": 932,
+          "suppressed": false
+        },
+        "owns_stock": {
+          "est": 0.5377687657216436,
+          "se": 0.020875438318400445,
+          "n": 932,
+          "suppressed": false
+        },
+        "nw_ge_1000000": {
+          "est": 0.40048164902254496,
+          "se": 0.023281461511880756,
+          "n": 932,
+          "suppressed": false
+        },
+        "nw_ge_3000000": {
+          "est": 0.2137928949632418,
+          "se": 0.014356976361026473,
+          "n": 932,
+          "suppressed": false
+        },
+        "nw_ge_10000000": {
+          "est": 0.06673305277321641,
+          "se": 0.006052111119741478,
+          "n": 932,
+          "suppressed": false
+        }
+      }
+    },
+    "by_age": {
+      "25-34": {
+        "employee": {
+          "median_networth": {
+            "est": 48246.0,
+            "se": 5435.509371082266,
+            "n": 456,
+            "suppressed": false
+          },
+          "median_nw_ex_business": {
+            "est": 46819.2,
+            "se": 4657.824551796183,
+            "n": 456,
+            "suppressed": false
+          },
+          "median_financial": {
+            "est": 18266.0,
+            "se": 2042.7317400877585,
+            "n": 456,
+            "suppressed": false
+          },
+          "median_income": {
+            "est": 86270.27027,
+            "se": 3221.3694821664917,
+            "n": 456,
+            "suppressed": false
+          },
+          "nw_ge_1000000": {
+            "est": 0.013509157186698696,
+            "se": 0.0033116451234885547,
+            "n": 456,
+            "suppressed": false
+          }
+        },
+        "self_employed": {
+          "median_networth": {
+            "est": 253942.0,
+            "se": 67899.6476387578,
+            "n": 45,
+            "suppressed": true
+          },
+          "median_nw_ex_business": {
+            "est": 91930.0,
+            "se": 31877.332135297394,
+            "n": 45,
+            "suppressed": true
+          },
+          "median_financial": {
+            "est": 14032.0,
+            "se": 8212.003309811824,
+            "n": 45,
+            "suppressed": true
+          },
+          "median_income": {
+            "est": 69837.837838,
+            "se": 13354.806750808519,
+            "n": 45,
+            "suppressed": true
+          },
+          "nw_ge_1000000": {
+            "est": 0.11583922410515268,
+            "se": 0.03542029412039363,
+            "n": 45,
+            "suppressed": true
+          }
+        }
+      },
+      "35-44": {
+        "employee": {
+          "median_networth": {
+            "est": 171440.0,
+            "se": 15663.405526023791,
+            "n": 561,
+            "suppressed": false
+          },
+          "median_nw_ex_business": {
+            "est": 164440.0,
+            "se": 14043.840591467797,
+            "n": 561,
+            "suppressed": false
+          },
+          "median_financial": {
+            "est": 42122.0,
+            "se": 4133.116796129822,
+            "n": 561,
+            "suppressed": false
+          },
+          "median_income": {
+            "est": 107221.62162199998,
+            "se": 3366.2968428868667,
+            "n": 561,
+            "suppressed": false
+          },
+          "nw_ge_1000000": {
+            "est": 0.1213413298635507,
+            "se": 0.012708968160743312,
+            "n": 561,
+            "suppressed": false
+          }
+        },
+        "self_employed": {
+          "median_networth": {
+            "est": 200676.0,
+            "se": 40413.80032242081,
+            "n": 131,
+            "suppressed": false
+          },
+          "median_nw_ex_business": {
+            "est": 157418.0,
+            "se": 33735.771721566554,
+            "n": 131,
+            "suppressed": false
+          },
+          "median_financial": {
+            "est": 14980.0,
+            "se": 4172.7866166565655,
+            "n": 131,
+            "suppressed": false
+          },
+          "median_income": {
+            "est": 81545.9459458,
+            "se": 7050.027110172464,
+            "n": 131,
+            "suppressed": false
+          },
+          "nw_ge_1000000": {
+            "est": 0.2328171320239087,
+            "se": 0.03910772371943433,
+            "n": 131,
+            "suppressed": false
+          }
+        }
+      },
+      "45-54": {
+        "employee": {
+          "median_networth": {
+            "est": 252822.4,
+            "se": 20121.17700497925,
+            "n": 516,
+            "suppressed": false
+          },
+          "median_nw_ex_business": {
+            "est": 242924.6,
+            "se": 21489.155418155122,
+            "n": 516,
+            "suppressed": false
+          },
+          "median_financial": {
+            "est": 91833.0,
+            "se": 12383.752194808421,
+            "n": 516,
+            "suppressed": false
+          },
+          "median_income": {
+            "est": 117697.297298,
+            "se": 6889.295250695458,
+            "n": 516,
+            "suppressed": false
+          },
+          "nw_ge_1000000": {
+            "est": 0.20700516810897912,
+            "se": 0.018391759518396875,
+            "n": 516,
+            "suppressed": false
+          }
+        },
+        "self_employed": {
+          "median_networth": {
+            "est": 1011274.0,
+            "se": 141869.82559783515,
+            "n": 205,
+            "suppressed": false
+          },
+          "median_nw_ex_business": {
+            "est": 494760.0,
+            "se": 133890.39100404186,
+            "n": 205,
+            "suppressed": false
+          },
+          "median_financial": {
+            "est": 120334.0,
+            "se": 63114.578395232966,
+            "n": 205,
+            "suppressed": false
+          },
+          "median_income": {
+            "est": 126324.32432600002,
+            "se": 12288.977075342025,
+            "n": 205,
+            "suppressed": false
+          },
+          "nw_ge_1000000": {
+            "est": 0.5004407575317125,
+            "se": 0.046607951378933914,
+            "n": 205,
+            "suppressed": false
+          }
+        }
+      },
+      "55-64": {
+        "employee": {
+          "median_networth": {
+            "est": 397920.0,
+            "se": 59142.4061665246,
+            "n": 391,
+            "suppressed": false
+          },
+          "median_nw_ex_business": {
+            "est": 371110.0,
+            "se": 48876.37704497995,
+            "n": 391,
+            "suppressed": false
+          },
+          "median_financial": {
+            "est": 103915.2,
+            "se": 17023.79963670951,
+            "n": 391,
+            "suppressed": false
+          },
+          "median_income": {
+            "est": 111945.94594399999,
+            "se": 6260.247870242274,
+            "n": 391,
+            "suppressed": false
+          },
+          "nw_ge_1000000": {
+            "est": 0.2868274401806178,
+            "se": 0.0224269547263978,
+            "n": 391,
+            "suppressed": false
+          }
+        },
+        "self_employed": {
+          "median_networth": {
+            "est": 899050.0,
+            "se": 290808.8314797827,
+            "n": 239,
+            "suppressed": false
+          },
+          "median_nw_ex_business": {
+            "est": 756110.0,
+            "se": 215785.11065335272,
+            "n": 239,
+            "suppressed": false
+          },
+          "median_financial": {
+            "est": 79200.0,
+            "se": 36448.213792841605,
+            "n": 239,
+            "suppressed": false
+          },
+          "median_income": {
+            "est": 98389.189188,
+            "se": 13680.562732472956,
+            "n": 239,
+            "suppressed": false
+          },
+          "nw_ge_1000000": {
+            "est": 0.4801268972523477,
+            "se": 0.047263972585021186,
+            "n": 239,
+            "suppressed": false
+          }
+        }
+      }
+    },
+    "rich": {
+      "nw_ge_1000000": {
+        "employee": {
+          "est": 0.36371187657863907,
+          "se": 0.013728367335134337,
+          "n": 1589,
+          "suppressed": false
+        },
+        "self_employed": {
+          "est": 0.22518630183676733,
+          "se": 0.013264046260474099,
+          "n": 1589,
+          "suppressed": false
+        },
+        "retired_or_nilf": {
+          "est": 0.3917601397476894,
+          "se": 0.014556318452958756,
+          "n": 1589,
+          "suppressed": false
+        },
+        "other": {
+          "est": 0.019341681836904205,
+          "se": 0.0047681212665032354,
+          "n": 1589,
+          "suppressed": false
+        },
+        "families_millions": 29.064320803181886
+      },
+      "nw_ge_3000000": {
+        "employee": {
+          "est": 0.2855121601917002,
+          "se": 0.022907299151962608,
+          "n": 1065,
+          "suppressed": false
+        },
+        "self_employed": {
+          "est": 0.31499556177725024,
+          "se": 0.021153495741330262,
+          "n": 1065,
+          "suppressed": false
+        },
+        "retired_or_nilf": {
+          "est": 0.38308580029649797,
+          "se": 0.025983932062526086,
+          "n": 1065,
+          "suppressed": false
+        },
+        "other": {
+          "est": 0.01640647773455168,
+          "se": 0.006856503129026544,
+          "n": 1065,
+          "suppressed": false
+        },
+        "families_millions": 11.09468108085131
+      },
+      "nw_ge_10000000": {
+        "employee": {
+          "est": 0.2520279517877296,
+          "se": 0.03189401438510068,
+          "n": 650,
+          "suppressed": false
+        },
+        "self_employed": {
+          "est": 0.40371264112126415,
+          "se": 0.03446108542659812,
+          "n": 650,
+          "suppressed": false
+        },
+        "retired_or_nilf": {
+          "est": 0.3264328624201587,
+          "se": 0.03398467453164238,
+          "n": 650,
+          "suppressed": false
+        },
+        "other": {
+          "est": 0.0178265446708476,
+          "se": 0.013446029971258175,
+          "n": 650,
+          "suppressed": false
+        },
+        "families_millions": 2.7036229493318555
+      }
+    },
+    "emp_income": {
+      "p60-80": {
+        "nw_ge_1000000": {
+          "est": 0.1024790775524383,
+          "se": 0.013968805491606584,
+          "n": 455,
+          "suppressed": false
+        },
+        "median_networth": {
+          "est": 255768.0,
+          "se": 16320.266309941988,
+          "n": 455,
+          "suppressed": false
+        }
+      },
+      "p80-90": {
+        "nw_ge_1000000": {
+          "est": 0.30656031374216747,
+          "se": 0.03036922436267315,
+          "n": 243,
+          "suppressed": false
+        },
+        "median_networth": {
+          "est": 624372.0,
+          "se": 52743.67081480033,
+          "n": 243,
+          "suppressed": false
+        }
+      },
+      "p90-100": {
+        "nw_ge_1000000": {
+          "est": 0.7649906757586724,
+          "se": 0.0282078772681074,
+          "n": 361,
+          "suppressed": false
+        },
+        "median_networth": {
+          "est": 2195204.0,
+          "se": 206714.57756985567,
+          "n": 361,
+          "suppressed": false
+        }
+      }
+    }
+  },
+  {
+    "year": 2022,
+    "all": {
+      "composition": {
+        "employee": {
+          "est": 0.5675823702241549,
+          "se": 0.005722760527171173,
+          "n": 4595,
+          "suppressed": false
+        },
+        "self_employed": {
+          "est": 0.11223743408727671,
+          "se": 0.004112784206109262,
+          "n": 4595,
+          "suppressed": false
+        },
+        "retired_or_nilf": {
+          "est": 0.2813200228322736,
+          "se": 0.005173207888472523,
+          "n": 4595,
+          "suppressed": false
+        },
+        "other": {
+          "est": 0.03886017285629474,
+          "se": 0.003152168751874555,
+          "n": 4595,
+          "suppressed": false
+        },
+        "families_millions": 131.30638938347022
+      },
+      "employee": {
+        "median_networth": {
+          "est": 170184.600546,
+          "se": 7485.596477275308,
+          "n": 2277,
+          "suppressed": false
+        },
+        "median_nw_ex_business": {
+          "est": 167492.42961566,
+          "se": 7533.42576895506,
+          "n": 2277,
+          "suppressed": false
+        },
+        "median_financial": {
+          "est": 39393.24588639999,
+          "se": 2804.8220636171986,
+          "n": 2277,
+          "suppressed": false
+        },
+        "median_income": {
+          "est": 94160.9559382,
+          "se": 1443.4025747477801,
+          "n": 2277,
+          "suppressed": false
+        },
+        "median_age": {
+          "est": 43.0,
+          "se": 0.1095993248702382,
+          "n": 2277,
+          "suppressed": false
+        },
+        "owns_business": {
+          "est": 0.09713505484101997,
+          "se": 0.005595802532938387,
+          "n": 2277,
+          "suppressed": false
+        },
+        "owns_stock": {
+          "est": 0.6609826948640204,
+          "se": 0.00844249908346393,
+          "n": 2277,
+          "suppressed": false
+        },
+        "nw_ge_1000000": {
+          "est": 0.14986123109711988,
+          "se": 0.00846400032359051,
+          "n": 2277,
+          "suppressed": false
+        },
+        "nw_ge_3000000": {
+          "est": 0.04262834223662873,
+          "se": 0.0035992943330799263,
+          "n": 2277,
+          "suppressed": false
+        },
+        "nw_ge_10000000": {
+          "est": 0.008349557729007823,
+          "se": 0.0012671152902167637,
+          "n": 2277,
+          "suppressed": false
+        }
+      },
+      "self_employed": {
+        "median_networth": {
+          "est": 490566.074038,
+          "se": 40319.776734336876,
+          "n": 999,
+          "suppressed": false
+        },
+        "median_nw_ex_business": {
+          "est": 365032.11350800015,
+          "se": 52187.925512392845,
+          "n": 999,
+          "suppressed": false
+        },
+        "median_financial": {
+          "est": 82778.78427779999,
+          "se": 16716.02453208969,
+          "n": 999,
+          "suppressed": false
+        },
+        "median_income": {
+          "est": 89665.83492620001,
+          "se": 7919.563861665148,
+          "n": 999,
+          "suppressed": false
+        },
+        "median_age": {
+          "est": 54.6,
+          "se": 1.2654016126278806,
+          "n": 999,
+          "suppressed": false
+        },
+        "owns_business": {
+          "est": 0.6338990171400567,
+          "se": 0.019520656449680557,
+          "n": 999,
+          "suppressed": false
+        },
+        "owns_stock": {
+          "est": 0.6015133601137566,
+          "se": 0.022245511113623963,
+          "n": 999,
+          "suppressed": false
+        },
+        "nw_ge_1000000": {
+          "est": 0.3721645623033892,
+          "se": 0.026091761137342677,
+          "n": 999,
+          "suppressed": false
+        },
+        "nw_ge_3000000": {
+          "est": 0.20422373213600814,
+          "se": 0.014952246333672025,
+          "n": 999,
+          "suppressed": false
+        },
+        "nw_ge_10000000": {
+          "est": 0.08212625983985,
+          "se": 0.007475781184921544,
+          "n": 999,
+          "suppressed": false
+        }
+      }
+    },
+    "by_age": {
+      "25-34": {
+        "employee": {
+          "median_networth": {
+            "est": 70094.062797,
+            "se": 5739.412544313711,
+            "n": 397,
+            "suppressed": false
+          },
+          "median_nw_ex_business": {
+            "est": 69182.4455668,
+            "se": 6623.943243537911,
+            "n": 397,
+            "suppressed": false
+          },
+          "median_financial": {
+            "est": 21309.9556218,
+            "se": 1751.623871844623,
+            "n": 397,
+            "suppressed": false
+          },
+          "median_income": {
+            "est": 85643.8845468,
+            "se": 5082.800626105249,
+            "n": 397,
+            "suppressed": false
+          },
+          "nw_ge_1000000": {
+            "est": 0.0253310778627045,
+            "se": 0.005843661644767377,
+            "n": 397,
+            "suppressed": false
+          }
+        },
+        "self_employed": {
+          "median_networth": {
+            "est": 72848.39442380001,
+            "se": 55168.48603868765,
+            "n": 59,
+            "suppressed": false
+          },
+          "median_nw_ex_business": {
+            "est": 42337.12386020001,
+            "se": 21352.55146131371,
+            "n": 59,
+            "suppressed": false
+          },
+          "median_financial": {
+            "est": 14226.919560999999,
+            "se": 9219.097263982554,
+            "n": 59,
+            "suppressed": false
+          },
+          "median_income": {
+            "est": 54414.622778,
+            "se": 11524.456216546985,
+            "n": 59,
+            "suppressed": false
+          },
+          "nw_ge_1000000": {
+            "est": 0.09342722835825501,
+            "se": 0.033482509588260066,
+            "n": 59,
+            "suppressed": false
+          }
+        }
+      },
+      "35-44": {
+        "employee": {
+          "median_networth": {
+            "est": 147913.999542,
+            "se": 10566.782010278977,
+            "n": 591,
+            "suppressed": false
+          },
+          "median_nw_ex_business": {
+            "est": 144530.1814464,
+            "se": 9225.415613959882,
+            "n": 591,
+            "suppressed": false
+          },
+          "median_financial": {
+            "est": 41082.9661792,
+            "se": 4530.584753511995,
+            "n": 591,
+            "suppressed": false
+          },
+          "median_income": {
+            "est": 102441.4420136,
+            "se": 6064.910445101842,
+            "n": 591,
+            "suppressed": false
+          },
+          "nw_ge_1000000": {
+            "est": 0.1072050243822438,
+            "se": 0.012142504148846805,
+            "n": 591,
+            "suppressed": false
+          }
+        },
+        "self_employed": {
+          "median_networth": {
+            "est": 309365.46024000004,
+            "se": 50400.123678862976,
+            "n": 107,
+            "suppressed": false
+          },
+          "median_nw_ex_business": {
+            "est": 164682.0658112,
+            "se": 67820.76258380922,
+            "n": 107,
+            "suppressed": false
+          },
+          "median_financial": {
+            "est": 25135.683729399996,
+            "se": 15109.040894646852,
+            "n": 107,
+            "suppressed": false
+          },
+          "median_income": {
+            "est": 74760.95999139998,
+            "se": 6804.846402115627,
+            "n": 107,
+            "suppressed": false
+          },
+          "nw_ge_1000000": {
+            "est": 0.2556482587266119,
+            "se": 0.04839610530062518,
+            "n": 107,
+            "suppressed": false
+          }
+        }
+      },
+      "45-54": {
+        "employee": {
+          "median_networth": {
+            "est": 284807.608318,
+            "se": 27211.76480413457,
+            "n": 548,
+            "suppressed": false
+          },
+          "median_nw_ex_business": {
+            "est": 274941.78679,
+            "se": 30131.436476062012,
+            "n": 548,
+            "suppressed": false
+          },
+          "median_financial": {
+            "est": 79517.7554388,
+            "se": 16044.738114129663,
+            "n": 548,
+            "suppressed": false
+          },
+          "median_income": {
+            "est": 114034.12252199999,
+            "se": 6213.036970082177,
+            "n": 548,
+            "suppressed": false
+          },
+          "nw_ge_1000000": {
+            "est": 0.21690340070750866,
+            "se": 0.021177652488911698,
+            "n": 548,
+            "suppressed": false
+          }
+        },
+        "self_employed": {
+          "median_networth": {
+            "est": 460842.75593999994,
+            "se": 132234.83004533206,
+            "n": 179,
+            "suppressed": false
+          },
+          "median_nw_ex_business": {
+            "est": 285698.43235699995,
+            "se": 98239.59003514943,
+            "n": 179,
+            "suppressed": false
+          },
+          "median_financial": {
+            "est": 55156.6727602,
+            "se": 25278.5069142608,
+            "n": 179,
+            "suppressed": false
+          },
+          "median_income": {
+            "est": 81385.3488516,
+            "se": 21862.221862552153,
+            "n": 179,
+            "suppressed": false
+          },
+          "nw_ge_1000000": {
+            "est": 0.3598554304201874,
+            "se": 0.05024700836269873,
+            "n": 179,
+            "suppressed": false
+          }
+        }
+      },
+      "55-64": {
+        "employee": {
+          "median_networth": {
+            "est": 474533.430074,
+            "se": 32461.848841990588,
+            "n": 468,
+            "suppressed": false
+          },
+          "median_nw_ex_business": {
+            "est": 466664.849178,
+            "se": 29749.819687129453,
+            "n": 468,
+            "suppressed": false
+          },
+          "median_financial": {
+            "est": 147209.21983400002,
+            "se": 17283.214407509717,
+            "n": 468,
+            "suppressed": false
+          },
+          "median_income": {
+            "est": 114507.293154,
+            "se": 4774.073588516724,
+            "n": 468,
+            "suppressed": false
+          },
+          "nw_ge_1000000": {
+            "est": 0.31425179797130676,
+            "se": 0.021884173820619284,
+            "n": 468,
+            "suppressed": false
+          }
+        },
+        "self_employed": {
+          "median_networth": {
+            "est": 1036770.3473479999,
+            "se": 180871.4340603877,
+            "n": 302,
+            "suppressed": false
+          },
+          "median_nw_ex_business": {
+            "est": 784559.8948680001,
+            "se": 154576.97551597323,
+            "n": 302,
+            "suppressed": false
+          },
+          "median_financial": {
+            "est": 134899.65128,
+            "se": 46517.07765601832,
+            "n": 302,
+            "suppressed": false
+          },
+          "median_income": {
+            "est": 113324.366572,
+            "se": 13314.638765442585,
+            "n": 302,
+            "suppressed": false
+          },
+          "nw_ge_1000000": {
+            "est": 0.5105463130803345,
+            "se": 0.048567839132101616,
+            "n": 302,
+            "suppressed": false
+          }
+        }
+      }
+    },
+    "rich": {
+      "nw_ge_1000000": {
+        "employee": {
+          "est": 0.43317745110062206,
+          "se": 0.014232745427458155,
+          "n": 1695,
+          "suppressed": false
+        },
+        "self_employed": {
+          "est": 0.21272826218335966,
+          "se": 0.012320137323281282,
+          "n": 1695,
+          "suppressed": false
+        },
+        "retired_or_nilf": {
+          "est": 0.339726063576598,
+          "se": 0.013443639572026336,
+          "n": 1695,
+          "suppressed": false
+        },
+        "other": {
+          "est": 0.014368223139420263,
+          "se": 0.003273967548797284,
+          "n": 1695,
+          "suppressed": false
+        },
+        "families_millions": 25.782313689631604
+      },
+      "nw_ge_3000000": {
+        "employee": {
+          "est": 0.3515049658024333,
+          "se": 0.026055300845343996,
+          "n": 1103,
+          "suppressed": false
+        },
+        "self_employed": {
+          "est": 0.3329036454798052,
+          "se": 0.020784556764312376,
+          "n": 1103,
+          "suppressed": false
+        },
+        "retired_or_nilf": {
+          "est": 0.3046302689251563,
+          "se": 0.023090006239415792,
+          "n": 1103,
+          "suppressed": false
+        },
+        "other": {
+          "est": 0.01096111979260523,
+          "se": 0.005199788855921048,
+          "n": 1103,
+          "suppressed": false
+        },
+        "families_millions": 9.039620773425089
+      },
+      "nw_ge_10000000": {
+        "employee": {
+          "est": 0.25333193171082025,
+          "se": 0.03368082022132218,
+          "n": 679,
+          "suppressed": false
+        },
+        "self_employed": {
+          "est": 0.49294954138091535,
+          "se": 0.03919948321842821,
+          "n": 679,
+          "suppressed": false
+        },
+        "retired_or_nilf": {
+          "est": 0.24177565294278786,
+          "se": 0.033910934461216825,
+          "n": 679,
+          "suppressed": false
+        },
+        "other": {
+          "est": 0.011942873965476622,
+          "se": 0.008974808818874563,
+          "n": 679,
+          "suppressed": false
+        },
+        "families_millions": 2.455756161505118
+      }
+    },
+    "emp_income": {
+      "p60-80": {
+        "nw_ge_1000000": {
+          "est": 0.08206252372440953,
+          "se": 0.01036523482750249,
+          "n": 461,
+          "suppressed": false
+        },
+        "median_networth": {
+          "est": 237729.63711399998,
+          "se": 14646.30547198395,
+          "n": 461,
+          "suppressed": false
+        }
+      },
+      "p80-90": {
+        "nw_ge_1000000": {
+          "est": 0.335115187660064,
+          "se": 0.03328219820047472,
+          "n": 288,
+          "suppressed": false
+        },
+        "median_networth": {
+          "est": 693562.32861,
+          "se": 52385.062299576086,
+          "n": 288,
+          "suppressed": false
+        }
+      },
+      "p90-100": {
+        "nw_ge_1000000": {
+          "est": 0.7271366600545491,
+          "se": 0.023243975644411604,
+          "n": 402,
+          "suppressed": false
+        },
+        "median_networth": {
+          "est": 1752314.3610599998,
+          "se": 173189.50085157173,
+          "n": 402,
+          "suppressed": false
+        }
+      }
+    }
+  }
+]
