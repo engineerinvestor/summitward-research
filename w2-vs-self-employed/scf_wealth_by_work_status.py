@@ -258,8 +258,13 @@ def report(r: dict) -> None:
     e, s = r["all"]["employee"], r["all"]["self_employed"]
     for label, key in rows:
         print(f"  {label:17s} {k(e[key]):24s} {k(s[key])}")
-    print(f"  median age        {e['median_age']['est']:.0f}  {s['median_age']['est']:>24.0f}")
-    for key, label in [("owns_business", "owns a business"), ("owns_stock", "owns stock")]:
+    print(
+        f"  median age        {e['median_age']['est']:.0f}  {s['median_age']['est']:>24.0f}"
+    )
+    for key, label in [
+        ("owns_business", "owns a business"),
+        ("owns_stock", "owns stock"),
+    ]:
         print(f"  {label:17s} {pct(e[key]):24s} {pct(s[key])}")
     for t in THRESHOLDS:
         key = f"nw_ge_{t}"
