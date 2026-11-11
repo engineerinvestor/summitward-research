@@ -210,6 +210,35 @@ def look_through(df: pd.DataFrame) -> tuple[dict, float, float, list]:
     return {k: v / total for k, v in agg.items()}, expanded, unexpanded, missing
 
 
+def look_through_raw(df: pd.DataFrame) -> tuple[dict, float]:
+    """Unrescaled look-through weights (shares of the whole fund) and the
+    unexpanded ETF share, for bounding what the unexpanded lines could change."""
+    agg: dict[str, float] = defaultdict(float)
+    unexpanded = 0.0
+    for _, r in df.iterrows():
+        typ, w = r["securityType"], r["w"]
+        if typ in STOCK_TYPES:
+            agg[issuer(r["ticker"], r["cusip"])] += w
+        elif typ in ETF_TYPES:
+            if r["ticker"] in HOLDINGS:
+                for k, wk in HOLDINGS[r["ticker"]].items():
+                    agg[k] += w * wk
+            elif r["ticker"] != "SGOV":
+                unexpanded += w
+    return dict(agg), unexpanded
+
+
+def bottom_band(weights: dict, bench: dict, share: float = 0.9) -> float:
+    """Weight in the benchmark's smallest issuers making up its last 1 - share."""
+    order = sorted(bench.items(), key=lambda kv: -kv[1])
+    small, cum = set(), 0.0
+    for k, w in order:
+        if cum >= share:
+            small.add(k)
+        cum += w
+    return sum(w for k, w in weights.items() if k in small)
+
+
 def size_buckets(weights: dict, bench: dict) -> dict:
     """Shares in the largest issuers making up 50% of the benchmark's cap, the
     next 40%, the last 10%, and names outside the benchmark."""
@@ -403,9 +432,15 @@ def main() -> None:
                 "avus": pct(w_avus.get(k, 0.0)),
                 "difference": pct(d),
                 "russell3000": pct(r3000.get(k, 0.0)),
+                "avuc_direct_pct_of_fund": pct(
+                    w_avuc_direct.get(k, 0.0) * comp["stock"]
+                ),
             }
         )
-        print(f"  {NAME_OF.get(k, k):34s} {pct(d):+6.2f}")
+        print(
+            f"  {NAME_OF.get(k, k):34s} {pct(d):+6.2f}"
+            f"   (held directly: {pct(w_avuc_direct.get(k, 0.0) * comp['stock']):.2f}% of the fund)"
+        )
     res["active_weights_vs_avus"] = active
     top10 = lambda wts: pct(sum(sorted(wts.values(), reverse=True)[:10]))  # noqa: E731
     res["top10_concentration"] = {
@@ -457,6 +492,42 @@ def main() -> None:
             for k, (s, c) in vs.items()
         },
     }
+
+    # ------------------------------------------------ bounds for unexpanded ETFs
+    # The central look-through figures drop the unexpanded ETF lines and rescale.
+    # Here they stay in the denominator (AVUC's equity, excluding T-bills and
+    # cash) and are assigned the least and most favorable composition.
+    raw, u = look_through_raw(avuc)
+    den = sum(raw.values()) + u
+    lt = {k: v / den for k, v in raw.items()}
+    ov_lo = overlap(lt, w_avus)
+    bot_lo = bottom_band(lt, r3000)
+    r1k = {k: w for k, w in raw.items() if k in frac}
+    r1k_val = sum(w * frac[k] for k, w in r1k.items())
+    r1k_tot = sum(r1k.values())
+    bounds = {
+        "unexpanded_share_of_equity_pct": pct(u / den),
+        "overlap_with_avus_pct": [pct(ov_lo), pct(min(ov_lo + u / den, 1.0))],
+        "smallest_10pct_band_pct": [pct(bot_lo), pct(bot_lo + u / den)],
+        "russell_value_share_pct": [
+            pct(r1k_val / (r1k_tot + u), 1),
+            pct((r1k_val + u) / (r1k_tot + u), 1),
+        ],
+    }
+    print(
+        f"\nBounds if the unexpanded {bounds['unexpanded_share_of_equity_pct']}% "
+        "of AVUC's equity held the least or most favorable stocks"
+    )
+    print(
+        f"  Overlap with AVUS            {bounds['overlap_with_avus_pct']} (central {pct(ov['AVUC look-through vs AVUS'])})"
+    )
+    print(
+        f"  Smallest 10% band            {bounds['smallest_10pct_band_pct']} (central {sb['AVUC look-through']['bottom 10%']}; AVUS {sb['AVUS']['bottom 10%']})"
+    )
+    print(
+        f"  Russell value share          {bounds['russell_value_share_pct']} (central {pct(vs['AVUC look-through'][0], 1)}; AVUS {pct(vs['AVUS'][0], 1)})"
+    )
+    res["bounds_unexpanded"] = bounds
 
     # ------------------------------------------------ AVNC
     avnc = AV["AVNC"]
@@ -548,6 +619,55 @@ def main() -> None:
             print(
                 f"  {r['fund']}: ${gain / 1e6:,.1f}M on ${(cost + gain) / 1e6:,.1f}M = {pct(share, 1)}%"
             )
+
+    # ------------------------------------------------ Sep 30 characteristics
+    fs = {}
+    with (DATA / "factsheets_2026-09-30.csv").open() as f:
+        for r in csv.DictReader(f):
+            fs[r["portfolio"]] = {
+                k: float(r[k])
+                for k in ("mkt_cap_bn", "book_to_market", "profits_to_book")
+            }
+    blend = {
+        k: 0.7 * fs["AVDE"][k] + 0.3 * fs["AVEM"][k]
+        for k in ("mkt_cap_bn", "book_to_market", "profits_to_book")
+    }
+    bench_blend = {
+        k: 0.7 * fs["MSCI World ex USA IMI"][k]
+        + 0.3 * fs["MSCI Emerging Markets IMI"][k]
+        for k in ("book_to_market", "profits_to_book")
+    }
+    print("\nFact-sheet characteristics, Sep 30 2026 (weighted averages)")
+    for name in ("AVNC", "AVNM", "AVDE", "AVEM", "MSCI ACWI ex USA IMI"):
+        print(f"  {name:22s} {fs[name]}")
+    print(
+        f"  70% AVDE + 30% AVEM    B/M {blend['book_to_market']:.3f}, "
+        f"profits/book {blend['profits_to_book']:.3f}, mkt cap ${blend['mkt_cap_bn']:.1f}B"
+    )
+    print(
+        f"  70/30 of their benchmarks: B/M {bench_blend['book_to_market']:.3f}, "
+        f"profits/book {bench_blend['profits_to_book']:.3f}"
+    )
+    res["factsheets_2026_09_30"] = {
+        **fs,
+        "AVDE 70 / AVEM 30": {k: round(v, 3) for k, v in blend.items()},
+        "benchmarks 70 / 30": {k: round(v, 3) for k, v in bench_blend.items()},
+    }
+
+    # ------------------------------------------------ trading
+    print("\nTrading on the Avantis fund pages, Nov 9 2026")
+    res["trading_2026_11_09"] = {}
+    with (DATA / "trading_2026-11-09.csv").open() as f:
+        for r in csv.DictReader(f):
+            print(
+                f"  {r['ticker']}: 30-day median bid-ask spread {r['median_spread_30d_pct']}%, "
+                f"spread {r['spread_pct']}%, volume {int(r['volume']):,}"
+            )
+            res["trading_2026_11_09"][r["ticker"]] = {
+                "median_spread_30d_pct": float(r["median_spread_30d_pct"]),
+                "spread_pct": float(r["spread_pct"]),
+                "volume": int(r["volume"]),
+            }
 
     (OUT / "results.json").write_text(json.dumps(res, indent=2))
     print("\nwrote out/results.json")

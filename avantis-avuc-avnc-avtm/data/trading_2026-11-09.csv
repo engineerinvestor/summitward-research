@@ -1,0 +1,9 @@
+ticker,median_spread_30d_pct,spread_pct,volume,source
+AVUC,0.06,0.06,309,avantisinvestors.com fund page (thirtyDayMedianBidAskSpread / bidAskSpread / volume as of 11/09/2026)
+AVUS,0.02,0.02,322002,avantisinvestors.com fund page (as of 11/09/2026)
+AVNC,0.23,0.16,755,avantisinvestors.com fund page (as of 11/09/2026)
+AVNM,0.11,0.11,57776,avantisinvestors.com fund page (as of 11/09/2026)
+AVTM,0.11,0.11,395,avantisinvestors.com fund page (as of 11/09/2026)
+AVGE,0.09,0.08,110631,avantisinvestors.com fund page (as of 11/09/2026)
+AVDE,0.01,0.01,867372,avantisinvestors.com fund page (as of 11/09/2026)
+AVEM,0.02,0.02,3045178,avantisinvestors.com fund page (as of 11/09/2026)

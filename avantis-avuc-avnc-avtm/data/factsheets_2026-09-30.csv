@@ -1,0 +1,8 @@
+portfolio,mkt_cap_bn,book_to_market,profits_to_book,holdings,source
+AVNC,299.0,0.34,0.38,8082,https://res.avantisinvestors.com/docs/avantis-all-international-core-equity-avnc-etf-fact-sheet.pdf
+AVNM,132.1,0.55,0.35,8964,https://res.avantisinvestors.com/docs/avantis-all-international-markets-equity-avnm-etf-fact-sheet.pdf
+MSCI ACWI ex USA IMI,226.8,0.39,0.32,5854,AVNC and AVNM fact sheets (benchmark column)
+AVDE,72.4,0.48,0.36,3342,https://res.avantisinvestors.com/docs/avantis-international-equity-avde-etf-fact-sheet.pdf
+MSCI World ex USA IMI,105.1,0.37,0.35,2940,AVDE fact sheet (benchmark column)
+AVEM,443.0,0.53,0.30,4019,https://res.avantisinvestors.com/docs/avantis-emerging-markets-equity-avem-etf-fact-sheet.pdf
+MSCI Emerging Markets IMI,475.3,0.45,0.28,2914,AVEM fact sheet (benchmark column)
