@@ -1,0 +1,494 @@
+{
+  "price_data_through": "2026-11-12",
+  "closes_adjusted": {
+    "2026-10-28": {
+      "NVDA": 215.38,
+      "SPY": 772.31,
+      "SOXX": 173.98
+    },
+    "2026-11-06": {
+      "NVDA": 186.64,
+      "SPY": 735.29,
+      "SOXX": 136.53
+    },
+    "2026-11-09": {
+      "NVDA": 178.67,
+      "SPY": 752.69,
+      "SOXX": 146.76
+    },
+    "2026-11-10": {
+      "NVDA": 168.89,
+      "SPY": 749.92,
+      "SOXX": 146.59
+    },
+    "2026-11-11": {
+      "NVDA": 173.73,
+      "SPY": 759.81,
+      "SOXX": 155.4
+    },
+    "2026-11-12": {
+      "NVDA": 166.19,
+      "SPY": 757.12,
+      "SOXX": 154.99
+    }
+  },
+  "estimation_window": [
+    "2025-10-29",
+    "2026-10-27"
+  ],
+  "event_study": {
+    "SPY": {
+      "alpha_daily": -0.00041,
+      "betas": {
+        "SPY": 1.928
+      },
+      "resid_sd_daily": 0.0178,
+      "daily_ar": {
+        "2026-10-29": -0.0002,
+        "2026-10-30": -0.0076,
+        "2026-11-02": -0.003,
+        "2026-11-03": 0.0176,
+        "2026-11-04": -0.0632,
+        "2026-11-05": -0.0072,
+        "2026-11-06": 0.0221,
+        "2026-11-09": -0.0879,
+        "2026-11-10": -0.0472,
+        "2026-11-11": 0.0036,
+        "2026-11-12": -0.0362
+      },
+      "phase1_reports_and_chip_selloff": {
+        "days": 7,
+        "car": -0.0414,
+        "t": -0.88
+      },
+      "phase2_admission_to_resignation": {
+        "days": 4,
+        "car": -0.1677,
+        "t": -4.72
+      },
+      "total": {
+        "days": 11,
+        "car": -0.2091,
+        "t": -3.55
+      }
+    },
+    "SOXX": {
+      "alpha_daily": -0.00061,
+      "betas": {
+        "SOXX": 0.483
+      },
+      "resid_sd_daily": 0.0188,
+      "daily_ar": {
+        "2026-10-29": 0.0001,
+        "2026-10-30": -0.0018,
+        "2026-11-02": 0.0063,
+        "2026-11-03": 0.0114,
+        "2026-11-04": -0.016,
+        "2026-11-05": -0.0334,
+        "2026-11-06": 0.0114,
+        "2026-11-09": -0.0782,
+        "2026-11-10": -0.0536,
+        "2026-11-11": 0.0003,
+        "2026-11-12": -0.0415
+      },
+      "phase1_reports_and_chip_selloff": {
+        "days": 7,
+        "car": -0.022,
+        "t": -0.44
+      },
+      "phase2_admission_to_resignation": {
+        "days": 4,
+        "car": -0.1731,
+        "t": -4.6
+      },
+      "total": {
+        "days": 11,
+        "car": -0.195,
+        "t": -3.13
+      }
+    },
+    "SPY+SOXX": {
+      "alpha_daily": -0.00065,
+      "betas": {
+        "SPY": 1.36,
+        "SOXX": 0.212
+      },
+      "resid_sd_daily": 0.0173,
+      "daily_ar": {
+        "2026-10-29": 0.0011,
+        "2026-10-30": 0.0001,
+        "2026-11-02": 0.0026,
+        "2026-11-03": 0.0142,
+        "2026-11-04": -0.0469,
+        "2026-11-05": -0.0062,
+        "2026-11-06": 0.0167,
+        "2026-11-09": -0.0902,
+        "2026-11-10": -0.0488,
+        "2026-11-11": -0.0014,
+        "2026-11-12": -0.0374
+      },
+      "phase1_reports_and_chip_selloff": {
+        "days": 7,
+        "car": -0.0184,
+        "t": -0.4
+      },
+      "phase2_admission_to_resignation": {
+        "days": 4,
+        "car": -0.1778,
+        "t": -5.14
+      },
+      "total": {
+        "days": 11,
+        "car": -0.1962,
+        "t": -3.42
+      }
+    },
+    "^SOX": {
+      "alpha_daily": -0.00058,
+      "betas": {
+        "^SOX": 0.52
+      },
+      "resid_sd_daily": 0.0182,
+      "daily_ar": {
+        "2026-10-29": -0.0,
+        "2026-10-30": -0.0042,
+        "2026-11-02": 0.0055,
+        "2026-11-03": 0.0098,
+        "2026-11-04": -0.0149,
+        "2026-11-05": -0.0284,
+        "2026-11-06": 0.0065,
+        "2026-11-09": -0.0778,
+        "2026-11-10": -0.0523,
+        "2026-11-11": -0.0002,
+        "2026-11-12": -0.04
+      },
+      "phase1_reports_and_chip_selloff": {
+        "days": 7,
+        "car": -0.0257,
+        "t": -0.53
+      },
+      "phase2_admission_to_resignation": {
+        "days": 4,
+        "car": -0.1702,
+        "t": -4.67
+      },
+      "total": {
+        "days": 11,
+        "car": -0.1959,
+        "t": -3.24
+      }
+    }
+  },
+  "cumulative_from_oct28": {
+    "NVDA": {
+      "2026-10-28": 0.0,
+      "2026-10-29": -0.008,
+      "2026-10-30": -0.0499,
+      "2026-11-02": -0.0618,
+      "2026-11-03": -0.0403,
+      "2026-11-04": -0.0708,
+      "2026-11-05": -0.1568,
+      "2026-11-06": -0.1334,
+      "2026-11-09": -0.1704,
+      "2026-11-10": -0.2159,
+      "2026-11-11": -0.1934,
+      "2026-11-12": -0.2284
+    },
+    "SPY": {
+      "2026-10-28": 0.0,
+      "2026-10-29": -0.0038,
+      "2026-10-30": -0.0215,
+      "2026-11-02": -0.0262,
+      "2026-11-03": -0.0233,
+      "2026-11-04": -0.0071,
+      "2026-11-05": -0.0509,
+      "2026-11-06": -0.0479,
+      "2026-11-09": -0.0254,
+      "2026-11-10": -0.029,
+      "2026-11-11": -0.0162,
+      "2026-11-12": -0.0197
+    },
+    "SOXX": {
+      "2026-10-28": 0.0,
+      "2026-10-29": -0.0155,
+      "2026-10-30": -0.0966,
+      "2026-11-02": -0.1308,
+      "2026-11-03": -0.1091,
+      "2026-11-04": -0.137,
+      "2026-11-05": -0.2419,
+      "2026-11-06": -0.2153,
+      "2026-11-09": -0.1565,
+      "2026-11-10": -0.1574,
+      "2026-11-11": -0.1068,
+      "2026-11-12": -0.1092
+    },
+    "^SOX": {
+      "2026-10-28": 0.0,
+      "2026-10-29": -0.0142,
+      "2026-10-30": -0.0852,
+      "2026-11-02": -0.116,
+      "2026-11-03": -0.0927,
+      "2026-11-04": -0.1211,
+      "2026-11-05": -0.2288,
+      "2026-11-06": -0.1963,
+      "2026-11-09": -0.1412,
+      "2026-11-10": -0.1443,
+      "2026-11-11": -0.0958,
+      "2026-11-12": -0.1008
+    }
+  },
+  "raw_phase_returns": {
+    "phase1_reports_and_chip_selloff": {
+      "NVDA": -0.1334,
+      "SPY": -0.0479,
+      "SOXX": -0.2153,
+      "^SOX": -0.1963
+    },
+    "phase2_admission_to_resignation": {
+      "NVDA": -0.1096,
+      "SPY": 0.0297,
+      "SOXX": 0.1352,
+      "^SOX": 0.1189
+    },
+    "total": {
+      "NVDA": -0.2284,
+      "SPY": -0.0197,
+      "SOXX": -0.1092,
+      "^SOX": -0.1008
+    }
+  },
+  "holdings": {
+    "SPY": {
+      "as_of": "11-Nov-2026",
+      "companies": 501,
+      "effective_n": 45.7,
+      "top10_share": 0.386,
+      "largest": "AAPL",
+      "largest_weight": 0.079
+    },
+    "ACWI": {
+      "as_of": "Nov 10, 2026",
+      "companies": 1585,
+      "effective_n": 104.5,
+      "top10_share": 0.2533,
+      "largest": "APPLE",
+      "largest_weight": 0.0513
+    },
+    "IJS": {
+      "as_of": "Nov 11, 2026",
+      "companies": 459,
+      "effective_n": 282.6,
+      "top10_share": 0.09,
+      "largest": "MATCH GROUP INC",
+      "largest_weight": 0.0103
+    },
+    "RSP": {
+      "as_of": "by construction at quarterly rebalance",
+      "companies": 501,
+      "effective_n": 501.0
+    },
+    "nvda_weight": {
+      "SPY": 0.06394,
+      "ACWI": 0.039,
+      "IJS": 0.0,
+      "RSP": 0.002
+    }
+  },
+  "nov12": {
+    "nvda_return": -0.0434,
+    "spy_return": -0.0035,
+    "nvda_contribution_pp": -0.278,
+    "spy_ex_nvda_return_implied": -0.0008
+  },
+  "spy_contribution": {
+    "implied_weight_oct28": 0.078,
+    "implied_weight_nov06": 0.071,
+    "phase1_reports_and_chip_selloff": {
+      "raw_pp": -1.04,
+      "abnormal_pp": -0.153
+    },
+    "phase2_admission_to_resignation": {
+      "raw_pp": -0.763,
+      "abnormal_pp": -1.212
+    },
+    "total": {
+      "raw_pp": -1.804,
+      "abnormal_pp": -1.365
+    }
+  },
+  "spy_daily_sd_1y": 0.008,
+  "risk_share": {
+    "3y": {
+      "weeks": 157,
+      "window": [
+        "2023-10-27",
+        "2026-10-23"
+      ],
+      "market": {
+        "betas": {
+          "ACWI": 2.075
+        },
+        "nvda_resid_vol": 0.337,
+        "nvda_total_vol": 0.4384,
+        "rows": {
+          "NVDA alone": {
+            "nvda_weight": 1.0,
+            "holding_vol": 0.4384,
+            "nvda_specific_share": 0.5908
+          },
+          "10% NVDA + 90% ACWI": {
+            "nvda_weight": 0.1351,
+            "holding_vol": 0.1541,
+            "nvda_specific_share": 0.0873
+          },
+          "SPY (S&P 500)": {
+            "nvda_weight": 0.0639,
+            "holding_vol": 0.1425,
+            "nvda_specific_share": 0.0229
+          },
+          "ACWI (global)": {
+            "nvda_weight": 0.039,
+            "holding_vol": 0.1358,
+            "nvda_specific_share": 0.0094
+          },
+          "RSP (equal weight)": {
+            "nvda_weight": 0.002,
+            "holding_vol": 0.1298,
+            "nvda_specific_share": 0.0
+          },
+          "IJS (small-cap value)": {
+            "nvda_weight": 0.0,
+            "holding_vol": 0.1954,
+            "nvda_specific_share": 0.0
+          }
+        }
+      },
+      "market+chips": {
+        "betas": {
+          "ACWI": 0.804,
+          "SOXX": 0.607
+        },
+        "nvda_resid_vol": 0.3102,
+        "nvda_total_vol": 0.4384,
+        "rows": {
+          "NVDA alone": {
+            "nvda_weight": 1.0,
+            "holding_vol": 0.4384,
+            "nvda_specific_share": 0.5006
+          },
+          "10% NVDA + 90% ACWI": {
+            "nvda_weight": 0.1351,
+            "holding_vol": 0.1541,
+            "nvda_specific_share": 0.074
+          },
+          "SPY (S&P 500)": {
+            "nvda_weight": 0.0639,
+            "holding_vol": 0.1425,
+            "nvda_specific_share": 0.0194
+          },
+          "ACWI (global)": {
+            "nvda_weight": 0.039,
+            "holding_vol": 0.1358,
+            "nvda_specific_share": 0.0079
+          },
+          "RSP (equal weight)": {
+            "nvda_weight": 0.002,
+            "holding_vol": 0.1298,
+            "nvda_specific_share": 0.0
+          },
+          "IJS (small-cap value)": {
+            "nvda_weight": 0.0,
+            "holding_vol": 0.1954,
+            "nvda_specific_share": 0.0
+          }
+        }
+      }
+    },
+    "5y": {
+      "weeks": 261,
+      "window": [
+        "2021-10-29",
+        "2026-10-23"
+      ],
+      "market": {
+        "betas": {
+          "ACWI": 2.06
+        },
+        "nvda_resid_vol": 0.3611,
+        "nvda_total_vol": 0.4802,
+        "rows": {
+          "NVDA alone": {
+            "nvda_weight": 1.0,
+            "holding_vol": 0.4802,
+            "nvda_specific_share": 0.5656
+          },
+          "10% NVDA + 90% ACWI": {
+            "nvda_weight": 0.1351,
+            "holding_vol": 0.1741,
+            "nvda_specific_share": 0.0785
+          },
+          "SPY (S&P 500)": {
+            "nvda_weight": 0.0639,
+            "holding_vol": 0.1623,
+            "nvda_specific_share": 0.0202
+          },
+          "ACWI (global)": {
+            "nvda_weight": 0.039,
+            "holding_vol": 0.154,
+            "nvda_specific_share": 0.0084
+          },
+          "RSP (equal weight)": {
+            "nvda_weight": 0.002,
+            "holding_vol": 0.1565,
+            "nvda_specific_share": 0.0
+          },
+          "IJS (small-cap value)": {
+            "nvda_weight": 0.0,
+            "holding_vol": 0.2062,
+            "nvda_specific_share": 0.0
+          }
+        }
+      },
+      "market+chips": {
+        "betas": {
+          "ACWI": 0.466,
+          "SOXX": 0.884
+        },
+        "nvda_resid_vol": 0.3076,
+        "nvda_total_vol": 0.4802,
+        "rows": {
+          "NVDA alone": {
+            "nvda_weight": 1.0,
+            "holding_vol": 0.4802,
+            "nvda_specific_share": 0.4103
+          },
+          "10% NVDA + 90% ACWI": {
+            "nvda_weight": 0.1351,
+            "holding_vol": 0.1741,
+            "nvda_specific_share": 0.057
+          },
+          "SPY (S&P 500)": {
+            "nvda_weight": 0.0639,
+            "holding_vol": 0.1623,
+            "nvda_specific_share": 0.0147
+          },
+          "ACWI (global)": {
+            "nvda_weight": 0.039,
+            "holding_vol": 0.154,
+            "nvda_specific_share": 0.0061
+          },
+          "RSP (equal weight)": {
+            "nvda_weight": 0.002,
+            "holding_vol": 0.1565,
+            "nvda_specific_share": 0.0
+          },
+          "IJS (small-cap value)": {
+            "nvda_weight": 0.0,
+            "holding_vol": 0.2062,
+            "nvda_specific_share": 0.0
+          }
+        }
+      }
+    }
+  }
+}
