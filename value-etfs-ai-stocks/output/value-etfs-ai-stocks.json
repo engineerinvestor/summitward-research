@@ -1,0 +1,68 @@
+{
+ "window": {
+  "start": "2026-10-06",
+  "end": "2026-11-12"
+ },
+ "returns": [
+  {
+   "ticker": "VTV",
+   "label": "VTV",
+   "selloff": 4.58
+  },
+  {
+   "ticker": "IWD",
+   "label": "IWD",
+   "selloff": 4.37
+  },
+  {
+   "ticker": "IVE",
+   "label": "IVE",
+   "selloff": 4.33
+  },
+  {
+   "ticker": "VLUE",
+   "label": "VLUE",
+   "selloff": -4.92
+  },
+  {
+   "ticker": "AVLV",
+   "label": "AVLV",
+   "selloff": 2.18
+  },
+  {
+   "ticker": "DFLV",
+   "label": "DFLV",
+   "selloff": 3.07
+  },
+  {
+   "ticker": "AVUV",
+   "label": "AVUV",
+   "selloff": 1.12
+  },
+  {
+   "ticker": "DFSV",
+   "label": "DFSV",
+   "selloff": 2.14
+  },
+  {
+   "ticker": "AVGV",
+   "label": "AVGV",
+   "selloff": -0.12
+  },
+  {
+   "ticker": "VTI",
+   "label": "VTI",
+   "selloff": -2.59
+  },
+  {
+   "ticker": "IWF",
+   "label": "IWF",
+   "selloff": -10.06
+  },
+  {
+   "ticker": "SOXX",
+   "label": "SOXX",
+   "selloff": -21.12
+  }
+ ]
+}

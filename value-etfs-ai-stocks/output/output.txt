@@ -1,0 +1,120 @@
+1. Holdings (Vanguard as of 2026-09-30; others 2026-11-12)
+fund         n      IT      CS   IT+CS    MSFT    AAPL    META    NVDA      MU    SNDK   GOOGL    GOOG    AVGO    ORCL     AMD
+VTV        298   12.78    2.97   15.75    0.00    0.00    0.00    0.00    4.56    0.00    0.00    0.00    0.00    0.00    0.00
+IWD        868   19.00    3.03   22.02    5.05    6.12    0.65    0.00    0.00    0.00    0.00    0.00    0.00    0.00    0.00
+IVE        434   19.38    2.68   22.05    0.00    8.41    0.00    0.00    0.00    0.00    0.00    0.00    0.00    0.39    0.00
+VLUE       146   37.79   10.01   47.80    0.00    0.00    0.00    0.00   18.63    0.00    0.00    0.00    0.00    0.00    0.00
+AVLV       298   13.10    7.27   20.38    3.40    2.91    2.93    0.17    2.59    0.39    0.00    0.00    0.00    0.00    0.00
+DFLV       333    6.57    7.26   13.83    0.00    0.00    1.99    0.00    0.10    0.00    0.81    0.72    0.00    0.03    0.00
+AVUV       784    4.40    2.63    7.03    0.00    0.00    0.00    0.00    0.00    0.00    0.00    0.00    0.00    0.00    0.00
+DFSV      1057    6.21    2.31    8.51    0.00    0.00    0.00    0.00    0.00    0.00    0.00    0.00    0.00    0.00    0.00
+AVGV              8.44    4.69   13.13    1.29    1.10    1.11    0.06    0.98    0.15    0.00    0.00    0.00    0.00    0.00
+VTI       3431   37.19    9.35   46.53    5.19    6.63    2.18    7.13    1.64    0.35    2.76    2.18    2.28    0.32    1.36
+IWV       2586   33.50    8.50   41.99    5.33    7.04    1.88    5.32    1.24    0.19    2.39    1.93    2.33    0.31    1.31
+IWF        372   53.01   15.69   68.70    6.15    8.81    3.55   12.28    2.85    0.43    5.51    4.45    5.37    0.71    3.02
+SOXX        30  100.03    0.00  100.03    0.00    0.00    0.00    6.61    7.27    0.00    0.00    0.00    8.61    0.00   10.86
+AVGV sleeves (%): {'AVLV': 37.8, 'AVUV': 17.96, 'AVIV': 17.75, 'AVES': 9.78, 'AVDV': 9.05, 'AVMV': 7.58}
+DFLV: unmapped equity weight 0.95%; Dimensional-reported Oct 31 IT 7.69, CS 6.96
+DFSV: unmapped equity weight 3.77%; Dimensional-reported Oct 31 IT 6.47, CS 2.58
+
+2. Returns, 2026-10-06 close to 2026-11-12 close, and YTD to 2026-10-30
+VTV    selloff    4.58%   vs VTI   7.17 pts   YTD   21.20%
+IWD    selloff    4.37%   vs VTI   6.96 pts   YTD   24.28%
+IVE    selloff    4.33%   vs VTI   6.92 pts   YTD   14.27%
+VLUE   selloff   -4.92%   vs VTI  -2.33 pts   YTD   43.97%
+AVLV   selloff    2.18%   vs VTI   4.77 pts   YTD   25.19%
+DFLV   selloff    3.07%   vs VTI   5.66 pts   YTD   23.58%
+AVUV   selloff    1.12%   vs VTI   3.71 pts   YTD   22.19%
+DFSV   selloff    2.14%   vs VTI   4.74 pts   YTD   21.22%
+AVGV   selloff   -0.12%   vs VTI   2.48 pts   YTD   18.32%
+VTI    selloff   -2.59%   vs VTI   0.00 pts   YTD   11.78%
+IWF    selloff  -10.06%   vs VTI  -7.47 pts   YTD   -0.34%
+IWN    selloff    0.24%   vs VTI   2.84 pts   YTD   19.65%
+SOXX   selloff  -21.12%   vs VTI -18.52 pts   YTD   56.84%
+NVDA   selloff  -30.53%   vs VTI -27.94 pts   YTD    9.98%
+NVDA closing high Sep 1 to Nov 12: 2026-10-06 (239.24)
+IWF closing high Sep 1 to Nov 12: 2026-10-06 (129.19)
+SOXX closing high Sep 1 to Nov 12: 2026-10-05 (196.50)
+
+3. Weekly semiconductor sensitivity, 2023-06-29 to 2026-11-12
+VTV    n=176 2023-07-06..2026-11-12  VTI 0.70  semis -0.056 [-0.108, -0.003]  R2 0.65   pre-selloff semis -0.050 [-0.108, +0.008]
+IWD    n=176 2023-07-06..2026-11-12  VTI 0.82  semis -0.096 [-0.140, -0.052]  R2 0.75   pre-selloff semis -0.080 [-0.125, -0.034]
+IVE    n=176 2023-07-06..2026-11-12  VTI 0.85  semis -0.112 [-0.143, -0.081]  R2 0.78   pre-selloff semis -0.112 [-0.145, -0.078]
+VLUE   n=176 2023-07-06..2026-11-12  VTI 0.79  semis +0.172 [+0.072, +0.273]  R2 0.69   pre-selloff semis +0.164 [+0.036, +0.291]
+AVLV   n=176 2023-07-06..2026-11-12  VTI 0.88  semis -0.031 [-0.083, +0.020]  R2 0.76   pre-selloff semis -0.013 [-0.065, +0.039]
+DFLV   n=176 2023-07-06..2026-11-12  VTI 0.81  semis -0.056 [-0.111, -0.001]  R2 0.66   pre-selloff semis -0.043 [-0.103, +0.016]
+AVUV   n=176 2023-07-06..2026-11-12  VTI 1.09  semis -0.082 [-0.150, -0.014]  R2 0.52   pre-selloff semis -0.068 [-0.145, +0.010]
+DFSV   n=176 2023-07-06..2026-11-12  VTI 1.12  semis -0.106 [-0.167, -0.046]  R2 0.54   pre-selloff semis -0.097 [-0.171, -0.024]
+AVGV   n=176 2023-07-06..2026-11-12  VTI 0.86  semis -0.031 [-0.077, +0.015]  R2 0.71   pre-selloff semis -0.016 [-0.064, +0.033]
+VTI    n=176 2023-07-06..2026-11-12  VTI 1.00  semis -0.000 [-0.000, -0.000]  R2 1.00   pre-selloff semis -0.000 [-0.000, -0.000]
+IWF    n=176 2023-07-06..2026-11-12  VTI 1.15  semis +0.090 [+0.037, +0.143]  R2 0.89   pre-selloff semis +0.065 [+0.016, +0.114]
+IWN    n=176 2023-07-06..2026-11-12  VTI 1.12  semis -0.082 [-0.150, -0.015]  R2 0.58   pre-selloff semis -0.066 [-0.142, +0.010]
+NVDA   n=176 2023-07-06..2026-11-12  VTI 1.45  semis +0.470 [+0.172, +0.768]  R2 0.47   pre-selloff semis +0.620 [+0.343, +0.898]
+
+3b. Selloff decomposition with the weekly betas, 2026-10-06 to 2026-11-12
+VTV    actual  +4.58  vs VTI  +7.17  market part  -1.81  semis part +1.03  predicted  -0.78  residual  +5.36
+IWD    actual  +4.37  vs VTI  +6.96  market part  -2.13  semis part +1.77  predicted  -0.36  residual  +4.73
+IVE    actual  +4.33  vs VTI  +6.92  market part  -2.19  semis part +2.07  predicted  -0.12  residual  +4.45
+VLUE   actual  -4.92  vs VTI  -2.33  market part  -2.05  semis part -3.19  predicted  -5.25  residual  +0.33
+AVLV   actual  +2.18  vs VTI  +4.77  market part  -2.29  semis part +0.58  predicted  -1.71  residual  +3.88
+DFLV   actual  +3.07  vs VTI  +5.66  market part  -2.10  semis part +1.04  predicted  -1.06  residual  +4.12
+AVUV   actual  +1.12  vs VTI  +3.71  market part  -2.83  semis part +1.52  predicted  -1.31  residual  +2.43
+DFSV   actual  +2.14  vs VTI  +4.74  market part  -2.91  semis part +1.97  predicted  -0.94  residual  +3.08
+AVGV   actual  -0.12  vs VTI  +2.48  market part  -2.23  semis part +0.57  predicted  -1.66  residual  +1.54
+IWF    actual -10.06  vs VTI  -7.47  market part  -2.99  semis part -1.66  predicted  -4.65  residual  -5.41
+IWN    actual  +0.24  vs VTI  +2.84  market part  -2.91  semis part +1.53  predicted  -1.38  residual  +1.63
+
+3c. Weekly semiconductor coefficient gaps (fund minus fund)
+AVGV-IWD n=176 semis gap +0.065 [+0.037, +0.092]
+AVLV-IWD n=176 semis gap +0.064 [+0.035, +0.094]
+AVLV-VTV n=176 semis gap +0.024 [-0.007, +0.056]
+
+4. Five factors + momentum, monthly, through 2026-09
+VTV   own    2004-02..2026-09 n=272  Mkt-RF +0.90(0.02)  SMB -0.07(0.03)  HML +0.30(0.03)  RMW +0.07(0.03)  CMA +0.18(0.05)  Mom -0.02(0.01)  a -0.005  R2 0.951
+VTV   common 2023-01..2026-09 n= 45  Mkt-RF +0.82(0.05)  SMB +0.05(0.10)  HML +0.38(0.17)  RMW +0.07(0.07)  CMA +0.25(0.19)  Mom +0.01(0.04)  a -0.005  R2 0.876
+IWD   own    2000-06..2026-09 n=316  Mkt-RF +0.93(0.02)  SMB -0.03(0.03)  HML +0.31(0.03)  RMW +0.09(0.02)  CMA +0.15(0.04)  Mom -0.04(0.02)  a -0.015  R2 0.960
+IWD   common 2023-01..2026-09 n= 45  Mkt-RF +0.93(0.05)  SMB +0.07(0.08)  HML +0.41(0.15)  RMW +0.13(0.04)  CMA +0.14(0.16)  Mom -0.03(0.05)  a -0.013  R2 0.909
+IVE   own    2000-06..2026-09 n=316  Mkt-RF +0.93(0.02)  SMB -0.07(0.03)  HML +0.28(0.03)  RMW +0.01(0.03)  CMA +0.14(0.04)  Mom -0.10(0.02)  a -0.014  R2 0.959
+IVE   common 2023-01..2026-09 n= 45  Mkt-RF +0.91(0.05)  SMB -0.00(0.09)  HML +0.33(0.14)  RMW +0.08(0.04)  CMA +0.09(0.13)  Mom -0.12(0.04)  a -0.030  R2 0.908
+VLUE  own    2013-05..2026-09 n=161  Mkt-RF +1.05(0.07)  SMB -0.04(0.10)  HML +0.43(0.06)  RMW -0.29(0.19)  CMA +0.06(0.06)  Mom -0.03(0.05)  a +0.001  R2 0.865
+VLUE  common 2023-01..2026-09 n= 45  Mkt-RF +1.17(0.21)  SMB -0.22(0.20)  HML +0.60(0.16)  RMW -0.57(0.18)  CMA +0.05(0.12)  Mom -0.07(0.11)  a -0.004  R2 0.792
+AVLV  own    2021-10..2026-09 n= 60  Mkt-RF +1.00(0.03)  SMB +0.18(0.06)  HML +0.29(0.06)  RMW +0.07(0.05)  CMA +0.18(0.08)  Mom -0.00(0.04)  a +0.007  R2 0.942
+AVLV  common 2023-01..2026-09 n= 45  Mkt-RF +0.96(0.06)  SMB +0.17(0.09)  HML +0.32(0.09)  RMW +0.07(0.07)  CMA +0.16(0.13)  Mom -0.02(0.06)  a +0.009  R2 0.907
+DFLV  own    2023-01..2026-09 n= 45  Mkt-RF +0.91(0.04)  SMB +0.04(0.07)  HML +0.54(0.12)  RMW +0.05(0.06)  CMA +0.14(0.15)  Mom -0.12(0.05)  a -0.013  R2 0.905
+DFLV  common 2023-01..2026-09 n= 45  Mkt-RF +0.91(0.04)  SMB +0.04(0.07)  HML +0.54(0.12)  RMW +0.05(0.06)  CMA +0.14(0.15)  Mom -0.12(0.05)  a -0.013  R2 0.905
+AVUV  own    2019-10..2026-09 n= 84  Mkt-RF +1.06(0.04)  SMB +0.89(0.06)  HML +0.55(0.05)  RMW +0.22(0.07)  CMA -0.05(0.10)  Mom +0.01(0.03)  a +0.005  R2 0.975
+AVUV  common 2023-01..2026-09 n= 45  Mkt-RF +0.95(0.06)  SMB +0.99(0.09)  HML +0.40(0.10)  RMW +0.21(0.09)  CMA +0.03(0.13)  Mom +0.04(0.05)  a +0.025  R2 0.965
+DFSV  own    2022-03..2026-09 n= 55  Mkt-RF +1.01(0.02)  SMB +0.86(0.08)  HML +0.44(0.06)  RMW +0.20(0.05)  CMA +0.10(0.08)  Mom -0.05(0.03)  a +0.008  R2 0.979
+DFSV  common 2023-01..2026-09 n= 45  Mkt-RF +1.00(0.05)  SMB +0.86(0.09)  HML +0.43(0.08)  RMW +0.20(0.07)  CMA +0.09(0.13)  Mom -0.05(0.04)  a +0.003  R2 0.971
+IWN   own    2000-08..2026-09 n=314  Mkt-RF +0.96(0.01)  SMB +0.83(0.02)  HML +0.38(0.03)  RMW +0.08(0.03)  CMA +0.07(0.04)  Mom +0.02(0.02)  a -0.015  R2 0.978
+IWN   common 2023-01..2026-09 n= 45  Mkt-RF +0.97(0.03)  SMB +0.88(0.06)  HML +0.41(0.04)  RMW +0.00(0.03)  CMA -0.03(0.08)  Mom +0.00(0.03)  a -0.004  R2 0.986
+VTI   own    2001-07..2026-09 n=303  Mkt-RF +1.00(0.00)  SMB +0.00(0.01)  HML +0.02(0.01)  RMW +0.02(0.01)  CMA +0.01(0.01)  Mom +0.00(0.01)  a -0.002  R2 0.998
+VTI   common 2023-01..2026-09 n= 45  Mkt-RF +1.00(0.01)  SMB +0.01(0.01)  HML +0.02(0.01)  RMW -0.01(0.01)  CMA +0.02(0.01)  Mom +0.01(0.01)  a -0.002  R2 0.999
+IWF   own    2000-06..2026-09 n=316  Mkt-RF +1.06(0.01)  SMB -0.14(0.02)  HML -0.26(0.03)  RMW -0.04(0.03)  CMA -0.13(0.04)  Mom -0.01(0.02)  a +0.006  R2 0.977
+IWF   common 2023-01..2026-09 n= 45  Mkt-RF +1.04(0.04)  SMB -0.12(0.05)  HML -0.37(0.11)  RMW -0.14(0.04)  CMA -0.06(0.12)  Mom +0.03(0.04)  a +0.015  R2 0.961
+
+4b. Loading gaps: fund minus index ETF, over the fund's own history
+AVLV-IWD 2021-10..2026-09 n=60  SMB +0.04 [-0.11,+0.18]  HML +0.00 [-0.14,+0.15]  RMW -0.04 [-0.14,+0.06]  CMA +0.03 [-0.13,+0.19]  alpha +0.017 (NW se 0.019)  R2 0.16
+DFLV-IWD 2023-01..2026-09 n=45  SMB -0.03 [-0.15,+0.08]  HML +0.13 [+0.04,+0.22]  RMW -0.08 [-0.16,-0.00]  CMA -0.00 [-0.14,+0.13]  alpha +0.001 (NW se 0.015)  R2 0.36
+VLUE-IWD 2013-05..2026-09 n=161  SMB -0.09 [-0.31,+0.13]  HML +0.14 [+0.01,+0.26]  RMW -0.38 [-0.78,+0.02]  CMA -0.05 [-0.22,+0.11]  alpha +0.015 (NW se 0.014)  R2 0.25
+AVUV-IWN 2019-10..2026-09 n=84  SMB +0.06 [-0.08,+0.20]  HML +0.15 [+0.04,+0.26]  RMW +0.23 [+0.07,+0.38]  CMA -0.01 [-0.14,+0.11]  alpha +0.028 (NW se 0.015)  R2 0.41
+DFSV-IWN 2022-03..2026-09 n=55  SMB -0.00 [-0.19,+0.18]  HML +0.05 [-0.11,+0.20]  RMW +0.20 [+0.12,+0.29]  CMA +0.11 [-0.03,+0.25]  alpha +0.022 (NW se 0.018)  R2 0.45
+AVLV-IWD: market-beta gap +0.107 (NW se 0.044) x mean Mkt-RF = +1.02 pts/yr of an arithmetic gap of +2.71 pts/yr
+
+4c. Realized: fund against index ETF over the fund's own history to Oct 2026
+AVLV 15.11% vs IWD 12.46% a year, 2021-10..2026-10 (61 months), tracking error 4.61%
+DFLV 16.84% vs IWD 17.03% a year, 2023-01..2026-10 (46 months), tracking error 2.93%
+AVUV 15.39% vs IWN 10.67% a year, 2019-10..2026-10 (85 months), tracking error 5.91%
+DFSV 11.22% vs IWN 8.74% a year, 2022-03..2026-10 (56 months), tracking error 4.81%
+
+5. HML record (three-factor file)
+1926-07..2007-12: 978 months, mean x12 5.30%, positive 54.8%, compound 4.66%
+2008-01..2025-03: 207 months, mean x12 -0.85%, positive 43.0%, compound -1.54%
+2008-01..2026-09: 225 months, mean x12 -0.56%, positive 43.1%, compound -1.23%
+1926-07..2026-09: 1203 months, mean x12 4.20%, positive 52.6%, compound 3.53%
+
+6. AVUV vs VTI, Oct 2019 to Oct 2026 (monthly)
+AVUV: 85 months, CAGR 15.39%, arithmetic 17.67%, volatility 25.40%
+VTI: 85 months, CAGR 15.20%, arithmetic 15.66%, volatility 16.96%
+
+Wrote output/results.json and output/value-etfs-ai-stocks.json
