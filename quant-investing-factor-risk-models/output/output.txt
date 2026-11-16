@@ -1,0 +1,113 @@
+Loading data
+  VTI    2001-07 to 2026-11
+  VBR    2004-02 to 2026-11
+  AVUV   2019-10 to 2026-11
+  DFSVX  1993-03 to 2026-11
+  USMV   2011-11 to 2026-11
+  QUAL   2013-08 to 2026-11
+  MTUM   2013-05 to 2026-11
+
+A. Active risk against VTI, six factors (FF5 + Mom), annualized %
+  common VBR    2019-10..2026-09 n= 84  TE 10.50  factor share  90.3%  resid TE 3.27  alpha -2.50
+         loadings  Mkt-RF:-0.013 SMB:+0.606 HML:+0.359 RMW:+0.112 CMA:-0.017 Mom:-0.015
+         var share Mkt-RF: -0.3 SMB:+51.3 HML:+38.4 RMW: +0.8 CMA: -0.6 Mom: +0.8 resid:  9.7
+  own    VBR    2004-02..2026-09 n=272  TE  8.04  factor share  87.7%  resid TE 2.82  alpha -0.71
+         loadings  Mkt-RF:+0.001 SMB:+0.610 HML:+0.306 RMW:+0.107 CMA:+0.033 Mom:-0.034
+         var share Mkt-RF: +0.1 SMB:+56.8 HML:+28.1 RMW: -0.7 CMA: +0.9 Mom: +2.5 resid: 12.3
+  common AVUV   2019-10..2026-09 n= 84  TE 15.23  factor share  92.6%  resid TE 4.15  alpha  0.88
+         loadings  Mkt-RF:+0.068 SMB:+0.894 HML:+0.518 RMW:+0.208 CMA:-0.044 Mom:+0.008
+         var share Mkt-RF: +1.8 SMB:+53.3 HML:+37.6 RMW: +1.2 CMA: -1.0 Mom: -0.3 resid:  7.4
+  own    AVUV   2019-10..2026-09 n= 84  TE 15.23  factor share  92.6%  resid TE 4.15  alpha  0.88
+         loadings  Mkt-RF:+0.068 SMB:+0.894 HML:+0.518 RMW:+0.208 CMA:-0.044 Mom:+0.008
+         var share Mkt-RF: +1.8 SMB:+53.3 HML:+37.6 RMW: +1.2 CMA: -1.0 Mom: -0.3 resid:  7.4
+  common DFSVX  2019-10..2026-09 n= 84  TE 13.66  factor share  95.0%  resid TE 3.06  alpha  0.41
+         loadings  Mkt-RF:-0.009 SMB:+0.801 HML:+0.467 RMW:+0.194 CMA:+0.016 Mom:-0.019
+         var share Mkt-RF: -0.2 SMB:+52.5 HML:+39.7 RMW: +1.6 CMA: +0.5 Mom: +0.8 resid:  5.0
+  own    DFSVX  2001-07..2026-09 n=303  TE 11.22  factor share  92.5%  resid TE 3.08  alpha -0.58
+         loadings  Mkt-RF:+0.047 SMB:+0.889 HML:+0.385 RMW:+0.144 CMA:+0.123 Mom:-0.019
+         var share Mkt-RF: +1.9 SMB:+64.0 HML:+24.0 RMW: -0.9 CMA: +2.7 Mom: +0.8 resid:  7.5
+  common USMV   2019-10..2026-09 n= 84  TE  8.78  factor share  55.3%  resid TE 5.87  alpha -4.28
+         loadings  Mkt-RF:-0.281 SMB:-0.100 HML:+0.035 RMW:+0.220 CMA:+0.147 Mom:-0.002
+         var share Mkt-RF:+34.7 SMB: +3.9 HML: +1.1 RMW: +9.6 CMA: +6.1 Mom: -0.0 resid: 44.7
+  own    USMV   2011-11..2026-09 n=179  TE  7.61  factor share  57.5%  resid TE 4.96  alpha -0.32
+         loadings  Mkt-RF:-0.271 SMB:-0.056 HML:-0.063 RMW:+0.280 CMA:+0.219 Mom:+0.072
+         var share Mkt-RF:+33.0 SMB: +2.6 HML: -0.3 RMW:+11.1 CMA: +7.4 Mom: +3.7 resid: 42.5
+  common QUAL   2019-10..2026-09 n= 84  TE  3.79  factor share  29.7%  resid TE 3.18  alpha -0.84
+         loadings  Mkt-RF:-0.011 SMB:-0.099 HML:-0.043 RMW:+0.121 CMA:+0.056 Mom:-0.012
+         var share Mkt-RF: +0.8 SMB:+11.9 HML: +1.9 RMW:+13.9 CMA: +1.5 Mom: -0.3 resid: 70.3
+  own    QUAL   2013-08..2026-09 n=158  TE  3.29  factor share  30.8%  resid TE 2.74  alpha -0.34
+         loadings  Mkt-RF:-0.017 SMB:-0.072 HML:-0.047 RMW:+0.152 CMA:+0.026 Mom:+0.014
+         var share Mkt-RF: +1.4 SMB: +9.1 HML: +2.7 RMW:+16.5 CMA: +0.3 Mom: +0.8 resid: 69.2
+  common MTUM   2019-10..2026-09 n= 84  TE 10.95  factor share  66.1%  resid TE 6.37  alpha -1.69
+         loadings  Mkt-RF:+0.138 SMB:-0.077 HML:+0.016 RMW:-0.319 CMA:+0.057 Mom:+0.507
+         var share Mkt-RF: -0.1 SMB: +1.7 HML: -0.4 RMW:+13.3 CMA: -0.0 Mom:+51.6 resid: 33.9
+  own    MTUM   2013-05..2026-09 n=161  TE  8.87  factor share  62.3%  resid TE 5.44  alpha -0.31
+         loadings  Mkt-RF:+0.101 SMB:-0.132 HML:-0.029 RMW:-0.285 CMA:+0.083 Mom:+0.442
+         var share Mkt-RF: -1.2 SMB: +3.9 HML: +1.1 RMW: +9.4 CMA: -0.6 Mom:+49.8 resid: 37.7
+
+  Residual correlations, common window:
+            VBR   AVUV  DFSVX   USMV   QUAL   MTUM
+  VBR      1.00   0.31   0.50   0.33   0.21   0.08
+  AVUV     0.31   1.00   0.71  -0.25  -0.04   0.09
+  DFSVX    0.50   0.71   1.00  -0.14  -0.06  -0.02
+  USMV     0.33  -0.25  -0.14   1.00   0.34   0.04
+  QUAL     0.21  -0.04  -0.06   0.34   1.00   0.13
+  MTUM     0.08   0.09  -0.02   0.04   0.13   1.00
+
+A2. Adding industry tilts: FF6 vs FF6 + 11 industry-minus-market spreads
+  common VBR    n= 84  FF6 R2  90.3 (adj  89.6)  FF6+ind R2  95.6 (adj  94.5)
+  own    VBR    n=272  FF6 R2  87.7 (adj  87.4)  FF6+ind R2  91.4 (adj  90.8)
+  common AVUV   n= 84  FF6 R2  92.6 (adj  92.0)  FF6+ind R2  96.2 (adj  95.2)
+  own    AVUV   n= 84  FF6 R2  92.6 (adj  92.0)  FF6+ind R2  96.2 (adj  95.2)
+  common DFSVX  n= 84  FF6 R2  95.0 (adj  94.6)  FF6+ind R2  96.5 (adj  95.6)
+  own    DFSVX  n=303  FF6 R2  92.5 (adj  92.3)  FF6+ind R2  93.7 (adj  93.3)
+  common USMV   n= 84  FF6 R2  55.3 (adj  51.9)  FF6+ind R2  89.2 (adj  86.5)
+  own    USMV   n=179  FF6 R2  57.5 (adj  56.1)  FF6+ind R2  87.2 (adj  85.8)
+  common QUAL   n= 84  FF6 R2  29.7 (adj  24.2)  FF6+ind R2  61.3 (adj  51.3)
+  own    QUAL   n=158  FF6 R2  30.8 (adj  28.0)  FF6+ind R2  49.7 (adj  43.6)
+  common MTUM   n= 84  FF6 R2  66.1 (adj  63.5)  FF6+ind R2  75.2 (adj  68.8)
+  own    MTUM   n=161  FF6 R2  62.3 (adj  60.9)  FF6+ind R2  67.7 (adj  63.8)
+
+B. Mixes against VTI, 2019-10..2026-09, monthly rebalanced
+  VTI 70 / AVUV 30             TE 4.57  factor share  92.6%  resid TE 1.24
+      loadings  Mkt-RF:+0.020 SMB:+0.268 HML:+0.155 RMW:+0.062 CMA:-0.013 Mom:+0.003
+      var share Mkt-RF: +1.8 SMB:+53.3 HML:+37.6 RMW: +1.2 CMA: -1.0 Mom: -0.3 resid:  7.4
+  VTI 70 / AVUV 15 / DFSVX 15  TE 4.31  factor share  94.6%  resid TE 1.00
+      loadings  Mkt-RF:+0.009 SMB:+0.254 HML:+0.148 RMW:+0.060 CMA:-0.004 Mom:-0.002
+      var share Mkt-RF: +0.7 SMB:+53.6 HML:+39.1 RMW: +1.4 CMA: -0.4 Mom: +0.2 resid:  5.4
+  VTI 70 / AVUV 15 / MTUM 15   TE 2.42  factor share  76.1%  resid TE 1.18
+      loadings  Mkt-RF:+0.031 SMB:+0.123 HML:+0.080 RMW:-0.017 CMA:+0.002 Mom:+0.077
+      var share Mkt-RF: +4.9 SMB:+34.9 HML:+28.8 RMW: +1.6 CMA: +0.3 Mom: +5.8 resid: 23.9
+  VTI 70 / AVUV 15 / QUAL 15   TE 2.19  factor share  87.7%  resid TE 0.77
+      loadings  Mkt-RF:+0.009 SMB:+0.119 HML:+0.071 RMW:+0.049 CMA:+0.002 Mom:-0.001
+      var share Mkt-RF: +1.4 SMB:+45.1 HML:+36.1 RMW: +4.6 CMA: +0.3 Mom: +0.2 resid: 12.3
+  VTI 70 / USMV 30             TE 2.63  factor share  55.3%  resid TE 1.76
+      loadings  Mkt-RF:-0.084 SMB:-0.030 HML:+0.010 RMW:+0.066 CMA:+0.044 Mom:-0.001
+      var share Mkt-RF:+34.7 SMB: +3.9 HML: +1.1 RMW: +9.6 CMA: +6.1 Mom: -0.0 resid: 44.7
+
+C. Tracking-error stability: 30% DFSVX sleeve vs market
+  active 1993-03..2026-09 n=403  full-period TE 3.36
+  forecast months 1998-02..2025-09 n=332
+  realized next-12 TE: min 1.09 (12 mo to 2013-03), max 6.22 (12 mo to 2021-02)
+  realized/forecast: median 0.98, p10 0.53, p90 1.70
+  i.i.d. 90% band for a 12-month SD ratio [0.644, 1.337]; outside 34.9% (expected 10%): above 18.7%, below 16.3%
+  largest realized/forecast ratios:
+    forecast at 2016-10: 1.99 -> next 12 mo 4.28 (x2.15)
+    forecast at 1999-02: 2.46 -> next 12 mo 5.25 (x2.13)
+    forecast at 1998-11: 2.40 -> next 12 mo 5.03 (x2.09)
+    forecast at 1999-01: 2.43 -> next 12 mo 5.08 (x2.09)
+    forecast at 1998-10: 2.40 -> next 12 mo 4.99 (x2.08)
+    forecast at 2016-09: 2.08 -> next 12 mo 4.27 (x2.06)
+    forecast at 2020-02: 3.04 -> next 12 mo 6.22 (x2.05)
+    forecast at 1999-03: 2.54 -> next 12 mo 5.20 (x2.05)
+  calendar-year TE: 1994:1.6 1995:1.8 1996:2.1 1997:3.5 1998:2.1 1999:4.9 2000:3.5 2001:4.0 2002:5.1 2003:2.5 2004:2.6 2005:2.5 2006:2.5 2007:2.0 2008:3.3 2009:4.8 2010:3.3 2011:2.8 2012:1.4 2013:1.6 2014:2.6 2015:2.7 2016:3.2 2017:2.7 2018:2.5 2019:3.2 2020:5.6 2021:4.6 2022:2.9 2023:4.4 2024:4.3 2025:3.5
+
+D. Pipeline check against factor-loadings-expected-returns (FF5, to 2026-08)
+  Mkt-RF  this run +0.0665  published +0.0665
+  SMB     this run +0.8966  published +0.8966
+  HML     this run +0.5162  published +0.5162
+  RMW     this run +0.2105  published +0.2104
+  CMA     this run -0.0450  published -0.0450
+  matches to 2 dp
+
+Wrote output/results.json and output/quant-risk-model.json

@@ -12,7 +12,8 @@ pandas or openpyxl; the committed CSVs make running it unnecessary; `small-cap-v
 an optional `--funds` flag that needs yfinance, and its committed
 `results.json` already holds that output; `minimum-volatility-investing` needs
 numpy, pandas, openpyxl and yfinance, and downloads its AQR and Yahoo inputs;
-`portable-alpha-and-return-stacking` and `factor-loadings-expected-returns` need numpy, pandas and yfinance;
+`portable-alpha-and-return-stacking`, `factor-loadings-expected-returns` and
+`quant-investing-factor-risk-models` need numpy, pandas and yfinance;
 `mean-variance-optimization` needs numpy and scipy;
 `r-squared-trap`, `most-stocks-lose-to-tbills` and `dividends-are-not-free-money`
 need numpy and matplotlib, and `safe-withdrawal-rate` and `tals-leverage-simulator`
@@ -51,6 +52,7 @@ python3 <folder>/<script>.py
 | `w2-vs-self-employed` | [Are W-2 Jobs a Scam? What Fed Data Shows About Getting Rich on a Salary](https://summitward.com/learn/are-w2-jobs-a-scam) | Net worth, net worth excluding business equity, financial assets and income of employee-headed vs self-employed-headed families from the 2025 and 2022 SCF, by age band, with replicate-weight standard errors; the work-status mix of $1M+, $3M+ and $10M+ families |
 | `does-technical-analysis-work` | [Does Technical Analysis Work? I Tested the Famous Chart Rules on 100 Years of Data](https://summitward.com/learn/does-technical-analysis-work) | Brock, Lakonishok and LeBaron's ten moving-average rules, the golden cross, Faber's 10-month rule and 12-month trend on daily CRSP market returns 1928-2026: edges over buy and hold and over same-exposure and same-volatility stock/T-bill mixes by era, with block-bootstrap intervals and White's Reality Check, delay and cost sensitivity, an after-tax account with wash sales, the reference Backtest Overfitting Lab, and the random-walk hero chart (needs numpy; the chart also needs matplotlib) |
 | `more-buyers-than-sellers` | [More Buyers Than Sellers? Why Stock Prices Move When Every Trade Has Both](https://summitward.com/learn/more-buyers-than-sellers) | Share of displayed exchange order volume that trades, and cancels per trade, for stocks and ETPs from SEC market structure data, 2012 to Q2 2026 |
+| `quant-investing-factor-risk-models` | [Is Quant Investing Just Factor and Risk Models All the Way Down?](https://summitward.com/learn/quant-investing-factor-risk-models) | Tracking error of VBR, AVUV, DFSVX, USMV, QUAL and MTUM against VTI split exactly into six-factor (FF5 + momentum) and residual parts, Oct 2019 to Sep 2026 and over each fund's own history; adjusted R-squared with 11 French industry spreads added; five fund mixes; a 30% DFSVX sleeve's trailing 60-month vs next-12-month tracking error since 1993; and the data behind the guide's Tracking Error Decomposer |
 
 ## Data sources
 
