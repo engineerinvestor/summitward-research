@@ -1,0 +1,30 @@
+Saved output/value_spread.json (43 KB)
+small: 2026-09 6.521 (June reading 6.326, prior 8.089); monthly pct full 0.824, since 1963 0.922; peaks {'date': '2000-02', 'value': 7.328} {'date': '2020-12', 'value': 9.416}
+large: 2026-09 10.058 (June reading 9.712, prior 9.522); monthly pct full 0.973, since 1963 0.988; peaks {'date': '2000-06', 'value': 9.828} {'date': '2020-09', 'value': 11.408}
+small_op {'date': '2026-06', 'value': 6.449} {'full': 0.859, 'since_1963': 0.859, 'median_full': 4.5574, 'median_since_1963': 4.5574, 'first': '1963-06', 'n': 64} {'date': '2026-09', 'value': 6.542}
+large_op {'date': '2026-06', 'value': 8.334} {'full': 0.891, 'since_1963': 0.891, 'median_full': 4.585, 'median_since_1963': 4.585, 'first': '1963-06', 'n': 64} {'date': '2026-09', 'value': 8.438}
+allcap_bm {'date': '2025-12', 'value': 9.899} {'full': 0.95, 'since_1963': 0.968, 'median_full': 4.8932, 'median_since_1963': 4.5479, 'first': '1926-12', 'n': 100} 
+allcap_ep {'date': '2025-12', 'value': 4.35} {'full': 0.868, 'since_1963': 0.841, 'median_full': 3.1937, 'median_since_1963': 3.2917, 'first': '1950-12', 'n': 76} 
+allcap_cfp {'date': '2025-12', 'value': 4.462} {'full': 0.921, 'since_1963': 0.905, 'median_full': 3.1053, 'median_since_1963': 3.1961, 'first': '1950-12', 'n': 76} 
+small 5y {'n': 96, 'slope_log_spread': -0.0023, 't_newey_west': -0.07, 'r2_in_sample': 0.0, 'oos_r2': -0.017, 'oos_forecasts': 72}
+    {'label': 'narrowest third', 'n': 32, 'spread_low': 3.52, 'spread_high': 4.4, 'mean': 0.0527, 'median': 0.04, 'share_negative': 0.219, 'worst': -0.0328, 'best': 0.1825}
+    {'label': 'middle third', 'n': 32, 'spread_low': 4.4, 'spread_high': 5.22, 'mean': 0.0664, 'median': 0.0474, 'share_negative': 0.094, 'worst': -0.0417, 'best': 0.1782}
+    {'label': 'widest third', 'n': 32, 'spread_low': 5.24, 'spread_high': 13.9, 'mean': 0.0477, 'median': 0.041, 'share_negative': 0.375, 'worst': -0.0972, 'best': 0.2385}
+    at least as wide: {'threshold': 6.33, 'n': 18, 'mean': 0.0573, 'share_negative': 0.389}
+small 10y {'n': 91, 'slope_log_spread': -0.0067, 't_newey_west': -0.29, 'r2_in_sample': 0.002, 'oos_r2': -0.143, 'oos_forecasts': 62}
+    {'label': 'narrowest third', 'n': 30, 'spread_low': 3.52, 'spread_high': 4.27, 'mean': 0.0597, 'median': 0.061, 'share_negative': 0.1, 'worst': -0.0102, 'best': 0.1394}
+    {'label': 'middle third', 'n': 31, 'spread_low': 4.39, 'spread_high': 5.11, 'mean': 0.0626, 'median': 0.0679, 'share_negative': 0.129, 'worst': -0.0547, 'best': 0.1529}
+    {'label': 'widest third', 'n': 30, 'spread_low': 5.15, 'spread_high': 13.9, 'mean': 0.0492, 'median': 0.0532, 'share_negative': 0.233, 'worst': -0.0419, 'best': 0.1221}
+    at least as wide: {'threshold': 6.33, 'n': 15, 'mean': 0.0543, 'share_negative': 0.267}
+large 5y {'n': 96, 'slope_log_spread': 0.0589, 't_newey_west': 1.56, 'r2_in_sample': 0.065, 'oos_r2': -0.042, 'oos_forecasts': 72}
+    {'label': 'narrowest third', 'n': 32, 'spread_low': 3.12, 'spread_high': 4.35, 'mean': 0.0076, 'median': 0.0079, 'share_negative': 0.438, 'worst': -0.1022, 'best': 0.1015}
+    {'label': 'middle third', 'n': 32, 'spread_low': 4.36, 'spread_high': 5.27, 'mean': 0.0244, 'median': 0.0297, 'share_negative': 0.219, 'worst': -0.1024, 'best': 0.1328}
+    {'label': 'widest third', 'n': 32, 'spread_low': 5.27, 'spread_high': 12.32, 'mean': 0.0391, 'median': 0.058, 'share_negative': 0.375, 'worst': -0.1333, 'best': 0.1974}
+    at least as wide: {'threshold': 9.71, 'n': 5, 'mean': 0.0891, 'share_negative': 0.2}
+large 10y {'n': 91, 'slope_log_spread': 0.0468, 't_newey_west': 2.15, 'r2_in_sample': 0.08, 'oos_r2': -0.061, 'oos_forecasts': 62}
+    {'label': 'narrowest third', 'n': 30, 'spread_low': 3.12, 'spread_high': 4.28, 'mean': 0.0098, 'median': 0.016, 'share_negative': 0.3, 'worst': -0.0836, 'best': 0.0592}
+    {'label': 'middle third', 'n': 31, 'spread_low': 4.3, 'spread_high': 5.11, 'mean': 0.0341, 'median': 0.0489, 'share_negative': 0.194, 'worst': -0.0603, 'best': 0.0977}
+    {'label': 'widest third', 'n': 30, 'spread_low': 5.12, 'spread_high': 12.32, 'mean': 0.0321, 'median': 0.037, 'share_negative': 0.367, 'worst': -0.0562, 'best': 0.1105}
+    at least as wide: {'threshold': 9.71, 'n': 4, 'mean': 0.0641, 'share_negative': 0.0}
+revisions {'small': {'n': 100, 'median_abs_pct': 7.8, 'p90_abs_pct': 18.9, 'mean_signed_pct': 4.9, 'latest': {'from': '2025-06', 'to': '2026-06', 'prior_reading': 8.089, 'rolled_fixed_portfolios': 7.644, 'new_reading': 6.326, 'value_exdiv_return': 0.372, 'growth_exdiv_return': 0.2965}}, 'large': {'n': 100, 'median_abs_pct': 6.2, 'p90_abs_pct': 17.4, 'mean_signed_pct': 1.4, 'latest': {'from': '2025-06', 'to': '2026-06', 'prior_reading': 9.522, 'rolled_fixed_portfolios': 7.736, 'new_reading': 9.712, 'value_exdiv_return': 0.4344, 'growth_exdiv_return': 0.1653}}}
+recent {"trailing_12m": {"start": "2025-10", "end": "2026-09", "small_value": 0.185, "small_growth": 0.1678, "large_value": 0.3297, "large_growth": 0.1039, "hml": 0.0973, "smb": -0.0134}, "ytd": {"start": "2026-01", "end": "2026-09", "small_value": 0.158, "small_growth": 0.1322, "large_value": 0.2192, "large_growth": 0.0819, "hml": 0.0666, "smb": -0.0013}}
