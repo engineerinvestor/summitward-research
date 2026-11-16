@@ -1,0 +1,72 @@
+
+U.S. HML (196307 to 202609)
+  2018:  -10.5%  (12 months)
+  2019:   -8.1%  (12 months)
+  2020:  -30.7%  (12 months)
+  2021:  +22.2%  (12 months)
+  2022:  +31.7%  (12 months)
+  2023:  -11.1%  (12 months)
+  2024:   -7.0%  (12 months)
+  2025:   +6.6%  (12 months)
+  2026:   +6.7%  (9 months)
+  pre-trough peak 200612, trough 202009, drawdown -57.8%
+  202609 vs trough: +58.4%
+  202609 vs pre-trough peak: -33.1%
+  series high 200612; 202609 is 66.9% of it
+  end 201909 to 202609: +2.6% total, +0.4% a year
+  end 202009 to 202609: +58.4% total, +8.0% a year
+  end 202109 to 202609: +26.8% total, +4.9% a year
+  end 202309 to 202609: +13.0% total, +4.2% a year
+  end 202509 to 202609: +9.7% total, +9.7% a year
+
+Developed ex-US HML (199007 to 202609)
+  2018:   -3.8%  (12 months)
+  2019:   -8.8%  (12 months)
+  2020:  -20.5%  (12 months)
+  2021:   +9.9%  (12 months)
+  2022:  +25.3%  (12 months)
+  2023:   +7.6%  (12 months)
+  2024:  +12.7%  (12 months)
+  2025:  +22.5%  (12 months)
+  2026:  +13.7%  (9 months)
+  pre-trough peak 201404, trough 202009, drawdown -35.2%
+  202609 vs trough: +146.1%
+  202609 vs pre-trough peak: +59.4%
+  series high 202607; 202609 is 99.8% of it
+  end 201909 to 202609: +85.1% total, +9.2% a year
+  end 202009 to 202609: +146.1% total, +16.2% a year
+  end 202109 to 202609: +113.2% total, +16.3% a year
+  end 202309 to 202609: +53.3% total, +15.3% a year
+  end 202509 to 202609: +21.6% total, +21.6% a year
+
+Core plus tilt, month-end market prices, 2019-09-30 to 2026-10-31, rebalanced monthly
+(no costs, no taxes; tracking error is annualized vs the core alone)
+
+  VTI + AVUV: 2019-10-31 to 2026-10-31, 85 months
+      0% AVUV: return 15.20%  vol 17.0%  worst drawdown -24.8%  tracking error  0.0%
+     10% AVUV: return 15.35%  vol 17.4%  worst drawdown -24.0%  tracking error  1.5%
+     20% AVUV: return 15.46%  vol 17.9%  worst drawdown -25.4%  tracking error  3.1%
+     30% AVUV: return 15.55%  vol 18.6%  worst drawdown -27.7%  tracking error  4.6%
+    100% AVUV: return 15.39%  vol 25.4%  worst drawdown -42.4%  tracking error 15.3%
+
+  VXUS + AVDV: 2019-10-31 to 2026-10-31, 85 months
+      0% AVDV: return  9.93%  vol 16.2%  worst drawdown -27.8%  tracking error  0.0%
+     10% AVDV: return 10.41%  vol 16.5%  worst drawdown -27.6%  tracking error  0.7%
+     20% AVDV: return 10.89%  vol 16.9%  worst drawdown -27.4%  tracking error  1.4%
+     30% AVDV: return 11.37%  vol 17.2%  worst drawdown -27.4%  tracking error  2.1%
+    100% AVDV: return 14.59%  vol 20.1%  worst drawdown -33.9%  tracking error  7.0%
+
+  VT + AVUV: 2019-10-31 to 2026-10-31, 85 months
+      0% AVUV: return 13.04%  vol 16.0%  worst drawdown -25.5%  tracking error  0.0%
+     10% AVUV: return 13.40%  vol 16.6%  worst drawdown -24.6%  tracking error  1.5%
+     20% AVUV: return 13.73%  vol 17.2%  worst drawdown -26.5%  tracking error  3.1%
+     30% AVUV: return 14.03%  vol 18.0%  worst drawdown -28.6%  tracking error  4.6%
+    100% AVUV: return 15.39%  vol 25.4%  worst drawdown -42.4%  tracking error 15.3%
+
+French 6 portfolios (2x3), value-weighted, 192607 to 202609
+  SMALL LoBM   compound  8.84% a year
+  ME1 BM2      compound 12.79% a year
+  SMALL HiBM   compound 14.23% a year
+  BIG LoBM     compound 10.30% a year
+  ME2 BM2      compound 10.25% a year
+  BIG HiBM     compound 12.43% a year
