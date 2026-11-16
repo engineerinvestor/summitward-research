@@ -1,0 +1,101 @@
+{
+  "window": "2025-10 to 2026-09",
+  "estimation_window": "2019-10 to 2025-09",
+  "funds": {
+    "AVUV": {
+      "contribution": {
+        "Mkt-RF": 0.1152,
+        "SMB": 0.013,
+        "HML": 0.0529,
+        "RMW": -0.0428,
+        "CMA": -0.0024,
+        "MOM": -0.0009
+      },
+      "predicted": 0.135,
+      "actual": 0.1545,
+      "residual": 0.0195
+    },
+    "DFSVX": {
+      "contribution": {
+        "Mkt-RF": 0.1071,
+        "SMB": 0.0116,
+        "HML": 0.0496,
+        "RMW": -0.0328,
+        "CMA": -0.0008,
+        "MOM": -0.0009
+      },
+      "predicted": 0.1338,
+      "actual": 0.1477,
+      "residual": 0.0139
+    },
+    "IWN": {
+      "contribution": {
+        "Mkt-RF": 0.1051,
+        "SMB": 0.0119,
+        "HML": 0.0394,
+        "RMW": 0.0015,
+        "CMA": -0.0018,
+        "MOM": -0.0018
+      },
+      "predicted": 0.1543,
+      "actual": 0.159,
+      "residual": 0.0047
+    },
+    "AVDV": {
+      "contribution": {
+        "Mkt-RF": 0.1316,
+        "SMB": -0.0164,
+        "HML": 0.1048,
+        "RMW": -0.0219,
+        "CMA": -0.0045,
+        "MOM": 0.0044
+      },
+      "predicted": 0.198,
+      "actual": 0.2224,
+      "residual": 0.0244
+    }
+  },
+  "avuv_minus_iwn": {
+    "estimation": {
+      "start": "2019-10",
+      "end": "2025-09",
+      "n": 72,
+      "r2": 0.431,
+      "resid_sd_ann": 0.0477,
+      "alpha_ann": 0.0286,
+      "alpha_ci95_ann": [
+        -0.0033,
+        0.0606
+      ],
+      "coef": {
+        "alpha": 0.0024,
+        "Mkt-RF": 0.0932,
+        "SMB": 0.0724,
+        "HML": 0.1379,
+        "RMW": 0.2842,
+        "CMA": -0.0159,
+        "MOM": 0.0107
+      },
+      "t_nw": {
+        "alpha": 1.76,
+        "Mkt-RF": 2.13,
+        "SMB": 0.82,
+        "HML": 2.16,
+        "RMW": 2.36,
+        "CMA": -0.23,
+        "MOM": 0.23
+      }
+    },
+    "contribution_sum": {
+      "Mkt-RF": 0.0101,
+      "SMB": 0.0011,
+      "HML": 0.0135,
+      "RMW": -0.0443,
+      "CMA": -0.0005,
+      "MOM": 0.0009
+    },
+    "predicted_sum": -0.0192,
+    "actual_sum": -0.0045,
+    "residual_sum": 0.0147
+  }
+}

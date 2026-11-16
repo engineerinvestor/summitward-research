@@ -1,0 +1,101 @@
+1. Issuer NAV returns as published (percent)
+  AVUV as of 2026-10-31: ytd 22.2, 1y 27.93, 3y 20.47, 5y 11.33, since_inception 15.37
+  Russell 2000 Value Index (AVUV benchmark) as of 2026-10-31: ytd 19.9, 1y 23.49, 3y 21.37, 5y 7.53
+  AVDV as of 2026-10-31: ytd 14.06, 1y 21.84, 3y 28.25, 5y 13.68, since_inception 14.3
+  MSCI World ex USA Small Cap Index (AVDV benchmark) as of 2026-10-31: ytd 7.99, 1y 12.52, 3y 20.48, 5y 5.54
+  DFSV (ETF class of the U.S. Small Cap Value Portfolio) as of 2026-09-30: 1y 19.19, 3y 16.27, 5y 10.97, since_inception 11.35
+  QVAL as of 2026-10-31: ytd 33.96, 1y 42.22, 3y 24.29, 5y 14.52, since_inception 9.95
+  AVUV as of 2026-09-30: ytd 16.6, 1y 19.91
+  Russell 2000 Value Index (AVUV benchmark) as of 2026-09-30: ytd 16.96, 1y 20.77
+  AVDV as of 2026-09-30: ytd 18.87, 1y 26.99
+  S&P 500 Index as of 2026-09-30: ytd 12.75, 1y 15.74
+  S&P 500 Index as of 2026-10-31: ytd 11.77, 1y 12.11, 3y 23.4, 5y 12.06
+
+2. DFSV calendar returns, old ETF vs current fact sheet (percent)
+  2023: old ETF 19.23, now shown 18.91, difference -0.32
+  2024: old ETF 7.27, now shown 9.57, difference +2.30
+  2025: old ETF 8.51, now shown 8.38, difference -0.13
+
+3. Market-price returns from Yahoo (distributions reinvested)
+  since_avuv_inception (2019-09 to 2026-10 month-ends)
+    AVUV   total 175.6%, CAGR 15.39%, vol 25.4%, worst drawdown -42.4%
+    DFSVX  total 158.1%, CAGR 14.33%, vol 23.4%, worst drawdown -39.0%
+    IWN    total 105.1%, CAGR 10.67%, vol 22.8%, worst drawdown -35.8%
+    VTI    total 172.5%, CAGR 15.20%, vol 17.0%, worst drawdown -24.8%
+    SPY    total 181.4%, CAGR 15.73%, vol 16.5%, worst drawdown -23.9%
+    VT     total 138.3%, CAGR 13.04%, vol 16.0%, worst drawdown -25.5%
+    AVDV   total 162.4%, CAGR 14.59%, vol 20.1%, worst drawdown -33.9%
+    DISVX  total 153.5%, CAGR 14.03%, vol 19.5%, worst drawdown -33.7%
+    VSS    total 76.9%, CAGR 8.39%, vol 18.7%, worst drawdown -31.8%
+    VXUS   total 95.6%, CAGR 9.93%, vol 16.2%, worst drawdown -27.8%
+    QVAL   total 162.6%, CAGR 14.60%, vol 23.1%, worst drawdown -40.3%
+  trailing_36m (2023-10 to 2026-10 month-ends)
+    AVUV   total 74.9%, CAGR 20.48%, vol 18.7%, worst drawdown -21.1%
+    DFSVX  total 73.8%, CAGR 20.23%, vol 17.9%, worst drawdown -20.0%
+    IWN    total 77.5%, CAGR 21.08%, vol 18.4%, worst drawdown -19.0%
+    VTI    total 86.7%, CAGR 23.13%, vol 12.7%, worst drawdown -8.4%
+    SPY    total 87.4%, CAGR 23.28%, vol 12.3%, worst drawdown -7.6%
+    VT     total 81.6%, CAGR 22.00%, vol 11.6%, worst drawdown -6.2%
+    AVDV   total 109.9%, CAGR 28.03%, vol 14.7%, worst drawdown -9.2%
+    DISVX  total 106.3%, CAGR 27.30%, vol 14.2%, worst drawdown -10.0%
+    VSS    total 61.0%, CAGR 17.21%, vol 14.1%, worst drawdown -8.9%
+    VXUS   total 74.0%, CAGR 20.28%, vol 11.9%, worst drawdown -7.9%
+    QVAL   total 92.0%, CAGR 24.28%, vol 14.9%, worst drawdown -13.2%
+  trailing_12m (2025-10 to 2026-10 month-ends)
+    AVUV   total 27.9%, CAGR 27.88%, vol 13.7%, worst drawdown -5.7%
+    DFSVX  total 27.4%, CAGR 27.41%, vol 13.2%, worst drawdown -5.2%
+    IWN    total 23.1%, CAGR 23.11%, vol 14.1%, worst drawdown -5.2%
+    VTI    total 12.0%, CAGR 12.04%, vol 13.2%, worst drawdown -5.5%
+    SPY    total 12.0%, CAGR 12.00%, vol 13.3%, worst drawdown -5.8%
+    VT     total 12.3%, CAGR 12.32%, vol 13.2%, worst drawdown -6.2%
+    AVDV   total 21.9%, CAGR 21.94%, vol 20.0%, worst drawdown -9.2%
+    DISVX  total 20.2%, CAGR 20.25%, vol 18.6%, worst drawdown -10.0%
+    VSS    total 7.3%, CAGR 7.26%, vol 18.3%, worst drawdown -8.9%
+    VXUS   total 13.2%, CAGR 13.23%, vol 15.2%, worst drawdown -7.9%
+    QVAL   total 42.2%, CAGR 42.16%, vol 14.1%, worst drawdown -4.6%
+  rolling 12-month windows where AVUV led: {'AVUV_beat_VTI': 0.527, 'AVUV_beat_VT': 0.568, 'AVUV_beat_IWN': 0.73, 'windows': 74, 'first_end': '2020-09', 'last_end': '2026-10'}
+  extra windows: {"oct2023_to_oct2025": {"AVUV": {"start": "2023-10", "end": "2025-10", "months": 24, "total": 0.3675, "cagr": 0.1694, "vol_ann": 0.2098, "max_drawdown_month_end": -0.2106}, "AVDV": {"start": "2023-10", "end": "2025-10", "months": 24, "total": 0.7212, "cagr": 0.3119, "vol_ann": 0.1173, "max_drawdown_month_end": -0.0564}}, "oct2025_to_sep2026": {"AVUV": {"start": "2025-09", "end": "2026-09", "months": 12, "total": 0.1989, "cagr": 0.1989, "vol_ann": 0.139, "max_drawdown_month_end": -0.0569}, "AVDV": {"start": "2025-09", "end": "2026-09", "months": 12, "total": 0.2715, "cagr": 0.2715, "vol_ann": 0.191, "max_drawdown_month_end": -0.0919}, "SPY": {"start": "2025-09", "end": "2026-09", "months": 12, "total": 0.1571, "cagr": 0.1571, "vol_ann": 0.1319, "max_drawdown_month_end": -0.0576}, "VTI": {"start": "2025-09", "end": "2026-09", "months": 12, "total": 0.1534, "cagr": 0.1534, "vol_ann": 0.1309, "max_drawdown_month_end": -0.0551}}, "single_months": {"AVUV": {"2025-10": -0.0174, "2026-10": 0.0481}, "SPY": {"2025-10": 0.0238, "2026-10": -0.0091}, "AVDV": {"2025-10": 0.002, "2026-10": -0.039}}, "calendar_market_price": {"DFSV": {"2023": 0.1926, "2024": 0.0714, "2025": 0.0859}, "DFSVX": {"2023": 0.1903, "2024": 0.0958, "2025": 0.0837}}}
+
+4. Factor attribution, out of sample
+  U.S. factors through 2026-09
+  developed ex-US factors through 2026-09
+  RMW trailing 12-month sum: {'window': '2025-10 to 2026-09', 'sum': -0.1559, 'share_of_12m_windows_at_or_below': 0.027, 'windows': 748, 'first_end': '1964-06', 'worst': -0.4451, 'worst_end': '2000-02'}
+  AVUV: est 2019-10..2025-09 n=72 R2=0.978 residual sd 4.2%/yr
+    loadings {'alpha': 0.0002, 'Mkt-RF': 1.0655, 'SMB': 0.8897, 'HML': 0.5402, 'RMW': 0.2746, 'CMA': -0.0725, 'MOM': -0.0113}
+    t(NW6)   {'alpha': 0.16, 'Mkt-RF': 29.57, 'SMB': 13.23, 'HML': 9.76, 'RMW': 2.64, 'CMA': -0.72, 'MOM': -0.35}
+    factor sums {'Mkt-RF': 0.1081, 'SMB': 0.0146, 'HML': 0.0979, 'RMW': -0.1559, 'CMA': 0.0326, 'MOM': 0.0835, 'RF': 0.037}
+    contributions {'Mkt-RF': 0.1152, 'SMB': 0.013, 'HML': 0.0529, 'RMW': -0.0428, 'CMA': -0.0024, 'MOM': -0.0009}
+    predicted excess 13.5%, actual 15.4%, residual 1.9%; compounded total predicted 17.4% vs actual 19.9%
+    full 2019-10..2026-09 n=84: alpha 0.51%/yr (95% CI -2.09% to 3.12%), t 0.39
+  DFSVX: est 2019-10..2025-09 n=72 R2=0.985 residual sd 3.2%/yr
+    loadings {'alpha': -0.0002, 'Mkt-RF': 0.9909, 'SMB': 0.795, 'HML': 0.5069, 'RMW': 0.2106, 'CMA': -0.0234, 'MOM': -0.0107}
+    t(NW6)   {'alpha': -0.24, 'Mkt-RF': 51.38, 'SMB': 15.08, 'HML': 11.97, 'RMW': 3.74, 'CMA': -0.29, 'MOM': -0.4}
+    factor sums {'Mkt-RF': 0.1081, 'SMB': 0.0146, 'HML': 0.0979, 'RMW': -0.1559, 'CMA': 0.0326, 'MOM': 0.0835, 'RF': 0.037}
+    contributions {'Mkt-RF': 0.1071, 'SMB': 0.0116, 'HML': 0.0496, 'RMW': -0.0328, 'CMA': -0.0008, 'MOM': -0.0009}
+    predicted excess 13.4%, actual 14.8%, residual 1.4%; compounded total predicted 17.5% vs actual 19.2%
+    full 2019-10..2026-09 n=84: alpha 0.04%/yr (95% CI -1.95% to 2.03%), t 0.04
+  IWN: est 2019-10..2025-09 n=72 R2=0.989 residual sd 2.6%/yr
+    loadings {'alpha': -0.0022, 'Mkt-RF': 0.9723, 'SMB': 0.8174, 'HML': 0.4023, 'RMW': -0.0097, 'CMA': -0.0566, 'MOM': -0.022}
+    t(NW6)   {'alpha': -2.97, 'Mkt-RF': 38.87, 'SMB': 16.25, 'HML': 12.47, 'RMW': -0.22, 'CMA': -1.11, 'MOM': -0.92}
+    factor sums {'Mkt-RF': 0.1081, 'SMB': 0.0146, 'HML': 0.0979, 'RMW': -0.1559, 'CMA': 0.0326, 'MOM': 0.0835, 'RF': 0.037}
+    contributions {'Mkt-RF': 0.1051, 'SMB': 0.0119, 'HML': 0.0394, 'RMW': 0.0015, 'CMA': -0.0018, 'MOM': -0.0018}
+    predicted excess 15.4%, actual 15.9%, residual 0.5%; compounded total predicted 20.0% vs actual 20.4%
+    full 2019-10..2026-09 n=84: alpha -2.31%/yr (95% CI -4.08% to -0.55%), t -2.57
+  VTI: est 2019-10..2025-09 n=72 R2=0.999 residual sd 0.6%/yr
+    loadings {'alpha': -0.0004, 'Mkt-RF': 0.9906, 'SMB': -0.0036, 'HML': 0.0264, 'RMW': 0.0291, 'CMA': -0.0074, 'MOM': -0.0035}
+    t(NW6)   {'alpha': -3.17, 'Mkt-RF': 173.67, 'SMB': -0.55, 'HML': 2.27, 'RMW': 2.39, 'CMA': -0.52, 'MOM': -0.49}
+    factor sums {'Mkt-RF': 0.1081, 'SMB': 0.0146, 'HML': 0.0979, 'RMW': -0.1559, 'CMA': 0.0326, 'MOM': 0.0835, 'RF': 0.037}
+    contributions {'Mkt-RF': 0.1071, 'SMB': -0.0001, 'HML': 0.0026, 'RMW': -0.0045, 'CMA': -0.0002, 'MOM': -0.0003}
+    predicted excess 10.5%, actual 11.4%, residual 1.0%; compounded total predicted 14.3% vs actual 15.3%
+    full 2019-10..2026-09 n=84: alpha -0.37%/yr (95% CI -0.73% to -0.00%), t -1.98
+  AVDV: est 2019-10..2025-09 n=72 R2=0.977 residual sd 3.2%/yr
+    loadings {'alpha': 0.0002, 'Mkt-RF': 1.1646, 'SMB': 0.7162, 'HML': 0.5229, 'RMW': 0.4322, 'CMA': -0.0865, 'MOM': 0.0291}
+    t(NW6)   {'alpha': 0.14, 'Mkt-RF': 46.25, 'SMB': 7.09, 'HML': 4.78, 'RMW': 3.4, 'CMA': -0.52, 'MOM': 0.51}
+    factor sums {'Mkt-RF': 0.113, 'SMB': -0.0229, 'HML': 0.2005, 'RMW': -0.0507, 'CMA': 0.0517, 'MOM': 0.1529, 'RF': 0.037}
+    contributions {'Mkt-RF': 0.1316, 'SMB': -0.0164, 'HML': 0.1048, 'RMW': -0.0219, 'CMA': -0.0045, 'MOM': 0.0044}
+    predicted excess 19.8%, actual 22.2%, residual 2.4%; compounded total predicted 24.1% vs actual 27.2%
+    full 2019-10..2026-09 n=84: alpha 0.51%/yr (95% CI -2.12% to 3.14%), t 0.38
+  AVUV_minus_IWN: loadings {'alpha': 0.0024, 'Mkt-RF': 0.0932, 'SMB': 0.0724, 'HML': 0.1379, 'RMW': 0.2842, 'CMA': -0.0159, 'MOM': 0.0107}
+    contributions {'Mkt-RF': 0.0101, 'SMB': 0.0011, 'HML': 0.0135, 'RMW': -0.0443, 'CMA': -0.0005, 'MOM': 0.0009}, predicted -1.9%, actual -0.4%, residual 1.5%
+
+Wrote output/results.json and output/is-the-value-premium-back.json
