@@ -1,0 +1,111 @@
+Loading data
+  AVUV   2019-10 to 2026-09
+  DFSVX  1993-03 to 2026-09
+  DFFVX  2000-03 to 2026-09
+  BOSVX  2011-09 to 2026-09
+  CALF   2017-07 to 2026-09
+  XSVM   2005-04 to 2026-09
+  VBR    2004-02 to 2026-09
+  IWN    2000-08 to 2026-09
+  AIEQ   2017-11 to 2026-09
+  VTI    2001-07 to 2026-09
+
+E. Pipeline check: AVUV excess on FF5, 2019-10 to 2026-08
+  Mkt-RF  ours +1.0612  published +1.0612
+  SMB     ours +0.8899  published +0.8899
+  HML     ours +0.5452  published +0.5451
+  RMW     ours +0.2199  published +0.2198
+  CMA     ours -0.0490  published -0.0489
+
+A. Common window 2019-10 to 2026-09: excess returns on FF5 + Mom
+  AVUV   n=84  CAGR  14.81  arith  17.19  vol 25.52  maxDD  -42.4  R2 0.975  alpha +0.51 (t +0.39)
+         Mkt-RF:+1.06(0.04) SMB:+0.89(0.06) HML:+0.55(0.05) RMW:+0.22(0.07) CMA:-0.05(0.10) Mom:+0.01(0.03)
+  DFSVX  n=84  CAGR  13.70  arith  15.70  vol 23.50  maxDD  -39.0  R2 0.983  alpha +0.04 (t +0.04)
+         Mkt-RF:+0.99(0.02) SMB:+0.80(0.05) HML:+0.50(0.04) RMW:+0.21(0.04) CMA:+0.01(0.08) Mom:-0.01(0.02)
+  DFFVX  n=84  CAGR  13.41  arith  15.47  vol 23.55  maxDD  -39.2  R2 0.985  alpha -0.24 (t -0.25)
+         Mkt-RF:+0.99(0.02) SMB:+0.78(0.04) HML:+0.50(0.04) RMW:+0.18(0.04) CMA:-0.03(0.08) Mom:-0.02(0.02)
+  BOSVX  n=84  CAGR  14.07  arith  16.41  vol 25.03  maxDD  -41.8  R2 0.979  alpha +1.09 (t +0.64)
+         Mkt-RF:+0.98(0.03) SMB:+0.97(0.05) HML:+0.56(0.05) RMW:+0.13(0.05) CMA:+0.04(0.09) Mom:+0.03(0.03)
+  CALF   n=84  CAGR  13.14  arith  15.32  vol 24.27  maxDD  -35.1  R2 0.902  alpha +0.54 (t +0.16)
+         Mkt-RF:+0.99(0.06) SMB:+0.89(0.13) HML:+0.12(0.08) RMW:+0.23(0.10) CMA:+0.18(0.12) Mom:-0.14(0.09)
+  XSVM   n=84  CAGR  13.37  arith  16.20  vol 26.71  maxDD  -41.0  R2 0.888  alpha -0.27 (t -0.10)
+         Mkt-RF:+1.06(0.05) SMB:+1.05(0.17) HML:+0.41(0.15) RMW:+0.22(0.07) CMA:+0.24(0.31) Mom:+0.11(0.11)
+  VBR    n=84  CAGR  10.98  arith  12.79  vol 21.39  maxDD  -35.0  R2 0.975  alpha -2.87 (t -3.05)
+         Mkt-RF:+0.98(0.02) SMB:+0.60(0.04) HML:+0.39(0.05) RMW:+0.12(0.03) CMA:-0.02(0.08) Mom:-0.01(0.03)
+  IWN    n=84  CAGR  10.42  arith  12.61  vol 22.97  maxDD  -35.8  R2 0.988  alpha -2.31 (t -2.57)
+         Mkt-RF:+0.98(0.02) SMB:+0.83(0.05) HML:+0.40(0.03) RMW:-0.01(0.03) CMA:-0.04(0.05) Mom:-0.00(0.02)
+  AIEQ   n=84  CAGR  10.18  arith  12.07  vol 21.80  maxDD  -35.4  R2 0.861  alpha -3.22 (t -1.08)
+         Mkt-RF:+1.04(0.06) SMB:+0.49(0.13) HML:-0.20(0.12) RMW:-0.21(0.13) CMA:+0.11(0.18) Mom:-0.00(0.09)
+  VTI    n=84  CAGR  15.52  arith  15.95  vol 17.05  maxDD  -24.8  R2 0.999  alpha -0.37 (t -1.98)
+         Mkt-RF:+1.00(0.01) SMB:-0.00(0.01) HML:+0.03(0.01) RMW:+0.01(0.01) CMA:-0.01(0.01) Mom:+0.01(0.01)
+
+B. Each fund minus AVUV, 2019-10 to 2026-09, on FF5 + Mom
+  DFSVX  TE  3.53 resid TE  2.91  active arith  -1.49 (t -1.12)  CAGR gap  -1.12  alpha -0.47 (t -0.51)  R2 0.32  yrs@1%    50/  34
+         d-beta Mkt-RF:-0.08(0.03) SMB:-0.09(0.04) HML:-0.05(0.03) RMW:-0.01(0.05) CMA:+0.06(0.05) Mom:-0.03(0.03)
+  DFFVX  TE  3.56 resid TE  2.99  active arith  -1.72 (t -1.28)  CAGR gap  -1.40  alpha -0.76 (t -0.85)  R2 0.29  yrs@1%    51/  36
+         d-beta Mkt-RF:-0.07(0.03) SMB:-0.11(0.04) HML:-0.05(0.04) RMW:-0.04(0.05) CMA:+0.02(0.05) Mom:-0.04(0.02)
+  BOSVX  TE  3.83 resid TE  3.17  active arith  -0.78 (t -0.54)  CAGR gap  -0.75  alpha +0.57 (t +0.42)  R2 0.31  yrs@1%    59/  40
+         d-beta Mkt-RF:-0.08(0.03) SMB:+0.08(0.03) HML:+0.01(0.03) RMW:-0.09(0.03) CMA:+0.09(0.05) Mom:+0.02(0.02)
+  CALF   TE  8.82 resid TE  7.24  active arith  -1.87 (t -0.56)  CAGR gap  -1.68  alpha +0.02 (t +0.01)  R2 0.33  yrs@1%   311/ 210
+         d-beta Mkt-RF:-0.07(0.05) SMB:+0.00(0.12) HML:-0.42(0.07) RMW:+0.02(0.09) CMA:+0.23(0.13) Mom:-0.16(0.10)
+  XSVM   TE 10.27 resid TE  9.91  active arith  -0.99 (t -0.25)  CAGR gap  -1.44  alpha -0.79 (t -0.29)  R2 0.07  yrs@1%   422/ 392
+         d-beta Mkt-RF:-0.01(0.05) SMB:+0.16(0.19) HML:-0.14(0.19) RMW:-0.00(0.08) CMA:+0.29(0.36) Mom:+0.09(0.10)
+  VBR    TE  6.56 resid TE  4.42  active arith  -4.40 (t -1.78)  CAGR gap  -3.83  alpha -3.38 (t -2.57)  R2 0.55  yrs@1%   172/  78
+         d-beta Mkt-RF:-0.08(0.04) SMB:-0.29(0.06) HML:-0.16(0.07) RMW:-0.10(0.07) CMA:+0.03(0.08) Mom:-0.02(0.03)
+  IWN    TE  5.89 resid TE  4.53  active arith  -4.58 (t -2.06)  CAGR gap  -4.39  alpha -2.83 (t -1.93)  R2 0.41  yrs@1%   139/  82
+         d-beta Mkt-RF:-0.09(0.05) SMB:-0.06(0.07) HML:-0.15(0.06) RMW:-0.23(0.08) CMA:+0.01(0.06) Mom:-0.02(0.04)
+  AIEQ   TE 16.33 resid TE  9.25  active arith  -5.12 (t -0.83)  CAGR gap  -4.64  alpha -3.73 (t -1.16)  R2 0.68  yrs@1%  1066/ 342
+         d-beta Mkt-RF:-0.02(0.05) SMB:-0.40(0.15) HML:-0.74(0.14) RMW:-0.43(0.17) CMA:+0.16(0.22) Mom:-0.02(0.09)
+
+C. Implied edge over AVUV, premia 1963-07 to 2026-09, % a year
+  premia: Mkt-RF 7.20  SMB 2.16  HML 3.50  RMW 2.96  CMA 2.94  Mom 7.25
+  DFSVX  fee diff +0.02  full: net -1.01 [-1.82, -0.20]  x0.42: net -0.76  style-only full -0.46 [-0.99, +0.08] x0.42 -0.20
+         contrib(full) Mkt-RF:-0.55 SMB:-0.20 HML:-0.18 RMW:-0.04 CMA:+0.18 Mom:-0.20
+  DFFVX  fee diff +0.01  full: net -1.21 [-1.93, -0.49]  x0.42: net -0.80  style-only full -0.72 [-1.23, -0.21] x0.42 -0.31
+         contrib(full) Mkt-RF:-0.49 SMB:-0.23 HML:-0.17 RMW:-0.12 CMA:+0.07 Mom:-0.26
+  BOSVX  fee diff +0.22  full: net -0.48 [-1.30, +0.33]  x0.42: net -0.67  style-only full +0.10 [-0.47, +0.67] x0.42 -0.09
+         contrib(full) Mkt-RF:-0.58 SMB:+0.18 HML:+0.03 RMW:-0.27 CMA:+0.25 Mom:+0.12
+  CALF   fee diff +0.34  full: net -2.74 [-5.34, -0.13]  x0.42: net -1.64  style-only full -2.23 [-4.73, +0.27] x0.42 -1.13
+         contrib(full) Mkt-RF:-0.51 SMB:+0.00 HML:-1.48 RMW:+0.04 CMA:+0.67 Mom:-1.13
+  XSVM   fee diff +0.11  full: net +1.24 [-2.18, +4.66]  x0.42: net +0.43  style-only full +1.28 [-1.86, +4.43] x0.42 +0.47
+         contrib(full) Mkt-RF:-0.04 SMB:+0.35 HML:-0.48 RMW:-0.00 CMA:+0.84 Mom:+0.68
+  VBR    fee diff -0.20  full: net -1.93 [-3.32, -0.54]  x0.42: net -1.03  style-only full -1.35 [-2.53, -0.16] x0.42 -0.45
+         contrib(full) Mkt-RF:-0.58 SMB:-0.62 HML:-0.55 RMW:-0.28 CMA:+0.08 Mom:-0.17
+  IWN    fee diff -0.01  full: net -2.02 [-3.41, -0.62]  x0.42: net -1.20  style-only full -1.41 [-2.48, -0.33] x0.42 -0.58
+         contrib(full) Mkt-RF:-0.61 SMB:-0.13 HML:-0.52 RMW:-0.68 CMA:+0.03 Mom:-0.13
+  AIEQ   fee diff +0.50  full: net -5.02 [-8.48, -1.56]  x0.42: net -2.48  style-only full -4.88 [-8.23, -1.53] x0.42 -2.34
+         contrib(full) Mkt-RF:-0.14 SMB:-0.87 HML:-2.60 RMW:-1.27 CMA:+0.47 Mom:-0.11
+
+F. After-the-fact attribution of each gap vs AVUV, 2019-10 to 2026-09
+  factor means in window: Mkt-RF 13.56  SMB -1.93  HML 1.44  RMW 1.99  CMA 0.41  Mom 2.88
+  DFSVX  arith gap  -1.49 = factors  -1.02 + alpha  -0.47  Mkt-RF:-1.04 SMB:+0.18 HML:-0.07 RMW:-0.03 CMA:+0.02 Mom:-0.08
+  DFFVX  arith gap  -1.72 = factors  -0.97 + alpha  -0.76  Mkt-RF:-0.93 SMB:+0.21 HML:-0.07 RMW:-0.08 CMA:+0.01 Mom:-0.10
+  BOSVX  arith gap  -0.78 = factors  -1.35 + alpha  +0.57  Mkt-RF:-1.10 SMB:-0.16 HML:+0.01 RMW:-0.18 CMA:+0.03 Mom:+0.05
+  CALF   arith gap  -1.87 = factors  -1.89 + alpha  +0.02  Mkt-RF:-0.95 SMB:-0.00 HML:-0.61 RMW:+0.03 CMA:+0.09 Mom:-0.45
+  XSVM   arith gap  -0.99 = factors  -0.20 + alpha  -0.79  Mkt-RF:-0.08 SMB:-0.31 HML:-0.20 RMW:-0.00 CMA:+0.12 Mom:+0.27
+  VBR    arith gap  -4.40 = factors  -1.02 + alpha  -3.38  Mkt-RF:-1.10 SMB:+0.56 HML:-0.23 RMW:-0.19 CMA:+0.01 Mom:-0.07
+  IWN    arith gap  -4.58 = factors  -1.75 + alpha  -2.83  Mkt-RF:-1.15 SMB:+0.12 HML:-0.21 RMW:-0.45 CMA:+0.00 Mom:-0.05
+  AIEQ   arith gap  -5.12 = factors  -1.39 + alpha  -3.73  Mkt-RF:-0.26 SMB:+0.78 HML:-1.07 RMW:-0.86 CMA:+0.07 Mom:-0.04
+
+D. Own-history regressions by regime (excess returns on FF5 + Mom)
+  DFSVX  Full history                     1993-03..2026-09 n=403  CAGR  11.37  alpha -0.83 (t -1.44)  R2 0.97
+         Mkt-RF:+1.03(0.01) SMB:+0.86(0.03) HML:+0.41(0.02) RMW:+0.15(0.03) CMA:+0.10(0.04) Mom:-0.07(0.02)
+  DFFVX  Full history                     2000-03..2026-09 n=319  CAGR  10.84  alpha -0.72 (t -1.02)  R2 0.96
+         Mkt-RF:+1.06(0.02) SMB:+0.67(0.08) HML:+0.47(0.05) RMW:+0.21(0.06) CMA:+0.09(0.06) Mom:-0.09(0.03)
+  BOSVX  Full history                     2011-09..2026-09 n=181  CAGR  11.47  alpha -0.20 (t -0.21)  R2 0.98
+         Mkt-RF:+1.00(0.02) SMB:+0.97(0.04) HML:+0.57(0.04) RMW:+0.13(0.05) CMA:-0.00(0.07) Mom:+0.02(0.02)
+  CALF   Full history                     2017-07..2026-09 n=111  CAGR   9.68  alpha +0.08 (t +0.03)  R2 0.90
+         Mkt-RF:+0.97(0.06) SMB:+0.94(0.12) HML:+0.12(0.08) RMW:+0.24(0.10) CMA:+0.20(0.12) Mom:-0.15(0.08)
+  XSVM   Current index (from 2019-06-21)  2019-07..2026-09 n= 87  CAGR  13.54  alpha +0.60 (t +0.21)  R2 0.89
+         Mkt-RF:+1.06(0.05) SMB:+1.03(0.17) HML:+0.43(0.15) RMW:+0.21(0.06) CMA:+0.25(0.31) Mom:+0.09(0.10)
+  AIEQ   Active, EquBot sub-adviser       2017-11..2024-01 n= 75  CAGR   7.65  alpha -1.03 (t -0.35)  R2 0.89
+         Mkt-RF:+1.09(0.06) SMB:+0.50(0.13) HML:-0.15(0.12) RMW:-0.39(0.15) CMA:+0.06(0.21) Mom:+0.06(0.09)
+         VTI CAGR same months  11.86  TE vs VTI 10.82  active arith  -2.81 (t -0.65)
+  AIEQ   EquBot index                     2024-02..2026-09 n= 32  CAGR  14.62  alpha -4.46 (t -0.99)  R2 0.88
+         Mkt-RF:+1.07(0.08) SMB:+0.12(0.18) HML:-0.06(0.14) RMW:-0.03(0.12) CMA:+0.08(0.17) Mom:-0.04(0.07)
+         VTI CAGR same months  19.67  TE vs VTI  5.40  active arith  -4.10 (t -1.24)
+  AIEQ   Full history                     2017-11..2026-09 n=107  CAGR   9.69  alpha -2.42 (t -1.04)  R2 0.88
+         Mkt-RF:+1.05(0.05) SMB:+0.44(0.11) HML:-0.19(0.10) RMW:-0.22(0.12) CMA:+0.10(0.17) Mom:-0.02(0.07)
+         VTI CAGR same months  14.14  TE vs VTI  9.50  active arith  -3.19 (t -1.00)
+
+Wrote output/results.json and output/better-scv-scoreboard.json
