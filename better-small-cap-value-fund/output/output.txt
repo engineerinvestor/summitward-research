@@ -63,7 +63,7 @@ C. Implied edge over AVUV, premia 1963-07 to 2026-09, % a year
          contrib(full) Mkt-RF:-0.55 SMB:-0.20 HML:-0.18 RMW:-0.04 CMA:+0.18 Mom:-0.20
   DFFVX  fee diff +0.01  full: net -1.21 [-1.93, -0.49]  x0.42: net -0.80  style-only full -0.72 [-1.23, -0.21] x0.42 -0.31
          contrib(full) Mkt-RF:-0.49 SMB:-0.23 HML:-0.17 RMW:-0.12 CMA:+0.07 Mom:-0.26
-  BOSVX  fee diff +0.22  full: net -0.48 [-1.30, +0.33]  x0.42: net -0.67  style-only full +0.10 [-0.47, +0.67] x0.42 -0.09
+  BOSVX  fee diff +0.20  full: net -0.46 [-1.28, +0.35]  x0.42: net -0.65  style-only full +0.12 [-0.45, +0.69] x0.42 -0.07
          contrib(full) Mkt-RF:-0.58 SMB:+0.18 HML:+0.03 RMW:-0.27 CMA:+0.25 Mom:+0.12
   CALF   fee diff +0.34  full: net -2.74 [-5.34, -0.13]  x0.42: net -1.64  style-only full -2.23 [-4.73, +0.27] x0.42 -1.13
          contrib(full) Mkt-RF:-0.51 SMB:+0.00 HML:-1.48 RMW:+0.04 CMA:+0.67 Mom:-1.13

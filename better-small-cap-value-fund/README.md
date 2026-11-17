@@ -2,16 +2,17 @@
 
 Supports https://summitward.com/learn/better-small-cap-value-fund.
 
-`analyze.py` measures funds that each tried one way to improve on plain
-small-cap value against AVUV, using the Fama-French five factors plus
-momentum:
+`analyze.py` measures funds built around different ideas for improving on
+plain small-cap value against AVUV, using the Fama-French five factors plus
+momentum. Each fund also differs from AVUV in universe, weighting and fee, so
+none is a controlled test of its idea:
 
 | Ticker | Fund | Idea |
 | --- | --- | --- |
 | AVUV | Avantis U.S. Small Cap Value ETF | Baseline |
 | DFSVX | Dimensional U.S. Small Cap Value Portfolio (DFSV's fund since 2026-09-25) | Baseline |
 | DFFVX | Dimensional U.S. Targeted Value Portfolio (DFAT's fund) | Wider, adds mid caps |
-| BOSVX | Bridgeway Omni Small-Cap Value (BSVO's sibling mutual fund) | Deeper value, smaller stocks |
+| BOSVX | Bridgeway Omni Small-Cap Value (BSVO's sibling mutual fund; BSVO's fee is used) | Deeper value, smaller stocks |
 | CALF | Pacer US Small Cap Cash Cows ETF | Free-cash-flow yield |
 | XSVM | Invesco S&P SmallCap Value with Momentum ETF | Value plus momentum |
 | VBR, IWN | Vanguard and iShares small-cap value index ETFs | Plain index |
@@ -53,6 +54,8 @@ Results the guide quotes (October 2019 to September 2026 unless noted):
 | CAGR: AVUV, BOSVX, DFSVX, DFFVX, XSVM, CALF | 14.81, 14.07, 13.70, 13.41, 13.37, 13.14% |
 | CAGR: VBR, IWN, AIEQ, VTI | 10.98, 10.42, 10.18, 15.52% |
 | Alpha gap vs AVUV, five small-value alternatives | -0.79 to +0.57%/yr, t -0.85 to +0.42 |
+| Own six-factor alpha: BOSVX, CALF, AVUV, DFSVX, DFFVX, XSVM | +1.09 (t 0.64), +0.54 (t 0.16), +0.51 (t 0.39), +0.04, -0.24, -0.27%/yr |
+| Style-only implied edge vs AVUV, full premiums: BOSVX (BSVO fee) | +0.12%/yr, 95% -0.45 to +0.69 |
 | Tracking error vs AVUV: DFSVX, BOSVX, DFFVX, CALF, XSVM | 3.53, 3.83, 3.56, 8.82, 10.27% |
 | Style-only implied edge vs AVUV, full premiums: XSVM | +1.28%/yr, 95% -1.86 to +4.43 |
 | Six-factor alpha: VBR, IWN | -2.87 (t -3.05), -2.31 (t -2.57)%/yr |
@@ -66,9 +69,18 @@ Methods: numpy OLS with an intercept; Newey-West uses a Bartlett kernel with
 excess of the French T-bill rate for loading regressions; active returns
 (fund minus AVUV) need no T-bill adjustment. Annualized means are 12 times the
 monthly mean; tracking error is the monthly standard deviation times the
-square root of 12. Fees are current net expense ratios (November 2026) and are
-used only for the fee difference in section C; fund returns are already net
-of fees.
+square root of 12. Maximum drawdown measures the running peak from the
+starting wealth, so a loss in the first month counts. Fees are current net
+expense ratios (November 2026) of the ETF a buyer would hold (DFSV for DFSVX,
+DFAT for DFFVX, BSVO for BOSVX) and are used only for the fee difference in
+section C. Fund returns come from DFSVX and DFFVX (older share classes of the
+same funds) and BOSVX (BSVO's sibling mutual fund), net of their own fees,
+which were higher for most of the window: DFSVX 0.51% and DFFVX 0.36% in
+February 2020, BOSVX 0.62% in October 2019.
+
+Price-data check: five-year annualized returns to 2026-09-30 computed from
+these closes are 11.15% for AVUV and 11.00% for DFSVX, against 11.17% and
+10.97% NAV returns on the Avantis and Dimensional fact sheets.
 
 These are descriptions of past windows, not forecasts.
 

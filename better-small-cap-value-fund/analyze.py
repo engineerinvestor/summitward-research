@@ -1,5 +1,6 @@
-"""Funds that each tried one way to improve on plain small-cap value, measured
-against AVUV with six factors, and how long a real edge would take to show.
+"""Funds built around different ideas for improving on plain small-cap value,
+measured against AVUV with six factors, and how long a real edge would take to
+show.
 
 Supports https://summitward.com/learn/better-small-cap-value-fund.
 
@@ -15,13 +16,15 @@ and cached in ./.cache/, which is not committed):
   * Yahoo Finance via yfinance: daily adjusted closes (auto_adjust=True),
     resampled to month-end.
 
-Funds, each standing for one idea:
+Funds, each built around a different idea (each also differs from AVUV in
+universe, weighting and fee, so none is a controlled test of its idea):
   AVUV   baseline (Avantis U.S. Small Cap Value ETF)
   DFSVX  baseline (Dimensional U.S. Small Cap Value Portfolio; DFSV has been an
          ETF share class of this fund since 2026-09-25)
   DFFVX  wider targeted value including mid caps (Dimensional U.S. Targeted
          Value Portfolio; DFAT's fund since 2026-10-02)
-  BOSVX  deeper value, more small companies (Bridgeway Omni Small-Cap Value)
+  BOSVX  deeper value, more small companies (Bridgeway Omni Small-Cap Value;
+         stands in for BSVO, whose fee is used)
   CALF   free-cash-flow yield, about 200 names (Pacer US Small Cap Cash Cows)
   XSVM   value plus momentum, about 120 names (Invesco S&P SmallCap Value with
          Momentum; current index since 2019-06-21)
@@ -83,12 +86,21 @@ COMMON_START = "2019-10"
 Z95 = 1.959964
 MP_SCALE = 0.42  # McLean-Pontiff: post-publication returns 58% lower
 
-# ticker, label, idea, net expense ratio % (issuer/prospectus, Nov 2026)
+# ticker, label, idea, net expense ratio % (issuer/prospectus, Nov 2026).
+# Returns come from DFSVX and DFFVX (older share classes of the same funds)
+# and BOSVX (BSVO's sibling mutual fund); the fee is that
+# of the ETF a buyer would hold today (DFSV for DFSVX, DFAT for DFFVX, BSVO
+# for BOSVX), used only for the fee difference in section C.
 FUNDS = [
     ("AVUV", "Avantis U.S. Small Cap Value ETF", "Baseline", 0.25),
     ("DFSVX", "Dimensional U.S. Small Cap Value (DFSV)", "Baseline", 0.27),
     ("DFFVX", "Dimensional U.S. Targeted Value (DFAT)", "Wider, adds mid caps", 0.26),
-    ("BOSVX", "Bridgeway Omni Small-Cap Value", "Deeper value, smaller stocks", 0.47),
+    (
+        "BOSVX",
+        "Bridgeway Omni Small-Cap Value (BSVO)",
+        "Deeper value, smaller stocks",
+        0.45,
+    ),
     ("CALF", "Pacer US Small Cap Cash Cows ETF", "Free-cash-flow yield", 0.59),
     ("XSVM", "Invesco S&P SmallCap Value with Momentum", "Value plus momentum", 0.36),
     ("VBR", "Vanguard Morningstar Small-Cap Value ETF", "Plain index", 0.05),
@@ -96,6 +108,8 @@ FUNDS = [
     ("AIEQ", "Amplify AI Powered Equity ETF", "Machine learning, all caps", 0.75),
 ]
 EXTRA = ["VTI"]
+# ETF a buyer would hold for each return series
+ETF = {"DFSVX": "DFSV", "DFFVX": "DFAT", "BOSVX": "BSVO"}
 TICKERS = [f[0] for f in FUNDS] + EXTRA
 FEE = {f[0]: f[3] / 100 for f in FUNDS}
 
@@ -218,7 +232,9 @@ def ols(y: pd.Series, X: pd.DataFrame, lags: int = 6) -> dict:
 def stats(r: pd.Series) -> dict:
     yrs = len(r) / 12
     wealth = (1 + r).cumprod()
-    dd = float((wealth / wealth.cummax() - 1).min())
+    # the running peak starts at the initial wealth of 1, so a loss in the
+    # first month counts toward the drawdown
+    dd = float((wealth / wealth.cummax().clip(lower=1.0) - 1).min())
     return {
         "start": ym(r.index[0]),
         "end": ym(r.index[-1]),
@@ -471,6 +487,7 @@ for t, label, idea, fee in FUNDS:
     a = secA[t]
     row = {
         "ticker": t,
+        "etf": ETF.get(t, t),
         "label": label,
         "idea": idea,
         "fee": fee,
@@ -479,6 +496,7 @@ for t, label, idea, fee in FUNDS:
         "maxDd": r4(100 * a["stats"]["max_dd"]),
         "alpha": r4(100 * a["ff6"]["alpha_ann"]),
         "alphaT": r4(a["ff6"]["alpha_t_nw"]),
+        "alphaSe": r4(100 * a["ff6"]["alpha_se_nw_ann"]),
         "r2": r4(a["ff6"]["r2"]),
         "beta": {c: r4(a["ff6"]["coef"][c]) for c in FACTORS},
         "betaSe": {c: r4(a["ff6"]["se_nw"][c]) for c in FACTORS},
@@ -493,6 +511,7 @@ for t, label, idea, fee in FUNDS:
             "tRawMean": r4(b["t_raw_mean"]),
             "alpha": r4(100 * b["reg"]["alpha_ann"]),
             "alphaT": r4(b["reg"]["alpha_t_nw"]),
+            "alphaSe": r4(100 * b["reg"]["alpha_se_nw_ann"]),
             "dBeta": {c: r4(b["reg"]["coef"][c]) for c in FACTORS},
             "dBetaSe": {c: r4(b["reg"]["se_nw"][c]) for c in FACTORS},
             "impliedNetFull": r4(100 * b["implied"]["full"]["net_of_fee_diff"]),
