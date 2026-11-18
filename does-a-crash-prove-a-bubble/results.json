@@ -1,0 +1,1327 @@
+{
+ "end": "Sep 2026",
+ "entries": {
+  "Dec 1998": {
+   "hitec_vw": {
+    "entry": "Dec 1998",
+    "years": 27.75,
+    "end_wealth": 14.335,
+    "cagr": 0.1007,
+    "real_end_wealth": 6.973,
+    "real_cagr": 0.0725,
+    "max_drawdown": -0.7794,
+    "trough": "Sep 2002",
+    "nominal_recovery": {
+     "ever_below": true,
+     "first_back": "Oct 2007",
+     "years_to_first_back": 8.8,
+     "last_below": "Sep 2011",
+     "durably_above_from": "Oct 2011",
+     "years_to_durably_above": 12.8,
+     "ends_above": true
+    },
+    "real_recovery": {
+     "ever_below": true,
+     "first_back": "Jan 2001",
+     "years_to_first_back": 2.1,
+     "last_below": "Sep 2013",
+     "durably_above_from": "Oct 2013",
+     "years_to_durably_above": 14.8,
+     "ends_above": true
+    },
+    "vs_tbills_end_ratio": 8.23,
+    "vs_tbills_recovery": {
+     "ever_below": true,
+     "first_back": "Jan 2001",
+     "years_to_first_back": 2.1,
+     "last_below": "Aug 2013",
+     "durably_above_from": "Sep 2013",
+     "years_to_durably_above": 14.8,
+     "ends_above": true
+    },
+    "vs_market_end_ratio": 1.296,
+    "vs_market_recovery": {
+     "ever_below": true,
+     "first_back": "Jan 2001",
+     "years_to_first_back": 2.1,
+     "last_below": "Apr 2023",
+     "durably_above_from": "May 2023",
+     "years_to_durably_above": 24.4,
+     "ends_above": true
+    },
+    "min_vs_market": 0.583
+   },
+   "hitec_ew": {
+    "entry": "Dec 1998",
+    "years": 27.75,
+    "end_wealth": 19.103,
+    "cagr": 0.1122,
+    "real_end_wealth": 9.292,
+    "real_cagr": 0.0836,
+    "max_drawdown": -0.7519,
+    "trough": "Sep 2002",
+    "nominal_recovery": {
+     "ever_below": true,
+     "first_back": "Nov 2002",
+     "years_to_first_back": 3.9,
+     "last_below": "Oct 2002",
+     "durably_above_from": "Nov 2002",
+     "years_to_durably_above": 3.9,
+     "ends_above": true
+    },
+    "real_recovery": {
+     "ever_below": true,
+     "first_back": "Oct 2001",
+     "years_to_first_back": 2.8,
+     "last_below": "Feb 2009",
+     "durably_above_from": "Mar 2009",
+     "years_to_durably_above": 10.2,
+     "ends_above": true
+    },
+    "vs_tbills_end_ratio": 10.967,
+    "vs_tbills_recovery": {
+     "ever_below": true,
+     "first_back": "Oct 2001",
+     "years_to_first_back": 2.8,
+     "last_below": "Mar 2009",
+     "durably_above_from": "Apr 2009",
+     "years_to_durably_above": 10.3,
+     "ends_above": true
+    },
+    "vs_market_end_ratio": 1.727,
+    "vs_market_recovery": {
+     "ever_below": false
+    },
+    "min_vs_market": 1.0
+   },
+   "market": {
+    "entry": "Dec 1998",
+    "years": 27.75,
+    "end_wealth": 11.063,
+    "cagr": 0.0905,
+    "real_end_wealth": 5.381,
+    "real_cagr": 0.0625,
+    "max_drawdown": -0.5031,
+    "trough": "Feb 2009",
+    "nominal_recovery": {
+     "ever_below": true,
+     "first_back": "Mar 1999",
+     "years_to_first_back": 0.2,
+     "last_below": "Jun 2009",
+     "durably_above_from": "Jul 2009",
+     "years_to_durably_above": 10.6,
+     "ends_above": true
+    },
+    "real_recovery": {
+     "ever_below": true,
+     "first_back": "Mar 1999",
+     "years_to_first_back": 0.2,
+     "last_below": "Sep 2011",
+     "durably_above_from": "Oct 2011",
+     "years_to_durably_above": 12.8,
+     "ends_above": true
+    },
+    "vs_tbills_end_ratio": 6.351,
+    "vs_tbills_recovery": {
+     "ever_below": true,
+     "first_back": "Mar 1999",
+     "years_to_first_back": 0.2,
+     "last_below": "Sep 2011",
+     "durably_above_from": "Oct 2011",
+     "years_to_durably_above": 12.8,
+     "ends_above": true
+    },
+    "vs_market_end_ratio": 1.0,
+    "vs_market_recovery": {
+     "ever_below": false
+    },
+    "min_vs_market": 1.0
+   }
+  },
+  "Dec 1999": {
+   "hitec_vw": {
+    "entry": "Dec 1999",
+    "years": 26.75,
+    "end_wealth": 8.529,
+    "cagr": 0.0834,
+    "real_end_wealth": 4.26,
+    "real_cagr": 0.0557,
+    "max_drawdown": -0.7794,
+    "trough": "Sep 2002",
+    "nominal_recovery": {
+     "ever_below": true,
+     "first_back": "Feb 2000",
+     "years_to_first_back": 0.2,
+     "last_below": "Jun 2014",
+     "durably_above_from": "Jul 2014",
+     "years_to_durably_above": 14.6,
+     "ends_above": true
+    },
+    "real_recovery": {
+     "ever_below": true,
+     "first_back": "Feb 2000",
+     "years_to_first_back": 0.2,
+     "last_below": "Jun 2017",
+     "durably_above_from": "Jul 2017",
+     "years_to_durably_above": 17.6,
+     "ends_above": true
+    },
+    "vs_tbills_end_ratio": 5.126,
+    "vs_tbills_recovery": {
+     "ever_below": true,
+     "first_back": "Feb 2000",
+     "years_to_first_back": 0.2,
+     "last_below": "Jan 2017",
+     "durably_above_from": "Feb 2017",
+     "years_to_durably_above": 17.2,
+     "ends_above": true
+    },
+    "vs_market_end_ratio": 0.966,
+    "vs_market_recovery": {
+     "ever_below": true,
+     "first_back": "Feb 2000",
+     "years_to_first_back": 0.2,
+     "last_below": "Sep 2026",
+     "durably_above_from": null,
+     "years_to_durably_above": null,
+     "ends_above": false
+    },
+    "min_vs_market": 0.434
+   },
+   "hitec_ew": {
+    "entry": "Dec 1999",
+    "years": 26.75,
+    "end_wealth": 8.287,
+    "cagr": 0.0823,
+    "real_end_wealth": 4.14,
+    "real_cagr": 0.0545,
+    "max_drawdown": -0.7519,
+    "trough": "Sep 2002",
+    "nominal_recovery": {
+     "ever_below": true,
+     "first_back": "Jun 2000",
+     "years_to_first_back": 0.5,
+     "last_below": "Aug 2009",
+     "durably_above_from": "Sep 2009",
+     "years_to_durably_above": 9.8,
+     "ends_above": true
+    },
+    "real_recovery": {
+     "ever_below": true,
+     "first_back": "Jun 2000",
+     "years_to_first_back": 0.5,
+     "last_below": "Dec 2011",
+     "durably_above_from": "Jan 2012",
+     "years_to_durably_above": 12.1,
+     "ends_above": true
+    },
+    "vs_tbills_end_ratio": 4.981,
+    "vs_tbills_recovery": {
+     "ever_below": true,
+     "first_back": "Jun 2000",
+     "years_to_first_back": 0.5,
+     "last_below": "Sep 2011",
+     "durably_above_from": "Oct 2011",
+     "years_to_durably_above": 11.8,
+     "ends_above": true
+    },
+    "vs_market_end_ratio": 0.938,
+    "vs_market_recovery": {
+     "ever_below": true,
+     "first_back": "Jul 2003",
+     "years_to_first_back": 3.6,
+     "last_below": "Sep 2026",
+     "durably_above_from": null,
+     "years_to_durably_above": null,
+     "ends_above": false
+    },
+    "min_vs_market": 0.638
+   },
+   "market": {
+    "entry": "Dec 1999",
+    "years": 26.75,
+    "end_wealth": 8.833,
+    "cagr": 0.0848,
+    "real_end_wealth": 4.412,
+    "real_cagr": 0.0571,
+    "max_drawdown": -0.5031,
+    "trough": "Feb 2009",
+    "nominal_recovery": {
+     "ever_below": true,
+     "first_back": "Mar 2000",
+     "years_to_first_back": 0.2,
+     "last_below": "Aug 2010",
+     "durably_above_from": "Sep 2010",
+     "years_to_durably_above": 10.8,
+     "ends_above": true
+    },
+    "real_recovery": {
+     "ever_below": true,
+     "first_back": "Mar 2000",
+     "years_to_first_back": 0.2,
+     "last_below": "Dec 2012",
+     "durably_above_from": "Jan 2013",
+     "years_to_durably_above": 13.1,
+     "ends_above": true
+    },
+    "vs_tbills_end_ratio": 5.309,
+    "vs_tbills_recovery": {
+     "ever_below": true,
+     "first_back": "Mar 2000",
+     "years_to_first_back": 0.2,
+     "last_below": "Nov 2012",
+     "durably_above_from": "Dec 2012",
+     "years_to_durably_above": 13.0,
+     "ends_above": true
+    },
+    "vs_market_end_ratio": 1.0,
+    "vs_market_recovery": {
+     "ever_below": false
+    },
+    "min_vs_market": 1.0
+   }
+  },
+  "Mar 2000": {
+   "hitec_vw": {
+    "entry": "Mar 2000",
+    "years": 26.5,
+    "end_wealth": 7.56,
+    "cagr": 0.0793,
+    "real_end_wealth": 3.841,
+    "real_cagr": 0.0521,
+    "max_drawdown": -0.7794,
+    "trough": "Sep 2002",
+    "nominal_recovery": {
+     "ever_below": true,
+     "first_back": "May 2016",
+     "years_to_first_back": 16.2,
+     "last_below": "Jun 2016",
+     "durably_above_from": "Jul 2016",
+     "years_to_durably_above": 16.3,
+     "ends_above": true
+    },
+    "real_recovery": {
+     "ever_below": true,
+     "first_back": "Jan 2018",
+     "years_to_first_back": 17.8,
+     "last_below": "Dec 2018",
+     "durably_above_from": "Jan 2019",
+     "years_to_durably_above": 18.8,
+     "ends_above": true
+    },
+    "vs_tbills_end_ratio": 4.603,
+    "vs_tbills_recovery": {
+     "ever_below": true,
+     "first_back": "Jul 2017",
+     "years_to_first_back": 17.3,
+     "last_below": "Jun 2017",
+     "durably_above_from": "Jul 2017",
+     "years_to_durably_above": 17.3,
+     "ends_above": true
+    },
+    "vs_market_end_ratio": 0.89,
+    "vs_market_recovery": {
+     "ever_below": true,
+     "first_back": null,
+     "years_to_first_back": null,
+     "last_below": "Sep 2026",
+     "durably_above_from": null,
+     "years_to_durably_above": null,
+     "ends_above": false
+    },
+    "min_vs_market": 0.401
+   },
+   "hitec_ew": {
+    "entry": "Mar 2000",
+    "years": 26.5,
+    "end_wealth": 5.809,
+    "cagr": 0.0686,
+    "real_end_wealth": 2.952,
+    "real_cagr": 0.0417,
+    "max_drawdown": -0.7437,
+    "trough": "Sep 2002",
+    "nominal_recovery": {
+     "ever_below": true,
+     "first_back": "Dec 2010",
+     "years_to_first_back": 10.8,
+     "last_below": "Jul 2012",
+     "durably_above_from": "Aug 2012",
+     "years_to_durably_above": 12.4,
+     "ends_above": true
+    },
+    "real_recovery": {
+     "ever_below": true,
+     "first_back": "Sep 2013",
+     "years_to_first_back": 13.5,
+     "last_below": "Aug 2013",
+     "durably_above_from": "Sep 2013",
+     "years_to_durably_above": 13.5,
+     "ends_above": true
+    },
+    "vs_tbills_end_ratio": 3.537,
+    "vs_tbills_recovery": {
+     "ever_below": true,
+     "first_back": "Jul 2013",
+     "years_to_first_back": 13.3,
+     "last_below": "Jun 2013",
+     "durably_above_from": "Jul 2013",
+     "years_to_durably_above": 13.3,
+     "ends_above": true
+    },
+    "vs_market_end_ratio": 0.684,
+    "vs_market_recovery": {
+     "ever_below": true,
+     "first_back": "Feb 2011",
+     "years_to_first_back": 10.9,
+     "last_below": "Sep 2026",
+     "durably_above_from": null,
+     "years_to_durably_above": null,
+     "ends_above": false
+    },
+    "min_vs_market": 0.465
+   },
+   "market": {
+    "entry": "Mar 2000",
+    "years": 26.5,
+    "end_wealth": 8.491,
+    "cagr": 0.0841,
+    "real_end_wealth": 4.314,
+    "real_cagr": 0.0567,
+    "max_drawdown": -0.5031,
+    "trough": "Feb 2009",
+    "nominal_recovery": {
+     "ever_below": true,
+     "first_back": "Aug 2000",
+     "years_to_first_back": 0.4,
+     "last_below": "Sep 2011",
+     "durably_above_from": "Oct 2011",
+     "years_to_durably_above": 11.6,
+     "ends_above": true
+    },
+    "real_recovery": {
+     "ever_below": true,
+     "first_back": "Feb 2013",
+     "years_to_first_back": 12.9,
+     "last_below": "Jan 2013",
+     "durably_above_from": "Feb 2013",
+     "years_to_durably_above": 12.9,
+     "ends_above": true
+    },
+    "vs_tbills_end_ratio": 5.17,
+    "vs_tbills_recovery": {
+     "ever_below": true,
+     "first_back": "Jan 2013",
+     "years_to_first_back": 12.8,
+     "last_below": "Dec 2012",
+     "durably_above_from": "Jan 2013",
+     "years_to_durably_above": 12.8,
+     "ends_above": true
+    },
+    "vs_market_end_ratio": 1.0,
+    "vs_market_recovery": {
+     "ever_below": false
+    },
+    "min_vs_market": 1.0
+   }
+  },
+  "Dec 2000": {
+   "hitec_vw": {
+    "entry": "Dec 2000",
+    "years": 25.75,
+    "end_wealth": 13.796,
+    "cagr": 0.1073,
+    "real_end_wealth": 7.125,
+    "real_cagr": 0.0792,
+    "max_drawdown": -0.653,
+    "trough": "Sep 2002",
+    "nominal_recovery": {
+     "ever_below": true,
+     "first_back": "Feb 2011",
+     "years_to_first_back": 10.2,
+     "last_below": "Dec 2011",
+     "durably_above_from": "Jan 2012",
+     "years_to_durably_above": 11.1,
+     "ends_above": true
+    },
+    "real_recovery": {
+     "ever_below": true,
+     "first_back": "Sep 2013",
+     "years_to_first_back": 12.8,
+     "last_below": "Aug 2013",
+     "durably_above_from": "Sep 2013",
+     "years_to_durably_above": 12.8,
+     "ends_above": true
+    },
+    "vs_tbills_end_ratio": 8.779,
+    "vs_tbills_recovery": {
+     "ever_below": true,
+     "first_back": "May 2013",
+     "years_to_first_back": 12.4,
+     "last_below": "Apr 2013",
+     "durably_above_from": "May 2013",
+     "years_to_durably_above": 12.4,
+     "ends_above": true
+    },
+    "vs_market_end_ratio": 1.381,
+    "vs_market_recovery": {
+     "ever_below": true,
+     "first_back": "Mar 2020",
+     "years_to_first_back": 19.2,
+     "last_below": "Feb 2023",
+     "durably_above_from": "Mar 2023",
+     "years_to_durably_above": 22.2,
+     "ends_above": true
+    },
+    "min_vs_market": 0.621
+   },
+   "hitec_ew": {
+    "entry": "Dec 2000",
+    "years": 25.75,
+    "end_wealth": 13.97,
+    "cagr": 0.1078,
+    "real_end_wealth": 7.215,
+    "real_cagr": 0.0798,
+    "max_drawdown": -0.5964,
+    "trough": "Feb 2009",
+    "nominal_recovery": {
+     "ever_below": true,
+     "first_back": "Apr 2001",
+     "years_to_first_back": 0.3,
+     "last_below": "Mar 2009",
+     "durably_above_from": "Apr 2009",
+     "years_to_durably_above": 8.3,
+     "ends_above": true
+    },
+    "real_recovery": {
+     "ever_below": true,
+     "first_back": "Apr 2001",
+     "years_to_first_back": 0.3,
+     "last_below": "Apr 2009",
+     "durably_above_from": "May 2009",
+     "years_to_durably_above": 8.4,
+     "ends_above": true
+    },
+    "vs_tbills_end_ratio": 8.89,
+    "vs_tbills_recovery": {
+     "ever_below": true,
+     "first_back": "Apr 2001",
+     "years_to_first_back": 0.3,
+     "last_below": "Apr 2009",
+     "durably_above_from": "May 2009",
+     "years_to_durably_above": 8.4,
+     "ends_above": true
+    },
+    "vs_market_end_ratio": 1.398,
+    "vs_market_recovery": {
+     "ever_below": true,
+     "first_back": "Oct 2001",
+     "years_to_first_back": 0.8,
+     "last_below": "Oct 2002",
+     "durably_above_from": "Nov 2002",
+     "years_to_durably_above": 1.9,
+     "ends_above": true
+    },
+    "min_vs_market": 0.951
+   },
+   "market": {
+    "entry": "Dec 2000",
+    "years": 25.75,
+    "end_wealth": 9.991,
+    "cagr": 0.0935,
+    "real_end_wealth": 5.16,
+    "real_cagr": 0.0658,
+    "max_drawdown": -0.5031,
+    "trough": "Feb 2009",
+    "nominal_recovery": {
+     "ever_below": true,
+     "first_back": "Dec 2004",
+     "years_to_first_back": 4.0,
+     "last_below": "Aug 2009",
+     "durably_above_from": "Sep 2009",
+     "years_to_durably_above": 8.8,
+     "ends_above": true
+    },
+    "real_recovery": {
+     "ever_below": true,
+     "first_back": "Mar 2006",
+     "years_to_first_back": 5.2,
+     "last_below": "Dec 2011",
+     "durably_above_from": "Jan 2012",
+     "years_to_durably_above": 11.1,
+     "ends_above": true
+    },
+    "vs_tbills_end_ratio": 6.358,
+    "vs_tbills_recovery": {
+     "ever_below": true,
+     "first_back": "Jan 2006",
+     "years_to_first_back": 5.1,
+     "last_below": "Sep 2011",
+     "durably_above_from": "Oct 2011",
+     "years_to_durably_above": 10.8,
+     "ends_above": true
+    },
+    "vs_market_end_ratio": 1.0,
+    "vs_market_recovery": {
+     "ever_below": false
+    },
+    "min_vs_market": 1.0
+   }
+  }
+ },
+ "full_history_cagr_1926_07_to_2025_12": {
+  "hitec_vw": 0.1077,
+  "market": 0.1032,
+  "tbill": 0.0329
+ },
+ "chart_from_mar_2000": [
+  {
+   "m": "200003",
+   "hitec_vw": 1.0,
+   "market": 1.0,
+   "tbill": 1.0,
+   "hitec_vw_real": 1.0
+  },
+  {
+   "m": "200006",
+   "hitec_vw": 0.8907,
+   "market": 0.95,
+   "tbill": 1.0137,
+   "hitec_vw_real": 0.8845
+  },
+  {
+   "m": "200009",
+   "hitec_vw": 0.8048,
+   "market": 0.9518,
+   "tbill": 1.0288,
+   "hitec_vw_real": 0.7932
+  },
+  {
+   "m": "200012",
+   "hitec_vw": 0.548,
+   "market": 0.8499,
+   "tbill": 1.0451,
+   "hitec_vw_real": 0.5392
+  },
+  {
+   "m": "200103",
+   "hitec_vw": 0.4336,
+   "market": 0.7425,
+   "tbill": 1.0591,
+   "hitec_vw_real": 0.4213
+  },
+  {
+   "m": "200106",
+   "hitec_vw": 0.4833,
+   "market": 0.7989,
+   "tbill": 1.0697,
+   "hitec_vw_real": 0.4649
+  },
+  {
+   "m": "200109",
+   "hitec_vw": 0.3451,
+   "market": 0.6705,
+   "tbill": 1.0792,
+   "hitec_vw_real": 0.3314
+  },
+  {
+   "m": "200112",
+   "hitec_vw": 0.4213,
+   "market": 0.7547,
+   "tbill": 1.085,
+   "hitec_vw_real": 0.4082
+  },
+  {
+   "m": "200203",
+   "hitec_vw": 0.3861,
+   "market": 0.7605,
+   "tbill": 1.0894,
+   "hitec_vw_real": 0.3697
+  },
+  {
+   "m": "200206",
+   "hitec_vw": 0.2903,
+   "market": 0.6626,
+   "tbill": 1.094,
+   "hitec_vw_real": 0.2763
+  },
+  {
+   "m": "200209",
+   "hitec_vw": 0.2206,
+   "market": 0.5507,
+   "tbill": 1.0987,
+   "hitec_vw_real": 0.2087
+  },
+  {
+   "m": "200212",
+   "hitec_vw": 0.2682,
+   "market": 0.5951,
+   "tbill": 1.1028,
+   "hitec_vw_real": 0.2538
+  },
+  {
+   "m": "200303",
+   "hitec_vw": 0.2575,
+   "market": 0.5768,
+   "tbill": 1.106,
+   "hitec_vw_real": 0.2394
+  },
+  {
+   "m": "200306",
+   "hitec_vw": 0.3101,
+   "market": 0.673,
+   "tbill": 1.1092,
+   "hitec_vw_real": 0.289
+  },
+  {
+   "m": "200309",
+   "hitec_vw": 0.3295,
+   "market": 0.6975,
+   "tbill": 1.1116,
+   "hitec_vw_real": 0.3046
+  },
+  {
+   "m": "200312",
+   "hitec_vw": 0.3725,
+   "market": 0.7838,
+   "tbill": 1.1141,
+   "hitec_vw_real": 0.346
+  },
+  {
+   "m": "200403",
+   "hitec_vw": 0.3687,
+   "market": 0.8029,
+   "tbill": 1.1165,
+   "hitec_vw_real": 0.3368
+  },
+  {
+   "m": "200406",
+   "hitec_vw": 0.373,
+   "market": 0.8142,
+   "tbill": 1.119,
+   "hitec_vw_real": 0.3367
+  },
+  {
+   "m": "200409",
+   "hitec_vw": 0.3471,
+   "market": 0.7969,
+   "tbill": 1.1226,
+   "hitec_vw_real": 0.3129
+  },
+  {
+   "m": "200412",
+   "hitec_vw": 0.395,
+   "market": 0.8773,
+   "tbill": 1.1273,
+   "hitec_vw_real": 0.3554
+  },
+  {
+   "m": "200503",
+   "hitec_vw": 0.3646,
+   "market": 0.8569,
+   "tbill": 1.1333,
+   "hitec_vw_real": 0.3229
+  },
+  {
+   "m": "200506",
+   "hitec_vw": 0.3688,
+   "market": 0.8759,
+   "tbill": 1.141,
+   "hitec_vw_real": 0.3246
+  },
+  {
+   "m": "200509",
+   "hitec_vw": 0.3872,
+   "market": 0.9111,
+   "tbill": 1.1505,
+   "hitec_vw_real": 0.3334
+  },
+  {
+   "m": "200512",
+   "hitec_vw": 0.393,
+   "market": 0.9308,
+   "tbill": 1.1609,
+   "hitec_vw_real": 0.3419
+  },
+  {
+   "m": "200603",
+   "hitec_vw": 0.4192,
+   "market": 0.9803,
+   "tbill": 1.1732,
+   "hitec_vw_real": 0.3592
+  },
+  {
+   "m": "200606",
+   "hitec_vw": 0.3923,
+   "market": 0.9605,
+   "tbill": 1.1872,
+   "hitec_vw_real": 0.331
+  },
+  {
+   "m": "200609",
+   "hitec_vw": 0.4214,
+   "market": 1.0024,
+   "tbill": 1.2019,
+   "hitec_vw_real": 0.3556
+  },
+  {
+   "m": "200612",
+   "hitec_vw": 0.4517,
+   "market": 1.0741,
+   "tbill": 1.2167,
+   "hitec_vw_real": 0.3832
+  },
+  {
+   "m": "200703",
+   "hitec_vw": 0.4557,
+   "market": 1.0887,
+   "tbill": 1.232,
+   "hitec_vw_real": 0.3799
+  },
+  {
+   "m": "200706",
+   "hitec_vw": 0.4967,
+   "market": 1.1543,
+   "tbill": 1.2475,
+   "hitec_vw_real": 0.4081
+  },
+  {
+   "m": "200709",
+   "hitec_vw": 0.5156,
+   "market": 1.1712,
+   "tbill": 1.2618,
+   "hitec_vw_real": 0.4234
+  },
+  {
+   "m": "200712",
+   "hitec_vw": 0.5049,
+   "market": 1.1357,
+   "tbill": 1.2735,
+   "hitec_vw_real": 0.4115
+  },
+  {
+   "m": "200803",
+   "hitec_vw": 0.4339,
+   "market": 1.0267,
+   "tbill": 1.28,
+   "hitec_vw_real": 0.3479
+  },
+  {
+   "m": "200806",
+   "hitec_vw": 0.4396,
+   "market": 1.0073,
+   "tbill": 1.2868,
+   "hitec_vw_real": 0.3439
+  },
+  {
+   "m": "200809",
+   "hitec_vw": 0.3906,
+   "market": 0.9242,
+   "tbill": 1.2924,
+   "hitec_vw_real": 0.3056
+  },
+  {
+   "m": "200812",
+   "hitec_vw": 0.3015,
+   "market": 0.7194,
+   "tbill": 1.2938,
+   "hitec_vw_real": 0.2455
+  },
+  {
+   "m": "200903",
+   "hitec_vw": 0.2989,
+   "market": 0.6479,
+   "tbill": 1.2942,
+   "hitec_vw_real": 0.2406
+  },
+  {
+   "m": "200906",
+   "hitec_vw": 0.3556,
+   "market": 0.7543,
+   "tbill": 1.2944,
+   "hitec_vw_real": 0.2823
+  },
+  {
+   "m": "200909",
+   "hitec_vw": 0.4113,
+   "market": 0.8742,
+   "tbill": 1.2948,
+   "hitec_vw_real": 0.326
+  },
+  {
+   "m": "200912",
+   "hitec_vw": 0.4498,
+   "market": 0.9254,
+   "tbill": 1.295,
+   "hitec_vw_real": 0.3566
+  },
+  {
+   "m": "201003",
+   "hitec_vw": 0.4636,
+   "market": 0.9831,
+   "tbill": 1.2951,
+   "hitec_vw_real": 0.3647
+  },
+  {
+   "m": "201006",
+   "hitec_vw": 0.4154,
+   "market": 0.8723,
+   "tbill": 1.2955,
+   "hitec_vw_real": 0.3262
+  },
+  {
+   "m": "201009",
+   "hitec_vw": 0.4714,
+   "market": 0.9732,
+   "tbill": 1.2959,
+   "hitec_vw_real": 0.3695
+  },
+  {
+   "m": "201012",
+   "hitec_vw": 0.5251,
+   "market": 1.0865,
+   "tbill": 1.2962,
+   "hitec_vw_real": 0.4101
+  },
+  {
+   "m": "201103",
+   "hitec_vw": 0.5558,
+   "market": 1.1521,
+   "tbill": 1.2966,
+   "hitec_vw_real": 0.4258
+  },
+  {
+   "m": "201106",
+   "hitec_vw": 0.554,
+   "market": 1.1501,
+   "tbill": 1.2966,
+   "hitec_vw_real": 0.4202
+  },
+  {
+   "m": "201109",
+   "hitec_vw": 0.4851,
+   "market": 0.9762,
+   "tbill": 1.2968,
+   "hitec_vw_real": 0.366
+  },
+  {
+   "m": "201112",
+   "hitec_vw": 0.5275,
+   "market": 1.092,
+   "tbill": 1.2968,
+   "hitec_vw_real": 0.4001
+  },
+  {
+   "m": "201203",
+   "hitec_vw": 0.6256,
+   "market": 1.2352,
+   "tbill": 1.2968,
+   "hitec_vw_real": 0.4669
+  },
+  {
+   "m": "201206",
+   "hitec_vw": 0.6004,
+   "market": 1.1939,
+   "tbill": 1.2969,
+   "hitec_vw_real": 0.4479
+  },
+  {
+   "m": "201209",
+   "hitec_vw": 0.6419,
+   "market": 1.2679,
+   "tbill": 1.2972,
+   "hitec_vw_real": 0.4749
+  },
+  {
+   "m": "201212",
+   "hitec_vw": 0.6173,
+   "market": 1.2705,
+   "tbill": 1.2975,
+   "hitec_vw_real": 0.4603
+  },
+  {
+   "m": "201303",
+   "hitec_vw": 0.6643,
+   "market": 1.4133,
+   "tbill": 1.2975,
+   "hitec_vw_real": 0.4886
+  },
+  {
+   "m": "201306",
+   "hitec_vw": 0.681,
+   "market": 1.4578,
+   "tbill": 1.2975,
+   "hitec_vw_real": 0.4993
+  },
+  {
+   "m": "201309",
+   "hitec_vw": 0.7376,
+   "market": 1.5549,
+   "tbill": 1.2975,
+   "hitec_vw_real": 0.5393
+  },
+  {
+   "m": "201312",
+   "hitec_vw": 0.8217,
+   "market": 1.7171,
+   "tbill": 1.2975,
+   "hitec_vw_real": 0.6036
+  },
+  {
+   "m": "201403",
+   "hitec_vw": 0.8389,
+   "market": 1.7449,
+   "tbill": 1.2975,
+   "hitec_vw_real": 0.6078
+  },
+  {
+   "m": "201406",
+   "hitec_vw": 0.8847,
+   "market": 1.8237,
+   "tbill": 1.2975,
+   "hitec_vw_real": 0.6355
+  },
+  {
+   "m": "201409",
+   "hitec_vw": 0.9041,
+   "market": 1.8259,
+   "tbill": 1.2975,
+   "hitec_vw_real": 0.6503
+  },
+  {
+   "m": "201412",
+   "hitec_vw": 0.9399,
+   "market": 1.9187,
+   "tbill": 1.2975,
+   "hitec_vw_real": 0.6853
+  },
+  {
+   "m": "201503",
+   "hitec_vw": 0.9573,
+   "market": 1.9513,
+   "tbill": 1.2975,
+   "hitec_vw_real": 0.6941
+  },
+  {
+   "m": "201506",
+   "hitec_vw": 0.9618,
+   "market": 1.9594,
+   "tbill": 1.2975,
+   "hitec_vw_real": 0.69
+  },
+  {
+   "m": "201509",
+   "hitec_vw": 0.9047,
+   "market": 1.8132,
+   "tbill": 1.2975,
+   "hitec_vw_real": 0.6509
+  },
+  {
+   "m": "201512",
+   "hitec_vw": 0.9735,
+   "market": 1.9228,
+   "tbill": 1.2977,
+   "hitec_vw_real": 0.7046
+  },
+  {
+   "m": "201603",
+   "hitec_vw": 0.9965,
+   "market": 1.9382,
+   "tbill": 1.2983,
+   "hitec_vw_real": 0.7164
+  },
+  {
+   "m": "201606",
+   "hitec_vw": 0.9971,
+   "market": 1.991,
+   "tbill": 1.2988,
+   "hitec_vw_real": 0.7083
+  },
+  {
+   "m": "201609",
+   "hitec_vw": 1.0885,
+   "market": 2.0864,
+   "tbill": 1.2996,
+   "hitec_vw_real": 0.7719
+  },
+  {
+   "m": "201612",
+   "hitec_vw": 1.1115,
+   "market": 2.184,
+   "tbill": 1.3004,
+   "hitec_vw_real": 0.7882
+  },
+  {
+   "m": "201703",
+   "hitec_vw": 1.226,
+   "market": 2.3118,
+   "tbill": 1.3018,
+   "hitec_vw_real": 0.8609
+  },
+  {
+   "m": "201706",
+   "hitec_vw": 1.2614,
+   "market": 2.3844,
+   "tbill": 1.304,
+   "hitec_vw_real": 0.8816
+  },
+  {
+   "m": "201709",
+   "hitec_vw": 1.3396,
+   "market": 2.5003,
+   "tbill": 1.3073,
+   "hitec_vw_real": 0.9292
+  },
+  {
+   "m": "201712",
+   "hitec_vw": 1.4317,
+   "market": 2.6714,
+   "tbill": 1.3107,
+   "hitec_vw_real": 0.9943
+  },
+  {
+   "m": "201803",
+   "hitec_vw": 1.4676,
+   "market": 2.663,
+   "tbill": 1.3152,
+   "hitec_vw_real": 1.0068
+  },
+  {
+   "m": "201806",
+   "hitec_vw": 1.5507,
+   "market": 2.7661,
+   "tbill": 1.3207,
+   "hitec_vw_real": 1.0535
+  },
+  {
+   "m": "201809",
+   "hitec_vw": 1.6981,
+   "market": 2.9684,
+   "tbill": 1.3269,
+   "hitec_vw_real": 1.1516
+  },
+  {
+   "m": "201812",
+   "hitec_vw": 1.4244,
+   "market": 2.5369,
+   "tbill": 1.3344,
+   "hitec_vw_real": 0.9706
+  },
+  {
+   "m": "201903",
+   "hitec_vw": 1.6837,
+   "market": 2.8906,
+   "tbill": 1.3421,
+   "hitec_vw_real": 1.1339
+  },
+  {
+   "m": "201906",
+   "hitec_vw": 1.7679,
+   "market": 3.0108,
+   "tbill": 1.3502,
+   "hitec_vw_real": 1.1816
+  },
+  {
+   "m": "201909",
+   "hitec_vw": 1.8116,
+   "market": 3.0279,
+   "tbill": 1.3574,
+   "hitec_vw_real": 1.2079
+  },
+  {
+   "m": "201912",
+   "hitec_vw": 2.0263,
+   "market": 3.3123,
+   "tbill": 1.3629,
+   "hitec_vw_real": 1.3499
+  },
+  {
+   "m": "202003",
+   "hitec_vw": 1.7379,
+   "market": 2.6432,
+   "tbill": 1.368,
+   "hitec_vw_real": 1.1527
+  },
+  {
+   "m": "202006",
+   "hitec_vw": 2.2307,
+   "market": 3.2482,
+   "tbill": 1.3683,
+   "hitec_vw_real": 1.4814
+  },
+  {
+   "m": "202009",
+   "hitec_vw": 2.491,
+   "market": 3.5659,
+   "tbill": 1.3687,
+   "hitec_vw_real": 1.6384
+  },
+  {
+   "m": "202012",
+   "hitec_vw": 2.8501,
+   "market": 4.1095,
+   "tbill": 1.3691,
+   "hitec_vw_real": 1.8733
+  },
+  {
+   "m": "202103",
+   "hitec_vw": 2.9282,
+   "market": 4.3558,
+   "tbill": 1.3691,
+   "hitec_vw_real": 1.8926
+  },
+  {
+   "m": "202106",
+   "hitec_vw": 3.2665,
+   "market": 4.7108,
+   "tbill": 1.3691,
+   "hitec_vw_real": 2.0582
+  },
+  {
+   "m": "202109",
+   "hitec_vw": 3.3063,
+   "market": 4.698,
+   "tbill": 1.3691,
+   "hitec_vw_real": 2.0635
+  },
+  {
+   "m": "202112",
+   "hitec_vw": 3.6312,
+   "market": 5.0901,
+   "tbill": 1.3692,
+   "hitec_vw_real": 2.2298
+  },
+  {
+   "m": "202203",
+   "hitec_vw": 3.2942,
+   "market": 4.8114,
+   "tbill": 1.3692,
+   "hitec_vw_real": 1.9616
+  },
+  {
+   "m": "202206",
+   "hitec_vw": 2.6216,
+   "market": 3.9828,
+   "tbill": 1.3704,
+   "hitec_vw_real": 1.5147
+  },
+  {
+   "m": "202209",
+   "hitec_vw": 2.4293,
+   "market": 3.8255,
+   "tbill": 1.3768,
+   "hitec_vw_real": 1.4012
+  },
+  {
+   "m": "202212",
+   "hitec_vw": 2.4821,
+   "market": 4.0763,
+   "tbill": 1.3885,
+   "hitec_vw_real": 1.4317
+  },
+  {
+   "m": "202303",
+   "hitec_vw": 2.9689,
+   "market": 4.3839,
+   "tbill": 1.4031,
+   "hitec_vw_real": 1.684
+  },
+  {
+   "m": "202306",
+   "hitec_vw": 3.3803,
+   "market": 4.7632,
+   "tbill": 1.4188,
+   "hitec_vw_real": 1.8967
+  },
+  {
+   "m": "202309",
+   "hitec_vw": 3.2594,
+   "market": 4.6107,
+   "tbill": 1.4377,
+   "hitec_vw_real": 1.813
+  },
+  {
+   "m": "202312",
+   "hitec_vw": 3.7417,
+   "market": 5.1643,
+   "tbill": 1.4571,
+   "hitec_vw_real": 2.0883
+  },
+  {
+   "m": "202403",
+   "hitec_vw": 4.179,
+   "market": 5.6935,
+   "tbill": 1.4764,
+   "hitec_vw_real": 2.2907
+  },
+  {
+   "m": "202406",
+   "hitec_vw": 4.6124,
+   "market": 5.8992,
+   "tbill": 1.4959,
+   "hitec_vw_real": 2.5134
+  },
+  {
+   "m": "202409",
+   "hitec_vw": 4.7482,
+   "market": 6.2523,
+   "tbill": 1.5159,
+   "hitec_vw_real": 2.5782
+  },
+  {
+   "m": "202412",
+   "hitec_vw": 5.0351,
+   "market": 6.4563,
+   "tbill": 1.5336,
+   "hitec_vw_real": 2.7313
+  },
+  {
+   "m": "202503",
+   "hitec_vw": 4.4586,
+   "market": 6.126,
+   "tbill": 1.5496,
+   "hitec_vw_real": 2.3868
+  },
+  {
+   "m": "202506",
+   "hitec_vw": 5.3913,
+   "market": 6.8259,
+   "tbill": 1.5662,
+   "hitec_vw_real": 2.8614
+  },
+  {
+   "m": "202509",
+   "hitec_vw": 6.1182,
+   "market": 7.4049,
+   "tbill": 1.5827,
+   "hitec_vw_real": 3.2248
+  },
+  {
+   "m": "202512",
+   "hitec_vw": 6.2425,
+   "market": 7.5888,
+   "tbill": 1.5988,
+   "hitec_vw_real": 3.2979
+  },
+  {
+   "m": "202603",
+   "hitec_vw": 5.6451,
+   "market": 7.2486,
+   "tbill": 1.6127,
+   "hitec_vw_real": 2.9267
+  },
+  {
+   "m": "202606",
+   "hitec_vw": 6.9777,
+   "market": 8.3424,
+   "tbill": 1.6271,
+   "hitec_vw_real": 3.5771
+  },
+  {
+   "m": "202609",
+   "hitec_vw": 7.5602,
+   "market": 8.4912,
+   "tbill": 1.6423,
+   "hitec_vw_real": 3.8413
+  }
+ ]
+}

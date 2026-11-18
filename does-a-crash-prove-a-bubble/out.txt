@@ -1,0 +1,81 @@
+Window ends Sep 2026. Full-history CAGR Jul 1926-Dec 2025: {'hitec_vw': 0.1077, 'market': 0.1032, 'tbill': 0.0329}
+
+=== Entry at close of Dec 1998 ===
+hitec_vw  $1 -> 14.34 (+10.1%/yr), real 6.97 (+7.2%/yr); maxDD -77.9% at Sep 2002
+    nominal   : last month-end below Sep 2011; above for good from Oct 2011 (12.8y after entry)
+    real      : last month-end below Sep 2013; above for good from Oct 2013 (14.8y after entry)
+    vs T-bills: last month-end below Aug 2013; above for good from Sep 2013 (14.8y after entry)
+    vs market : last month-end below Apr 2023; above for good from May 2023 (24.4y after entry)
+    end ratio vs T-bills 8.23, vs market 1.296 (low 0.583)
+hitec_ew  $1 -> 19.10 (+11.2%/yr), real 9.29 (+8.4%/yr); maxDD -75.2% at Sep 2002
+    nominal   : last month-end below Oct 2002; above for good from Nov 2002 (3.9y after entry)
+    real      : last month-end below Feb 2009; above for good from Mar 2009 (10.2y after entry)
+    vs T-bills: last month-end below Mar 2009; above for good from Apr 2009 (10.3y after entry)
+    vs market : never below the starting line
+    end ratio vs T-bills 10.967, vs market 1.727 (low 1.0)
+market    $1 -> 11.06 (+9.0%/yr), real 5.38 (+6.2%/yr); maxDD -50.3% at Feb 2009
+    nominal   : last month-end below Jun 2009; above for good from Jul 2009 (10.6y after entry)
+    real      : last month-end below Sep 2011; above for good from Oct 2011 (12.8y after entry)
+    vs T-bills: last month-end below Sep 2011; above for good from Oct 2011 (12.8y after entry)
+    vs market : never below the starting line
+    end ratio vs T-bills 6.351, vs market 1.0 (low 1.0)
+
+=== Entry at close of Dec 1999 ===
+hitec_vw  $1 -> 8.53 (+8.3%/yr), real 4.26 (+5.6%/yr); maxDD -77.9% at Sep 2002
+    nominal   : last month-end below Jun 2014; above for good from Jul 2014 (14.6y after entry)
+    real      : last month-end below Jun 2017; above for good from Jul 2017 (17.6y after entry)
+    vs T-bills: last month-end below Jan 2017; above for good from Feb 2017 (17.2y after entry)
+    vs market : still below at Sep 2026
+    end ratio vs T-bills 5.126, vs market 0.966 (low 0.434)
+hitec_ew  $1 -> 8.29 (+8.2%/yr), real 4.14 (+5.5%/yr); maxDD -75.2% at Sep 2002
+    nominal   : last month-end below Aug 2009; above for good from Sep 2009 (9.8y after entry)
+    real      : last month-end below Dec 2011; above for good from Jan 2012 (12.1y after entry)
+    vs T-bills: last month-end below Sep 2011; above for good from Oct 2011 (11.8y after entry)
+    vs market : still below at Sep 2026
+    end ratio vs T-bills 4.981, vs market 0.938 (low 0.638)
+market    $1 -> 8.83 (+8.5%/yr), real 4.41 (+5.7%/yr); maxDD -50.3% at Feb 2009
+    nominal   : last month-end below Aug 2010; above for good from Sep 2010 (10.8y after entry)
+    real      : last month-end below Dec 2012; above for good from Jan 2013 (13.1y after entry)
+    vs T-bills: last month-end below Nov 2012; above for good from Dec 2012 (13.0y after entry)
+    vs market : never below the starting line
+    end ratio vs T-bills 5.309, vs market 1.0 (low 1.0)
+
+=== Entry at close of Mar 2000 ===
+hitec_vw  $1 -> 7.56 (+7.9%/yr), real 3.84 (+5.2%/yr); maxDD -77.9% at Sep 2002
+    nominal   : last month-end below Jun 2016; above for good from Jul 2016 (16.3y after entry)
+    real      : last month-end below Dec 2018; above for good from Jan 2019 (18.8y after entry)
+    vs T-bills: last month-end below Jun 2017; above for good from Jul 2017 (17.3y after entry)
+    vs market : still below at Sep 2026
+    end ratio vs T-bills 4.603, vs market 0.89 (low 0.401)
+hitec_ew  $1 -> 5.81 (+6.9%/yr), real 2.95 (+4.2%/yr); maxDD -74.4% at Sep 2002
+    nominal   : last month-end below Jul 2012; above for good from Aug 2012 (12.4y after entry)
+    real      : last month-end below Aug 2013; above for good from Sep 2013 (13.5y after entry)
+    vs T-bills: last month-end below Jun 2013; above for good from Jul 2013 (13.3y after entry)
+    vs market : still below at Sep 2026
+    end ratio vs T-bills 3.537, vs market 0.684 (low 0.465)
+market    $1 -> 8.49 (+8.4%/yr), real 4.31 (+5.7%/yr); maxDD -50.3% at Feb 2009
+    nominal   : last month-end below Sep 2011; above for good from Oct 2011 (11.6y after entry)
+    real      : last month-end below Jan 2013; above for good from Feb 2013 (12.9y after entry)
+    vs T-bills: last month-end below Dec 2012; above for good from Jan 2013 (12.8y after entry)
+    vs market : never below the starting line
+    end ratio vs T-bills 5.17, vs market 1.0 (low 1.0)
+
+=== Entry at close of Dec 2000 ===
+hitec_vw  $1 -> 13.80 (+10.7%/yr), real 7.12 (+7.9%/yr); maxDD -65.3% at Sep 2002
+    nominal   : last month-end below Dec 2011; above for good from Jan 2012 (11.1y after entry)
+    real      : last month-end below Aug 2013; above for good from Sep 2013 (12.8y after entry)
+    vs T-bills: last month-end below Apr 2013; above for good from May 2013 (12.4y after entry)
+    vs market : last month-end below Feb 2023; above for good from Mar 2023 (22.2y after entry)
+    end ratio vs T-bills 8.779, vs market 1.381 (low 0.621)
+hitec_ew  $1 -> 13.97 (+10.8%/yr), real 7.21 (+8.0%/yr); maxDD -59.6% at Feb 2009
+    nominal   : last month-end below Mar 2009; above for good from Apr 2009 (8.3y after entry)
+    real      : last month-end below Apr 2009; above for good from May 2009 (8.4y after entry)
+    vs T-bills: last month-end below Apr 2009; above for good from May 2009 (8.4y after entry)
+    vs market : last month-end below Oct 2002; above for good from Nov 2002 (1.9y after entry)
+    end ratio vs T-bills 8.89, vs market 1.398 (low 0.951)
+market    $1 -> 9.99 (+9.3%/yr), real 5.16 (+6.6%/yr); maxDD -50.3% at Feb 2009
+    nominal   : last month-end below Aug 2009; above for good from Sep 2009 (8.8y after entry)
+    real      : last month-end below Dec 2011; above for good from Jan 2012 (11.1y after entry)
+    vs T-bills: last month-end below Sep 2011; above for good from Oct 2011 (10.8y after entry)
+    vs market : never below the starting line
+    end ratio vs T-bills 6.358, vs market 1.0 (low 1.0)
