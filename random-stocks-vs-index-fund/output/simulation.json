@@ -1,0 +1,842 @@
+{
+  "assumptions": {
+    "universe_companies": 500,
+    "idio_vol_rms": 0.3091,
+    "market_vol": 0.1547,
+    "risk_free": 0.03,
+    "market_excess_return": 0.06,
+    "fund_fee_for_scale": 0.0003,
+    "seed": 20261118,
+    "calibration_window": "2021-11 to 2026-10 (monthly, total return)"
+  },
+  "closed_form_rebalanced_ew_10y": {
+    "1": {
+      "vol": 0.3457,
+      "tracking_error": 0.3091,
+      "p5": 0.1242,
+      "p50": 0.6202,
+      "p95": 3.0959
+    },
+    "5": {
+      "vol": 0.2075,
+      "tracking_error": 0.1382,
+      "p5": 0.4428,
+      "p50": 0.9089,
+      "p95": 1.8654
+    },
+    "10": {
+      "vol": 0.183,
+      "tracking_error": 0.0977,
+      "p5": 0.5734,
+      "p50": 0.9534,
+      "p95": 1.5851
+    },
+    "20": {
+      "vol": 0.1694,
+      "tracking_error": 0.0691,
+      "p5": 0.6815,
+      "p50": 0.9764,
+      "p95": 1.3988
+    },
+    "30": {
+      "vol": 0.1647,
+      "tracking_error": 0.0564,
+      "p5": 0.7338,
+      "p50": 0.9842,
+      "p95": 1.32
+    },
+    "50": {
+      "vol": 0.1608,
+      "tracking_error": 0.0437,
+      "p5": 0.789,
+      "p50": 0.9905,
+      "p95": 1.2434
+    },
+    "100": {
+      "vol": 0.1578,
+      "tracking_error": 0.0309,
+      "p5": 0.8474,
+      "p50": 0.9952,
+      "p95": 1.1688
+    },
+    "500": {
+      "vol": 0.1553,
+      "tracking_error": 0.0138,
+      "p5": 0.9297,
+      "p50": 0.999,
+      "p95": 1.0735
+    }
+  },
+  "expected_distinct_holdings": {
+    "10": 9.9,
+    "12": 11.9,
+    "60": 56.6,
+    "120": 106.8,
+    "240": 190.8,
+    "360": 256.8
+  },
+  "baseline": {
+    "fixed_n_10y": {
+      "1": {
+        "p5": 0.1221,
+        "p25": 0.323,
+        "p50": 0.6298,
+        "p75": 1.233,
+        "p95": 3.2077,
+        "mean": 1.0134,
+        "p_trail_10": 0.6403,
+        "p_trail_25": 0.5713,
+        "p_trail_any": 0.6813,
+        "p_lead_10": 0.2866
+      },
+      "5": {
+        "p5": 0.3928,
+        "p25": 0.6263,
+        "p50": 0.8716,
+        "p75": 1.2179,
+        "p95": 2.0217,
+        "mean": 1.0018,
+        "p_trail_10": 0.5274,
+        "p_trail_25": 0.377,
+        "p_trail_any": 0.6101,
+        "p_lead_10": 0.3172
+      },
+      "10": {
+        "p5": 0.5182,
+        "p25": 0.7224,
+        "p50": 0.92,
+        "p75": 1.1833,
+        "p95": 1.7079,
+        "mean": 0.9955,
+        "p_trail_10": 0.4743,
+        "p_trail_25": 0.2841,
+        "p_trail_any": 0.5918,
+        "p_lead_10": 0.3117
+      },
+      "20": {
+        "p5": 0.6351,
+        "p25": 0.8054,
+        "p50": 0.9586,
+        "p75": 1.1469,
+        "p95": 1.5037,
+        "mean": 0.999,
+        "p_trail_10": 0.4039,
+        "p_trail_25": 0.1685,
+        "p_trail_any": 0.5642,
+        "p_lead_10": 0.3012
+      },
+      "30": {
+        "p5": 0.6847,
+        "p25": 0.8394,
+        "p50": 0.969,
+        "p75": 1.1184,
+        "p95": 1.4098,
+        "mean": 0.9971,
+        "p_trail_10": 0.3666,
+        "p_trail_25": 0.1135,
+        "p_trail_any": 0.559,
+        "p_lead_10": 0.2748
+      },
+      "50": {
+        "p5": 0.7458,
+        "p25": 0.8772,
+        "p50": 0.9853,
+        "p75": 1.1055,
+        "p95": 1.3186,
+        "mean": 1.0031,
+        "p_trail_10": 0.2986,
+        "p_trail_25": 0.0546,
+        "p_trail_any": 0.5352,
+        "p_lead_10": 0.2605
+      },
+      "100": {
+        "p5": 0.8139,
+        "p25": 0.9096,
+        "p50": 0.9859,
+        "p75": 1.0741,
+        "p95": 1.222,
+        "mean": 0.9983,
+        "p_trail_10": 0.2213,
+        "p_trail_25": 0.0105,
+        "p_trail_any": 0.546,
+        "p_lead_10": 0.1997
+      }
+    },
+    "monthly": {
+      "10y": {
+        "p5": 0.8584,
+        "p25": 0.9334,
+        "p50": 0.9922,
+        "p75": 1.0545,
+        "p95": 1.163,
+        "mean": 0.999,
+        "p_trail_10": 0.133,
+        "p_trail_25": 0.0007,
+        "p_trail_any": 0.5359,
+        "p_lead_10": 0.1333,
+        "distinct_mean": 106.7,
+        "neff_median": 57.0,
+        "neff_p5": 34.4,
+        "neff_p95": 72.1,
+        "fund_fee_drag_median": 0.0017,
+        "ew_fund_fee_drag_median": 0.01129,
+        "by_year": [
+          {
+            "year": 1,
+            "distinct_mean": 11.9,
+            "neff_median": 11.4
+          },
+          {
+            "year": 2,
+            "distinct_mean": 23.4,
+            "neff_median": 21.0
+          },
+          {
+            "year": 3,
+            "distinct_mean": 34.7,
+            "neff_median": 29.2
+          },
+          {
+            "year": 4,
+            "distinct_mean": 45.8,
+            "neff_median": 36.1
+          },
+          {
+            "year": 5,
+            "distinct_mean": 56.6,
+            "neff_median": 41.9
+          },
+          {
+            "year": 6,
+            "distinct_mean": 67.1,
+            "neff_median": 46.5
+          },
+          {
+            "year": 7,
+            "distinct_mean": 77.4,
+            "neff_median": 50.3
+          },
+          {
+            "year": 8,
+            "distinct_mean": 87.4,
+            "neff_median": 53.2
+          },
+          {
+            "year": 9,
+            "distinct_mean": 97.2,
+            "neff_median": 55.4
+          },
+          {
+            "year": 10,
+            "distinct_mean": 106.7,
+            "neff_median": 57.0
+          }
+        ]
+      },
+      "20y": {
+        "p5": 0.8083,
+        "p25": 0.904,
+        "p50": 0.9801,
+        "p75": 1.0656,
+        "p95": 1.2416,
+        "mean": 0.997,
+        "p_trail_10": 0.2402,
+        "p_trail_25": 0.0112,
+        "p_trail_any": 0.565,
+        "p_lead_10": 0.1892,
+        "distinct_mean": 190.9,
+        "neff_median": 53.4,
+        "neff_p5": 21.3,
+        "neff_p95": 83.7,
+        "fund_fee_drag_median": 0.00374,
+        "ew_fund_fee_drag_median": 0.02465,
+        "by_year": [
+          {
+            "year": 1,
+            "distinct_mean": 11.9,
+            "neff_median": 11.4
+          },
+          {
+            "year": 2,
+            "distinct_mean": 23.5,
+            "neff_median": 21.1
+          },
+          {
+            "year": 3,
+            "distinct_mean": 34.8,
+            "neff_median": 29.3
+          },
+          {
+            "year": 4,
+            "distinct_mean": 45.8,
+            "neff_median": 36.1
+          },
+          {
+            "year": 5,
+            "distinct_mean": 56.6,
+            "neff_median": 41.9
+          },
+          {
+            "year": 6,
+            "distinct_mean": 67.1,
+            "neff_median": 46.5
+          },
+          {
+            "year": 7,
+            "distinct_mean": 77.4,
+            "neff_median": 50.3
+          },
+          {
+            "year": 8,
+            "distinct_mean": 87.4,
+            "neff_median": 53.3
+          },
+          {
+            "year": 9,
+            "distinct_mean": 97.2,
+            "neff_median": 55.6
+          },
+          {
+            "year": 10,
+            "distinct_mean": 106.8,
+            "neff_median": 57.3
+          },
+          {
+            "year": 11,
+            "distinct_mean": 116.2,
+            "neff_median": 58.2
+          },
+          {
+            "year": 12,
+            "distinct_mean": 125.3,
+            "neff_median": 58.9
+          },
+          {
+            "year": 13,
+            "distinct_mean": 134.2,
+            "neff_median": 59.1
+          },
+          {
+            "year": 14,
+            "distinct_mean": 142.9,
+            "neff_median": 58.7
+          },
+          {
+            "year": 15,
+            "distinct_mean": 151.4,
+            "neff_median": 58.1
+          },
+          {
+            "year": 16,
+            "distinct_mean": 159.7,
+            "neff_median": 57.7
+          },
+          {
+            "year": 17,
+            "distinct_mean": 167.7,
+            "neff_median": 56.6
+          },
+          {
+            "year": 18,
+            "distinct_mean": 175.6,
+            "neff_median": 55.8
+          },
+          {
+            "year": 19,
+            "distinct_mean": 183.4,
+            "neff_median": 54.6
+          },
+          {
+            "year": 20,
+            "distinct_mean": 190.9,
+            "neff_median": 53.4
+          }
+        ]
+      },
+      "30y": {
+        "p5": 0.7473,
+        "p25": 0.8684,
+        "p50": 0.9638,
+        "p75": 1.0918,
+        "p95": 1.361,
+        "mean": 1.0011,
+        "p_trail_10": 0.326,
+        "p_trail_25": 0.0524,
+        "p_trail_any": 0.5826,
+        "p_lead_10": 0.2394,
+        "distinct_mean": 256.7,
+        "neff_median": 40.5,
+        "neff_p5": 12.1,
+        "neff_p95": 75.4,
+        "fund_fee_drag_median": 0.00608,
+        "ew_fund_fee_drag_median": 0.03973,
+        "by_year": [
+          {
+            "year": 1,
+            "distinct_mean": 11.9,
+            "neff_median": 11.4
+          },
+          {
+            "year": 2,
+            "distinct_mean": 23.5,
+            "neff_median": 21.0
+          },
+          {
+            "year": 3,
+            "distinct_mean": 34.8,
+            "neff_median": 29.2
+          },
+          {
+            "year": 4,
+            "distinct_mean": 45.8,
+            "neff_median": 36.1
+          },
+          {
+            "year": 5,
+            "distinct_mean": 56.6,
+            "neff_median": 41.8
+          },
+          {
+            "year": 6,
+            "distinct_mean": 67.1,
+            "neff_median": 46.4
+          },
+          {
+            "year": 7,
+            "distinct_mean": 77.4,
+            "neff_median": 50.1
+          },
+          {
+            "year": 8,
+            "distinct_mean": 87.4,
+            "neff_median": 53.1
+          },
+          {
+            "year": 9,
+            "distinct_mean": 97.2,
+            "neff_median": 55.1
+          },
+          {
+            "year": 10,
+            "distinct_mean": 106.8,
+            "neff_median": 56.9
+          },
+          {
+            "year": 11,
+            "distinct_mean": 116.1,
+            "neff_median": 57.9
+          },
+          {
+            "year": 12,
+            "distinct_mean": 125.2,
+            "neff_median": 58.4
+          },
+          {
+            "year": 13,
+            "distinct_mean": 134.1,
+            "neff_median": 58.7
+          },
+          {
+            "year": 14,
+            "distinct_mean": 142.7,
+            "neff_median": 58.6
+          },
+          {
+            "year": 15,
+            "distinct_mean": 151.2,
+            "neff_median": 57.9
+          },
+          {
+            "year": 16,
+            "distinct_mean": 159.4,
+            "neff_median": 57.3
+          },
+          {
+            "year": 17,
+            "distinct_mean": 167.5,
+            "neff_median": 56.6
+          },
+          {
+            "year": 18,
+            "distinct_mean": 175.4,
+            "neff_median": 55.6
+          },
+          {
+            "year": 19,
+            "distinct_mean": 183.1,
+            "neff_median": 54.8
+          },
+          {
+            "year": 20,
+            "distinct_mean": 190.6,
+            "neff_median": 53.8
+          },
+          {
+            "year": 21,
+            "distinct_mean": 198.0,
+            "neff_median": 52.4
+          },
+          {
+            "year": 22,
+            "distinct_mean": 205.1,
+            "neff_median": 50.9
+          },
+          {
+            "year": 23,
+            "distinct_mean": 212.2,
+            "neff_median": 49.3
+          },
+          {
+            "year": 24,
+            "distinct_mean": 219.0,
+            "neff_median": 47.9
+          },
+          {
+            "year": 25,
+            "distinct_mean": 225.7,
+            "neff_median": 46.8
+          },
+          {
+            "year": 26,
+            "distinct_mean": 232.2,
+            "neff_median": 45.3
+          },
+          {
+            "year": 27,
+            "distinct_mean": 238.5,
+            "neff_median": 44.3
+          },
+          {
+            "year": 28,
+            "distinct_mean": 244.7,
+            "neff_median": 42.7
+          },
+          {
+            "year": 29,
+            "distinct_mean": 250.7,
+            "neff_median": 41.7
+          },
+          {
+            "year": 30,
+            "distinct_mean": 256.7,
+            "neff_median": 40.5
+          }
+        ]
+      }
+    },
+    "fixed_n_long": {
+      "10_20y": {
+        "p5": 0.346,
+        "p25": 0.5631,
+        "p50": 0.8143,
+        "p75": 1.2103,
+        "p95": 2.2411,
+        "mean": 0.9999,
+        "p_trail_10": 0.5702,
+        "p_trail_25": 0.4478,
+        "p_trail_any": 0.641,
+        "p_lead_10": 0.303
+      },
+      "10_30y": {
+        "p5": 0.2284,
+        "p25": 0.4378,
+        "p50": 0.6948,
+        "p75": 1.1504,
+        "p95": 2.7528,
+        "mean": 1.0194,
+        "p_trail_10": 0.6416,
+        "p_trail_25": 0.5418,
+        "p_trail_any": 0.6898,
+        "p_lead_10": 0.2684
+      }
+    }
+  },
+  "measured": {
+    "fixed_n_10y": {
+      "1": {
+        "p5": 0.1064,
+        "p25": 0.363,
+        "p50": 0.6783,
+        "p75": 1.1694,
+        "p95": 2.7188,
+        "mean": 0.9788,
+        "p_trail_10": 0.6372,
+        "p_trail_25": 0.5543,
+        "p_trail_any": 0.6877,
+        "p_lead_10": 0.2735
+      },
+      "5": {
+        "p5": 0.4117,
+        "p25": 0.6321,
+        "p50": 0.8401,
+        "p75": 1.1285,
+        "p95": 1.8332,
+        "mean": 0.9617,
+        "p_trail_10": 0.555,
+        "p_trail_25": 0.3962,
+        "p_trail_any": 0.6552,
+        "p_lead_10": 0.2682
+      },
+      "10": {
+        "p5": 0.529,
+        "p25": 0.7118,
+        "p50": 0.8816,
+        "p75": 1.0977,
+        "p95": 1.663,
+        "mean": 0.9823,
+        "p_trail_10": 0.5252,
+        "p_trail_25": 0.2993,
+        "p_trail_any": 0.6518,
+        "p_lead_10": 0.248
+      },
+      "20": {
+        "p5": 0.6212,
+        "p25": 0.783,
+        "p50": 0.914,
+        "p75": 1.0884,
+        "p95": 1.475,
+        "mean": 0.9853,
+        "p_trail_10": 0.4755,
+        "p_trail_25": 0.1898,
+        "p_trail_any": 0.6428,
+        "p_lead_10": 0.2382
+      },
+      "30": {
+        "p5": 0.6726,
+        "p25": 0.8116,
+        "p50": 0.9274,
+        "p75": 1.0727,
+        "p95": 1.3991,
+        "mean": 0.9759,
+        "p_trail_10": 0.437,
+        "p_trail_25": 0.1467,
+        "p_trail_any": 0.6445,
+        "p_lead_10": 0.211
+      },
+      "50": {
+        "p5": 0.7251,
+        "p25": 0.8431,
+        "p50": 0.9398,
+        "p75": 1.0589,
+        "p95": 1.3124,
+        "mean": 0.9915,
+        "p_trail_10": 0.3917,
+        "p_trail_25": 0.0788,
+        "p_trail_any": 0.6358,
+        "p_lead_10": 0.1933
+      },
+      "100": {
+        "p5": 0.79,
+        "p25": 0.8785,
+        "p50": 0.9545,
+        "p75": 1.0451,
+        "p95": 1.2349,
+        "mean": 0.9941,
+        "p_trail_10": 0.3127,
+        "p_trail_25": 0.0177,
+        "p_trail_any": 0.6378,
+        "p_lead_10": 0.1568
+      }
+    },
+    "monthly": {
+      "10y": {
+        "p5": 0.837,
+        "p25": 0.9137,
+        "p50": 0.972,
+        "p75": 1.0366,
+        "p95": 1.1705,
+        "mean": 0.9888,
+        "p_trail_10": 0.2008,
+        "p_trail_25": 0.0025,
+        "p_trail_any": 0.625,
+        "p_lead_10": 0.1118,
+        "distinct_mean": 106.8,
+        "neff_median": 60.4,
+        "neff_p5": 25.3,
+        "neff_p95": 76.6,
+        "fund_fee_drag_median": 0.0017,
+        "ew_fund_fee_drag_median": 0.01126
+      },
+      "20y": {
+        "p5": 0.7769,
+        "p25": 0.8706,
+        "p50": 0.9433,
+        "p75": 1.0362,
+        "p95": 1.2914,
+        "mean": 0.9943,
+        "p_trail_10": 0.3475,
+        "p_trail_25": 0.025,
+        "p_trail_any": 0.67,
+        "p_lead_10": 0.1535,
+        "distinct_mean": 190.7,
+        "neff_median": 58.5,
+        "neff_p5": 14.5,
+        "neff_p95": 95.4,
+        "fund_fee_drag_median": 0.00375,
+        "ew_fund_fee_drag_median": 0.02471
+      },
+      "30y": {
+        "p5": 0.7133,
+        "p25": 0.8143,
+        "p50": 0.9066,
+        "p75": 1.0348,
+        "p95": 1.4237,
+        "mean": 0.9954,
+        "p_trail_10": 0.4775,
+        "p_trail_25": 0.099,
+        "p_trail_any": 0.6895,
+        "p_lead_10": 0.173,
+        "distinct_mean": 256.8,
+        "neff_median": 44.4,
+        "neff_p5": 8.2,
+        "neff_p95": 90.7,
+        "fund_fee_drag_median": 0.00612,
+        "ew_fund_fee_drag_median": 0.03998
+      }
+    }
+  },
+  "fat_tails": {
+    "fixed_n_10y": {
+      "1": {
+        "p5": 0.1112,
+        "p25": 0.3258,
+        "p50": 0.6112,
+        "p75": 1.2282,
+        "p95": 3.056,
+        "mean": 0.9999,
+        "p_trail_10": 0.6405,
+        "p_trail_25": 0.5687,
+        "p_trail_any": 0.6763,
+        "p_lead_10": 0.289
+      },
+      "5": {
+        "p5": 0.3903,
+        "p25": 0.6283,
+        "p50": 0.8769,
+        "p75": 1.2203,
+        "p95": 2.0189,
+        "mean": 1.0026,
+        "p_trail_10": 0.5242,
+        "p_trail_25": 0.3745,
+        "p_trail_any": 0.6132,
+        "p_lead_10": 0.3157
+      },
+      "10": {
+        "p5": 0.5206,
+        "p25": 0.7374,
+        "p50": 0.9286,
+        "p75": 1.1941,
+        "p95": 1.7478,
+        "mean": 1.0082,
+        "p_trail_10": 0.4685,
+        "p_trail_25": 0.2702,
+        "p_trail_any": 0.5863,
+        "p_lead_10": 0.3157
+      },
+      "20": {
+        "p5": 0.6291,
+        "p25": 0.8048,
+        "p50": 0.9617,
+        "p75": 1.1574,
+        "p95": 1.5379,
+        "mean": 1.0056,
+        "p_trail_10": 0.4032,
+        "p_trail_25": 0.1742,
+        "p_trail_any": 0.5583,
+        "p_lead_10": 0.3118
+      },
+      "30": {
+        "p5": 0.6833,
+        "p25": 0.8432,
+        "p50": 0.9729,
+        "p75": 1.1285,
+        "p95": 1.4205,
+        "mean": 1.0021,
+        "p_trail_10": 0.358,
+        "p_trail_25": 0.1128,
+        "p_trail_any": 0.548,
+        "p_lead_10": 0.2825
+      },
+      "50": {
+        "p5": 0.746,
+        "p25": 0.876,
+        "p50": 0.9869,
+        "p75": 1.1119,
+        "p95": 1.317,
+        "mean": 1.0033,
+        "p_trail_10": 0.302,
+        "p_trail_25": 0.054,
+        "p_trail_any": 0.5278,
+        "p_lead_10": 0.266
+      },
+      "100": {
+        "p5": 0.8185,
+        "p25": 0.9149,
+        "p50": 0.9889,
+        "p75": 1.0789,
+        "p95": 1.2224,
+        "mean": 1.001,
+        "p_trail_10": 0.208,
+        "p_trail_25": 0.008,
+        "p_trail_any": 0.5325,
+        "p_lead_10": 0.2
+      }
+    },
+    "monthly": {
+      "10y": {
+        "p5": 0.8616,
+        "p25": 0.9376,
+        "p50": 0.9936,
+        "p75": 1.0578,
+        "p95": 1.1585,
+        "mean": 1.0008,
+        "p_trail_10": 0.1255,
+        "p_trail_25": 0.0005,
+        "p_trail_any": 0.5275,
+        "p_lead_10": 0.1345,
+        "distinct_mean": 106.9,
+        "neff_median": 57.2,
+        "neff_p5": 35.2,
+        "neff_p95": 72.1,
+        "fund_fee_drag_median": 0.0017,
+        "ew_fund_fee_drag_median": 0.0113
+      },
+      "20y": {
+        "p5": 0.8135,
+        "p25": 0.9054,
+        "p50": 0.9794,
+        "p75": 1.0685,
+        "p95": 1.2391,
+        "mean": 1.0007,
+        "p_trail_10": 0.2295,
+        "p_trail_25": 0.0105,
+        "p_trail_any": 0.5705,
+        "p_lead_10": 0.197,
+        "distinct_mean": 190.9,
+        "neff_median": 53.9,
+        "neff_p5": 20.3,
+        "neff_p95": 82.4,
+        "fund_fee_drag_median": 0.00375,
+        "ew_fund_fee_drag_median": 0.0247
+      },
+      "30y": {
+        "p5": 0.7516,
+        "p25": 0.8698,
+        "p50": 0.967,
+        "p75": 1.0887,
+        "p95": 1.3675,
+        "mean": 1.0068,
+        "p_trail_10": 0.32,
+        "p_trail_25": 0.0465,
+        "p_trail_any": 0.579,
+        "p_lead_10": 0.236,
+        "distinct_mean": 256.6,
+        "neff_median": 40.6,
+        "neff_p5": 11.3,
+        "neff_p95": 78.9,
+        "fund_fee_drag_median": 0.00606,
+        "ew_fund_fee_drag_median": 0.03963
+      }
+    }
+  }
+}

@@ -1,0 +1,52 @@
+{
+  "holdings_as_of": "17-Nov-2026",
+  "equity_securities": 503,
+  "companies": 500,
+  "companies_with_two_share_classes": {
+    "GOOGL": [
+      "GOOGL",
+      "GOOG"
+    ],
+    "FOXA": [
+      "FOXA",
+      "FOX"
+    ],
+    "NWSA": [
+      "NWSA",
+      "NWS"
+    ]
+  },
+  "window": "2021-11 to 2026-10 (monthly, total return)",
+  "stocks_with_full_history": 492,
+  "securities_dropped_short_history": 11,
+  "spy_annualized_vol": 0.1547,
+  "top10_company_share": 0.3863,
+  "effective_n_companies": 45.9,
+  "share_price_month_end": "2026-10-31",
+  "stocks_above_1000": 13,
+  "stocks_above_500": 43,
+  "highest_share_price": 5958.56,
+  "idiosyncratic_vol": {
+    "median": 0.2528,
+    "p25": 0.2103,
+    "p75": 0.3183,
+    "mean": 0.2851,
+    "rms": 0.3091,
+    "cap_weighted_rms": 0.3056
+  },
+  "total_vol": {
+    "median": 0.2889,
+    "p25": 0.2438,
+    "p75": 0.3609,
+    "mean": 0.3241,
+    "rms": 0.3498,
+    "cap_weighted_rms": 0.3594
+  },
+  "beta": {
+    "median": 0.9215,
+    "p25": 0.5806,
+    "p75": 1.2351,
+    "mean": 0.9563,
+    "sd": 0.5242
+  }
+}

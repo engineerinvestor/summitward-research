@@ -1,0 +1,35 @@
+{
+  "window": "2021-11 to 2026-10",
+  "stocks": 492,
+  "spread_check": {
+    "1": {
+      "actual_sd_log": 0.66,
+      "model_sd_log": 0.705,
+      "actual_p5_p95_ratio": 8.59,
+      "model_p5_p95_ratio": 9.97
+    },
+    "10": {
+      "actual_sd_log": 0.257,
+      "model_sd_log": 0.239,
+      "actual_p5_p95_ratio": 2.31,
+      "model_p5_p95_ratio": 2.16
+    },
+    "30": {
+      "actual_sd_log": 0.152,
+      "model_sd_log": 0.141,
+      "actual_p5_p95_ratio": 1.65,
+      "model_p5_p95_ratio": 1.58
+    },
+    "100": {
+      "actual_sd_log": 0.077,
+      "model_sd_log": 0.076,
+      "actual_p5_p95_ratio": 1.29,
+      "model_p5_p95_ratio": 1.28
+    }
+  },
+  "survivorship": {
+    "todays_members_equal_weight_vs_spy": 1.0752,
+    "todays_members_quarterly_rebalanced_vs_spy": 1.068,
+    "rsp_vs_spy": 0.8549
+  }
+}
