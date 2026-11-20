@@ -17,7 +17,12 @@ D. The monthly return difference regressed on a term factor (IEF minus BIL)
 E. A static replica for DFCF and AVIG made of BND and VCIT, with the VCIT
    weight set so the replica's corporate share equals the fund's in its first
    public N-PORT filing (BND and VCIT shares from their filings on or before
-   that date), rebalanced every January. Fund minus replica, as in C and D.
+   that date), rebalanced every January. The comparison starts the month after
+   the last of those three filings became public on EDGAR (data/filing_dates.csv),
+   so the weight uses only information available at the start. Fund minus
+   replica, as in C and D. Sensitivity: the window from each fund's first full
+   month (which uses holdings not yet public), monthly rebalancing, and the
+   weight implied by the latest filings.
 F. Years of data needed before an edge of a given size reaches t = 1.96 on
    average at the measured tracking error: (1.96 * TE / edge) ** 2.
 
@@ -236,6 +241,15 @@ def file_on_or_before(ticker: str, period: str) -> str:
     return ok[-1]
 
 
+def filing_dates() -> dict[tuple[str, str], str]:
+    d = pd.read_csv(DATA / "filing_dates.csv", dtype=str)
+    return {(r.ticker, r.period): r.filed for r in d.itertuples()}
+
+
+def month_after(date: str) -> str:
+    return str(pd.Period(date[:7], freq="M") + 1)
+
+
 def main() -> None:
     OUT.mkdir(exist_ok=True)
     results: dict = {}
@@ -322,7 +336,8 @@ def main() -> None:
     p()
     p("E. Static replica: BND + VCIT matched to each fund's first-filing corporate share")
     results["replica"] = {}
-    for fund, start in (("AVIG", "2020-11"), ("DFCF", "2021-12")):
+    filed = filing_dates()
+    for fund, launch in (("AVIG", "2020-11"), ("DFCF", "2021-12")):
         f0 = first_file(fund, "first")
         period = period_of(f0)
         c_fund = corp_share(holdings(f0)[0])
@@ -331,6 +346,12 @@ def main() -> None:
         c_bnd = corp_share(holdings(f_bnd)[0])
         c_vcit = corp_share(holdings(f_vcit)[0])
         w = (c_fund - c_bnd) / (c_vcit - c_bnd)
+        public = max(
+            filed[(fund, period)],
+            filed[("BND", period_of(f_bnd))],
+            filed[("VCIT", period_of(f_vcit))],
+        )
+        start = month_after(public)
         rep = replica_returns(r, w, start)
         res = compare(r.loc[start:END, fund], rep, factors)
         res.update(
@@ -342,12 +363,18 @@ def main() -> None:
                 "fund_filing": period,
                 "bnd_filing": period_of(f_bnd),
                 "vcit_filing": period_of(f_vcit),
+                "public_from": public,
             }
         )
         # Sensitivity (not the pre-set test): monthly rebalancing, and the
         # weight implied by the fund's latest filing, which uses information
         # from the end of the window.
         sens = {}
+        rep_launch = replica_returns(r, w, launch)
+        launch_res = compare(r.loc[launch:END, fund], rep_launch, {})
+        sens["launch_start"] = launch
+        sens["launch_gap"] = launch_res["cagr_gap"]
+        sens["launch_active_t"] = launch_res["active_t"]
         rep_m = replica_returns(r, w, start, monthly=True)
         sens["monthly_rebalance_gap"] = compare(r.loc[start:END, fund], rep_m, {})["cagr_gap"]
         c_last = corp_share(holdings(first_file(fund, "last"))[0])
@@ -361,7 +388,8 @@ def main() -> None:
         rm = res["regression_main"]
         p(
             f"  {fund}: corporate {c_fund:.2f}% ({period}); BND {c_bnd:.2f}% ({res['bnd_filing']}), "
-            f"VCIT {c_vcit:.2f}% ({res['vcit_filing']}) -> VCIT weight {w:.3f}"
+            f"VCIT {c_vcit:.2f}% ({res['vcit_filing']}) -> VCIT weight {w:.3f}; "
+            f"last filing public {public}, window starts {start}"
         )
         p(
             f"    {res['start']} to {res['end']} ({res['months']} mo): CAGR fund {res['fund']['cagr']:.2f} vs replica "
@@ -373,7 +401,8 @@ def main() -> None:
             f"credit {rm['beta_credit']:.3f} (NW t {rm['t_nw_credit']:.1f}); term {rm['beta_term']:.3f} (NW t {rm['t_nw_term']:.1f}); R2 {rm['r2']:.2f}"
         )
         p(
-            f"    sensitivity: monthly rebalancing gap {sens['monthly_rebalance_gap']:+.2f}; "
+            f"    sensitivity: from launch ({launch}, holdings not yet public) gap {sens['launch_gap']:+.2f} "
+            f"(t {sens['launch_active_t']:.2f}); monthly rebalancing gap {sens['monthly_rebalance_gap']:+.2f}; "
             f"latest-filing weight {sens['latest_weight']:.3f} gap {sens['latest_weight_gap']:+.2f}"
         )
 
@@ -414,6 +443,10 @@ def main() -> None:
                 "weightVcit": round(v["weight_vcit"], 3),
                 "fundCorporate": round(v["fund_corporate"], 2),
                 "fundFiling": v["fund_filing"],
+                "publicFrom": v["public_from"],
+                "launchStart": v["sensitivity"]["launch_start"],
+                "launchGap": round(v["sensitivity"]["launch_gap"], 2),
+                "launchActiveT": round(v["sensitivity"]["launch_active_t"], 2),
                 "start": v["start"],
                 "end": v["end"],
                 "months": v["months"],
@@ -428,6 +461,8 @@ def main() -> None:
                 "activeT": round(v["active_t"], 2),
                 "alpha": round(v["regression_main"]["alpha_pct_yr"], 2),
                 "alphaT": round(v["regression_main"]["alpha_t_nw"], 2),
+                "credit": round(v["regression_main"]["beta_credit"], 3),
+                "term": round(v["regression_main"]["beta_term"], 3),
             }
             for k, v in results["replica"].items()
         },

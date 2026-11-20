@@ -41,11 +41,11 @@ Calendar-year market-price total returns, %
   VBTLX: 2021 -1.65, 2022 -13.16, 2023 +5.74, 2024 +1.27, 2025 +7.17, 2026 -0.46 (2026 = Jan-Oct)
 
 E. Static replica: BND + VCIT matched to each fund's first-filing corporate share
-  AVIG: corporate 56.31% (2020-11-30); BND 29.89% (2020-09-30), VCIT 99.20% (2020-11-30) -> VCIT weight 0.381
-    2020-11 to 2026-10 (72 mo): CAGR fund -0.19 vs replica 0.19 (gap -0.38); vol 6.64 vs 6.54; max DD -18.5 vs -17.7; TE 0.42; active t -2.18
-    SPIB-IEI model on fund minus replica: alpha -0.18%/yr (NW t -1.47); credit -0.075 (NW t -1.7); term 0.017 (NW t 2.4); R2 0.16
-    sensitivity: monthly rebalancing gap -0.38; latest-filing weight 0.476 gap -0.49
-  DFCF: corporate 52.19% (2022-01-31); BND 28.50% (2021-12-31), VCIT 99.46% (2021-11-30) -> VCIT weight 0.334
-    2021-12 to 2026-10 (59 mo): CAGR fund -0.10 vs replica 0.17 (gap -0.28); vol 6.98 vs 7.01; max DD -18.0 vs -16.2; TE 0.85; active t -0.72
-    SPIB-IEI model on fund minus replica: alpha -0.37%/yr (NW t -1.10); credit 0.016 (NW t 0.2); term -0.014 (NW t -0.5); R2 0.02
-    sensitivity: monthly rebalancing gap -0.27; latest-filing weight 0.311 gap -0.25
+  AVIG: corporate 56.31% (2020-11-30); BND 29.89% (2020-09-30), VCIT 99.20% (2020-11-30) -> VCIT weight 0.381; last filing public 2021-01-29, window starts 2021-02
+    2021-02 to 2026-10 (69 mo): CAGR fund -0.33 vs replica 0.04 (gap -0.37); vol 6.75 vs 6.65; max DD -18.1 vs -17.4; TE 0.42; active t -2.11
+    SPIB-IEI model on fund minus replica: alpha -0.20%/yr (NW t -1.57); credit -0.063 (NW t -1.4); term 0.017 (NW t 2.5); R2 0.14
+    sensitivity: from launch (2020-11, holdings not yet public) gap -0.38 (t -2.18); monthly rebalancing gap -0.37; latest-filing weight 0.476 gap -0.46
+  DFCF: corporate 52.19% (2022-01-31); BND 28.50% (2021-12-31), VCIT 99.46% (2021-11-30) -> VCIT weight 0.334; last filing public 2022-03-31, window starts 2022-04
+    2022-04 to 2026-10 (55 mo): CAGR fund 1.59 vs replica 1.62 (gap -0.03); vol 6.91 vs 7.02; max DD -11.4 vs -10.6; TE 0.83; active t -0.09
+    SPIB-IEI model on fund minus replica: alpha -0.17%/yr (NW t -0.55); credit 0.032 (NW t 0.4); term -0.024 (NW t -0.9); R2 0.05
+    sensitivity: from launch (2021-12, holdings not yet public) gap -0.28 (t -0.72); monthly rebalancing gap -0.03; latest-filing weight 0.311 gap +0.01

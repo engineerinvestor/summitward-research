@@ -6,6 +6,10 @@ closest to (on or before) those first dates, which set the static replica's
 weights in analyze.py. Each filing becomes data/holdings_<TICKER>_<period>.csv.gz
 with one row per position (gzipped). Raw XML is cached in .cache/ (not committed).
 
+Filing dates: the EDGAR filing date (the day a filing became public) of every
+holdings file in data/, written to data/filing_dates.csv. analyze.py starts the
+static replica's window only after the filings that set its weights were public.
+
 Prices: daily adjusted closes from Yahoo Finance via yfinance, reduced to
 month-end values through END_MONTH, written to data/monthly_prices.csv.
 Adjusted close is a market-price total return (dividends reinvested), not NAV.
@@ -198,6 +202,33 @@ def fetch_holdings() -> None:
             write_holdings(leg, *best)
 
 
+def fetch_filing_dates() -> None:
+    """Filing date of each holdings file already in data/ (no holdings re-fetch)."""
+    wanted: dict[str, dict[str, str]] = {}
+    for path in sorted(DATA.glob("holdings_*.csv.gz")):
+        with gzip.open(path, "rt") as f:
+            header = f.readline()
+        ticker, period = path.name.removesuffix(".csv.gz").split("_")[1:3]
+        acc = re.search(r"/(\d{18})/primary_doc", header).group(1)
+        wanted.setdefault(ticker, {})[acc] = period
+    rows = []
+    for ticker, accs in wanted.items():
+        for f in nport_filings(SERIES[ticker][1]):
+            acc = re.search(r"/(\d{18})/", f["href"]).group(1)
+            if acc in accs:
+                rows.append({"ticker": ticker, "period": accs[acc], "accession": acc, "filed": f["filed"]})
+        missing = set(accs) - {r["accession"] for r in rows if r["ticker"] == ticker}
+        if missing:
+            sys.exit(f"{ticker}: no filing date for {sorted(missing)}")
+    rows.sort(key=lambda r: (r["ticker"], r["period"]))
+    with (DATA / "filing_dates.csv").open("w", newline="") as f:
+        w = csv.DictWriter(f, fieldnames=["ticker", "period", "accession", "filed"])
+        w.writeheader()
+        w.writerows(rows)
+    for r in rows:
+        print(f"{r['ticker']} {r['period']}: filed {r['filed']}")
+
+
 def fetch_prices() -> None:
     import pandas as pd
     import yfinance as yf
@@ -217,8 +248,10 @@ def fetch_prices() -> None:
 
 
 if __name__ == "__main__":
-    steps = sys.argv[1:] or ["holdings", "prices"]
+    steps = sys.argv[1:] or ["holdings", "filing_dates", "prices"]
     if "holdings" in steps:
         fetch_holdings()
+    if "filing_dates" in steps:
+        fetch_filing_dates()
     if "prices" in steps:
         fetch_prices()
