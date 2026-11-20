@@ -1,0 +1,373 @@
+{
+  "asOf": "2026-10",
+  "mix": {
+    "AGG": {
+      "period": "2026-08-31",
+      "buckets": {
+        "US Treasury": 46.02,
+        "Corporate bonds": 24.52,
+        "Agency MBS": 23.71,
+        "Cash and collateral": 3.53,
+        "Other government-related": 2.82,
+        "Other securitized": 1.07,
+        "Agency debt": 0.16,
+        "Other": 0.09
+      },
+      "corporate": 24.52
+    },
+    "BND": {
+      "period": "2026-06-30",
+      "buckets": {
+        "US Treasury": 48.14,
+        "Corporate bonds": 25.55,
+        "Agency MBS": 19.78,
+        "Other government-related": 3.65,
+        "Other securitized": 1.14,
+        "Cash and collateral": 0.9,
+        "Agency debt": 0.49,
+        "Other": 0.0
+      },
+      "corporate": 25.55
+    },
+    "DFCF": {
+      "period": "2026-07-31",
+      "buckets": {
+        "Corporate bonds": 48.52,
+        "US Treasury": 46.11,
+        "Agency MBS": 24.87,
+        "Cash and collateral": 6.15,
+        "Other government-related": 2.19,
+        "Agency debt": 0.01,
+        "Other": -0.04
+      },
+      "corporate": 48.52
+    },
+    "AVIG": {
+      "period": "2026-08-31",
+      "buckets": {
+        "Corporate bonds": 60.63,
+        "US Treasury": 34.64,
+        "Agency MBS": 17.66,
+        "Other government-related": 2.42,
+        "Agency debt": 0.87,
+        "Cash and collateral": 0.64,
+        "Other": 0.04
+      },
+      "corporate": 60.63
+    }
+  },
+  "concentration": {
+    "AGG": {
+      "corporate_pct": 24.52,
+      "issuers": 1160,
+      "positions": 8854,
+      "largest": {
+        "issuer": "JPMORGAN CHASE & CO",
+        "pct": 0.572
+      },
+      "top10_pct": 3.89,
+      "top25_pct": 6.56,
+      "top50_pct": 9.22,
+      "effective_issuers": 203.0,
+      "largest_position_pct": 0.028,
+      "treasury_pct": 46.02,
+      "period": "2026-08-31",
+      "top10": [
+        {
+          "issuer": "JPMORGAN CHASE & CO",
+          "pct": 0.572
+        },
+        {
+          "issuer": "BANK OF AMERICA CORP",
+          "pct": 0.525
+        },
+        {
+          "issuer": "MORGAN STANLEY",
+          "pct": 0.493
+        },
+        {
+          "issuer": "GOLDMAN SACHS GROUP INC",
+          "pct": 0.472
+        },
+        {
+          "issuer": "WELLS FARGO & COMPANY",
+          "pct": 0.34
+        },
+        {
+          "issuer": "ORACLE CORP",
+          "pct": 0.323
+        },
+        {
+          "issuer": "AMAZON.COM INC",
+          "pct": 0.322
+        },
+        {
+          "issuer": "CITIGROUP INC",
+          "pct": 0.301
+        },
+        {
+          "issuer": "HSBC HOLDINGS PLC",
+          "pct": 0.278
+        },
+        {
+          "issuer": "AT&T INC",
+          "pct": 0.269
+        }
+      ]
+    },
+    "BND": {
+      "corporate_pct": 25.55,
+      "issuers": 1130,
+      "positions": 7699,
+      "largest": {
+        "issuer": "JPMorgan Chase & Co",
+        "pct": 0.609
+      },
+      "top10_pct": 3.81,
+      "top25_pct": 6.61,
+      "top50_pct": 9.51,
+      "effective_issuers": 213.0,
+      "largest_position_pct": 0.038,
+      "treasury_pct": 48.14,
+      "period": "2026-06-30",
+      "top10": [
+        {
+          "issuer": "JPMorgan Chase & Co",
+          "pct": 0.609
+        },
+        {
+          "issuer": "Bank of America Corp",
+          "pct": 0.528
+        },
+        {
+          "issuer": "Morgan Stanley",
+          "pct": 0.491
+        },
+        {
+          "issuer": "Goldman Sachs Group Inc/The",
+          "pct": 0.41
+        },
+        {
+          "issuer": "Oracle Corp",
+          "pct": 0.343
+        },
+        {
+          "issuer": "Wells Fargo & Co",
+          "pct": 0.321
+        },
+        {
+          "issuer": "Amazon.com Inc",
+          "pct": 0.292
+        },
+        {
+          "issuer": "AT&T Inc",
+          "pct": 0.278
+        },
+        {
+          "issuer": "HSBC Holdings PLC",
+          "pct": 0.273
+        },
+        {
+          "issuer": "Citigroup Inc",
+          "pct": 0.261
+        }
+      ]
+    }
+  },
+  "pairs": {
+    "AVIG-AGG": {
+      "start": "2020-11",
+      "end": "2026-10",
+      "months": 72,
+      "fundCagr": -0.19,
+      "indexCagr": -0.21,
+      "cagrGap": 0.02,
+      "fundVol": 6.64,
+      "indexVol": 6.17,
+      "fundMaxDd": -18.5,
+      "indexMaxDd": -17.0,
+      "te": 0.76,
+      "activeT": 0.16,
+      "alpha": 0.02,
+      "alphaT": 0.12,
+      "credit": 0.168,
+      "creditT": 3.3,
+      "term": 0.052,
+      "termT": 4.5,
+      "r2": 0.42
+    },
+    "AVIG-BND": {
+      "start": "2020-11",
+      "end": "2026-10",
+      "months": 72,
+      "fundCagr": -0.19,
+      "indexCagr": -0.21,
+      "cagrGap": 0.02,
+      "fundVol": 6.64,
+      "indexVol": 6.11,
+      "fundMaxDd": -18.5,
+      "indexMaxDd": -17.1,
+      "te": 0.8,
+      "activeT": 0.17,
+      "alpha": 0.1,
+      "alphaT": 0.54,
+      "credit": 0.15,
+      "creditT": 2.8,
+      "term": 0.062,
+      "termT": 5.5,
+      "r2": 0.45
+    },
+    "DFCF-AGG": {
+      "start": "2021-12",
+      "end": "2026-10",
+      "months": 59,
+      "fundCagr": -0.1,
+      "indexCagr": -0.23,
+      "cagrGap": 0.13,
+      "fundVol": 6.98,
+      "indexVol": 6.69,
+      "fundMaxDd": -18.0,
+      "indexMaxDd": -15.8,
+      "te": 1.08,
+      "activeT": 0.3,
+      "alpha": -0.1,
+      "alphaT": -0.25,
+      "credit": 0.224,
+      "creditT": 2.6,
+      "term": 0.014,
+      "termT": 0.5,
+      "r2": 0.15
+    },
+    "DFCF-BND": {
+      "start": "2021-12",
+      "end": "2026-10",
+      "months": 59,
+      "fundCagr": -0.1,
+      "indexCagr": -0.22,
+      "cagrGap": 0.12,
+      "fundVol": 6.98,
+      "indexVol": 6.6,
+      "fundMaxDd": -18.0,
+      "indexMaxDd": -15.8,
+      "te": 1.07,
+      "activeT": 0.29,
+      "alpha": -0.02,
+      "alphaT": -0.07,
+      "credit": 0.213,
+      "creditT": 2.7,
+      "term": 0.027,
+      "termT": 1.0,
+      "r2": 0.17
+    },
+    "DFAPX-VBTLX": {
+      "start": "2011-04",
+      "end": "2026-10",
+      "months": 187,
+      "fundCagr": 2.6,
+      "indexCagr": 2.25,
+      "cagrGap": 0.36,
+      "fundVol": 4.69,
+      "indexVol": 4.5,
+      "fundMaxDd": -17.5,
+      "indexMaxDd": -17.4,
+      "te": 0.89,
+      "activeT": 1.59,
+      "alpha": 0.17,
+      "alphaT": 1.02,
+      "credit": 0.123,
+      "creditT": 4.1,
+      "term": 0.027,
+      "termT": 1.6,
+      "r2": 0.18
+    }
+  },
+  "replica": {
+    "AVIG": {
+      "weightVcit": 0.381,
+      "fundCorporate": 56.31,
+      "fundFiling": "2020-11-30",
+      "start": "2020-11",
+      "end": "2026-10",
+      "months": 72,
+      "fundCagr": -0.19,
+      "replicaCagr": 0.19,
+      "cagrGap": -0.38,
+      "fundMaxDd": -18.5,
+      "replicaMaxDd": -17.7,
+      "fundVol": 6.64,
+      "replicaVol": 6.54,
+      "te": 0.42,
+      "activeT": -2.18,
+      "alpha": -0.18,
+      "alphaT": -1.47
+    },
+    "DFCF": {
+      "weightVcit": 0.334,
+      "fundCorporate": 52.19,
+      "fundFiling": "2022-01-31",
+      "start": "2021-12",
+      "end": "2026-10",
+      "months": 59,
+      "fundCagr": -0.1,
+      "replicaCagr": 0.17,
+      "cagrGap": -0.28,
+      "fundMaxDd": -18.0,
+      "replicaMaxDd": -16.2,
+      "fundVol": 6.98,
+      "replicaVol": 7.01,
+      "te": 0.85,
+      "activeT": -0.72,
+      "alpha": -0.37,
+      "alphaT": -1.1
+    }
+  },
+  "calendar": {
+    "AGG": {
+      "2021": -1.77,
+      "2022": -13.02,
+      "2023": 5.66,
+      "2024": 1.31,
+      "2025": 7.19,
+      "2026": -0.56
+    },
+    "BND": {
+      "2021": -1.86,
+      "2022": -13.11,
+      "2023": 5.65,
+      "2024": 1.38,
+      "2025": 7.08,
+      "2026": -0.42
+    },
+    "AVIG": {
+      "2021": -2.15,
+      "2022": -13.94,
+      "2023": 6.41,
+      "2024": 1.55,
+      "2025": 7.99,
+      "2026": -0.99
+    },
+    "DFCF": {
+      "2022": -14.48,
+      "2023": 6.95,
+      "2024": 1.86,
+      "2025": 7.89,
+      "2026": -0.7
+    },
+    "DFAPX": {
+      "2021": -2.11,
+      "2022": -12.92,
+      "2023": 6.84,
+      "2024": 1.82,
+      "2025": 7.21,
+      "2026": -0.28
+    },
+    "VBTLX": {
+      "2021": -1.65,
+      "2022": -13.16,
+      "2023": 5.74,
+      "2024": 1.27,
+      "2025": 7.17,
+      "2026": -0.46
+    }
+  }
+}
