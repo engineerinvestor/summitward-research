@@ -1,0 +1,51 @@
+{
+ "AVLV": {
+  "numberOfHoldings": "296",
+  "priceEarningsRatio": "16.55",
+  "priceBookRatio": "3.36",
+  "weightedAverageMarketCap": null,
+  "asOf": "10/31/2026"
+ },
+ "AVUV": {
+  "numberOfHoldings": "790",
+  "priceEarningsRatio": "12.06",
+  "priceBookRatio": "1.46",
+  "weightedAverageMarketCap": null,
+  "asOf": "10/31/2026"
+ },
+ "AVDV": {
+  "numberOfHoldings": "1711",
+  "priceEarningsRatio": "11.92",
+  "priceBookRatio": "1.23",
+  "weightedAverageMarketCap": null,
+  "asOf": "10/31/2026"
+ },
+ "AVGV": {
+  "numberOfHoldings": "6",
+  "priceEarningsRatio": null,
+  "priceBookRatio": null,
+  "weightedAverageMarketCap": null,
+  "asOf": "10/31/2026"
+ },
+ "AVIV": {
+  "numberOfHoldings": "567",
+  "priceEarningsRatio": "13.61",
+  "priceBookRatio": "1.79",
+  "weightedAverageMarketCap": null,
+  "asOf": "10/31/2026"
+ },
+ "AVES": {
+  "numberOfHoldings": "1985",
+  "priceEarningsRatio": "9.85",
+  "priceBookRatio": "1.25",
+  "weightedAverageMarketCap": null,
+  "asOf": "10/31/2026"
+ },
+ "AVMV": {
+  "numberOfHoldings": "289",
+  "priceEarningsRatio": "16.07",
+  "priceBookRatio": "2.55",
+  "weightedAverageMarketCap": null,
+  "asOf": "10/31/2026"
+ }
+}

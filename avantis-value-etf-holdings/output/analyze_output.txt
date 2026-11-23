@@ -1,0 +1,806 @@
+{
+ "as_of": "2026-11-20",
+ "russell_split": {
+  "large_value_share_of_iwb": 0.5663,
+  "large_fit_r2": 1.0,
+  "small_value_share_of_iwm": 0.5035,
+  "small_fit_r2": 0.9941
+ },
+ "portfolios": {
+  "AVLV": {
+   "issuers": 295,
+   "active_share_vs_market": 69.3,
+   "coverage": 99.2,
+   "loss_share": 1.2,
+   "pe_bands": {
+    "loss": 1.2,
+    "under 15": 42.1,
+    "15 to 30": 42.5,
+    "over 30": 14.2
+   },
+   "pe_profitable": 14.3,
+   "pe_weighted_median": 16.1,
+   "pb": 3.03,
+   "russell_growth_share": 24.5,
+   "share_not_in_value_index": 13.0,
+   "share_pure_growth": 11.6,
+   "share_inside_russell": 97.5,
+   "share_in_russell_1000": 97.5,
+   "non_stock_share": 0.07,
+   "unadjusted": {
+    "book_to_market": 0.331,
+    "book_to_market_coverage": 99.2,
+    "cfo_to_book_ex_financials": 0.526,
+    "cfo_to_book_coverage": 75.9
+   }
+  },
+  "IWD": {
+   "issuers": 858,
+   "active_share_vs_market": 35.1,
+   "coverage": 92.5,
+   "loss_share": 3.5,
+   "pe_bands": {
+    "loss": 3.5,
+    "under 15": 21.0,
+    "15 to 30": 46.3,
+    "over 30": 29.2
+   },
+   "pe_profitable": 19.6,
+   "pe_weighted_median": 22.4,
+   "pb": 3.2,
+   "russell_growth_share": 10.7,
+   "share_not_in_value_index": 0.0,
+   "share_pure_growth": 0.0,
+   "share_inside_russell": 100.0,
+   "share_in_russell_1000": 100.0,
+   "unadjusted": {
+    "book_to_market": 0.321,
+    "book_to_market_coverage": 90.8,
+    "cfo_to_book_ex_financials": 0.448,
+    "cfo_to_book_coverage": 74.9
+   }
+  },
+  "IWB": {
+   "issuers": 1009,
+   "active_share_vs_market": 0.0,
+   "coverage": 94.1,
+   "loss_share": 2.9,
+   "pe_bands": {
+    "loss": 2.9,
+    "under 15": 18.6,
+    "15 to 30": 42.5,
+    "over 30": 36.0
+   },
+   "pe_profitable": 21.1,
+   "pe_weighted_median": 25.2,
+   "pb": 4.59,
+   "russell_growth_share": 43.4,
+   "share_not_in_value_index": 29.5,
+   "share_pure_growth": 29.5,
+   "share_inside_russell": 100.0,
+   "share_in_russell_1000": 100.0
+  },
+  "AVUV": {
+   "issuers": 783,
+   "active_share_vs_market": 71.2,
+   "coverage": 94.9,
+   "loss_share": 11.5,
+   "pe_bands": {
+    "loss": 11.5,
+    "under 15": 58.3,
+    "15 to 30": 20.1,
+    "over 30": 10.1
+   },
+   "pe_profitable": 7.4,
+   "pe_weighted_median": 11.8,
+   "pb": 1.33,
+   "russell_growth_share": 27.3,
+   "share_not_in_value_index": 35.4,
+   "share_pure_growth": 12.7,
+   "share_inside_russell": 77.4,
+   "share_in_russell_1000": 21.7,
+   "non_stock_share": 0.21
+  },
+  "IWN": {
+   "issuers": 1380,
+   "active_share_vs_market": 44.4,
+   "coverage": 92.0,
+   "loss_share": 24.0,
+   "pe_bands": {
+    "loss": 24.0,
+    "under 15": 41.5,
+    "15 to 30": 22.3,
+    "over 30": 12.2
+   },
+   "pe_profitable": 10.9,
+   "pe_weighted_median": 13.7,
+   "pb": 1.25,
+   "russell_growth_share": 7.8,
+   "share_not_in_value_index": 0.0,
+   "share_pure_growth": 0.0,
+   "share_inside_russell": 99.6,
+   "share_in_russell_1000": 0.0
+  },
+  "IWM": {
+   "issuers": 1945,
+   "active_share_vs_market": 0.0,
+   "coverage": 93.7,
+   "loss_share": 28.8,
+   "pe_bands": {
+    "loss": 28.8,
+    "under 15": 27.5,
+    "15 to 30": 25.1,
+    "over 30": 18.6
+   },
+   "pe_profitable": 13.6,
+   "pe_weighted_median": 18.9,
+   "pb": 1.86,
+   "russell_growth_share": 49.7,
+   "share_not_in_value_index": 37.2,
+   "share_pure_growth": 37.0,
+   "share_inside_russell": 99.8,
+   "share_in_russell_1000": 0.0
+  }
+ },
+ "named_large": [
+  {
+   "ticker": "MSFT",
+   "name": "Microsoft",
+   "fund": 3.38,
+   "market": 5.65,
+   "value_index": 4.99,
+   "active_vs_market": -2.28,
+   "active_vs_value_index": -1.61,
+   "ratio_to_market": 0.6,
+   "trailing_pe": 25.2,
+   "ttm_net_income_bn": 142.63,
+   "ni_period_end": "2026-09-30",
+   "rank_in_fund": 1,
+   "book_to_market": 0.131,
+   "cfo_ttm_bn": 195.88,
+   "cfo_to_book": 0.416,
+   "russell_growth_fraction": 0.5
+  },
+  {
+   "ticker": "AAPL",
+   "name": "Apple",
+   "fund": 3.1,
+   "market": 7.78,
+   "value_index": 6.3,
+   "active_vs_market": -4.68,
+   "active_vs_value_index": -3.2,
+   "ratio_to_market": 0.4,
+   "trailing_pe": 37.7,
+   "ttm_net_income_bn": 132.18,
+   "ni_period_end": "2026-09-26",
+   "rank_in_fund": 2,
+   "book_to_market": 0.023,
+   "cfo_ttm_bn": 145.1,
+   "cfo_to_book": 1.294,
+   "russell_growth_fraction": 0.542
+  },
+  {
+   "ticker": "META",
+   "name": "Meta Platforms",
+   "fund": 2.83,
+   "market": 1.94,
+   "value_index": 0.62,
+   "active_vs_market": 0.9,
+   "active_vs_value_index": 2.21,
+   "ratio_to_market": 1.46,
+   "trailing_pe": 19.2,
+   "ttm_net_income_bn": 75.25,
+   "ni_period_end": "2026-09-30",
+   "rank_in_fund": 4,
+   "book_to_market": 0.189,
+   "cfo_ttm_bn": 133.09,
+   "cfo_to_book": 0.489,
+   "russell_growth_fraction": 0.818
+  },
+  {
+   "ticker": "NVDA",
+   "name": "Nvidia",
+   "fund": 0.0,
+   "market": 4.6,
+   "value_index": 0.0,
+   "active_vs_market": -4.6,
+   "active_vs_value_index": 0.0,
+   "ratio_to_market": 0.0,
+   "trailing_pe": 15.7,
+   "ttm_net_income_bn": 192.88,
+   "ni_period_end": "2026-07-26",
+   "rank_in_fund": null,
+   "book_to_market": 0.076,
+   "cfo_ttm_bn": null,
+   "cfo_to_book": null,
+   "russell_growth_fraction": 1.0
+  },
+  {
+   "ticker": "GOOGL",
+   "name": "Alphabet",
+   "fund": 0.0,
+   "market": 4.4,
+   "value_index": 0.0,
+   "active_vs_market": -4.4,
+   "active_vs_value_index": 0.0,
+   "ratio_to_market": 0.0,
+   "trailing_pe": 13.9,
+   "ttm_net_income_bn": 235.69,
+   "ni_period_end": "2026-09-30",
+   "rank_in_fund": null,
+   "book_to_market": 0.208,
+   "cfo_ttm_bn": null,
+   "cfo_to_book": null,
+   "russell_growth_fraction": 1.0
+  },
+  {
+   "ticker": "MU",
+   "name": "Micron",
+   "fund": 2.29,
+   "market": 1.05,
+   "value_index": 0.0,
+   "active_vs_market": 1.23,
+   "active_vs_value_index": 2.29,
+   "ratio_to_market": 2.17,
+   "trailing_pe": 7.9,
+   "ttm_net_income_bn": 84.97,
+   "ni_period_end": "2026-09-03",
+   "rank_in_fund": 8,
+   "book_to_market": 0.206,
+   "cfo_ttm_bn": 89.67,
+   "cfo_to_book": 0.648,
+   "russell_growth_fraction": 1.0
+  },
+  {
+   "ticker": "SNDK",
+   "name": "Sandisk",
+   "fund": 0.31,
+   "market": 0.14,
+   "value_index": 0.0,
+   "active_vs_market": 0.17,
+   "active_vs_value_index": 0.31,
+   "ratio_to_market": 2.14,
+   "trailing_pe": 4.6,
+   "ttm_net_income_bn": 19.42,
+   "ni_period_end": "2026-10-02",
+   "rank_in_fund": 89,
+   "book_to_market": 0.201,
+   "cfo_ttm_bn": 17.55,
+   "cfo_to_book": 0.968,
+   "russell_growth_fraction": 1.0
+  },
+  {
+   "ticker": "QCOM",
+   "name": "Qualcomm",
+   "fund": 0.66,
+   "market": 0.25,
+   "value_index": 0.44,
+   "active_vs_market": 0.42,
+   "active_vs_value_index": 0.23,
+   "ratio_to_market": 2.67,
+   "trailing_pe": 11.8,
+   "ttm_net_income_bn": 13.63,
+   "ni_period_end": "2026-09-27",
+   "rank_in_fund": 40,
+   "book_to_market": 0.189,
+   "cfo_ttm_bn": 11.14,
+   "cfo_to_book": 0.367,
+   "russell_growth_fraction": 0.0
+  },
+  {
+   "ticker": "COST",
+   "name": "Costco",
+   "fund": 2.42,
+   "market": 0.77,
+   "value_index": 0.76,
+   "active_vs_market": 1.65,
+   "active_vs_value_index": 1.65,
+   "ratio_to_market": 3.15,
+   "trailing_pe": 52.9,
+   "ttm_net_income_bn": 9.23,
+   "ni_period_end": "2026-08-30",
+   "rank_in_fund": 6,
+   "book_to_market": 0.073,
+   "cfo_ttm_bn": 15.82,
+   "cfo_to_book": 0.442,
+   "russell_growth_fraction": 0.437
+  },
+  {
+   "ticker": "LLY",
+   "name": "Eli Lilly",
+   "fund": 1.98,
+   "market": 1.69,
+   "value_index": 0.0,
+   "active_vs_market": 0.29,
+   "active_vs_value_index": 1.98,
+   "ratio_to_market": 1.17,
+   "trailing_pe": 45.9,
+   "ttm_net_income_bn": 27.58,
+   "ni_period_end": "2026-09-30",
+   "rank_in_fund": 9,
+   "book_to_market": 0.032,
+   "cfo_ttm_bn": 30.64,
+   "cfo_to_book": 0.761,
+   "russell_growth_fraction": 1.0
+  },
+  {
+   "ticker": "XOM",
+   "name": "Exxon Mobil",
+   "fund": 2.39,
+   "market": 1.03,
+   "value_index": 1.83,
+   "active_vs_market": 1.35,
+   "active_vs_value_index": 0.56,
+   "ratio_to_market": 2.31,
+   "trailing_pe": 16.1,
+   "ttm_net_income_bn": 40.62,
+   "ni_period_end": "2026-09-30",
+   "rank_in_fund": 7,
+   "book_to_market": 0.407,
+   "cfo_ttm_bn": 70.59,
+   "cfo_to_book": 0.266,
+   "russell_growth_fraction": 0.0
+  },
+  {
+   "ticker": "JPM",
+   "name": "JPMorgan Chase",
+   "fund": 2.61,
+   "market": 1.3,
+   "value_index": 2.3,
+   "active_vs_market": 1.3,
+   "active_vs_value_index": 0.31,
+   "ratio_to_market": 2.0,
+   "trailing_pe": 12.5,
+   "ttm_net_income_bn": 65.98,
+   "ni_period_end": "2026-09-30",
+   "rank_in_fund": 5,
+   "book_to_market": 0.452,
+   "cfo_ttm_bn": -84.16,
+   "cfo_to_book": null,
+   "russell_growth_fraction": 0.0
+  }
+ ],
+ "named_small": [
+  {
+   "ticker": "LYFT",
+   "name": "Lyft",
+   "fund": 0.93,
+   "market": 0.0,
+   "value_index": 0.0,
+   "active_vs_market": 0.93,
+   "active_vs_value_index": 0.93,
+   "ratio_to_market": null,
+   "trailing_pe": 2.2,
+   "ttm_net_income_bn": 2.81,
+   "ni_period_end": "2026-09-30",
+   "rank_in_fund": 3,
+   "book_to_market": 0.479,
+   "cfo_ttm_bn": 1.23,
+   "cfo_to_book": 0.413,
+   "russell_growth_fraction": null
+  },
+  {
+   "ticker": "M",
+   "name": "Macy's",
+   "fund": 0.8,
+   "market": 0.0,
+   "value_index": 0.0,
+   "active_vs_market": 0.8,
+   "active_vs_value_index": 0.8,
+   "ratio_to_market": null,
+   "trailing_pe": 8.1,
+   "ttm_net_income_bn": 0.75,
+   "ni_period_end": "2026-08-01",
+   "rank_in_fund": 5,
+   "book_to_market": 0.814,
+   "cfo_ttm_bn": 1.76,
+   "cfo_to_book": 0.357,
+   "russell_growth_fraction": null
+  },
+  {
+   "ticker": "CROX",
+   "name": "Crocs",
+   "fund": 0.75,
+   "market": 0.0,
+   "value_index": 0.0,
+   "active_vs_market": 0.75,
+   "active_vs_value_index": 0.75,
+   "ratio_to_market": null,
+   "trailing_pe": 10.6,
+   "ttm_net_income_bn": 0.66,
+   "ni_period_end": "2026-09-30",
+   "rank_in_fund": 6,
+   "book_to_market": 0.19,
+   "cfo_ttm_bn": 0.81,
+   "cfo_to_book": 0.605,
+   "russell_growth_fraction": null
+  },
+  {
+   "ticker": "GATX",
+   "name": "GATX",
+   "fund": 1.06,
+   "market": 0.24,
+   "value_index": 0.44,
+   "active_vs_market": 0.82,
+   "active_vs_value_index": 0.62,
+   "ratio_to_market": 4.45,
+   "trailing_pe": 16.0,
+   "ttm_net_income_bn": 0.39,
+   "ni_period_end": "2026-09-30",
+   "rank_in_fund": 1,
+   "book_to_market": 0.445,
+   "cfo_ttm_bn": 0.86,
+   "cfo_to_book": 0.31,
+   "russell_growth_fraction": 0.072
+  },
+  {
+   "ticker": "MATX",
+   "name": "Matson",
+   "fund": 0.97,
+   "market": 0.23,
+   "value_index": 0.45,
+   "active_vs_market": 0.75,
+   "active_vs_value_index": 0.53,
+   "ratio_to_market": 4.31,
+   "trailing_pe": 11.0,
+   "ttm_net_income_bn": 0.54,
+   "ni_period_end": "2026-09-30",
+   "rank_in_fund": 2,
+   "book_to_market": 0.494,
+   "cfo_ttm_bn": 0.64,
+   "cfo_to_book": 0.218,
+   "russell_growth_fraction": 0.0
+  }
+ ],
+ "avdv": {
+  "stocks": 1741,
+  "countries_ex_us": 22,
+  "top10_weight": 5.8,
+  "country_top6": [
+   {
+    "country": "Japan",
+    "weight": 33.0
+   },
+   {
+    "country": "United Kingdom",
+    "weight": 12.4
+   },
+   {
+    "country": "Canada",
+    "weight": 10.5
+   },
+   {
+    "country": "Australia",
+    "weight": 8.9
+   },
+   {
+    "country": "Sweden",
+    "weight": 4.8
+   },
+   {
+    "country": "Switzerland",
+    "weight": 4.2
+   }
+  ],
+  "sector_top5": [
+   {
+    "sector": "Materials",
+    "weight": 22.4
+   },
+   {
+    "sector": "Industrials",
+    "weight": 22.0
+   },
+   {
+    "sector": "Consumer Discretionary",
+    "weight": 16.7
+   },
+   {
+    "sector": "Financials",
+    "weight": 12.3
+   },
+   {
+    "sector": "Energy",
+    "weight": 10.4
+   }
+  ],
+  "top10": [
+   {
+    "name": "WHITBREAD PLC COMMON STOCK GBP.767974",
+    "weight": 0.78
+   },
+   {
+    "name": "PERSEUS MINING LTD COMMON STOCK",
+    "weight": 0.63
+   },
+   {
+    "name": "LION FINANCE GROUP PLC COMMON STOCK GBP.01",
+    "weight": 0.61
+   },
+   {
+    "name": "BURBERRY GROUP PLC COMMON STOCK GBP.0005",
+    "weight": 0.59
+   },
+   {
+    "name": "JOHNSON MATTHEY PLC COMMON STOCK GBP1.478994",
+    "weight": 0.58
+   },
+   {
+    "name": "B2GOLD CORP COMMON STOCK",
+    "weight": 0.53
+   },
+   {
+    "name": "DRAX GROUP PLC COMMON STOCK GBP.1155172",
+    "weight": 0.52
+   },
+   {
+    "name": "OCEANAGOLD CORP COMMON STOCK",
+    "weight": 0.52
+   },
+   {
+    "name": "CLAL INSURANCE ENTERPR HLDGS COMMON STOCK ILS1.0",
+    "weight": 0.51
+   },
+   {
+    "name": "GREGGS PLC COMMON STOCK GBP.02",
+    "weight": 0.5
+   }
+  ]
+ },
+ "avgv": {
+  "sleeves": {
+   "AVLV": 37.91,
+   "AVUV": 18.21,
+   "AVIV": 17.79,
+   "AVES": 9.54,
+   "AVDV": 8.87,
+   "AVMV": 7.68
+  },
+  "regions": {
+   "U.S.": 63.8,
+   "Developed ex-U.S.": 26.7,
+   "Emerging": 9.5
+  },
+  "look_through_stocks": 5207,
+  "top10_weight": 9.8,
+  "top50_weight": 25.4,
+  "named": [
+   {
+    "name": "Microsoft",
+    "weight": 1.28
+   },
+   {
+    "name": "Apple",
+    "weight": 1.17
+   },
+   {
+    "name": "Meta Platforms",
+    "weight": 1.07
+   },
+   {
+    "name": "Nvidia",
+    "weight": 0.0
+   },
+   {
+    "name": "Alphabet",
+    "weight": 0.0
+   },
+   {
+    "name": "Micron",
+    "weight": 0.87
+   },
+   {
+    "name": "Sandisk",
+    "weight": 0.12
+   },
+   {
+    "name": "Qualcomm",
+    "weight": 0.25
+   },
+   {
+    "name": "Costco",
+    "weight": 0.92
+   },
+   {
+    "name": "Eli Lilly",
+    "weight": 0.75
+   },
+   {
+    "name": "Exxon Mobil",
+    "weight": 0.91
+   },
+   {
+    "name": "JPMorgan Chase",
+    "weight": 0.99
+   }
+  ],
+  "small_cap_sleeves": 27.1,
+  "us_sleeves_loss_share": 4.3,
+  "us_sleeves_coverage": 97.7
+ },
+ "factsheets_2026_09_30": [
+  {
+   "portfolio": "AVLV",
+   "benchmark_of": "",
+   "book_to_market": "0.26",
+   "profits_to_book": "0.58",
+   "mkt_cap_bn": "605.9",
+   "holdings": "303"
+  },
+  {
+   "portfolio": "Russell 1000 Value",
+   "benchmark_of": "AVLV",
+   "book_to_market": "0.19",
+   "profits_to_book": "0.42",
+   "mkt_cap_bn": "857.2",
+   "holdings": "869"
+  },
+  {
+   "portfolio": "AVUV",
+   "benchmark_of": "",
+   "book_to_market": "0.61",
+   "profits_to_book": "0.32",
+   "mkt_cap_bn": "3.7",
+   "holdings": "794"
+  },
+  {
+   "portfolio": "Russell 2000 Value",
+   "benchmark_of": "AVUV",
+   "book_to_market": "0.51",
+   "profits_to_book": "0.14",
+   "mkt_cap_bn": "3.3",
+   "holdings": "1414"
+  },
+  {
+   "portfolio": "AVDV",
+   "benchmark_of": "",
+   "book_to_market": "0.74",
+   "profits_to_book": "0.35",
+   "mkt_cap_bn": "3.3",
+   "holdings": "1728"
+  },
+  {
+   "portfolio": "MSCI World ex USA Small Cap",
+   "benchmark_of": "AVDV",
+   "book_to_market": "0.53",
+   "profits_to_book": "0.29",
+   "mkt_cap_bn": "4.3",
+   "holdings": "2204"
+  },
+  {
+   "portfolio": "AVGV",
+   "benchmark_of": "",
+   "book_to_market": "0.47",
+   "profits_to_book": "0.45",
+   "mkt_cap_bn": "244.2",
+   "holdings": "5219"
+  },
+  {
+   "portfolio": "MSCI ACWI IMI Value",
+   "benchmark_of": "AVGV",
+   "book_to_market": "0.34",
+   "profits_to_book": "0.34",
+   "mkt_cap_bn": "497.7",
+   "holdings": "4916"
+  }
+ ],
+ "avantis_published_pe_2026_10_31": {
+  "AVLV": "16.55",
+  "AVUV": "12.06",
+  "AVDV": "11.92"
+ },
+ "cap_flags": [
+  {
+   "issuer": "CIK1130464",
+   "ticker": "HZN",
+   "index": "IWM",
+   "ratio": 0.484,
+   "weight": 0.4043
+  },
+  {
+   "issuer": "CIK1625297",
+   "ticker": "SUPN",
+   "index": "IWM",
+   "ratio": 0.506,
+   "weight": 0.2172
+  },
+  {
+   "issuer": "CIK1697500",
+   "ticker": "SEI",
+   "index": "IWM",
+   "ratio": 0.166,
+   "weight": 0.1134
+  },
+  {
+   "issuer": "CIK55785",
+   "ticker": "KMB",
+   "index": "IWB",
+   "ratio": 0.539,
+   "weight": 0.1017
+  },
+  {
+   "issuer": "CIK906107",
+   "ticker": "VMRK",
+   "index": "IWB",
+   "ratio": 0.484,
+   "weight": 0.0756
+  },
+  {
+   "issuer": "CIK940942",
+   "ticker": "HUBG",
+   "index": "IWM",
+   "ratio": 0.001,
+   "weight": 0.0512
+  },
+  {
+   "issuer": "CIK1970622",
+   "ticker": "USAR",
+   "index": "IWM",
+   "ratio": 0.539,
+   "weight": 0.0503
+  },
+  {
+   "issuer": "CIK1834489",
+   "ticker": "GENI",
+   "index": "IWM",
+   "ratio": 0.037,
+   "weight": 0.0456
+  },
+  {
+   "issuer": "CIK1518715",
+   "ticker": "MCHB",
+   "index": "IWM",
+   "ratio": 0.397,
+   "weight": 0.0216
+  },
+  {
+   "issuer": "CIK1859836",
+   "ticker": "YSWY",
+   "index": "IWM",
+   "ratio": 0.0,
+   "weight": 0.0117
+  },
+  {
+   "issuer": "CIK1720592",
+   "ticker": "RPAY",
+   "index": "IWM",
+   "ratio": 1060.755,
+   "weight": 0.0098
+  },
+  {
+   "issuer": "CIK1717115",
+   "ticker": "TEM",
+   "index": "IWB",
+   "ratio": 0.002,
+   "weight": 0.0091
+  },
+  {
+   "issuer": "CIK1840502",
+   "ticker": "TBLA",
+   "index": "IWM",
+   "ratio": 1911.406,
+   "weight": 0.0091
+  },
+  {
+   "issuer": "CIK1687187",
+   "ticker": "METC",
+   "index": "IWM",
+   "ratio": 0.001,
+   "weight": 0.0089
+  },
+  {
+   "issuer": "CIK1567683",
+   "ticker": "CWEN",
+   "index": "IWB",
+   "ratio": 0.528,
+   "weight": 0.0053
+  },
+  {
+   "issuer": "CIK2090646",
+   "ticker": "BRUN",
+   "index": "IWM",
+   "ratio": 0.0,
+   "weight": 0.0025
+  }
+ ]
+}
