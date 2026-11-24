@@ -1,9 +1,9 @@
-portfolio,benchmark_of,mkt_cap_bn,book_to_market,profits_to_book,holdings,source
-AVLV,,605.9,0.26,0.58,303,https://res.avantisinvestors.com/docs/avantis-us-large-cap-value-avlv-etf-fact-sheet.pdf
-Russell 1000 Value,AVLV,857.2,0.19,0.42,869,AVLV fact sheet (benchmark column)
-AVUV,,3.7,0.61,0.32,794,https://res.avantisinvestors.com/docs/avantis-us-small-cap-value-avuv-etf-fact-sheet.pdf
-Russell 2000 Value,AVUV,3.3,0.51,0.14,1414,AVUV fact sheet (benchmark column)
-AVDV,,3.3,0.74,0.35,1728,https://res.avantisinvestors.com/docs/avantis-international-small-cap-value-avdv-etf-fact-sheet.pdf
-MSCI World ex USA Small Cap,AVDV,4.3,0.53,0.29,2204,AVDV fact sheet (benchmark column)
-AVGV,,244.2,0.47,0.45,5219,https://res.avantisinvestors.com/docs/avantis-all-equity-markets-value-avgv-etf-fact-sheet.pdf
-MSCI ACWI IMI Value,AVGV,497.7,0.34,0.34,4916,AVGV fact sheet (benchmark column)
+portfolio,benchmark_of,mkt_cap_bn,book_to_market,profits_to_book,holdings,source,pdf_retrieved,pdf_sha256
+AVLV,,605.9,0.26,0.58,303,https://res.avantisinvestors.com/docs/avantis-us-large-cap-value-avlv-etf-fact-sheet.pdf,2026-11-23,75c4edf33f4098b6b66a14bc44b7d1a2274e18f0067a0434c493dbf03fffd58e
+Russell 1000 Value,AVLV,857.2,0.19,0.42,869,AVLV fact sheet (benchmark column),2026-11-23,75c4edf33f4098b6b66a14bc44b7d1a2274e18f0067a0434c493dbf03fffd58e
+AVUV,,3.7,0.61,0.32,794,https://res.avantisinvestors.com/docs/avantis-us-small-cap-value-avuv-etf-fact-sheet.pdf,2026-11-23,a311e9f4dbb64a9fde4d32fe7574596ccac371ade3f00fb016f6f63a5f66032a
+Russell 2000 Value,AVUV,3.3,0.51,0.14,1414,AVUV fact sheet (benchmark column),2026-11-23,a311e9f4dbb64a9fde4d32fe7574596ccac371ade3f00fb016f6f63a5f66032a
+AVDV,,3.3,0.74,0.35,1728,https://res.avantisinvestors.com/docs/avantis-international-small-cap-value-avdv-etf-fact-sheet.pdf,2026-11-23,ee3e08a9acba84823c6830b50f4319229a3b0fb13f371d616e6e2bba4122ef09
+MSCI World ex USA Small Cap,AVDV,4.3,0.53,0.29,2204,AVDV fact sheet (benchmark column),2026-11-23,ee3e08a9acba84823c6830b50f4319229a3b0fb13f371d616e6e2bba4122ef09
+AVGV,,244.2,0.47,0.45,5219,https://res.avantisinvestors.com/docs/avantis-all-equity-markets-value-avgv-etf-fact-sheet.pdf,2026-11-23,bb6e4e5f83118c884b36f83e07ce2ad2d71b1705cd53187ceaa67e53aa79eb49
+MSCI ACWI IMI Value,AVGV,497.7,0.34,0.34,4916,AVGV fact sheet (benchmark column),2026-11-23,bb6e4e5f83118c884b36f83e07ce2ad2d71b1705cd53187ceaa67e53aa79eb49

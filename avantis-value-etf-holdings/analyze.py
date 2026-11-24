@@ -26,6 +26,19 @@ Added after a first look at the results (reported as such in the guide):
   - unadjusted weighted book/market and operating-cash-flow/book for AVLV and
     IWD, to set beside single companies on the same basis
 
+Added after an outside review of the guide (Nov 23-24, 2026):
+  - loss share as a share of all stock weight, with the upper bound if every
+    stock without SEC data lost money (the loss share above is over covered
+    weight only)
+  - the share of the market index's weight in stocks the fund holds (its
+    inverse is the average holding's multiple of market weight), and the
+    filed book/market including companies with negative book
+  - weighted medians of the same unadjusted measures for AVLV, IWD and the
+    Russell 1000 (IWB), and each named stock's percentile in the Russell 1000
+    by market value. A fund that starts from market-cap weights tilts away from
+    the market, so the market is the yardstick for a single holding; the
+    fund's own average is already tilted and is pulled around by outliers.
+
 Writes output/holdings_summary.json and prints every number the guide quotes.
 
 Usage:
@@ -231,28 +244,63 @@ for _r in csv.DictReader((DATA / f"cfo_{DATE}.csv").open()):
         CFO.setdefault(issuer(_r["ticker"]), float(_r["cfo_ttm"]))
 
 
-def unadjusted_tilts(w: dict[str, float]) -> dict:
-    """Weighted average book/market and operating-cash-flow/book from filed,
-    unadjusted figures. Cash flow/book leaves out financials, whose operating
-    cash flow is not a profitability measure (JPMorgan's was negative)."""
-    bm = bmw = pb_ = pbw = 0.0
+def filed_ratios(w: dict[str, float], negative_book: bool = False) -> tuple[list, list]:
+    """(value, weight) pairs of filed book/market and operating-cash-flow/book.
+    Cash flow/book leaves out financials, whose operating cash flow is not a
+    profitability measure (JPMorgan's was negative). Companies with zero or
+    negative book are left out unless negative_book is set, in which case
+    their (negative) book/market is kept and cash flow/book is still skipped."""
+    bm_pts, cb_pts = [], []
     for k, x in w.items():
         rec = ISSUER.get(k)
         if not rec or not rec.get("cap") or rec.get("cap_flag"):
             continue
         book = rec.get("book")
+        if negative_book and book and book < 0:
+            bm_pts.append((book / rec["cap"], x))
+            continue
         if not book or book <= 0:
             continue
-        bm += x * book / rec["cap"]
-        bmw += x
+        bm_pts.append((book / rec["cap"], x))
         if k in CFO and SECTOR.get(k, "") != "FINANCIALS":
-            pb_ += x * CFO[k] / book
-            pbw += x
+            cb_pts.append((CFO[k] / book, x))
+    return bm_pts, cb_pts
+
+
+def wmean(pts: list) -> float:
+    return sum(v * x for v, x in pts) / sum(x for _, x in pts)
+
+
+def wmedian(pts: list) -> float:
+    half, run = sum(x for _, x in pts) / 2, 0.0
+    for v, x in sorted(pts):
+        run += x
+        if run >= half:
+            return v
+    return float("nan")
+
+
+def share_below(pts: list, value: float) -> float:
+    """Share of the covered weight with a lower figure (a percentile by weight)."""
+    return sum(x for v, x in pts if v < value) / sum(x for _, x in pts)
+
+
+def unadjusted_tilts(w: dict[str, float]) -> dict:
+    """Weighted mean and weighted median book/market and operating-cash-flow/
+    book from filed, unadjusted figures."""
+    bm_pts, cb_pts = filed_ratios(w)
+    bm_all, _ = filed_ratios(w, negative_book=True)
     return {
-        "book_to_market": round(bm / bmw, 3),
-        "book_to_market_coverage": pct(bmw, 1),
-        "cfo_to_book_ex_financials": round(pb_ / pbw, 3),
-        "cfo_to_book_coverage": pct(pbw, 1),
+        "book_to_market": round(wmean(bm_pts), 3),
+        "book_to_market_incl_negative": round(wmean(bm_all), 3),
+        "negative_book_weight": pct(
+            sum(x for v, x in bm_all if v < 0) / sum(x for _, x in bm_all), 1
+        ),
+        "book_to_market_median": round(wmedian(bm_pts), 3),
+        "book_to_market_coverage": pct(sum(x for _, x in bm_pts), 1),
+        "cfo_to_book_ex_financials": round(wmean(cb_pts), 3),
+        "cfo_to_book_median": round(wmedian(cb_pts), 3),
+        "cfo_to_book_coverage": pct(sum(x for _, x in cb_pts), 1),
     }
 
 
@@ -262,6 +310,12 @@ for f in FLAGS:
 
 
 # ---------------------------------------------------------------- metrics
+def covered(k: str) -> bool:
+    """Usable trailing earnings and market cap (the coverage test below)."""
+    rec = ISSUER.get(k)
+    return bool(rec and rec["ni"] is not None and rec["cap"] and not rec.get("cap_flag"))
+
+
 def coverage_and_bands(w: dict[str, float]) -> dict:
     cov = loss = 0.0
     bands = {"loss": 0.0, "under 15": 0.0, "15 to 30": 0.0, "over 30": 0.0}
@@ -269,9 +323,9 @@ def coverage_and_bands(w: dict[str, float]) -> dict:
     pe_pts: list[tuple[float, float]] = []  # (P/E, weight) for the weighted median
     bp_sum = bp_w = 0.0
     for k, wk in w.items():
-        rec = ISSUER.get(k)
-        if not rec or rec["ni"] is None or not rec["cap"] or rec.get("cap_flag"):
+        if not covered(k):
             continue
+        rec = ISSUER[k]
         cov += wk
         ni, cap = rec["ni"], rec["cap"]
         if ni < 0:
@@ -299,6 +353,8 @@ def coverage_and_bands(w: dict[str, float]) -> dict:
         "median_pe": median_pe,
         "coverage": cov,
         "loss_share": loss / cov,
+        "loss_of_total": loss,  # weights sum to 1 over the fund's stocks
+        "loss_max": loss + (1 - cov),  # if every uncovered stock lost money
         "bands": {b: v / cov for b, v in bands.items()},
         "pe_profitable": ep_w / ep_sum,
         "pb": bp_w / bp_sum,
@@ -366,6 +422,8 @@ def main() -> None:
                 "active_share_vs_market": pct(active_share(w, ISH[mkt]), 1),
                 "coverage": pct(m["coverage"], 1),
                 "loss_share": pct(m["loss_share"], 1),
+                "loss_share_of_total": pct(m["loss_of_total"], 1),
+                "loss_share_max": pct(m["loss_max"], 1),
                 "pe_bands": {b: pct(v, 1) for b, v in m["bands"].items()},
                 "pe_profitable": round(m["pe_profitable"], 1),
                 "pe_weighted_median": round(m["median_pe"], 1),
@@ -388,9 +446,19 @@ def main() -> None:
                 ),
             }
             if p in AV_US:
+                res["portfolios"][p]["held_share_of_market"] = pct(
+                    sum(ISH[mkt].get(k, 0.0) for k in w), 1
+                )
+            res["portfolios"][p]["largest_uncovered"] = [
+                {"name": ISSUER.get(k, {}).get("name", k), "weight": pct(x)}
+                for k, x in sorted(w.items(), key=lambda kv: -kv[1])
+                if not covered(k)
+            ][:3]
+            if p in AV_US:
                 res["portfolios"][p]["non_stock_share"] = pct(AV_US[p][1], 2)
-            if p in ("AVLV", "IWD"):
+            if p in ("AVLV", "IWD", "IWB"):
                 res["portfolios"][p]["unadjusted"] = unadjusted_tilts(w)
+    r1000_bm, r1000_cb = filed_ratios(ISH["IWB"])
 
 
     def named(sel: dict, fund: str, mkt: str, val: str) -> list[dict]:
@@ -437,6 +505,19 @@ def main() -> None:
                         if k in CFO
                         and SECTOR.get(k, "") != "FINANCIALS"
                         and rec.get("book")
+                        else None
+                    ),
+                    "bm_pct_r1000": (
+                        round(100 * share_below(r1000_bm, rec["book"] / rec["cap"]))
+                        if mkt == "IWB" and rec.get("book") and rec["book"] > 0
+                        and rec.get("cap") and not rec.get("cap_flag")
+                        else None
+                    ),
+                    "cfo_pct_r1000": (
+                        round(100 * share_below(r1000_cb, CFO[k] / rec["book"]))
+                        if mkt == "IWB" and k in CFO
+                        and SECTOR.get(k, "") != "FINANCIALS"
+                        and rec.get("book") and rec["book"] > 0
                         else None
                     ),
                     "russell_growth_fraction": (
@@ -524,6 +605,7 @@ def main() -> None:
     m = coverage_and_bands(us_w)
     res["avgv"]["us_sleeves_loss_share"] = pct(m["loss_share"], 1)
     res["avgv"]["us_sleeves_coverage"] = pct(m["coverage"], 1)
+    res["avgv"]["us_sleeves_loss_share_max"] = pct(m["loss_max"], 1)
 
     # ------------------------------------------------------------ fact sheets
     fs = list(csv.DictReader((DATA / "factsheets_2026-09-30.csv").open()))

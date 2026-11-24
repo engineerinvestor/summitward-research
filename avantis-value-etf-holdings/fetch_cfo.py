@@ -1,6 +1,7 @@
 """Trailing operating cash flow for every U.S. stock in AVLV and the Russell
-1000 Value (IWD), so the guide can compare a company's cash profitability with
-the fund's average on the same unadjusted basis. AVLV's prospectus names
+1000 (IWB, which contains the Russell 1000 Value), so the guide can compare a
+company's cash profitability with the fund, the value index and the market on
+the same unadjusted basis. AVLV's prospectus names
 "adjusted cash from operations to book value" as its profitability measure;
 Avantis does not publish its adjustments, so these filed figures approximate it.
 
@@ -30,11 +31,12 @@ def tickers() -> list[str]:
     for r in csv.DictReader((ff.DATA / f"avantis_AVLV_{ff.DATE}.csv").open()):
         if r["securityType"] == "COMMON STOCK":
             out.add(r["ticker"])
-    lines = (ff.DATA / f"ishares_IWD_{ff.DATE}.csv").read_text().splitlines()
-    head = next(i for i, ln in enumerate(lines) if ln.startswith("Ticker,"))
-    for r in csv.DictReader(lines[head:]):
-        if r.get("Asset Class") == "Equity":
-            out.add(r["Ticker"])
+    for etf in ("IWD", "IWB"):
+        lines = (ff.DATA / f"ishares_{etf}_{ff.DATE}.csv").read_text().splitlines()
+        head = next(i for i, ln in enumerate(lines) if ln.startswith("Ticker,"))
+        for r in csv.DictReader(lines[head:]):
+            if r.get("Asset Class") == "Equity":
+                out.add(r["Ticker"])
     return sorted(out)
 
 

@@ -11,6 +11,10 @@ and concept, cached under .cache/sec/ (not committed). For each company:
   shares       dei:EntityCommonStockSharesOutstanding from the latest cover page,
                else the latest quarter's weighted average diluted shares
 
+Only 10-K, 10-Q, 20-F and 40-F facts filed on or before DATE count, so the
+figures are what was public at the Nov 20, 2026 close even when the data is
+pulled later.
+
 Prices come from the holdings files themselves (iShares lists a price per row;
 Avantis gives market value and share quantity), so every figure is as of the
 same close. The SEC asks automated clients to identify themselves: set
@@ -132,10 +136,12 @@ PERIODIC = ("10-K", "10-K/A", "10-KT", "10-Q", "10-Q/A", "20-F", "20-F/A", "40-F
 
 
 def periodic(rows: list[dict]) -> list[dict]:
-    """Facts from periodic reports only. Proxy statements (pay-versus-performance
-    tables) and 8-Ks re-file the same numbers later and would otherwise win the
-    "most recently filed" tie-break with the wrong form."""
-    return [r for r in rows if r.get("form") in PERIODIC]
+    """Facts from periodic reports filed on or before the snapshot date.
+    Proxy statements (pay-versus-performance tables) and 8-Ks re-file the same
+    numbers later and would otherwise win the "most recently filed" tie-break
+    with the wrong form. Reports filed after DATE were not public at the close
+    the holdings describe, so they are left out (the data is pulled later)."""
+    return [r for r in rows if r.get("form") in PERIODIC and r.get("filed", "") <= DATE]
 
 
 def latest_filed(rows: list[dict]) -> dict[tuple, dict]:

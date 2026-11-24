@@ -12,6 +12,8 @@
    "active_share_vs_market": 69.3,
    "coverage": 99.2,
    "loss_share": 1.2,
+   "loss_share_of_total": 1.2,
+   "loss_share_max": 2.0,
    "pe_bands": {
     "loss": 1.2,
     "under 15": 42.1,
@@ -26,11 +28,30 @@
    "share_pure_growth": 11.6,
    "share_inside_russell": 97.5,
    "share_in_russell_1000": 97.5,
+   "held_share_of_market": 39.7,
+   "largest_uncovered": [
+    {
+     "name": "VIKING HOLDINGS LTD",
+     "weight": 0.28
+    },
+    {
+     "name": "ONEMAIN HOLDINGS",
+     "weight": 0.12
+    },
+    {
+     "name": "U HAUL HOLDING",
+     "weight": 0.09
+    }
+   ],
    "non_stock_share": 0.07,
    "unadjusted": {
     "book_to_market": 0.331,
+    "book_to_market_incl_negative": 0.331,
+    "negative_book_weight": 0.2,
+    "book_to_market_median": 0.232,
     "book_to_market_coverage": 99.2,
     "cfo_to_book_ex_financials": 0.526,
+    "cfo_to_book_median": 0.442,
     "cfo_to_book_coverage": 75.9
    }
   },
@@ -39,6 +60,8 @@
    "active_share_vs_market": 35.1,
    "coverage": 92.5,
    "loss_share": 3.5,
+   "loss_share_of_total": 3.2,
+   "loss_share_max": 10.7,
    "pe_bands": {
     "loss": 3.5,
     "under 15": 21.0,
@@ -53,10 +76,28 @@
    "share_pure_growth": 0.0,
    "share_inside_russell": 100.0,
    "share_in_russell_1000": 100.0,
+   "largest_uncovered": [
+    {
+     "name": "BERKSHIRE HATHAWAY INC CLASS B",
+     "weight": 2.94
+    },
+    {
+     "name": "NEXTERA ENERGY",
+     "weight": 0.48
+    },
+    {
+     "name": "CITIGROUP",
+     "weight": 0.43
+    }
+   ],
    "unadjusted": {
     "book_to_market": 0.321,
+    "book_to_market_incl_negative": 0.3,
+    "negative_book_weight": 5.9,
+    "book_to_market_median": 0.239,
     "book_to_market_coverage": 90.8,
     "cfo_to_book_ex_financials": 0.448,
+    "cfo_to_book_median": 0.282,
     "cfo_to_book_coverage": 74.9
    }
   },
@@ -65,6 +106,8 @@
    "active_share_vs_market": 0.0,
    "coverage": 94.1,
    "loss_share": 2.9,
+   "loss_share_of_total": 2.8,
+   "loss_share_max": 8.6,
    "pe_bands": {
     "loss": 2.9,
     "under 15": 18.6,
@@ -78,13 +121,39 @@
    "share_not_in_value_index": 29.5,
    "share_pure_growth": 29.5,
    "share_inside_russell": 100.0,
-   "share_in_russell_1000": 100.0
+   "share_in_russell_1000": 100.0,
+   "largest_uncovered": [
+    {
+     "name": "BERKSHIRE HATHAWAY INC CLASS B",
+     "weight": 1.67
+    },
+    {
+     "name": "VISA CLASS A",
+     "weight": 1.07
+    },
+    {
+     "name": "CITIGROUP",
+     "weight": 0.29
+    }
+   ],
+   "unadjusted": {
+    "book_to_market": 0.225,
+    "book_to_market_incl_negative": 0.213,
+    "negative_book_weight": 4.5,
+    "book_to_market_median": 0.146,
+    "book_to_market_coverage": 92.2,
+    "cfo_to_book_ex_financials": 0.523,
+    "cfo_to_book_median": 0.408,
+    "cfo_to_book_coverage": 81.6
+   }
   },
   "AVUV": {
    "issuers": 783,
    "active_share_vs_market": 71.2,
    "coverage": 94.9,
    "loss_share": 11.5,
+   "loss_share_of_total": 10.9,
+   "loss_share_max": 16.1,
    "pe_bands": {
     "loss": 11.5,
     "under 15": 58.3,
@@ -99,6 +168,21 @@
    "share_pure_growth": 12.7,
    "share_inside_russell": 77.4,
    "share_in_russell_1000": 21.7,
+   "held_share_of_market": 32.7,
+   "largest_uncovered": [
+    {
+     "name": "BANK OZK",
+     "weight": 0.55
+    },
+    {
+     "name": "DHT HOLDINGS",
+     "weight": 0.35
+    },
+    {
+     "name": "ONEMAIN HOLDINGS",
+     "weight": 0.35
+    }
+   ],
    "non_stock_share": 0.21
   },
   "IWN": {
@@ -106,6 +190,8 @@
    "active_share_vs_market": 44.4,
    "coverage": 92.0,
    "loss_share": 24.0,
+   "loss_share_of_total": 22.1,
+   "loss_share_max": 30.1,
    "pe_bands": {
     "loss": 24.0,
     "under 15": 41.5,
@@ -119,13 +205,29 @@
    "share_not_in_value_index": 0.0,
    "share_pure_growth": 0.0,
    "share_inside_russell": 99.6,
-   "share_in_russell_1000": 0.0
+   "share_in_russell_1000": 0.0,
+   "largest_uncovered": [
+    {
+     "name": "BRIGHT HORIZON ENERGY CORP",
+     "weight": 0.8
+    },
+    {
+     "name": "TXNM ENERGY INC",
+     "weight": 0.48
+    },
+    {
+     "name": "BROOKFIELD INFRASTRUCTURE PARTNERS",
+     "weight": 0.39
+    }
+   ]
   },
   "IWM": {
    "issuers": 1945,
    "active_share_vs_market": 0.0,
    "coverage": 93.7,
    "loss_share": 28.8,
+   "loss_share_of_total": 27.0,
+   "loss_share_max": 33.3,
    "pe_bands": {
     "loss": 28.8,
     "under 15": 27.5,
@@ -139,7 +241,21 @@
    "share_not_in_value_index": 37.2,
    "share_pure_growth": 37.0,
    "share_inside_russell": 99.8,
-   "share_in_russell_1000": 0.0
+   "share_in_russell_1000": 0.0,
+   "largest_uncovered": [
+    {
+     "name": "BRIGHT HORIZON ENERGY CORP",
+     "weight": 0.4
+    },
+    {
+     "name": "TXNM ENERGY INC",
+     "weight": 0.24
+    },
+    {
+     "name": "SUPERNUS",
+     "weight": 0.22
+    }
+   ]
   }
  },
  "named_large": [
@@ -159,6 +275,8 @@
    "book_to_market": 0.131,
    "cfo_ttm_bn": 195.88,
    "cfo_to_book": 0.416,
+   "bm_pct_r1000": 41,
+   "cfo_pct_r1000": 53,
    "russell_growth_fraction": 0.5
   },
   {
@@ -177,6 +295,8 @@
    "book_to_market": 0.023,
    "cfo_ttm_bn": 145.1,
    "cfo_to_book": 1.294,
+   "bm_pct_r1000": 2,
+   "cfo_pct_r1000": 89,
    "russell_growth_fraction": 0.542
   },
   {
@@ -195,6 +315,8 @@
    "book_to_market": 0.189,
    "cfo_ttm_bn": 133.09,
    "cfo_to_book": 0.489,
+   "bm_pct_r1000": 55,
+   "cfo_pct_r1000": 66,
    "russell_growth_fraction": 0.818
   },
   {
@@ -211,8 +333,10 @@
    "ni_period_end": "2026-07-26",
    "rank_in_fund": null,
    "book_to_market": 0.076,
-   "cfo_ttm_bn": null,
-   "cfo_to_book": null,
+   "cfo_ttm_bn": 134.36,
+   "cfo_to_book": 0.587,
+   "bm_pct_r1000": 24,
+   "cfo_pct_r1000": 72,
    "russell_growth_fraction": 1.0
   },
   {
@@ -229,8 +353,10 @@
    "ni_period_end": "2026-09-30",
    "rank_in_fund": null,
    "book_to_market": 0.208,
-   "cfo_ttm_bn": null,
-   "cfo_to_book": null,
+   "cfo_ttm_bn": 179.55,
+   "cfo_to_book": 0.265,
+   "bm_pct_r1000": 60,
+   "cfo_pct_r1000": 24,
    "russell_growth_fraction": 1.0
   },
   {
@@ -249,6 +375,8 @@
    "book_to_market": 0.206,
    "cfo_ttm_bn": 89.67,
    "cfo_to_book": 0.648,
+   "bm_pct_r1000": 59,
+   "cfo_pct_r1000": 79,
    "russell_growth_fraction": 1.0
   },
   {
@@ -267,6 +395,8 @@
    "book_to_market": 0.201,
    "cfo_ttm_bn": 17.55,
    "cfo_to_book": 0.968,
+   "bm_pct_r1000": 59,
+   "cfo_pct_r1000": 86,
    "russell_growth_fraction": 1.0
   },
   {
@@ -285,6 +415,8 @@
    "book_to_market": 0.189,
    "cfo_ttm_bn": 11.14,
    "cfo_to_book": 0.367,
+   "bm_pct_r1000": 57,
+   "cfo_pct_r1000": 46,
    "russell_growth_fraction": 0.0
   },
   {
@@ -303,6 +435,8 @@
    "book_to_market": 0.073,
    "cfo_ttm_bn": 15.82,
    "cfo_to_book": 0.442,
+   "bm_pct_r1000": 23,
+   "cfo_pct_r1000": 63,
    "russell_growth_fraction": 0.437
   },
   {
@@ -321,6 +455,8 @@
    "book_to_market": 0.032,
    "cfo_ttm_bn": 30.64,
    "cfo_to_book": 0.761,
+   "bm_pct_r1000": 11,
+   "cfo_pct_r1000": 82,
    "russell_growth_fraction": 1.0
   },
   {
@@ -339,6 +475,8 @@
    "book_to_market": 0.407,
    "cfo_ttm_bn": 70.59,
    "cfo_to_book": 0.266,
+   "bm_pct_r1000": 82,
+   "cfo_pct_r1000": 29,
    "russell_growth_fraction": 0.0
   },
   {
@@ -357,6 +495,8 @@
    "book_to_market": 0.452,
    "cfo_ttm_bn": -84.16,
    "cfo_to_book": null,
+   "bm_pct_r1000": 86,
+   "cfo_pct_r1000": null,
    "russell_growth_fraction": 0.0
   }
  ],
@@ -377,6 +517,8 @@
    "book_to_market": 0.479,
    "cfo_ttm_bn": 1.23,
    "cfo_to_book": 0.413,
+   "bm_pct_r1000": null,
+   "cfo_pct_r1000": null,
    "russell_growth_fraction": null
   },
   {
@@ -395,6 +537,8 @@
    "book_to_market": 0.814,
    "cfo_ttm_bn": 1.76,
    "cfo_to_book": 0.357,
+   "bm_pct_r1000": null,
+   "cfo_pct_r1000": null,
    "russell_growth_fraction": null
   },
   {
@@ -413,6 +557,8 @@
    "book_to_market": 0.19,
    "cfo_ttm_bn": 0.81,
    "cfo_to_book": 0.605,
+   "bm_pct_r1000": null,
+   "cfo_pct_r1000": null,
    "russell_growth_fraction": null
   },
   {
@@ -431,6 +577,8 @@
    "book_to_market": 0.445,
    "cfo_ttm_bn": 0.86,
    "cfo_to_book": 0.31,
+   "bm_pct_r1000": null,
+   "cfo_pct_r1000": null,
    "russell_growth_fraction": 0.072
   },
   {
@@ -449,6 +597,8 @@
    "book_to_market": 0.494,
    "cfo_ttm_bn": 0.64,
    "cfo_to_book": 0.218,
+   "bm_pct_r1000": null,
+   "cfo_pct_r1000": null,
    "russell_growth_fraction": 0.0
   }
  ],
@@ -616,7 +766,8 @@
   ],
   "small_cap_sleeves": 27.1,
   "us_sleeves_loss_share": 4.3,
-  "us_sleeves_coverage": 97.7
+  "us_sleeves_coverage": 97.7,
+  "us_sleeves_loss_share_max": 6.6
  },
  "factsheets_2026_09_30": [
   {
@@ -764,7 +915,7 @@
    "issuer": "CIK1720592",
    "ticker": "RPAY",
    "index": "IWM",
-   "ratio": 1060.755,
+   "ratio": 1060.88,
    "weight": 0.0098
   },
   {
@@ -778,7 +929,7 @@
    "issuer": "CIK1840502",
    "ticker": "TBLA",
    "index": "IWM",
-   "ratio": 1911.406,
+   "ratio": 1911.631,
    "weight": 0.0091
   },
   {
