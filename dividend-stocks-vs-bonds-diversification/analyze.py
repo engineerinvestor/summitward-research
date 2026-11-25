@@ -589,6 +589,67 @@ long_out["declines_20pct"] = {"episodes": ep_out, "worse_hi10": worse10,
                               "worse_hi30": worse30}  # fmt: skip
 R["long_history"] = long_out
 
+# ---------------------------------------------------------------- 4c. common window
+print("=" * 78)
+print("4c. Common window 2005-01 to 2025-12: size of the differences, not just signs")
+CW = slice("2005-01", "2025-12")
+cw_rows = []
+for key, label, s in [
+    ("vw_hi10", "Top 10% by yield", VW["Hi 10"]),
+    ("market", "U.S. market", MKT),
+    ("vustx", "Long-term Treasuries (VUSTX)", mret["VUSTX"]),
+    ("vbmfx", "Total bond market (VBMFX)", mret["VBMFX"]),
+    ("gld", "Gold (GLD)", mret["GLD"]),
+    ("vgsix", "REITs (VGSIX)", mret["VGSIX"]),
+]:
+    d = pd.concat([s.rename("p"), MKT.rename("m")], axis=1).loc[CW].dropna()
+    st = year_stats(d["p"], d["m"])
+    wealth = (1 + d["p"]).cumprod()
+    cw_rows.append({
+        "key": key, "label": label, "n": len(d),
+        "corr": rnd(st["abs"], 3), "beta": rnd(st["beta"], 3),
+        "vol": rnd(d["p"].std(ddof=1) * np.sqrt(12)),
+        "max_dd": rnd((wealth / wealth.cummax() - 1).min()),
+        "cagr": rnd(wealth.iloc[-1] ** (12 / len(d)) - 1),
+    })  # fmt: skip
+cwd = pd.concat(
+    [VW["Hi 10"].rename("vw_hi10"), MKT.rename("market"), mret["VUSTX"].rename("vustx"),
+     mret["VBMFX"].rename("vbmfx"), mret["GLD"].rename("gld"),
+     mret["VGSIX"].rename("vgsix")], axis=1,
+).loc[CW].dropna()  # fmt: skip
+cut = cwd["market"].quantile(0.10)
+worst = cwd[cwd["market"] <= cut]
+for r in cw_rows:
+    r["worst10_avg"] = rnd(worst[r["key"]].mean())
+    print(
+        f"  {r['label']:30s} n={r['n']} corr {r['corr']:+.2f} beta {r['beta']:+.2f} "
+        f"vol {r['vol'] * 100:5.1f}% maxDD {r['max_dd'] * 100:6.1f}% "
+        f"CAGR {r['cagr'] * 100:5.2f}% worst-10% months avg {r['worst10_avg'] * 100:+.2f}%"
+    )
+print(f"  worst 10% of market months: n={len(worst)}, market return <= {cut * 100:.2f}%")
+R["common_window"] = {"start": "2005-01", "end": "2025-12", "n": int(len(cwd)),
+                      "worst10_n": int(len(worst)), "rows": cw_rows}  # fmt: skip
+
+# sampling noise in the yearly signs (12 monthly observations per year)
+rel = np.array([r["rel"] for r in dec_rows])
+noise = {"n": len(rel), "within_033": int((np.abs(rel) < 0.33).sum()),
+         "below_neg033": int((rel < -0.33).sum())}  # fmt: skip
+print(
+    f"  Top 10% yearly relative correlations within 0.33 of zero (about one standard "
+    f"error with 12 months): {noise['within_033']} of {noise['n']}; below -0.33: "
+    f"{noise['below_neg033']}"
+)
+R["sign_noise"] = noise
+
+# cross-check the unusual 2023 long-Treasury beta with an independent fund
+chk = {}
+for t in ["VUSTX", "TLT"]:
+    s = mret[t]
+    st = year_stats(s[s.index.year == 2023], MKT[MKT.index.year == 2023])
+    chk[t] = {"beta": rnd(st["beta"], 3), "corr": rnd(st["abs"], 3), "ret": rnd(st["ret_p"])}
+print(f"  2023 long-Treasury check vs the market: {chk}")
+R["treasury_2023_check"] = chk
+
 # ---------------------------------------------------------------- 5. regressions
 print("=" * 78)
 print("5. Factor regressions, excess returns over T-bills (OLS, Newey-West 6 lags)")

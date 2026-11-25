@@ -21,7 +21,7 @@ Fama-French three-factor and five-factor-plus-momentum regressions.
 
 | Script | What it does | Output |
 | --- | --- | --- |
-| `analyze.py` | Calendar-year absolute and relative correlations and betas, 1986-2025 (also 1928-2025), for French's top 10%, 20% and 30% dividend-yield portfolios against the CRSP market, with an S&P 500 total-return robustness check; a 70/30 stock/T-bill mix and a beta-matched mix; VUSTX, VBMFX, GLD, GC=F and VGSIX on the same tests; full-period betas, volatilities and the beta_rel = beta - 1 check; factor regressions with Newey-West t-statistics; daily-return counts for SPYD, SCHD and VYM against SPY; the 2021-2026 daily comparison against TLT, IEF, BND, GLD and VNQ; 2022 returns, the value factor's returns in 2000, 2001 and 2022, the 2020 crash and trailing correlations; BofA's 40-year cross-asset comparison scored mixed (decile relative vs. asset actual) and the same way (both relative); and July 1927 to June 2026 statistics with beta-matched market/T-bill blends and every U.S. market decline of 20% or more from a prior high | `results.json`, `out.txt` (printed output) |
+| `analyze.py` | Calendar-year absolute and relative correlations and betas, 1986-2025 (also 1928-2025), for French's top 10%, 20% and 30% dividend-yield portfolios against the CRSP market, with an S&P 500 total-return robustness check; a 70/30 stock/T-bill mix and a beta-matched mix; VUSTX, VBMFX, GLD, GC=F and VGSIX on the same tests; full-period betas, volatilities and the beta_rel = beta - 1 check; factor regressions with Newey-West t-statistics; daily-return counts for SPYD, SCHD and VYM against SPY; the 2021-2026 daily comparison against TLT, IEF, BND, GLD and VNQ; 2022 returns, the value factor's returns in 2000, 2001 and 2022, the 2020 crash and trailing correlations; BofA's 40-year cross-asset comparison scored mixed (decile relative vs. asset actual) and the same way (both relative); and July 1927 to June 2026 statistics with beta-matched market/T-bill blends and every U.S. market decline of 20% or more from a prior high; a 2005-2025 common-window table (correlation, beta, volatility, maximum drawdown, CAGR, average return in the worst 10% of market months); the share of yearly correlations within one standard error of zero; and a TLT cross-check of VUSTX's 2023 beta | `results.json`, `out.txt` (printed output) |
 
 Needs numpy, pandas and yfinance:
 
@@ -94,3 +94,13 @@ declines of 20% or more from a prior high, the top 10% fell further than the
 market in 4 (1929-32, 1946-47, 2007-09, 2020), the top 30% in 3. Declines run
 from a market high to the lowest month-end before that high was regained, so
 1937-38 is not counted separately.
+
+Common window, January 2005 to December 2025 (252 months): in the 26 worst
+market months the top 10% averaged -7.30% (market -7.93%, VUSTX +1.26%, VBMFX
+-0.12%, GLD +1.53%); maximum drawdowns -73.4%, -50.3%, -45.3%, -17.5%, -42.9%.
+16 of the 40 yearly relative correlations for the top 10% sit within 0.33 of
+zero, about one standard error with 12 months. VUSTX's 2023 beta of 1.07 is
+corroborated by TLT's 1.16 over the same months.
+
+Every published number is frozen in `results.json`. Yahoo prices are not
+redistributed; a rerun downloads them and can move the fourth decimal.
