@@ -1,0 +1,210 @@
+==============================================================================
+Loading Ken French data (202609 CRSP cut)
+  Market and RF 1926-07..2026-09
+  D/P VW 1927-07..2026-09; columns ['<= 0', 'Lo 30', 'Med 40', 'Hi 30', 'Lo 20', 'Qnt 2', 'Qnt 3', 'Qnt 4', 'Hi 20', 'Lo 10', '2-Dec', '3-Dec', '4-Dec', '5-Dec', '6-Dec', '7-Dec', '8-Dec', '9-Dec', 'Hi 10']
+Loading Yahoo Finance daily adjusted closes
+  Yahoo daily data through 2026-11-23
+   ^SP500TR  1988-01-04..2026-11-23
+   VUSTX     1986-05-19..2026-11-23
+   VBMFX     1986-12-11..2026-11-23
+   VGSIX     1996-05-13..2026-11-23
+   GLD       2004-11-18..2026-11-23
+   GC=F      2000-08-30..2026-11-23
+   SPY       1993-01-29..2026-11-23
+   SPYD      2015-10-22..2026-11-23
+   SCHD      2011-10-20..2026-11-23
+   VYM       2006-11-16..2026-11-23
+   TLT       2002-07-30..2026-11-23
+   IEF       2002-07-30..2026-11-23
+   BND       2007-04-10..2026-11-23
+   VNQ       2004-09-29..2026-11-23
+==============================================================================
+1. Ken French dividend-yield portfolios vs the CRSP market, calendar years
+   (12 monthly returns per year). abs = Corr(R_D, R_M); rel = Corr(R_D - R_M, R_M)
+  Top 10% by yield, value-weighted     1986-2025: abs neg  3/40, rel neg 35/40 | 1928-2025: abs 3/98, rel 67/98
+  Top 10% by yield, equal-weighted     1986-2025: abs neg  0/40, rel neg 31/40 | 1928-2025: abs 0/98, rel 66/98
+  Top 20% by yield, value-weighted     1986-2025: abs neg  0/40, rel neg 34/40 | 1928-2025: abs 0/98, rel 70/98
+  Top 20% by yield, equal-weighted     1986-2025: abs neg  0/40, rel neg 34/40 | 1928-2025: abs 0/98, rel 67/98
+  Top 30% by yield, value-weighted     1986-2025: abs neg  0/40, rel neg 36/40 | 1928-2025: abs 0/98, rel 71/98
+  Robustness, S&P 500 total return (^SP500TR) as the market, 1989-2025:
+    Top 10% by yield, value-weighted     abs neg 1/37, rel neg 32/37
+    Top 10% by yield, equal-weighted     abs neg 0/37, rel neg 28/37
+    Top 20% by yield, value-weighted     abs neg 0/37, rel neg 33/37
+    monthly corr of CRSP market with ^SP500TR: 0.989
+  Per year, top 10% value-weighted (abs corr / rel corr / beta / decile ret / market ret):
+    1986 +0.860 -0.309  0.84  +27.5%  +16.4%
+    1987 +0.787 -0.888  0.40   +6.4%   +1.6%
+    1988 +0.492 -0.358  0.60  +14.9%  +18.0%
+    1989 +0.709 -0.756  0.47  +31.2%  +28.9%
+    1990 +0.928 -0.805  0.65   -9.5%   -6.0%
+    1991 +0.847 -0.750  0.58  +22.9%  +34.8%
+    1992 +0.589 -0.388  0.63  +23.5%   +9.8%
+    1993 +0.380 -0.578  0.37  +16.6%  +11.2%
+    1994 +0.643 -0.364  0.68   -6.6%   -0.1%
+    1995 -0.124 -0.581 -0.21  +31.2%  +36.9%
+    1996 +0.490 -0.601  0.43   +2.6%  +21.2%
+    1997 +0.480 -0.616  0.41  +29.7%  +31.2%
+    1998 +0.271 -0.858  0.14  +15.2%  +24.3%
+    1999 -0.030 -0.705 -0.03  -16.5%  +25.2%
+    2000 -0.042 -0.682 -0.05  +52.2%  -11.6%
+    2001 +0.459 -0.896  0.20   +5.7%  -11.2%
+    2002 +0.637 -0.418  0.64   -7.6%  -21.1%
+    2003 +0.668 +0.172  1.24  +35.6%  +31.7%  <- beta > 1
+    2004 +0.581 -0.308  0.69  +14.0%  +11.9%
+    2005 +0.792 -0.687  0.58   +4.5%   +6.1%
+    2006 +0.500 -0.258  0.68  +26.8%  +15.4%
+    2007 +0.813 +0.098  1.08   +0.4%   +5.7%  <- beta > 1
+    2008 +0.682 -0.013  0.99  -47.9%  -36.7%
+    2009 +0.938 +0.811  2.04   +6.9%  +28.6%  <- beta > 1
+    2010 +0.858 -0.260  0.86  +18.1%  +17.4%
+    2011 +0.756 -0.842  0.43  +13.5%   +0.5%
+    2012 +0.326 -0.758  0.23  +13.8%  +16.3%
+    2013 +0.727 -0.086  0.92  +25.7%  +35.2%
+    2014 +0.792 -0.400  0.75  +10.6%  +11.7%
+    2015 +0.844 -0.365  0.80   -5.2%   +0.2%
+    2016 +0.696 -0.236  0.80  +37.7%  +13.6%
+    2017 +0.360 +0.018  1.05  +15.5%  +22.3%  <- beta > 1
+    2018 +0.724 -0.600  0.58   -4.2%   -5.0%
+    2019 +0.809 -0.307  0.81  +24.3%  +30.6%
+    2020 +0.889 +0.186  1.11   -7.8%  +24.1%  <- beta > 1
+    2021 +0.404 -0.166  0.72  +48.6%  +23.9%
+    2022 +0.703 -0.287  0.77  +21.4%  -19.9%
+    2023 +0.813 -0.263  0.84   +7.8%  +26.7%
+    2024 +0.631 -0.271  0.74  +20.0%  +25.0%
+    2025 +0.060 -0.705  0.06  +10.9%  +17.5%
+  beta > 1 (positive relative correlation) in: [2003, 2007, 2009, 2017, 2020]
+  negative absolute correlation in: [1995, 1999, 2000]
+  market down years: [1990, 1994, 2000, 2001, 2002, 2008, 2018, 2022]; decile also lost money in 5 of 8: [1990, 1994, 2002, 2008, 2018]
+    1990: market -6.0%, top decile -9.5%
+    1994: market -0.1%, top decile -6.6%
+    2000: market -11.6%, top decile +52.2%
+    2001: market -11.2%, top decile +5.7%
+    2002: market -21.1%, top decile -7.6%
+    2008: market -36.7%, top decile -47.9%
+    2018: market -5.0%, top decile -4.2%
+    2022: market -19.9%, top decile +21.4%
+  firms in portfolio 1986-2025: {'Hi 10': {'min': 107, 'max': 207, 'median': 163}, 'Hi 20': {'min': 246, 'max': 441, 'median': 335}}
+==============================================================================
+2. Controls with no stock selection
+  70% market, 30% T-bills                        abs neg 0/40, rel neg 40/40 | 1928-2025 rel 98/98
+  67% market, rest T-bills (top decile's beta)   abs neg 0/40, rel neg 40/40 | 1928-2025 rel 98/98
+==============================================================================
+3. Bonds, gold and REITs vs the CRSP market, same two statistics
+  Long-term Treasuries (VUSTX)   1987-2025: abs neg 20/39, rel neg 38/39 | top decile same years: abs 3/39, rel 34/39
+      years with non-negative relative correlation: [2023]
+  Total bond market (VBMFX)      1987-2025: abs neg 17/39, rel neg 39/39 | top decile same years: abs 3/39, rel 34/39
+  Gold (GLD)                     2005-2025: abs neg  8/21, rel neg 21/21 | top decile same years: abs 0/21, rel 17/21
+  Gold futures (GC=F)            2001-2025: abs neg  9/25, rel neg 25/25 | top decile same years: abs 0/25, rel 20/25
+  REITs (VGSIX)                  1997-2025: abs neg  1/29, rel neg 20/29 | top decile same years: abs 2/29, rel 24/29
+      years with non-negative relative correlation: [2005, 2006, 2007, 2008, 2009, 2011, 2021, 2023, 2024]
+==============================================================================
+4. Full-period monthly statistics (1986-01..2025-12 or the asset's own window)
+  Top 10% VW   1986-01..2025-12 n=480: beta +0.667 abs +0.613 rel -0.362 vol 16.9% | regression slope of relative returns -0.3331
+  Top 10% EW   1986-01..2025-12 n=480: beta +0.803 abs +0.708 rel -0.238 vol 17.7% | regression slope of relative returns -0.1966
+  Top 20% VW   1986-01..2025-12 n=480: beta +0.722 abs +0.745 rel -0.395 vol 15.1% | regression slope of relative returns -0.2784
+  CRSP market  1986-01..2025-12 n=480: beta +1.000 abs +1.000 rel n/a vol 15.6% | regression slope of relative returns +0.0000
+  VUSTX        1986-06..2025-12 n=475: beta -0.013 abs -0.018 rel -0.831 vol 10.6% | regression slope of relative returns -1.0126
+  VBMFX        1987-01..2025-12 n=468: beta +0.044 abs +0.163 rel -0.963 vol 4.2% | regression slope of relative returns -0.9555
+  GLD          2004-12..2025-12 n=253: beta +0.077 abs +0.071 rel -0.646 vol 16.7% | regression slope of relative returns -0.9227
+  VGSIX        1996-06..2025-12 n=355: beta +0.763 abs +0.612 rel -0.234 vol 19.8% | regression slope of relative returns -0.2372
+==============================================================================
+5. Factor regressions, excess returns over T-bills (OLS, Newey-West 6 lags)
+  vw_hi10 capm: 1986-01..2025-12 n=480 adjR2=0.375 alpha=+3.39%/yr (t=1.58, NW t=1.21)
+     Mkt-RF +0.667 (t=16.99, NW t=7.36)
+  vw_hi10 ff3: 1986-01..2025-12 n=480 adjR2=0.646 alpha=+1.00%/yr (t=0.61, NW t=0.53)
+     Mkt-RF +0.763 (t=24.96, NW t=12.45)
+        SMB -0.071 (t=-1.58, NW t=-1.46)
+        HML +0.806 (t=18.64, NW t=9.94)
+  vw_hi10 ff5_mom: 1986-01..2025-12 n=480 adjR2=0.661 alpha=+0.91%/yr (t=0.55, NW t=0.51)
+     Mkt-RF +0.770 (t=23.59, NW t=14.56)
+        SMB -0.032 (t=-0.65, NW t=-0.53)
+        HML +0.630 (t=10.57, NW t=4.28)
+        RMW +0.070 (t=1.13, NW t=0.77)
+        CMA +0.312 (t=3.61, NW t=2.14)
+        Mom -0.122 (t=-3.93, NW t=-2.59)
+  vw_hi10 ff5_mom through latest: 1986-01..2026-09 n=489 adjR2=0.656 alpha=+0.83%/yr (t=0.51, NW t=0.47)
+     Mkt-RF +0.771 (t=23.62, NW t=14.68)
+        SMB -0.020 (t=-0.42, NW t=-0.35)
+        HML +0.612 (t=10.38, NW t=4.25)
+        RMW +0.102 (t=1.74, NW t=1.19)
+        CMA +0.325 (t=3.79, NW t=2.28)
+        Mom -0.135 (t=-4.44, NW t=-2.90)
+  vw_hi20 capm: 1986-01..2025-12 n=480 adjR2=0.554 alpha=+2.65%/yr (t=1.64, NW t=1.27)
+     Mkt-RF +0.721 (t=24.39, NW t=12.09)
+  vw_hi20 ff3: 1986-01..2025-12 n=480 adjR2=0.784 alpha=+0.64%/yr (t=0.57, NW t=0.54)
+     Mkt-RF +0.807 (t=37.88, NW t=23.96)
+        SMB -0.105 (t=-3.35, NW t=-2.73)
+        HML +0.650 (t=21.59, NW t=12.80)
+  vw_hi20 ff5_mom: 1986-01..2025-12 n=480 adjR2=0.803 alpha=+0.02%/yr (t=0.02, NW t=0.02)
+     Mkt-RF +0.827 (t=37.27, NW t=28.55)
+        SMB -0.043 (t=-1.29, NW t=-0.94)
+        HML +0.469 (t=11.58, NW t=5.49)
+        RMW +0.137 (t=3.24, NW t=2.53)
+        CMA +0.325 (t=5.55, NW t=4.14)
+        Mom -0.099 (t=-4.69, NW t=-3.35)
+  vw_hi20 ff5_mom through latest: 1986-01..2026-09 n=489 adjR2=0.796 alpha=-0.01%/yr (t=-0.01, NW t=-0.01)
+     Mkt-RF +0.823 (t=36.78, NW t=28.50)
+        SMB -0.022 (t=-0.67, NW t=-0.48)
+        HML +0.456 (t=11.26, NW t=5.44)
+        RMW +0.170 (t=4.21, NW t=3.14)
+        CMA +0.345 (t=5.87, NW t=4.43)
+        Mom -0.111 (t=-5.31, NW t=-3.69)
+  ew_hi10 capm: 1986-01..2025-12 n=480 adjR2=0.503 alpha=+2.12%/yr (t=1.06, NW t=0.86)
+     Mkt-RF +0.808 (t=22.03, NW t=9.28)
+  ew_hi10 ff3: 1986-01..2025-12 n=480 adjR2=0.780 alpha=+0.63%/yr (t=0.47, NW t=0.45)
+     Mkt-RF +0.814 (t=32.27, NW t=15.80)
+        SMB +0.497 (t=13.32, NW t=8.21)
+        HML +0.800 (t=22.42, NW t=14.79)
+  ew_hi10 ff5_mom: 1986-01..2025-12 n=480 adjR2=0.810 alpha=+1.16%/yr (t=0.91, NW t=0.86)
+     Mkt-RF +0.793 (t=31.04, NW t=17.11)
+        SMB +0.549 (t=14.37, NW t=9.19)
+        HML +0.524 (t=11.25, NW t=7.88)
+        RMW +0.148 (t=3.06, NW t=1.95)
+        CMA +0.199 (t=2.94, NW t=1.95)
+        Mom -0.195 (t=-8.00, NW t=-5.27)
+  ew_hi10 ff5_mom through latest: 1986-01..2026-09 n=489 adjR2=0.808 alpha=+1.25%/yr (t=0.98, NW t=0.93)
+     Mkt-RF +0.796 (t=31.32, NW t=17.17)
+        SMB +0.539 (t=14.34, NW t=9.32)
+        HML +0.537 (t=11.70, NW t=8.33)
+        RMW +0.120 (t=2.63, NW t=1.68)
+        CMA +0.173 (t=2.59, NW t=1.72)
+        Mom -0.187 (t=-7.85, NW t=-5.00)
+==============================================================================
+6. Dividend ETFs vs SPY, daily returns, complete calendar years
+  SPYD: abs neg 0/10, rel neg 9/10; beta>1 in [2020]
+  SCHD: abs neg 0/14, rel neg 14/14; beta>1 in []
+  VYM: abs neg 0/19, rel neg 18/19; beta>1 in [2009]
+==============================================================================
+7. The 'four of the past five years' comparison, daily returns vs SPY
+   (SPYD stands in for the top-yield decile of the S&P 500; 2026 is to Nov 23)
+  2021  n=252 SPYD abs +0.63 rel -0.19 | abs: TLT -0.14 IEF -0.09 BND +0.01 GLD +0.17 VNQ +0.67 | rel: TLT -0.74 IEF -0.93 BND -0.96 GLD -0.62 VNQ -0.28
+  2022  n=251 SPYD abs +0.84 rel -0.56 | abs: TLT +0.09 IEF +0.19 BND +0.32 GLD +0.19 VNQ +0.82 | rel: TLT -0.74 IEF -0.91 BND -0.94 GLD -0.82 VNQ -0.27
+  2023  n=251 SPYD abs +0.76 rel -0.00 | abs: TLT +0.13 IEF +0.04 BND +0.15 GLD +0.00 VNQ +0.71 | rel: TLT -0.51 IEF -0.80 BND -0.86 GLD -0.70 VNQ +0.09
+  2024  n=252 SPYD abs +0.48 rel -0.50 | abs: TLT +0.06 IEF +0.07 BND +0.16 GLD +0.27 VNQ +0.47 | rel: TLT -0.64 IEF -0.88 BND -0.91 GLD -0.51 VNQ -0.33
+  2025  n=252 SPYD abs +0.69 rel -0.60 | abs: TLT +0.09 IEF -0.10 BND +0.08 GLD +0.03 VNQ +0.63 | rel: TLT -0.84 IEF -0.96 BND -0.97 GLD -0.69 VNQ -0.56
+  2026* n=225 SPYD abs +0.26 rel -0.70 | abs: TLT +0.20 IEF +0.18 BND +0.27 GLD +0.40 VNQ +0.33 | rel: TLT -0.81 IEF -0.94 BND -0.96 GLD -0.11 VNQ -0.60
+  2021-2025: SPYD's relative correlation was below every other asset's ABSOLUTE correlation in 5 of 5 years; below every other asset's RELATIVE correlation in 0 of 5
+  Monthly version, 2021-2025, vs CRSP market:
+    2021 top decile rel -0.17 | abs: vustx +0.17 vbmfx +0.16 gld +0.17 vgsix +0.89 | rel: vustx -0.59 vbmfx -0.95 gld -0.46 vgsix +0.42
+    2022 top decile rel -0.29 | abs: vustx +0.52 vbmfx +0.66 gld +0.19 vgsix +0.90 | rel: vustx -0.77 vbmfx -0.94 gld -0.84 vgsix -0.20
+    2023 top decile rel -0.26 | abs: vustx +0.85 vbmfx +0.83 gld +0.35 vgsix +0.92 | rel: vustx +0.11 vbmfx -0.87 gld -0.58 vgsix +0.58
+    2024 top decile rel -0.27 | abs: vustx +0.72 vbmfx +0.62 gld -0.16 vgsix +0.75 | rel: vustx -0.28 vbmfx -0.86 gld -0.75 vgsix +0.23
+    2025 top decile rel -0.70 | abs: vustx -0.03 vbmfx -0.06 gld -0.35 vgsix +0.27 | rel: vustx -0.83 vbmfx -0.97 gld -0.80 vgsix -0.78
+==============================================================================
+8. Episodes
+  2022 total return: SPY -18.2%, SCHD -3.3%, SPYD -1.2%, VYM -0.4%, BND -13.1%, GLD -0.8%
+  2000 value factor (HML) +44.5%; CRSP market -11.6%
+  2001 value factor (HML) +15.6%; CRSP market -11.2%
+  2022 value factor (HML) +31.7%; CRSP market -19.9%
+  COVID SPY: -33.7% (2020-02-19 to 2020-03-23)
+  COVID SCHD: -33.4% (2020-01-23 to 2020-03-23)
+  COVID SPYD: -46.4% (2020-01-16 to 2020-03-23)
+  COVID VYM: -35.2% (2020-01-17 to 2020-03-23)
+  SPYD daily beta to SPY in 2020: 1.18
+  Trailing monthly correlation with SPY ending 2026-10:
+    SCHD: {'1y': 0.234, '3y': 0.404, '5y': 0.663, '10y': 0.802, 'rolling12_min_since_2024_11': 0.14, 'rolling12_max_since_2024_11': 0.72}
+    SPYD: {'1y': 0.207, '3y': 0.446, '5y': 0.655, '10y': 0.75, 'rolling12_min_since_2024_11': 0.1, 'rolling12_max_since_2024_11': 0.68}
+    VYM: {'1y': 0.522, '3y': 0.696, '5y': 0.802, '10y': 0.872, 'rolling12_min_since_2024_11': 0.52, 'rolling12_max_since_2024_11': 0.87}
+    12 months to 2026-10: {'SCHD': 0.3845, 'SPY': 0.12}
+==============================================================================
+Wrote results.json
