@@ -631,6 +631,49 @@
    }
   }
  ],
+ "bofa_40yr_test": {
+  "by_asset": {
+   "vustx": {
+    "label": "Long-term Treasuries (VUSTX)",
+    "n": 39,
+    "first": 1987,
+    "last": 2025,
+    "mixed": 28,
+    "same": 1
+   },
+   "vbmfx": {
+    "label": "Total bond market (VBMFX)",
+    "n": 39,
+    "first": 1987,
+    "last": 2025,
+    "mixed": 31,
+    "same": 0
+   },
+   "gld": {
+    "label": "Gold (GLD)",
+    "n": 21,
+    "first": 2005,
+    "last": 2025,
+    "mixed": 18,
+    "same": 5
+   },
+   "vgsix": {
+    "label": "REITs (VGSIX)",
+    "n": 29,
+    "first": 1997,
+    "last": 2025,
+    "mixed": 29,
+    "same": 18
+   }
+  },
+  "all_available": {
+   "n": 39,
+   "first": 1987,
+   "last": 2025,
+   "mixed": 28,
+   "same": 0
+  }
+ },
  "counts_chart": [
   {
    "key": "vw_hi10",
@@ -794,6 +837,119 @@
    "beta_rel_regression": -0.2372
   }
  ],
+ "long_history": {
+  "start": "1927-07",
+  "end": "2026-06",
+  "n": 1188,
+  "vw_hi10": {
+   "beta": 0.981,
+   "cagr": 0.1067,
+   "vol": 0.2258,
+   "sharpe": 0.413,
+   "max_dd": -0.8693,
+   "blend": {
+    "cagr": 0.1017,
+    "vol": 0.1807,
+    "sharpe": 0.448,
+    "max_dd": -0.8299
+   }
+  },
+  "vw_hi30": {
+   "beta": 0.941,
+   "cagr": 0.1133,
+   "vol": 0.1958,
+   "sharpe": 0.479,
+   "max_dd": -0.8793,
+   "blend": {
+    "cagr": 0.0995,
+    "vol": 0.1733,
+    "sharpe": 0.448,
+    "max_dd": -0.815
+   }
+  },
+  "market": {
+   "cagr": 0.1027,
+   "vol": 0.1842,
+   "sharpe": 0.448,
+   "max_dd": -0.8365
+  },
+  "declines_20pct": {
+   "episodes": [
+    {
+     "peak": "1929-08",
+     "trough": "1932-06",
+     "market": -0.8365,
+     "vw_hi10": -0.862,
+     "vw_hi30": -0.8742
+    },
+    {
+     "peak": "1946-05",
+     "trough": "1947-05",
+     "market": -0.2426,
+     "vw_hi10": -0.313,
+     "vw_hi30": -0.2289
+    },
+    {
+     "peak": "1961-12",
+     "trough": "1962-06",
+     "market": -0.2307,
+     "vw_hi10": -0.1519,
+     "vw_hi30": -0.1159
+    },
+    {
+     "peak": "1968-11",
+     "trough": "1970-06",
+     "market": -0.3355,
+     "vw_hi10": -0.2304,
+     "vw_hi30": -0.265
+    },
+    {
+     "peak": "1972-12",
+     "trough": "1974-09",
+     "market": -0.4651,
+     "vw_hi10": -0.3751,
+     "vw_hi30": -0.3109
+    },
+    {
+     "peak": "1987-08",
+     "trough": "1987-11",
+     "market": -0.2985,
+     "vw_hi10": -0.11,
+     "vw_hi30": -0.2286
+    },
+    {
+     "peak": "2000-08",
+     "trough": "2002-09",
+     "market": -0.4499,
+     "vw_hi10": 0.1458,
+     "vw_hi30": 0.0273
+    },
+    {
+     "peak": "2007-10",
+     "trough": "2009-02",
+     "market": -0.5031,
+     "vw_hi10": -0.7311,
+     "vw_hi30": -0.5541
+    },
+    {
+     "peak": "2020-01",
+     "trough": "2020-03",
+     "market": -0.2022,
+     "vw_hi10": -0.2496,
+     "vw_hi30": -0.2458
+    },
+    {
+     "peak": "2021-12",
+     "trough": "2022-09",
+     "market": -0.2484,
+     "vw_hi10": 0.0602,
+     "vw_hi30": -0.0756
+    }
+   ],
+   "worse_hi10": 4,
+   "worse_hi30": 3
+  }
+ },
  "regressions": {
   "vw_hi10": {
    "capm": {

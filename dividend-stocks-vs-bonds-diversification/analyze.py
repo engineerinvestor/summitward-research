@@ -427,6 +427,49 @@ for key, label, s in others:
         print(f"      years with non-negative relative correlation: {pos}")
 R["other_assets"] = other_out
 
+# BofA's own text applies the cross-asset comparison to 34 of the past 40 years:
+# the decile's relative-return correlation "more negatively correlated with S&P
+# 500 returns than gold, bonds real estate and alternatives". Count the years in
+# which the decile's relative correlation is below each asset's correlation,
+# scoring the asset on its actual returns (mixed) and on its relative returns
+# (same treatment as the decile).
+print("  BofA's 40-year cross-asset comparison, top 10% VW relative correlation vs:")
+dec_by_year = {r["year"]: r for r in dec_rows}
+by_asset = {}
+year_sets = {}
+for key, label, s in others:
+    if key == "gcf":
+        continue
+    rows = {r["year"]: r for r in monthly_full_years(s, MKT, YEARS)}
+    year_sets[key] = rows
+    mixed = sum(dec_by_year[y]["rel"] < r["abs"] for y, r in rows.items())
+    same = sum(dec_by_year[y]["rel"] < r["rel"] for y, r in rows.items())
+    yrs = sorted(rows)
+    by_asset[key] = {"label": label, "n": len(rows), "first": yrs[0], "last": yrs[-1],
+                     "mixed": int(mixed), "same": int(same)}  # fmt: skip
+    print(
+        f"    {label:30s} {yrs[0]}-{yrs[-1]} n={len(rows)}: below its actual corr "
+        f"{mixed}, below its relative corr {same}"
+    )
+bond_years = sorted(year_sets["vustx"])
+mixed_all = same_all = 0
+for y in bond_years:
+    avail = [year_sets[k][y] for k in year_sets if y in year_sets[k]]
+    d = dec_by_year[y]["rel"]
+    mixed_all += all(d < r["abs"] for r in avail)
+    same_all += all(d < r["rel"] for r in avail)
+print(
+    f"    Every available asset at once (bonds, REITs from 1997, gold from 2005), "
+    f"{bond_years[0]}-{bond_years[-1]}: mixed {mixed_all} of {len(bond_years)}, "
+    f"same {same_all} of {len(bond_years)}"
+)
+R["bofa_40yr_test"] = {
+    "by_asset": by_asset,
+    "all_available": {"n": len(bond_years), "first": bond_years[0],
+                      "last": bond_years[-1], "mixed": int(mixed_all),
+                      "same": int(same_all)},  # fmt: skip
+}
+
 # the counts table charted in the guide
 chart = []
 lookup = {d["key"]: d for d in french_counts + ctrl_out + other_out}
@@ -470,6 +513,81 @@ for key, label, s in [
     )
     assert abs(w["beta_rel_regression"] - (w["beta"] - 1)) < 1e-3
 R["full_period"] = fp
+
+# ---------------------------------------------------------------- 4b. long history
+print("=" * 78)
+print("4b. Long history, July 1927 to June 2026: risk, a beta-matched blend, and")
+print("    every U.S. market decline of 20% or more (monthly, peak to trough)")
+
+
+def long_stats(r: pd.Series, rf: pd.Series) -> dict:
+    n = len(r)
+    wealth = (1 + r).cumprod()
+    ex = r - rf
+    return {
+        "cagr": rnd(wealth.iloc[-1] ** (12 / n) - 1),
+        "vol": rnd(r.std(ddof=1) * np.sqrt(12)),
+        "sharpe": rnd(ex.mean() * 12 / (ex.std(ddof=1) * np.sqrt(12)), 3),
+        "max_dd": rnd((wealth / wealth.cummax() - 1).min()),
+    }
+
+
+LH = slice("1927-07", "2026-06")
+mkt_lh, rf_lh = MKT.loc[LH], RF.loc[LH]
+long_out = {"start": "1927-07", "end": "2026-06", "n": int(len(mkt_lh))}
+for key, s in [("vw_hi10", VW["Hi 10"]), ("vw_hi30", VW["Hi 30"])]:
+    sl = s.loc[LH]
+    b = year_stats(sl, mkt_lh)["beta"]
+    blend = b * mkt_lh + (1 - b) * rf_lh
+    long_out[key] = {"beta": rnd(b, 3), **long_stats(sl, rf_lh),
+                     "blend": long_stats(blend, rf_lh)}  # fmt: skip
+long_out["market"] = long_stats(mkt_lh, rf_lh)
+for k in ["vw_hi10", "vw_hi30"]:
+    d = long_out[k]
+    print(
+        f"  {k}: beta {d['beta']:.3f} CAGR {d['cagr'] * 100:.2f}% vol {d['vol'] * 100:.2f}% "
+        f"Sharpe {d['sharpe']:.3f} maxDD {d['max_dd'] * 100:.1f}% | beta-matched blend CAGR "
+        f"{d['blend']['cagr'] * 100:.2f}% vol {d['blend']['vol'] * 100:.2f}% Sharpe "
+        f"{d['blend']['sharpe']:.3f}"
+    )
+m = long_out["market"]
+print(f"  market: CAGR {m['cagr'] * 100:.2f}% vol {m['vol'] * 100:.2f}% Sharpe {m['sharpe']:.3f}")
+
+# drawdown episodes: from each market peak to the lowest month-end before the
+# market regains that peak; keep declines of 20% or more
+w = (1 + mkt_lh).cumprod()
+episodes, peak_i, trough_i = [], 0, 0
+vals = w.to_numpy()
+for i in range(1, len(vals)):
+    if vals[i] >= vals[peak_i]:
+        if vals[trough_i] / vals[peak_i] - 1 <= -0.20:
+            episodes.append((peak_i, trough_i))
+        peak_i = trough_i = i
+    elif vals[i] < vals[trough_i]:
+        trough_i = i
+if vals[trough_i] / vals[peak_i] - 1 <= -0.20 and trough_i > peak_i:
+    episodes.append((peak_i, trough_i))
+ep_out = []
+for pk, tr in episodes:
+    win = slice(w.index[pk + 1], w.index[tr])  # returns after the peak month-end
+    row = {"peak": ym(w.index[pk]), "trough": ym(w.index[tr]),
+           "market": rnd(np.prod(1 + mkt_lh.loc[win]) - 1)}  # fmt: skip
+    for key, s in [("vw_hi10", VW["Hi 10"]), ("vw_hi30", VW["Hi 30"])]:
+        row[key] = rnd(np.prod(1 + s.loc[win]) - 1)
+    ep_out.append(row)
+    print(
+        f"  {row['peak']} -> {row['trough']}: market {row['market'] * 100:+.1f}%, "
+        f"top 10% {row['vw_hi10'] * 100:+.1f}%, top 30% {row['vw_hi30'] * 100:+.1f}%"
+    )
+worse10 = sum(e["vw_hi10"] < e["market"] for e in ep_out)
+worse30 = sum(e["vw_hi30"] < e["market"] for e in ep_out)
+print(
+    f"  {len(ep_out)} declines of 20%+: top 10% fell further in {worse10}, "
+    f"top 30% in {worse30}"
+)
+long_out["declines_20pct"] = {"episodes": ep_out, "worse_hi10": worse10,
+                              "worse_hi30": worse30}  # fmt: skip
+R["long_history"] = long_out
 
 # ---------------------------------------------------------------- 5. regressions
 print("=" * 78)

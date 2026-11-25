@@ -2,13 +2,15 @@
 
 Supports https://summitward.com/learn/dividend-stocks-vs-bonds-diversification.
 
-Tests a BofA Global Research statistic from its November 2, 2026 equity strategy
-report, as summarized by [UnHideA](https://unhidea.com/en/articles/research-8f1495dd025e4d9f88a04525e661bf9b-en)
-(the report itself is members-only): "a factor constructed from the
-highest-yielding tenth of S&P 500 stocks had returns relative to the index that
-were negatively correlated with index returns in 34 of the past 40 years. In
-four of the past five years, its negative correlation was stronger than that of
-gold, bonds, real estate and alternative assets."
+Tests a statistic from BofA Global Research, "Equity Strategy Theme Screens:
+There will be no moment of clarity. Investment ideas for the here and now"
+(November 2, 2026, corrected; client-only, not redistributed here). Page 7 says
+that in 4 of the past 5 years, and 34 of the past 40, the relative return of
+the top decile of the S&P 500 by dividend yield was "more negatively correlated
+with S&P 500 returns than gold, bonds real estate and alternatives." Exhibit 6
+plots only the factor's own yearly relative-return correlation, 1986-2025,
+negative in 34 of 40 years. A public summary of the report is on
+[UnHideA](https://unhidea.com/en/articles/research-8f1495dd025e4d9f88a04525e661bf9b-en).
 
 Within any sample, Cov(R_D - R_M, R_M) = (beta - 1) Var(R_M), so the relative
 correlation is negative exactly when the portfolio's beta is below 1. The script
@@ -19,7 +21,7 @@ Fama-French three-factor and five-factor-plus-momentum regressions.
 
 | Script | What it does | Output |
 | --- | --- | --- |
-| `analyze.py` | Calendar-year absolute and relative correlations and betas, 1986-2025 (also 1928-2025), for French's top 10%, 20% and 30% dividend-yield portfolios against the CRSP market, with an S&P 500 total-return robustness check; a 70/30 stock/T-bill mix and a beta-matched mix; VUSTX, VBMFX, GLD, GC=F and VGSIX on the same tests; full-period betas, volatilities and the beta_rel = beta - 1 check; factor regressions with Newey-West t-statistics; daily-return counts for SPYD, SCHD and VYM against SPY; the 2021-2026 daily comparison against TLT, IEF, BND, GLD and VNQ; 2022 returns, the value factor's returns in 2000, 2001 and 2022, the 2020 crash and trailing correlations | `results.json`, `out.txt` (printed output) |
+| `analyze.py` | Calendar-year absolute and relative correlations and betas, 1986-2025 (also 1928-2025), for French's top 10%, 20% and 30% dividend-yield portfolios against the CRSP market, with an S&P 500 total-return robustness check; a 70/30 stock/T-bill mix and a beta-matched mix; VUSTX, VBMFX, GLD, GC=F and VGSIX on the same tests; full-period betas, volatilities and the beta_rel = beta - 1 check; factor regressions with Newey-West t-statistics; daily-return counts for SPYD, SCHD and VYM against SPY; the 2021-2026 daily comparison against TLT, IEF, BND, GLD and VNQ; 2022 returns, the value factor's returns in 2000, 2001 and 2022, the 2020 crash and trailing correlations; BofA's 40-year cross-asset comparison scored mixed (decile relative vs. asset actual) and the same way (both relative); and July 1927 to June 2026 statistics with beta-matched market/T-bill blends and every U.S. market decline of 20% or more from a prior high | `results.json`, `out.txt` (printed output) |
 
 Needs numpy, pandas and yfinance:
 
@@ -79,3 +81,16 @@ asset's relative correlation in 0 of 5.
 
 Value factor (HML) by year: 2000 +44.5%, 2001 +15.6%, 2022 +31.7% (CRSP market
 -11.6%, -11.2%, -19.9%).
+
+BofA's 40-year comparison, 1987-2025: the top decile's relative correlation was
+below the actual correlation of every asset with data (bonds; REITs from 1997;
+gold from 2005) in 28 of 39 years, and below their relative correlations in 0
+of 39.
+
+July 1927 to June 2026: top 30% CAGR 11.33%, volatility 19.58%, Sharpe 0.479,
+against 9.95%, 17.33% and 0.448 for a market/T-bill blend at its 0.941 beta;
+top 10% Sharpe 0.413 against 0.448 for its blend (beta 0.981). Of 10 market
+declines of 20% or more from a prior high, the top 10% fell further than the
+market in 4 (1929-32, 1946-47, 2007-09, 2020), the top 30% in 3. Declines run
+from a market high to the lowest month-end before that high was regained, so
+1937-38 is not counted separately.

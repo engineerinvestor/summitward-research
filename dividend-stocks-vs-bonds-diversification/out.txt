@@ -97,6 +97,12 @@ Loading Yahoo Finance daily adjusted closes
   Gold futures (GC=F)            2001-2025: abs neg  9/25, rel neg 25/25 | top decile same years: abs 0/25, rel 20/25
   REITs (VGSIX)                  1997-2025: abs neg  1/29, rel neg 20/29 | top decile same years: abs 2/29, rel 24/29
       years with non-negative relative correlation: [2005, 2006, 2007, 2008, 2009, 2011, 2021, 2023, 2024]
+  BofA's 40-year cross-asset comparison, top 10% VW relative correlation vs:
+    Long-term Treasuries (VUSTX)   1987-2025 n=39: below its actual corr 28, below its relative corr 1
+    Total bond market (VBMFX)      1987-2025 n=39: below its actual corr 31, below its relative corr 0
+    Gold (GLD)                     2005-2025 n=21: below its actual corr 18, below its relative corr 5
+    REITs (VGSIX)                  1997-2025 n=29: below its actual corr 29, below its relative corr 18
+    Every available asset at once (bonds, REITs from 1997, gold from 2005), 1987-2025: mixed 28 of 39, same 0 of 39
 ==============================================================================
 4. Full-period monthly statistics (1986-01..2025-12 or the asset's own window)
   Top 10% VW   1986-01..2025-12 n=480: beta +0.667 abs +0.613 rel -0.362 vol 16.9% | regression slope of relative returns -0.3331
@@ -107,6 +113,23 @@ Loading Yahoo Finance daily adjusted closes
   VBMFX        1987-01..2025-12 n=468: beta +0.044 abs +0.163 rel -0.963 vol 4.2% | regression slope of relative returns -0.9555
   GLD          2004-12..2025-12 n=253: beta +0.077 abs +0.071 rel -0.646 vol 16.7% | regression slope of relative returns -0.9227
   VGSIX        1996-06..2025-12 n=355: beta +0.763 abs +0.612 rel -0.234 vol 19.8% | regression slope of relative returns -0.2372
+==============================================================================
+4b. Long history, July 1927 to June 2026: risk, a beta-matched blend, and
+    every U.S. market decline of 20% or more (monthly, peak to trough)
+  vw_hi10: beta 0.981 CAGR 10.67% vol 22.58% Sharpe 0.413 maxDD -86.9% | beta-matched blend CAGR 10.17% vol 18.07% Sharpe 0.448
+  vw_hi30: beta 0.941 CAGR 11.33% vol 19.58% Sharpe 0.479 maxDD -87.9% | beta-matched blend CAGR 9.95% vol 17.33% Sharpe 0.448
+  market: CAGR 10.27% vol 18.42% Sharpe 0.448
+  1929-08 -> 1932-06: market -83.7%, top 10% -86.2%, top 30% -87.4%
+  1946-05 -> 1947-05: market -24.3%, top 10% -31.3%, top 30% -22.9%
+  1961-12 -> 1962-06: market -23.1%, top 10% -15.2%, top 30% -11.6%
+  1968-11 -> 1970-06: market -33.6%, top 10% -23.0%, top 30% -26.5%
+  1972-12 -> 1974-09: market -46.5%, top 10% -37.5%, top 30% -31.1%
+  1987-08 -> 1987-11: market -29.8%, top 10% -11.0%, top 30% -22.9%
+  2000-08 -> 2002-09: market -45.0%, top 10% +14.6%, top 30% +2.7%
+  2007-10 -> 2009-02: market -50.3%, top 10% -73.1%, top 30% -55.4%
+  2020-01 -> 2020-03: market -20.2%, top 10% -25.0%, top 30% -24.6%
+  2021-12 -> 2022-09: market -24.8%, top 10% +6.0%, top 30% -7.6%
+  10 declines of 20%+: top 10% fell further in 4, top 30% in 3
 ==============================================================================
 5. Factor regressions, excess returns over T-bills (OLS, Newey-West 6 lags)
   vw_hi10 capm: 1986-01..2025-12 n=480 adjR2=0.375 alpha=+3.39%/yr (t=1.58, NW t=1.21)
