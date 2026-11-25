@@ -1,0 +1,49 @@
+# Fails if a commit uses an author or committer email outside the Engineer
+# Investor allowlist, or adds a macOS home-directory path. Prints commit SHAs
+# only, never the offending values, so the log itself cannot leak anything.
+name: identity-guard
+on:
+  push:
+  pull_request:
+permissions:
+  contents: read
+jobs:
+  check:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+      - name: Check commit identities and added paths
+        env:
+          EVENT: ${{ github.event_name }}
+          BEFORE: ${{ github.event.before }}
+          AFTER: ${{ github.sha }}
+          PR_BASE: ${{ github.event.pull_request.base.sha }}
+          PR_HEAD: ${{ github.event.pull_request.head.sha }}
+        run: |
+          set -euo pipefail
+          allowed='^(166449067\+engineerinvestor@users\.noreply\.github\.com|egr\.investor@gmail\.com|noreply@github\.com)$'
+          zero=0000000000000000000000000000000000000000
+          if [ "$EVENT" = "pull_request" ]; then
+            range="$PR_BASE..$PR_HEAD"
+          elif [ -z "$BEFORE" ] || [ "$BEFORE" = "$zero" ] || ! git cat-file -e "$BEFORE^{commit}" 2>/dev/null; then
+            range="$AFTER"
+          else
+            range="$BEFORE..$AFTER"
+          fi
+          bad=$(git log --format='%h %ae %ce' "$range" | while read -r h ae ce; do
+            if ! printf '%s\n' "$ae" | grep -qE "$allowed" || ! printf '%s\n' "$ce" | grep -qE "$allowed"; then
+              echo "$h"
+            fi
+          done)
+          if [ -n "$bad" ]; then
+            echo "::error::Commits with a non-Engineer-Investor identity: $(echo $bad)"
+            exit 1
+          fi
+          paths=$(git log -p --format= "$range" | grep -E '^\+' | grep -cE '/Users/[A-Za-z]' || true)
+          if [ "$paths" != "0" ]; then
+            echo "::error::$paths added line(s) contain a /Users/ home path"
+            exit 1
+          fi
+          echo "OK: $(git rev-list --count "$range") commit(s) checked"
