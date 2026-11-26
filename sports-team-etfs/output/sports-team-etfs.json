@@ -1,0 +1,180 @@
+{
+  "asOf": "2026-11-25",
+  "edgar": {
+    "filings": [
+      {
+        "date": "2026-08-14",
+        "accession": "0001213900-26-090260",
+        "issuer": "Volatility Shares",
+        "league": "NHL",
+        "newSeries": 32,
+        "leveragedSeries": 0,
+        "indexUrl": "https://www.sec.gov/Archives/edgar/data/1884021/000121390026090260/0001213900-26-090260-index.htm"
+      },
+      {
+        "date": "2026-08-21",
+        "accession": "0001398344-26-015283",
+        "issuer": "Roundhill",
+        "league": "NHL",
+        "newSeries": 32,
+        "leveragedSeries": 0,
+        "indexUrl": "https://www.sec.gov/Archives/edgar/data/1976517/000139834426015283/0001398344-26-015283-index.htm"
+      },
+      {
+        "date": "2026-08-25",
+        "accession": "0001999371-26-018659",
+        "issuer": "LeagueShares",
+        "league": "NHL",
+        "newSeries": 32,
+        "leveragedSeries": 0,
+        "indexUrl": "https://www.sec.gov/Archives/edgar/data/1122649/000199937126018659/0001999371-26-018659-index.htm"
+      },
+      {
+        "date": "2026-08-25",
+        "accession": "0001999371-26-018661",
+        "issuer": "LeagueShares",
+        "league": "NHL",
+        "newSeries": 32,
+        "leveragedSeries": 32,
+        "indexUrl": "https://www.sec.gov/Archives/edgar/data/1122649/000199937126018661/0001999371-26-018661-index.htm"
+      },
+      {
+        "date": "2026-09-21",
+        "accession": "0001213900-26-101774",
+        "issuer": "Volatility Shares",
+        "league": "MLB",
+        "newSeries": 30,
+        "leveragedSeries": 0,
+        "indexUrl": "https://www.sec.gov/Archives/edgar/data/1884021/000121390026101774/0001213900-26-101774-index.htm"
+      },
+      {
+        "date": "2026-09-21",
+        "accession": "0001999371-26-020909",
+        "issuer": "LeagueShares",
+        "league": "MLB",
+        "newSeries": 30,
+        "leveragedSeries": 0,
+        "indexUrl": "https://www.sec.gov/Archives/edgar/data/1122649/000199937126020909/0001999371-26-020909-index.htm"
+      },
+      {
+        "date": "2026-09-21",
+        "accession": "0001999371-26-020911",
+        "issuer": "LeagueShares",
+        "league": "MLB",
+        "newSeries": 30,
+        "leveragedSeries": 30,
+        "indexUrl": "https://www.sec.gov/Archives/edgar/data/1122649/000199937126020911/0001999371-26-020911-index.htm"
+      },
+      {
+        "date": "2026-09-21",
+        "accession": "0001999371-26-020924",
+        "issuer": "REX (Alpha Sports)",
+        "league": "MLB",
+        "newSeries": 30,
+        "leveragedSeries": 0,
+        "indexUrl": "https://www.sec.gov/Archives/edgar/data/2043954/000199937126020924/0001999371-26-020924-index.htm"
+      },
+      {
+        "date": "2026-09-21",
+        "accession": "0001999371-26-020927",
+        "issuer": "REX (Alpha Sports)",
+        "league": "NHL",
+        "newSeries": 32,
+        "leveragedSeries": 32,
+        "indexUrl": "https://www.sec.gov/Archives/edgar/data/2043954/000199937126020927/0001999371-26-020927-index.htm"
+      },
+      {
+        "date": "2026-09-21",
+        "accession": "0001999371-26-020929",
+        "issuer": "REX (Alpha Sports)",
+        "league": "MLB",
+        "newSeries": 30,
+        "leveragedSeries": 30,
+        "indexUrl": "https://www.sec.gov/Archives/edgar/data/2043954/000199937126020929/0001999371-26-020929-index.htm"
+      },
+      {
+        "date": "2026-09-21",
+        "accession": "0001999371-26-020930",
+        "issuer": "REX (Alpha Sports)",
+        "league": "NHL",
+        "newSeries": 32,
+        "leveragedSeries": 0,
+        "indexUrl": "https://www.sec.gov/Archives/edgar/data/2043954/000199937126020930/0001999371-26-020930-index.htm"
+      },
+      {
+        "date": "2026-09-22",
+        "accession": "0001398344-26-017281",
+        "issuer": "Roundhill",
+        "league": "MLB",
+        "newSeries": 30,
+        "leveragedSeries": 0,
+        "indexUrl": "https://www.sec.gov/Archives/edgar/data/1976517/000139834426017281/0001398344-26-017281-index.htm"
+      },
+      {
+        "date": "2026-09-25",
+        "accession": "0001213900-26-103595",
+        "issuer": "Volatility Shares",
+        "league": "NBA",
+        "newSeries": 30,
+        "leveragedSeries": 0,
+        "indexUrl": "https://www.sec.gov/Archives/edgar/data/1884021/000121390026103595/0001213900-26-103595-index.htm"
+      },
+      {
+        "date": "2026-11-24",
+        "accession": "0001999371-26-026231",
+        "issuer": "LeagueShares",
+        "league": "NBA",
+        "newSeries": 30,
+        "leveragedSeries": 0,
+        "indexUrl": "https://www.sec.gov/Archives/edgar/data/1122649/000199937126026231/0001999371-26-026231-index.htm"
+      },
+      {
+        "date": "2026-11-24",
+        "accession": "0001999371-26-026232",
+        "issuer": "LeagueShares",
+        "league": "NBA",
+        "newSeries": 30,
+        "leveragedSeries": 30,
+        "indexUrl": "https://www.sec.gov/Archives/edgar/data/1122649/000199937126026232/0001999371-26-026232-index.htm"
+      }
+    ],
+    "total": 462,
+    "leveraged": 154,
+    "byIssuer": {
+      "Volatility Shares": 92,
+      "Roundhill": 62,
+      "LeagueShares": 184,
+      "REX (Alpha Sports)": 124
+    },
+    "byLeague": {
+      "NHL": 192,
+      "MLB": 180,
+      "NBA": 90
+    },
+    "effectiveFilingHits": {
+      "485BPOS": 0,
+      "497": 0,
+      "497K": 0
+    }
+  },
+  "nbaLeagueSum": {
+    "teams": 30,
+    "baseTotal": 225000,
+    "qualificationNet": 160,
+    "pointsPerPlayoffGame": 15,
+    "playoffGames": [
+      60,
+      105
+    ],
+    "champion": 250,
+    "changeRange": [
+      1310,
+      1985
+    ],
+    "changePctRange": [
+      0.58,
+      0.88
+    ],
+    "excluded": "free throws missed (no listed counterpart; weight not disclosed) and the in-season tournament final bonus"
+  }
+}
